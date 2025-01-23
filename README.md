@@ -18,4 +18,4 @@ Then, you can run the resulting sb3 in **TurboWarp Desktop**
 
 ### Current State
 
-First ~~Second?~~ commit, nothing has been done yet. Stay tuned!
+Engine is mostly complete, just need to actually do something with it.
