@@ -11,7 +11,10 @@ It *is* kinda an unoptimized mess, each background is like 15 MB. I made a chang
 
 Clone the repo and run `sb3-repackage.py`
 
-Then, you can run the resulting sb3 in TurboWarp Desktop (I have yet to decide if I will build this for TW or Scratch)
+Then, you can run the resulting sb3 in **TurboWarp Desktop**
+- Note: This cannot be run on scratch due to custom plugins
+    - This can be run on Nitrowarp or whatever it's called, all TW plugins are compatible
+        - I will not be testing a NW build though, so run at your own risk
 
 ### Current State
 
