@@ -7,3 +7,9 @@ Now I'm making a sequel because I don't have the motivation to sift through all 
 
 
 Welp, hopefully making the actual car will be easy. This is a lot more complicated than CDS 1
+
+23/1/2025 - 19:17
+
+I wonder what happens if I put this in the SB3
+
+You cannot, it gets deleted by scratch

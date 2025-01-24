@@ -5,9 +5,6 @@ if [ $? -ne 0 ]; then
     echo "Git was unable to pull. Ensure you are logged in!"
     echo "Pull aborted."
     exit 1
-elif [[ $output == *"Already up to date."* ]]; then
-    echo "No new changes. Skipping packaging."
-    exit 0
 fi
 
 python sb3-repackage.py
