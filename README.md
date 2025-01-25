@@ -16,6 +16,21 @@ Then, you can run the resulting sb3 in **TurboWarp Desktop**
     - This can be run on Nitrowarp or whatever it's called, all TW plugins are compatible
         - I will not be testing a NW build though, so run at your own risk
 
-### Current State
 
-Engine is mostly complete, just need to actually do something with it.
+
+### Controls
+
+`J` - Start/Stop Engine
+
+`W` - Press Accelerator Pedal
+`S` - Press Brake Pedal
+`.` - Press Clutch Pedal
+
+`P` - Shift to Neutral
+`[` - Downshift
+`]` - Upshift
+
+To start the car, the clutch needs to be held as it has a manual transmition and the car needs to be in neutral. After that, all the realism ends.
+
+## Current State
+Car + Road are rendered, but there's really nothing to do apart from run out of gas.
