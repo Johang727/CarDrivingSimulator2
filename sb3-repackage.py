@@ -7,9 +7,11 @@ from datetime import datetime
 import os
 
 
+
 def repackage_sb3(assets_folder, output_file):
     with ZipFile(output_file, 'w') as sb3:
         for file in assets_folder.glob('**/*'):
+            print(f"Wrote {file}")
             sb3.write(file, file.relative_to(assets_folder.parent))
 
 def create_backup(output_file):
@@ -42,4 +44,5 @@ else:
     print('Packaging file...')
     repackage_sb3(assets_folder, output_file)
     print('Success!')
-    print('Ensure to open and immediately save the .sb3 to allow TurboWarp to handle file compression!')
+
+print('Ensure to open the .sb3 to allow TurboWarp to handle file compression!')
