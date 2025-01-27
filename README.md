@@ -26,11 +26,14 @@ Then, you can run the resulting sb3 in **TurboWarp Desktop**
 `S` - Press Brake Pedal
 `.` - Press Clutch Pedal
 
+`O` - Shift to Park
 `P` - Shift to Neutral
-`[` - Downshift
+`[` - Downshift / Shift to Drive (Auto)
 `]` - Upshift
 
 To start the car, the clutch needs to be held as it has a manual transmition and the car needs to be in neutral. After that, all the realism ends.
 
+You can change to automatic in the settings 
+
 ## Current State
-Car + Road are rendered, but there's really nothing to do apart from run out of gas.
+Other cars render now, but there is no objective yet
