@@ -39,7 +39,7 @@ if os.path.exists('CarDrivingSimulator2.sb3'):
         repackage_sb3(assets_folder, output_file)
         print('Success!')
     else:
-        print('Operation canceled, no files overwritten.')
+        sys.exit('Operation canceled, no files overwritten.')
 else:
     print('Packaging file...')
     repackage_sb3(assets_folder, output_file)

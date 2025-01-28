@@ -26,7 +26,17 @@ Then, you can run the resulting sb3 in **TurboWarp Desktop**
 `S` - Press Brake Pedal
 `.` - Press Clutch Pedal
 
-`O` - Shift to Park
+`A` - Move Left
+`D` - Move Right
+
+`Q` - Left Indicator
+`E` - Right Indicator
+`Z` - Hazard Lights
+`F` - Light
+
+
+`I` - Shift to Park (Auto)
+`O` - Shift to Reverse
 `P` - Shift to Neutral
 `[` - Downshift / Shift to Drive (Auto)
 `]` - Upshift
@@ -36,4 +46,4 @@ To start the car, the clutch needs to be held as it has a manual transmition and
 You can change to automatic in the settings 
 
 ## Current State
-Other cars render now, but there is no objective yet
+Other cars render now, but there is no objective yet, or even a gas station :p
