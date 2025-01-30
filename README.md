@@ -4,14 +4,15 @@
 Car Driving Simulator started as a simple scratch project made in 2018 with zero knowledge of programming.
 
 It can be found here: https://scratch.mit.edu/projects/311364999
-
-It *is* kinda an unoptimized mess, each background is like 15 MB. I made a change locally and fixed that, but have been too lazy to publish it on Scratch.
+- Note: CDS 1 *is* kinda an unoptimized mess, each background is like 15 MB. I made a change locally and fixed that, but have been too lazy to publish it on Scratch.
 
 ### How to run
 
-Clone the repo and run `sb3-repackage.py`
+Download the latest artifact from the [Actions](https://github.com/Johang727/CarDrivingSimulator2/actions) tab!
+- This should be a .zip named `sb3-output`
+    - Located in the .zip should be CarDrivingSimulator2.sb3
 
-Then, you can run the resulting sb3 in **TurboWarp Desktop**
+Then, you can run the resulting sb3 in [**TurboWarp**](https://turbowarp.org/)
 - Note: This cannot be run on scratch due to custom plugins
     - This can be run on Nitrowarp or whatever it's called, all TW plugins are compatible
         - I will not be testing a NW build though, so run at your own risk
