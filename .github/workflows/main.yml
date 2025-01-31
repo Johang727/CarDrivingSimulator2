@@ -27,7 +27,7 @@ jobs:
                       (response) => response.data.files.map((file) => file.filename)
                       );
                       return {
-                        projectJsonChanged: changedFiles.includes("Assets/project.json")
+                        changedFiles.includes("Assets/project.json")
                         };
 
             - name: setup python
