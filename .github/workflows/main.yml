@@ -18,7 +18,7 @@ jobs:
               with:
                 script: |
                   const changedFiles = await github.paginate(
-                    github.rest.repos.getCommit,
+                    github.rest.repos.listCommits,
                     {
                       owner: context.repo.owner,
                       repo: context.repo.repo,
