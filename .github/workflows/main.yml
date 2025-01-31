@@ -31,21 +31,21 @@ jobs:
                         };
 
             - name: setup python
-              if: steps.check_changes.outputs.projectJsonChanged == 'true'
+              if: steps.check_changes.outputs.return == 'true'
               uses: actions/setup-python@v5
               with:
                 python-version: '3.x'
 
             - name: install dependencies
-              if: steps.check_changes.outputs.projectJsonChanged == 'true'
+              if: steps.check_changes.outputs.return == 'true'
               run: python -m pip install --upgrade pip
 
             - name: run sb3-repackage.py
-              if: steps.check_changes.outputs.projectJsonChanged == 'true'
+              if: steps.check_changes.outputs.return == 'true'
               run: python sb3-repackage.py
             
             - name: upload artifact
-              if: steps.check_changes.outputs.projectJsonChanged == 'true'
+              if: steps.check_changes.outputs.return == 'true'
               uses: actions/upload-artifact@v4
               with:
                 name: sb3-output
