@@ -2,7 +2,7 @@
 
 git pull
 if [ $? -ne 0 ]; then
-    echo "Git was unable to pull. Ensure you are logged in!"
+    echo "Git was unable to pull. Are you logged in?"
     echo "Pull aborted."
     exit 1
 fi
@@ -13,3 +13,6 @@ if [ $? -ne 0 ]; then
     echo "Pull aborted."
     exit 1
 fi
+
+echo "Opening in TurboWarp Desktop..."
+turbowarp-desktop CarDrivingSimulator2.sb3
