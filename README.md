@@ -14,9 +14,8 @@ Download the latest artifact from the [Actions](https://github.com/Johang727/Car
 
 Then, you can run the resulting sb3 in [**TurboWarp**](https://turbowarp.org/)
 - Note: This cannot be run on scratch due to custom plugins
-    - This can be run on Nitrowarp or whatever it's called, all TW plugins are compatible
-        - I will not be testing a NW build though, so run at your own risk
-
+    - This can be run on NitroBolt, all TW plugins are compatible
+        - I will not be testing a NB build though, so run at your own risk
 
 
 ### Controls
@@ -47,4 +46,4 @@ To start the car, the clutch needs to be held as it has a manual transmition and
 You can change to automatic in the settings 
 
 ## Current State
-Other cars render now, but there is no objective yet, or even a gas station :p
+Ehh, i guess there's somewhat of an objective. Gas station exists now.
