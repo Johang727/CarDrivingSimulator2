@@ -46,4 +46,4 @@ To start the car, the clutch needs to be held as it has a manual transmition and
 You can change to automatic in the settings 
 
 ## Current State
-Ehh, i guess there's somewhat of an objective. Gas station exists now.
+Car dealership can be used to change engine for free (temp)
