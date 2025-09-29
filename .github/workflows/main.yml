@@ -4,6 +4,9 @@ on:
     push:
         branches:
             - main
+        paths:
+            - 'CarDrivingSimulator2_Decompiled/**'
+
 
 jobs:
     run-script:
@@ -20,8 +23,8 @@ jobs:
             - name: install dependencies
               run: python -m pip install --upgrade pip
 
-            - name: run sb3-repackage.py
-              run: python sb3-repackage.py
+            - name: run vcs.py
+              run: python vcs.py recompile
             
             - name: upload artifact
               uses: actions/upload-artifact@v4
