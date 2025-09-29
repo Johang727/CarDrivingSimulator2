@@ -5,9 +5,9 @@
     "lists": {},
     "broadcasts": {},
     "blocks": {
-        "s;": {
+        "mn": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "#",
+            "next": "E",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -21,47 +21,47 @@
             "x": -998,
             "y": -92
         },
-        "#": {
+        "E": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "s;",
+            "parent": "mn",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "XA"
+                    "D@"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "XA": {
+        "D@": {
             "opcode": "looks_show",
-            "next": "%",
-            "parent": "#",
+            "next": "F",
+            "parent": "E",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "%": {
+        "F": {
             "opcode": "motion_goto",
-            "next": "(",
-            "parent": "XA",
+            "next": "G",
+            "parent": "D@",
             "inputs": {
                 "TO": [
                     1,
-                    "s="
+                    "mo"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "s=": {
+        "mo": {
             "opcode": "motion_goto_menu",
             "next": null,
-            "parent": "%",
+            "parent": "F",
             "inputs": {},
             "fields": {
                 "TO": [
@@ -72,14 +72,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "(": {
+        "G": {
             "opcode": "motion_pointindirection",
-            "next": "b[",
-            "parent": "%",
+            "next": "ay",
+            "parent": "F",
             "inputs": {
                 "DIRECTION": [
                     3,
-                    "e",
+                    "d",
                     [
                         8,
                         "0"
@@ -90,14 +90,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "e": {
+        "d": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "(",
+            "parent": "G",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "s?"
+                    "mp"
                 ]
             },
             "fields": {
@@ -109,10 +109,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "s?": {
+        "mp": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "e",
+            "parent": "d",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -123,14 +123,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "b[": {
+        "ay": {
             "opcode": "lmsLooksPlus_setLayerTo",
-            "next": "XB",
-            "parent": "(",
+            "next": "D[",
+            "parent": "G",
             "inputs": {
                 "TARGET": [
                     1,
-                    "s@"
+                    "mq"
                 ],
                 "LAYER": [
                     3,
@@ -145,10 +145,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "s@": {
+        "mq": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "b[",
+            "parent": "ay",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -162,11 +162,11 @@
         "h": {
             "opcode": "operator_add",
             "next": null,
-            "parent": "b[",
+            "parent": "ay",
             "inputs": {
                 "NUM1": [
                     3,
-                    "f.",
+                    "fe",
                     [
                         4,
                         ""
@@ -184,24 +184,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "f.": {
+        "fe": {
             "opcode": "lmsLooksPlus_spriteLayerNumber",
             "next": null,
             "parent": "h",
             "inputs": {
                 "TARGET": [
                     1,
-                    "s["
+                    "mr"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "s[": {
+        "mr": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "f.",
+            "parent": "fe",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -212,9 +212,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "aoJ": {
+        "`%": {
             "opcode": "event_whenflagclicked",
-            "next": "aoK",
+            "next": "`(",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -223,18 +223,18 @@
             "x": -891,
             "y": -289
         },
-        "aoK": {
+        "`(": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "aoJ",
+            "parent": "`%",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aoL": {
+        "`)": {
             "opcode": "lmsMoreEvents_whenStopClicked",
-            "next": "aoM",
+            "next": "`*",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -243,23 +243,23 @@
             "x": -628,
             "y": -282
         },
-        "aoM": {
+        "`*": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "aoL",
+            "parent": "`)",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "XB": {
+        "D[": {
             "opcode": "looks_seteffectto",
             "next": null,
-            "parent": "b[",
+            "parent": "ay",
             "inputs": {
                 "VALUE": [
                     3,
-                    "XC",
+                    "D]",
                     [
                         4,
                         "0"
@@ -275,14 +275,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "XC": {
+        "D]": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "XB",
+            "parent": "D[",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "aoN"
+                    "`+"
                 ]
             },
             "fields": {
@@ -294,10 +294,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aoN": {
+        "`+": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "XC",
+            "parent": "D]",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -308,9 +308,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "aoO": {
+        "`,": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "XD",
+            "next": "D^",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -324,47 +324,47 @@
             "x": -1002,
             "y": 327
         },
-        "XD": {
+        "D^": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "aoO",
+            "parent": "`,",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "XE"
+                    "D_"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "XE": {
+        "D_": {
             "opcode": "looks_show",
-            "next": "s]",
-            "parent": "XD",
+            "next": "ms",
+            "parent": "D^",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "s]": {
+        "ms": {
             "opcode": "motion_goto",
-            "next": "s^",
-            "parent": "XE",
+            "next": "mt",
+            "parent": "D_",
             "inputs": {
                 "TO": [
                     1,
-                    "aoP"
+                    "`-"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aoP": {
+        "`-": {
             "opcode": "motion_goto_menu",
             "next": null,
-            "parent": "s]",
+            "parent": "ms",
             "inputs": {},
             "fields": {
                 "TO": [
@@ -375,14 +375,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "s^": {
+        "mt": {
             "opcode": "motion_pointindirection",
-            "next": ",",
-            "parent": "s]",
+            "next": ")",
+            "parent": "ms",
             "inputs": {
                 "DIRECTION": [
                     3,
-                    "XF",
+                    "D`",
                     [
                         8,
                         "0"
@@ -393,14 +393,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "XF": {
+        "D`": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "s^",
+            "parent": "mt",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "aoQ"
+                    "`."
                 ]
             },
             "fields": {
@@ -412,10 +412,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aoQ": {
+        "`.": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "XF",
+            "parent": "D`",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -426,18 +426,18 @@
             "shadow": true,
             "topLevel": false
         },
-        ",": {
+        ")": {
             "opcode": "lmsLooksPlus_setLayerTo",
-            "next": "XG",
-            "parent": "s^",
+            "next": "D{",
+            "parent": "mt",
             "inputs": {
                 "TARGET": [
                     1,
-                    "aoR"
+                    "`/"
                 ],
                 "LAYER": [
                     3,
-                    "XH",
+                    "D|",
                     [
                         4,
                         "1"
@@ -448,10 +448,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aoR": {
+        "`/": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": ",",
+            "parent": ")",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -462,14 +462,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "XH": {
+        "D|": {
             "opcode": "operator_add",
             "next": null,
-            "parent": ",",
+            "parent": ")",
             "inputs": {
                 "NUM1": [
                     3,
-                    "XI",
+                    "D}",
                     [
                         4,
                         ""
@@ -487,24 +487,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "XI": {
+        "D}": {
             "opcode": "lmsLooksPlus_spriteLayerNumber",
             "next": null,
-            "parent": "XH",
+            "parent": "D|",
             "inputs": {
                 "TARGET": [
                     1,
-                    "aoS"
+                    "`:"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aoS": {
+        "`:": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "XI",
+            "parent": "D}",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -515,14 +515,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "XG": {
+        "D{": {
             "opcode": "looks_seteffectto",
             "next": null,
-            "parent": ",",
+            "parent": ")",
             "inputs": {
                 "VALUE": [
                     3,
-                    "XJ",
+                    "D~",
                     [
                         4,
                         "0"
@@ -538,14 +538,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "XJ": {
+        "D~": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "XG",
+            "parent": "D{",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "aoT"
+                    "`;"
                 ]
             },
             "fields": {
@@ -557,10 +557,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aoT": {
+        "`;": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "XJ",
+            "parent": "D~",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -571,9 +571,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "aoU": {
+        "`=": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "XK",
+            "next": "Ea",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -587,10 +587,10 @@
             "x": -257,
             "y": 102
         },
-        "XK": {
+        "Ea": {
             "opcode": "control_stop",
-            "next": "aoV",
-            "parent": "aoU",
+            "next": "`?",
+            "parent": "`=",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -606,10 +606,10 @@
                 "hasnext": "true"
             }
         },
-        "aoV": {
+        "`?": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "XK",
+            "parent": "Ea",
             "inputs": {},
             "fields": {},
             "shadow": false,
@@ -633,7 +633,7 @@
         },
         "g": {
             "opcode": "control_stop",
-            "next": "aoW",
+            "next": "`@",
             "parent": "i",
             "inputs": {},
             "fields": {
@@ -650,7 +650,7 @@
                 "hasnext": "true"
             }
         },
-        "aoW": {
+        "`@": {
             "opcode": "looks_hide",
             "next": null,
             "parent": "g",

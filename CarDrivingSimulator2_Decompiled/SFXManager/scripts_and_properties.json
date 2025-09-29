@@ -5,9 +5,9 @@
     "lists": {},
     "broadcasts": {},
     "blocks": {
-        "ak~": {
+        "aN_": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "rl",
+            "next": "BB",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -21,14 +21,14 @@
             "x": 254,
             "y": 341
         },
-        "rl": {
+        "BB": {
             "opcode": "sound_seteffectto",
-            "next": "rm",
-            "parent": "ak~",
+            "next": "BC",
+            "parent": "aN_",
             "inputs": {
                 "VALUE": [
                     3,
-                    "ala",
+                    "aN`",
                     [
                         4,
                         "0"
@@ -44,10 +44,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "ala": {
+        "aN`": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "rl",
+            "parent": "BB",
             "inputs": {
                 "FROM": [
                     1,
@@ -68,37 +68,37 @@
             "shadow": false,
             "topLevel": false
         },
-        "rm": {
+        "BC": {
             "opcode": "lmsSpAsMoreControl_switch",
             "next": null,
-            "parent": "rl",
+            "parent": "BB",
             "inputs": {
                 "SWITCH": [
                     2,
-                    "alb"
+                    "aN{"
                 ],
                 "SUBSTACK": [
                     2,
-                    "rn"
+                    "BD"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alb": {
+        "aN{": {
             "opcode": "lmsMoreEvents_receivedData",
             "next": null,
-            "parent": "rm",
+            "parent": "BC",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rn": {
+        "BD": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "ro",
-            "parent": "rm",
+            "next": "BE",
+            "parent": "BC",
             "inputs": {
                 "CASE": [
                     1,
@@ -109,31 +109,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "rp"
+                    "BF"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rp": {
+        "BF": {
             "opcode": "sound_play",
-            "next": "alc",
-            "parent": "rn",
+            "next": "aN|",
+            "parent": "BD",
             "inputs": {
                 "SOUND_MENU": [
                     1,
-                    "ald"
+                    "aN}"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ald": {
+        "aN}": {
             "opcode": "sound_sounds_menu",
             "next": null,
-            "parent": "rp",
+            "parent": "BF",
             "inputs": {},
             "fields": {
                 "SOUND_MENU": [
@@ -144,19 +144,19 @@
             "shadow": true,
             "topLevel": false
         },
-        "alc": {
+        "aN|": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "rp",
+            "parent": "BF",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ro": {
+        "BE": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "rq",
-            "parent": "rn",
+            "next": "BG",
+            "parent": "BD",
             "inputs": {
                 "CASE": [
                     1,
@@ -167,31 +167,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "rr"
+                    "BH"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rr": {
+        "BH": {
             "opcode": "sound_play",
-            "next": "ale",
-            "parent": "ro",
+            "next": "aN~",
+            "parent": "BE",
             "inputs": {
                 "SOUND_MENU": [
                     1,
-                    "alf"
+                    "aOa"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alf": {
+        "aOa": {
             "opcode": "sound_sounds_menu",
             "next": null,
-            "parent": "rr",
+            "parent": "BH",
             "inputs": {},
             "fields": {
                 "SOUND_MENU": [
@@ -202,19 +202,19 @@
             "shadow": true,
             "topLevel": false
         },
-        "ale": {
+        "aN~": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "rr",
+            "parent": "BH",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rq": {
+        "BG": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "rs",
-            "parent": "ro",
+            "next": "BI",
+            "parent": "BE",
             "inputs": {
                 "CASE": [
                     1,
@@ -225,31 +225,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "rt"
+                    "BJ"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rt": {
+        "BJ": {
             "opcode": "sound_play",
-            "next": "alg",
-            "parent": "rq",
+            "next": "aOb",
+            "parent": "BG",
             "inputs": {
                 "SOUND_MENU": [
                     1,
-                    "alh"
+                    "aOc"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alh": {
+        "aOc": {
             "opcode": "sound_sounds_menu",
             "next": null,
-            "parent": "rt",
+            "parent": "BJ",
             "inputs": {},
             "fields": {
                 "SOUND_MENU": [
@@ -260,19 +260,19 @@
             "shadow": true,
             "topLevel": false
         },
-        "alg": {
+        "aOb": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "rt",
+            "parent": "BJ",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rs": {
+        "BI": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "ru",
-            "parent": "rq",
+            "next": "BK",
+            "parent": "BG",
             "inputs": {
                 "CASE": [
                     1,
@@ -283,31 +283,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "rv"
+                    "BL"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rv": {
+        "BL": {
             "opcode": "sound_play",
-            "next": "ali",
-            "parent": "rs",
+            "next": "aOd",
+            "parent": "BI",
             "inputs": {
                 "SOUND_MENU": [
                     1,
-                    "alj"
+                    "aOe"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alj": {
+        "aOe": {
             "opcode": "sound_sounds_menu",
             "next": null,
-            "parent": "rv",
+            "parent": "BL",
             "inputs": {},
             "fields": {
                 "SOUND_MENU": [
@@ -318,19 +318,19 @@
             "shadow": true,
             "topLevel": false
         },
-        "ali": {
+        "aOd": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "rv",
+            "parent": "BL",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ru": {
+        "BK": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "rw",
-            "parent": "rs",
+            "next": "BM",
+            "parent": "BI",
             "inputs": {
                 "CASE": [
                     1,
@@ -341,31 +341,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "rx"
+                    "BN"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rx": {
+        "BN": {
             "opcode": "sound_play",
-            "next": "alk",
-            "parent": "ru",
+            "next": "aOf",
+            "parent": "BK",
             "inputs": {
                 "SOUND_MENU": [
                     1,
-                    "all"
+                    "aOg"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "all": {
+        "aOg": {
             "opcode": "sound_sounds_menu",
             "next": null,
-            "parent": "rx",
+            "parent": "BN",
             "inputs": {},
             "fields": {
                 "SOUND_MENU": [
@@ -376,19 +376,19 @@
             "shadow": true,
             "topLevel": false
         },
-        "alk": {
+        "aOf": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "rx",
+            "parent": "BN",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rw": {
+        "BM": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "Uk",
-            "parent": "ru",
+            "next": "];",
+            "parent": "BK",
             "inputs": {
                 "CASE": [
                     1,
@@ -399,31 +399,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "ry"
+                    "BO"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ry": {
+        "BO": {
             "opcode": "sound_play",
-            "next": "alm",
-            "parent": "rw",
+            "next": "aOh",
+            "parent": "BM",
             "inputs": {
                 "SOUND_MENU": [
                     1,
-                    "aln"
+                    "aOi"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aln": {
+        "aOi": {
             "opcode": "sound_sounds_menu",
             "next": null,
-            "parent": "ry",
+            "parent": "BO",
             "inputs": {},
             "fields": {
                 "SOUND_MENU": [
@@ -434,37 +434,37 @@
             "shadow": true,
             "topLevel": false
         },
-        "alm": {
+        "aOh": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "ry",
+            "parent": "BO",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Uk": {
+        "];": {
             "opcode": "lmsSpAsMoreControl_default",
             "next": null,
-            "parent": "rw",
+            "parent": "BM",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "Ul"
+                    "]="
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Ul": {
+        "]=": {
             "opcode": "procedures_call",
             "next": null,
-            "parent": "Uk",
+            "parent": "];",
             "inputs": {
                 "ZzMo;[$+1+{Wn/{SJq[J": [
                     3,
-                    "Um",
+                    "]?",
                     [
                         10,
                         ""
@@ -489,10 +489,10 @@
                 "warp": "false"
             }
         },
-        "Um": {
+        "]?": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "Ul",
+            "parent": "]=",
             "inputs": {
                 "STRING1": [
                     1,
@@ -503,7 +503,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "Un",
+                    "]@",
                     [
                         10,
                         ""
@@ -514,14 +514,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "Un": {
+        "]@": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "Um",
+            "parent": "]?",
             "inputs": {
                 "STRING1": [
                     3,
-                    "alo",
+                    "aOj",
                     [
                         10,
                         ""
@@ -539,23 +539,23 @@
             "shadow": false,
             "topLevel": false
         },
-        "alo": {
+        "aOj": {
             "opcode": "lmsMoreEvents_receivedData",
             "next": null,
-            "parent": "Un",
+            "parent": "]@",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Uo": {
+        "][": {
             "opcode": "procedures_definition",
-            "next": "jo",
+            "next": "lG",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "rz"
+                    "BP"
                 ]
             },
             "fields": {},
@@ -564,18 +564,18 @@
             "x": -172,
             "y": -88
         },
-        "rz": {
+        "BP": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "Uo",
+            "parent": "][",
             "inputs": {
                 "ZzMo;[$+1+{Wn/{SJq[J": [
                     1,
-                    "alp"
+                    "aOk"
                 ],
                 "q#;S0tT6_|1(2ivL(,R,": [
                     1,
-                    "alq"
+                    "aOl"
                 ]
             },
             "fields": {},
@@ -591,10 +591,10 @@
                 "warp": "false"
             }
         },
-        "alp": {
+        "aOk": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "rz",
+            "parent": "BP",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -605,10 +605,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "alq": {
+        "aOl": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "rz",
+            "parent": "BP",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -619,36 +619,36 @@
             "shadow": true,
             "topLevel": false
         },
-        "jo": {
+        "lG": {
             "opcode": "control_if_else",
             "next": null,
-            "parent": "Uo",
+            "parent": "][",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "Up"
+                    "]]"
                 ],
                 "SUBSTACK": [
                     2,
-                    "Uq"
+                    "]^"
                 ],
                 "SUBSTACK2": [
                     2,
-                    "Ur"
+                    "]_"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Up": {
+        "]]": {
             "opcode": "operator_equals",
             "next": null,
-            "parent": "jo",
+            "parent": "lG",
             "inputs": {
                 "OPERAND1": [
                     3,
-                    "alr",
+                    "aOm",
                     [
                         10,
                         ""
@@ -666,10 +666,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alr": {
+        "aOm": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "Up",
+            "parent": "]]",
             "inputs": {
                 "VAR": [
                     1,
@@ -683,14 +683,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "Uq": {
+        "]^": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "jo",
+            "parent": "lG",
             "inputs": {
                 "ITEM": [
                     3,
-                    "rA",
+                    "BQ",
                     [
                         10,
                         "rec:checking save status..."
@@ -706,14 +706,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rA": {
+        "BQ": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "Uq",
+            "parent": "]^",
             "inputs": {
                 "STRING1": [
                     3,
-                    "als",
+                    "aOn",
                     [
                         10,
                         "manzana "
@@ -721,7 +721,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "Us",
+                    "]`",
                     [
                         10,
                         "banana"
@@ -732,10 +732,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "als": {
+        "aOn": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "rA",
+            "parent": "BQ",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -746,10 +746,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Us": {
+        "]`": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rA",
+            "parent": "BQ",
             "inputs": {
                 "STRING1": [
                     1,
@@ -760,7 +760,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "rB",
+                    "BR",
                     [
                         10,
                         "banana"
@@ -771,14 +771,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rB": {
+        "BR": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "Us",
+            "parent": "]`",
             "inputs": {
                 "STRING1": [
                     3,
-                    "alt",
+                    "aOo",
                     [
                         10,
                         ""
@@ -786,7 +786,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "Ut",
+                    "]{",
                     [
                         10,
                         "banana"
@@ -797,19 +797,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "alt": {
+        "aOo": {
             "opcode": "lmsAssets_getSpriteName",
             "next": null,
-            "parent": "rB",
+            "parent": "BR",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Ut": {
+        "]{": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rB",
+            "parent": "BR",
             "inputs": {
                 "STRING1": [
                     1,
@@ -820,7 +820,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "alu",
+                    "aOp",
                     [
                         10,
                         "banana"
@@ -831,10 +831,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alu": {
+        "aOp": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "Ut",
+            "parent": "]{",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -845,14 +845,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "Ur": {
+        "]_": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "jo",
+            "parent": "lG",
             "inputs": {
                 "ITEM": [
                     3,
-                    "rC",
+                    "BS",
                     [
                         10,
                         "rec:checking save status..."
@@ -868,14 +868,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rC": {
+        "BS": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "Ur",
+            "parent": "]_",
             "inputs": {
                 "STRING1": [
                     3,
-                    "rD",
+                    "BT",
                     [
                         10,
                         "manzana "
@@ -883,7 +883,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "Uu",
+                    "]|",
                     [
                         10,
                         "banana"
@@ -894,14 +894,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rD": {
+        "BT": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rC",
+            "parent": "BS",
             "inputs": {
                 "STRING1": [
                     3,
-                    "alv",
+                    "aOq",
                     [
                         10,
                         "manzana "
@@ -909,7 +909,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "Uv",
+                    "]}",
                     [
                         10,
                         "banana"
@@ -920,10 +920,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alv": {
+        "aOq": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "rD",
+            "parent": "BT",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -934,10 +934,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Uv": {
+        "]}": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rD",
+            "parent": "BT",
             "inputs": {
                 "STRING1": [
                     1,
@@ -948,7 +948,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "rE",
+                    "BU",
                     [
                         10,
                         "banana"
@@ -959,14 +959,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rE": {
+        "BU": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "Uv",
+            "parent": "]}",
             "inputs": {
                 "STRING1": [
                     3,
-                    "alw",
+                    "aOr",
                     [
                         10,
                         ""
@@ -974,7 +974,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "Uw",
+                    "]~",
                     [
                         10,
                         "banana"
@@ -985,19 +985,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "alw": {
+        "aOr": {
             "opcode": "lmsAssets_getSpriteName",
             "next": null,
-            "parent": "rE",
+            "parent": "BU",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Uw": {
+        "]~": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rE",
+            "parent": "BU",
             "inputs": {
                 "STRING1": [
                     1,
@@ -1008,7 +1008,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "alx",
+                    "aOs",
                     [
                         10,
                         "banana"
@@ -1019,10 +1019,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alx": {
+        "aOs": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "Uw",
+            "parent": "]~",
             "inputs": {
                 "VAR": [
                     1,
@@ -1036,10 +1036,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Uu": {
+        "]|": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rC",
+            "parent": "BS",
             "inputs": {
                 "STRING1": [
                     1,
@@ -1050,7 +1050,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "aly",
+                    "aOt",
                     [
                         10,
                         "banana"
@@ -1061,10 +1061,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aly": {
+        "aOt": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "Uu",
+            "parent": "]|",
             "inputs": {},
             "fields": {
                 "VALUE": [

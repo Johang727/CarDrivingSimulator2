@@ -35,9 +35,9 @@
     },
     "broadcasts": {},
     "blocks": {
-        "alz": {
+        "aGF": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "Ux",
+            "next": "/@",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -51,10 +51,10 @@
             "x": -85,
             "y": 285
         },
-        "Ux": {
+        "/@": {
             "opcode": "data_setvariableto",
-            "next": "Uy",
-            "parent": "alz",
+            "next": "/[",
+            "parent": "aGF",
             "inputs": {
                 "VALUE": [
                     1,
@@ -73,24 +73,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "Uy": {
+        "/[": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "Ux",
+            "parent": "/@",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "Uz"
+                    "/]"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Uz": {
+        "/]": {
             "opcode": "procedures_call",
-            "next": "UA",
-            "parent": "Uy",
+            "next": "/^",
+            "parent": "/[",
             "inputs": {},
             "fields": {},
             "shadow": false,
@@ -103,14 +103,14 @@
                 "warp": "false"
             }
         },
-        "UA": {
+        "/^": {
             "opcode": "control_wait",
             "next": null,
-            "parent": "Uz",
+            "parent": "/]",
             "inputs": {
                 "DURATION": [
                     3,
-                    "alA",
+                    "aGG",
                     [
                         5,
                         ""
@@ -121,10 +121,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alA": {
+        "aGG": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "UA",
+            "parent": "/^",
             "inputs": {
                 "FROM": [
                     1,
@@ -145,9 +145,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "alB": {
+        "aGH": {
             "opcode": "event_whenflagclicked",
-            "next": "UB",
+            "next": "/_",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -156,10 +156,10 @@
             "x": -946,
             "y": -89
         },
-        "UB": {
+        "/_": {
             "opcode": "data_deletealloflist",
-            "next": "rF",
-            "parent": "alB",
+            "next": "x}",
+            "parent": "aGH",
             "inputs": {},
             "fields": {
                 "LIST": [
@@ -170,10 +170,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "rF": {
+        "x}": {
             "opcode": "lmscomments_commentC",
-            "next": "rG",
-            "parent": "UB",
+            "next": "x~",
+            "parent": "/_",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -184,17 +184,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "UC"
+                    "/`"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UC": {
+        "/`": {
             "opcode": "data_addtolist",
-            "next": "UD",
-            "parent": "rF",
+            "next": "/{",
+            "parent": "x}",
             "inputs": {
                 "ITEM": [
                     1,
@@ -213,10 +213,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UD": {
+        "/{": {
             "opcode": "data_addtolist",
-            "next": "alC",
-            "parent": "UC",
+            "next": "aGI",
+            "parent": "/`",
             "inputs": {
                 "ITEM": [
                     1,
@@ -235,10 +235,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alC": {
+        "aGI": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "UD",
+            "parent": "/{",
             "inputs": {
                 "ITEM": [
                     1,
@@ -257,10 +257,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "rG": {
+        "x~": {
             "opcode": "lmscomments_commentC",
-            "next": "rH",
-            "parent": "rF",
+            "next": "ya",
+            "parent": "x}",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -271,17 +271,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "UE"
+                    "/|"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UE": {
+        "/|": {
             "opcode": "data_addtolist",
-            "next": "UF",
-            "parent": "rG",
+            "next": "/}",
+            "parent": "x~",
             "inputs": {
                 "ITEM": [
                     1,
@@ -300,10 +300,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UF": {
+        "/}": {
             "opcode": "data_addtolist",
-            "next": "alD",
-            "parent": "UE",
+            "next": "aGJ",
+            "parent": "/|",
             "inputs": {
                 "ITEM": [
                     1,
@@ -322,10 +322,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alD": {
+        "aGJ": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "UF",
+            "parent": "/}",
             "inputs": {
                 "ITEM": [
                     1,
@@ -344,10 +344,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "rH": {
+        "ya": {
             "opcode": "lmscomments_commentC",
-            "next": "UG",
-            "parent": "rG",
+            "next": "/~",
+            "parent": "x~",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -358,17 +358,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "UH"
+                    ":a"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UH": {
+        ":a": {
             "opcode": "data_addtolist",
-            "next": "UI",
-            "parent": "rH",
+            "next": ":b",
+            "parent": "ya",
             "inputs": {
                 "ITEM": [
                     1,
@@ -387,10 +387,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UI": {
+        ":b": {
             "opcode": "data_addtolist",
-            "next": "alE",
-            "parent": "UH",
+            "next": "aGK",
+            "parent": ":a",
             "inputs": {
                 "ITEM": [
                     1,
@@ -409,10 +409,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alE": {
+        "aGK": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "UI",
+            "parent": ":b",
             "inputs": {
                 "ITEM": [
                     1,
@@ -431,10 +431,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UG": {
+        "/~": {
             "opcode": "lmscomments_commentC",
             "next": null,
-            "parent": "rH",
+            "parent": "ya",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -445,17 +445,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "UJ"
+                    ":c"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UJ": {
+        ":c": {
             "opcode": "data_addtolist",
-            "next": "alF",
-            "parent": "UG",
+            "next": "aGL",
+            "parent": "/~",
             "inputs": {
                 "ITEM": [
                     1,
@@ -474,10 +474,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alF": {
+        "aGL": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "UJ",
+            "parent": ":c",
             "inputs": {
                 "ITEM": [
                     1,
@@ -496,14 +496,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "UK": {
+        ":d": {
             "opcode": "procedures_definition",
-            "next": "jp",
+            "next": "k!",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "rI"
+                    "yb"
                 ]
             },
             "fields": {},
@@ -512,18 +512,18 @@
             "x": -1078,
             "y": -963
         },
-        "rI": {
+        "yb": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "UK",
+            "parent": ":d",
             "inputs": {
                 "ZzMo;[$+1+{Wn/{SJq[J": [
                     1,
-                    "alG"
+                    "aGM"
                 ],
                 "q#;S0tT6_|1(2ivL(,R,": [
                     1,
-                    "alH"
+                    "aGN"
                 ]
             },
             "fields": {},
@@ -539,10 +539,10 @@
                 "warp": "false"
             }
         },
-        "alG": {
+        "aGM": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "rI",
+            "parent": "yb",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -553,10 +553,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "alH": {
+        "aGN": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "rI",
+            "parent": "yb",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -567,36 +567,36 @@
             "shadow": true,
             "topLevel": false
         },
-        "jp": {
+        "k!": {
             "opcode": "control_if_else",
             "next": null,
-            "parent": "UK",
+            "parent": ":d",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "UL"
+                    ":e"
                 ],
                 "SUBSTACK": [
                     2,
-                    "UM"
+                    ":f"
                 ],
                 "SUBSTACK2": [
                     2,
-                    "UN"
+                    ":g"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UL": {
+        ":e": {
             "opcode": "operator_equals",
             "next": null,
-            "parent": "jp",
+            "parent": "k!",
             "inputs": {
                 "OPERAND1": [
                     3,
-                    "alI",
+                    "aGO",
                     [
                         10,
                         ""
@@ -614,10 +614,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alI": {
+        "aGO": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "UL",
+            "parent": ":e",
             "inputs": {
                 "VAR": [
                     1,
@@ -631,14 +631,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "UM": {
+        ":f": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "jp",
+            "parent": "k!",
             "inputs": {
                 "ITEM": [
                     3,
-                    "rJ",
+                    "yc",
                     [
                         10,
                         "rec:checking save status..."
@@ -654,14 +654,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rJ": {
+        "yc": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "UM",
+            "parent": ":f",
             "inputs": {
                 "STRING1": [
                     3,
-                    "alJ",
+                    "aGP",
                     [
                         10,
                         "manzana "
@@ -669,7 +669,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "UO",
+                    ":h",
                     [
                         10,
                         "banana"
@@ -680,10 +680,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alJ": {
+        "aGP": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "rJ",
+            "parent": "yc",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -694,10 +694,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UO": {
+        ":h": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rJ",
+            "parent": "yc",
             "inputs": {
                 "STRING1": [
                     1,
@@ -708,7 +708,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "rK",
+                    "yd",
                     [
                         10,
                         "banana"
@@ -719,14 +719,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rK": {
+        "yd": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "UO",
+            "parent": ":h",
             "inputs": {
                 "STRING1": [
                     3,
-                    "alK",
+                    "aGQ",
                     [
                         10,
                         ""
@@ -734,7 +734,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "UP",
+                    ":i",
                     [
                         10,
                         "banana"
@@ -745,19 +745,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "alK": {
+        "aGQ": {
             "opcode": "lmsAssets_getSpriteName",
             "next": null,
-            "parent": "rK",
+            "parent": "yd",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UP": {
+        ":i": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rK",
+            "parent": "yd",
             "inputs": {
                 "STRING1": [
                     1,
@@ -768,7 +768,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "alL",
+                    "aGR",
                     [
                         10,
                         "banana"
@@ -779,10 +779,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alL": {
+        "aGR": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "UP",
+            "parent": ":i",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -793,14 +793,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "UN": {
+        ":g": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "jp",
+            "parent": "k!",
             "inputs": {
                 "ITEM": [
                     3,
-                    "rL",
+                    "ye",
                     [
                         10,
                         "rec:checking save status..."
@@ -816,14 +816,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rL": {
+        "ye": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "UN",
+            "parent": ":g",
             "inputs": {
                 "STRING1": [
                     3,
-                    "rM",
+                    "yf",
                     [
                         10,
                         "manzana "
@@ -831,7 +831,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "UQ",
+                    ":j",
                     [
                         10,
                         "banana"
@@ -842,14 +842,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rM": {
+        "yf": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rL",
+            "parent": "ye",
             "inputs": {
                 "STRING1": [
                     3,
-                    "alM",
+                    "aGS",
                     [
                         10,
                         "manzana "
@@ -857,7 +857,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "UR",
+                    ":k",
                     [
                         10,
                         "banana"
@@ -868,10 +868,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alM": {
+        "aGS": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "rM",
+            "parent": "yf",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -882,10 +882,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UR": {
+        ":k": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rM",
+            "parent": "yf",
             "inputs": {
                 "STRING1": [
                     1,
@@ -896,7 +896,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "rN",
+                    "yg",
                     [
                         10,
                         "banana"
@@ -907,14 +907,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rN": {
+        "yg": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "UR",
+            "parent": ":k",
             "inputs": {
                 "STRING1": [
                     3,
-                    "alN",
+                    "aGT",
                     [
                         10,
                         ""
@@ -922,7 +922,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "US",
+                    ":l",
                     [
                         10,
                         "banana"
@@ -933,19 +933,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "alN": {
+        "aGT": {
             "opcode": "lmsAssets_getSpriteName",
             "next": null,
-            "parent": "rN",
+            "parent": "yg",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "US": {
+        ":l": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rN",
+            "parent": "yg",
             "inputs": {
                 "STRING1": [
                     1,
@@ -956,7 +956,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "alO",
+                    "aGU",
                     [
                         10,
                         "banana"
@@ -967,10 +967,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alO": {
+        "aGU": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "US",
+            "parent": ":l",
             "inputs": {
                 "VAR": [
                     1,
@@ -984,10 +984,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UQ": {
+        ":j": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rL",
+            "parent": "ye",
             "inputs": {
                 "STRING1": [
                     1,
@@ -998,7 +998,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "alP",
+                    "aGV",
                     [
                         10,
                         "banana"
@@ -1009,10 +1009,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alP": {
+        "aGV": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "UQ",
+            "parent": ":j",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -1023,14 +1023,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "UT": {
+        ":m": {
             "opcode": "procedures_definition",
-            "next": "jq",
+            "next": "k#",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "alQ"
+                    "aGW"
                 ]
             },
             "fields": {},
@@ -1039,10 +1039,10 @@
             "x": -2741,
             "y": -988
         },
-        "alQ": {
+        "aGW": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "UT",
+            "parent": ":m",
             "inputs": {},
             "fields": {},
             "shadow": true,
@@ -1057,42 +1057,42 @@
                 "warp": "false"
             }
         },
-        "jq": {
+        "k#": {
             "opcode": "control_if",
-            "next": "jr",
-            "parent": "UT",
+            "next": "k%",
+            "parent": ":m",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "UU"
+                    ":n"
                 ],
                 "SUBSTACK": [
                     2,
-                    "UV"
+                    ":o"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UU": {
+        ":n": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "jq",
+            "parent": "k#",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "alR"
+                    "aGX"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alR": {
+        "aGX": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "UU",
+            "parent": ":n",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1111,10 +1111,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UV": {
+        ":o": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "alS",
-            "parent": "jq",
+            "next": "aGY",
+            "parent": "k#",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1133,10 +1133,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alS": {
+        "aGY": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "UV",
+            "parent": ":o",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1152,42 +1152,42 @@
                 "hasnext": "false"
             }
         },
-        "jr": {
+        "k%": {
             "opcode": "control_if",
-            "next": "js",
-            "parent": "jq",
+            "next": "k(",
+            "parent": "k#",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "UW"
+                    ":p"
                 ],
                 "SUBSTACK": [
                     2,
-                    "UX"
+                    ":q"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UW": {
+        ":p": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "jr",
+            "parent": "k%",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "alT"
+                    "aGZ"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alT": {
+        "aGZ": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "UW",
+            "parent": ":p",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1206,10 +1206,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UX": {
+        ":q": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "alU",
-            "parent": "jr",
+            "next": "aG!",
+            "parent": "k%",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1228,10 +1228,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alU": {
+        "aG!": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "UX",
+            "parent": ":q",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1247,42 +1247,42 @@
                 "hasnext": "false"
             }
         },
-        "js": {
+        "k(": {
             "opcode": "control_if",
-            "next": "jt",
-            "parent": "jr",
+            "next": "k)",
+            "parent": "k%",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "UY"
+                    ":r"
                 ],
                 "SUBSTACK": [
                     2,
-                    "UZ"
+                    ":s"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "UY": {
+        ":r": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "js",
+            "parent": "k(",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "alV"
+                    "aG#"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alV": {
+        "aG#": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "UY",
+            "parent": ":r",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1301,10 +1301,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "UZ": {
+        ":s": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "alW",
-            "parent": "js",
+            "next": "aG%",
+            "parent": "k(",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1323,10 +1323,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alW": {
+        "aG%": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "UZ",
+            "parent": ":s",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1342,42 +1342,42 @@
                 "hasnext": "false"
             }
         },
-        "jt": {
+        "k)": {
             "opcode": "control_if",
-            "next": "ju",
-            "parent": "js",
+            "next": "k*",
+            "parent": "k(",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "U!"
+                    ":t"
                 ],
                 "SUBSTACK": [
                     2,
-                    "U#"
+                    ":u"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U!": {
+        ":t": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "jt",
+            "parent": "k)",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "alX"
+                    "aG("
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alX": {
+        "aG(": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "U!",
+            "parent": ":t",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1396,10 +1396,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U#": {
+        ":u": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "alY",
-            "parent": "jt",
+            "next": "aG)",
+            "parent": "k)",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1418,10 +1418,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "alY": {
+        "aG)": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "U#",
+            "parent": ":u",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1437,42 +1437,42 @@
                 "hasnext": "false"
             }
         },
-        "ju": {
+        "k*": {
             "opcode": "control_if",
-            "next": "jv",
-            "parent": "jt",
+            "next": "k+",
+            "parent": "k)",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "U%"
+                    ":v"
                 ],
                 "SUBSTACK": [
                     2,
-                    "U("
+                    ":w"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U%": {
+        ":v": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "ju",
+            "parent": "k*",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "alZ"
+                    "aG*"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "alZ": {
+        "aG*": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "U%",
+            "parent": ":v",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1491,10 +1491,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U(": {
+        ":w": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "al!",
-            "parent": "ju",
+            "next": "aG+",
+            "parent": "k*",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1513,10 +1513,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al!": {
+        "aG+": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "U(",
+            "parent": ":w",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1532,42 +1532,42 @@
                 "hasnext": "false"
             }
         },
-        "jv": {
+        "k+": {
             "opcode": "control_if",
-            "next": "jw",
-            "parent": "ju",
+            "next": "k,",
+            "parent": "k*",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "U)"
+                    ":x"
                 ],
                 "SUBSTACK": [
                     2,
-                    "U*"
+                    ":y"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U)": {
+        ":x": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "jv",
+            "parent": "k+",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "al#"
+                    "aG,"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "al#": {
+        "aG,": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "U)",
+            "parent": ":x",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1586,10 +1586,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U*": {
+        ":y": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "al%",
-            "parent": "jv",
+            "next": "aG-",
+            "parent": "k+",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1608,10 +1608,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al%": {
+        "aG-": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "U*",
+            "parent": ":y",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1627,42 +1627,42 @@
                 "hasnext": "false"
             }
         },
-        "jw": {
+        "k,": {
             "opcode": "control_if",
-            "next": "jx",
-            "parent": "jv",
+            "next": "k-",
+            "parent": "k+",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "U+"
+                    ":z"
                 ],
                 "SUBSTACK": [
                     2,
-                    "U,"
+                    ":A"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U+": {
+        ":z": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "jw",
+            "parent": "k,",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "al("
+                    "aG."
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "al(": {
+        "aG.": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "U+",
+            "parent": ":z",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1681,10 +1681,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U,": {
+        ":A": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "al)",
-            "parent": "jw",
+            "next": "aG/",
+            "parent": "k,",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1703,10 +1703,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al)": {
+        "aG/": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "U,",
+            "parent": ":A",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1722,42 +1722,42 @@
                 "hasnext": "false"
             }
         },
-        "jx": {
+        "k-": {
             "opcode": "control_if",
-            "next": "jy",
-            "parent": "jw",
+            "next": "k.",
+            "parent": "k,",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "U-"
+                    ":B"
                 ],
                 "SUBSTACK": [
                     2,
-                    "U."
+                    ":C"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U-": {
+        ":B": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "jx",
+            "parent": "k-",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "al*"
+                    "aG:"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "al*": {
+        "aG:": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "U-",
+            "parent": ":B",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1776,10 +1776,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U.": {
+        ":C": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "al+",
-            "parent": "jx",
+            "next": "aG;",
+            "parent": "k-",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1798,10 +1798,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al+": {
+        "aG;": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "U.",
+            "parent": ":C",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1817,42 +1817,42 @@
                 "hasnext": "false"
             }
         },
-        "jy": {
+        "k.": {
             "opcode": "control_if",
-            "next": "rO",
-            "parent": "jx",
+            "next": "yh",
+            "parent": "k-",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "U/"
+                    ":D"
                 ],
                 "SUBSTACK": [
                     2,
-                    "U:"
+                    ":E"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U/": {
+        ":D": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "jy",
+            "parent": "k.",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "al,"
+                    "aG="
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "al,": {
+        "aG=": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "U/",
+            "parent": ":D",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1871,10 +1871,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U:": {
+        ":E": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "al-",
-            "parent": "jy",
+            "next": "aG?",
+            "parent": "k.",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1893,10 +1893,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al-": {
+        "aG?": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "U:",
+            "parent": ":E",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -1912,42 +1912,42 @@
                 "hasnext": "false"
             }
         },
-        "rO": {
+        "yh": {
             "opcode": "control_if",
             "next": null,
-            "parent": "jy",
+            "parent": "k.",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "U;"
+                    ":F"
                 ],
                 "SUBSTACK": [
                     2,
-                    "U="
+                    ":G"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U;": {
+        ":F": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "rO",
+            "parent": "yh",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "al."
+                    "aG@"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "al.": {
+        "aG@": {
             "opcode": "lmsclonesplus_cloneExists",
             "next": null,
-            "parent": "U;",
+            "parent": ":F",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1966,10 +1966,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U=": {
+        ":G": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "al/",
-            "parent": "rO",
+            "next": "aG[",
+            "parent": "yh",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -1988,10 +1988,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al/": {
+        "aG[": {
             "opcode": "control_stop",
             "next": null,
-            "parent": "U=",
+            "parent": ":G",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -2007,9 +2007,9 @@
                 "hasnext": "false"
             }
         },
-        "al:": {
+        "aG]": {
             "opcode": "control_start_as_clone",
-            "next": "rP",
+            "next": "yi",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -2018,14 +2018,14 @@
             "x": 809,
             "y": 191
         },
-        "rP": {
+        "yi": {
             "opcode": "procedures_call",
-            "next": "rQ",
-            "parent": "al:",
+            "next": "yj",
+            "parent": "aG]",
             "inputs": {
                 "`/rW)nf5Iz2?0*jT0w=|": [
                     3,
-                    "U?",
+                    ":H",
                     [
                         10,
                         ""
@@ -2043,10 +2043,10 @@
                 "warp": "false"
             }
         },
-        "U?": {
+        ":H": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rP",
+            "parent": "yi",
             "inputs": {
                 "STRING1": [
                     1,
@@ -2057,7 +2057,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "al;",
+                    "aG^",
                     [
                         10,
                         ""
@@ -2068,10 +2068,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al;": {
+        "aG^": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "U?",
+            "parent": ":H",
             "inputs": {
                 "STRING1": [
                     3,
@@ -2097,14 +2097,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rQ": {
+        "yj": {
             "opcode": "lmsLooksPlus_setLayerTo",
-            "next": "jz",
-            "parent": "rP",
+            "next": "k/",
+            "parent": "yi",
             "inputs": {
                 "TARGET": [
                     1,
-                    "al="
+                    "aG_"
                 ],
                 "LAYER": [
                     1,
@@ -2118,10 +2118,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al=": {
+        "aG_": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "rQ",
+            "parent": "yj",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -2132,25 +2132,25 @@
             "shadow": true,
             "topLevel": false
         },
-        "jz": {
+        "k/": {
             "opcode": "looks_switchcostumeto",
-            "next": "rR",
-            "parent": "rQ",
+            "next": "yk",
+            "parent": "yj",
             "inputs": {
                 "COSTUME": [
                     3,
-                    "al?",
-                    "al@"
+                    "aG`",
+                    "aG{"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "al?": {
+        "aG`": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "jz",
+            "parent": "k/",
             "inputs": {
                 "STRING1": [
                     1,
@@ -2176,10 +2176,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al@": {
+        "aG{": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "jz",
+            "parent": "k/",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -2190,14 +2190,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "rR": {
+        "yk": {
             "opcode": "data_setvariableto",
-            "next": "jA",
-            "parent": "jz",
+            "next": "k:",
+            "parent": "k/",
             "inputs": {
                 "VALUE": [
                     3,
-                    "al[",
+                    "aG|",
                     [
                         10,
                         "0"
@@ -2213,10 +2213,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al[": {
+        "aG|": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "rR",
+            "parent": "yk",
             "inputs": {
                 "FROM": [
                     1,
@@ -2237,14 +2237,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "jA": {
+        "k:": {
             "opcode": "motion_gotoxy",
-            "next": "rS",
-            "parent": "rR",
+            "next": "yl",
+            "parent": "yk",
             "inputs": {
                 "X": [
                     3,
-                    "U@",
+                    ":I",
                     [
                         4,
                         ""
@@ -2252,7 +2252,7 @@
                 ],
                 "Y": [
                     3,
-                    "U[",
+                    ":J",
                     [
                         4,
                         ""
@@ -2263,10 +2263,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U@": {
+        ":I": {
             "opcode": "strings_split",
             "next": null,
-            "parent": "jA",
+            "parent": "k:",
             "inputs": {
                 "ITEM": [
                     1,
@@ -2277,7 +2277,7 @@
                 ],
                 "STRING": [
                     3,
-                    "al]",
+                    "aG}",
                     [
                         10,
                         ""
@@ -2295,10 +2295,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al]": {
+        "aG}": {
             "opcode": "data_itemoflist",
             "next": null,
-            "parent": "U@",
+            "parent": ":I",
             "inputs": {
                 "INDEX": [
                     3,
@@ -2322,10 +2322,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U[": {
+        ":J": {
             "opcode": "strings_split",
             "next": null,
-            "parent": "jA",
+            "parent": "k:",
             "inputs": {
                 "ITEM": [
                     1,
@@ -2336,7 +2336,7 @@
                 ],
                 "STRING": [
                     3,
-                    "al^",
+                    "aG~",
                     [
                         10,
                         ""
@@ -2354,10 +2354,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al^": {
+        "aG~": {
             "opcode": "data_itemoflist",
             "next": null,
-            "parent": "U[",
+            "parent": ":J",
             "inputs": {
                 "INDEX": [
                     3,
@@ -2381,10 +2381,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "rS": {
+        "yl": {
             "opcode": "data_replaceitemoflist",
-            "next": "U]",
-            "parent": "jA",
+            "next": ":K",
+            "parent": "k:",
             "inputs": {
                 "INDEX": [
                     3,
@@ -2400,7 +2400,7 @@
                 ],
                 "ITEM": [
                     3,
-                    "rT",
+                    "ym",
                     [
                         10,
                         ""
@@ -2416,14 +2416,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "rT": {
+        "ym": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rS",
+            "parent": "yl",
             "inputs": {
                 "STRING1": [
                     3,
-                    "al_",
+                    "aHa",
                     [
                         10,
                         ""
@@ -2431,7 +2431,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "U^",
+                    ":L",
                     [
                         10,
                         ""
@@ -2442,19 +2442,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "al_": {
+        "aHa": {
             "opcode": "motion_xposition",
             "next": null,
-            "parent": "rT",
+            "parent": "ym",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U^": {
+        ":L": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "rT",
+            "parent": "ym",
             "inputs": {
                 "STRING1": [
                     1,
@@ -2465,7 +2465,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "al`",
+                    "aHb",
                     [
                         10,
                         ""
@@ -2476,28 +2476,28 @@
             "shadow": false,
             "topLevel": false
         },
-        "al`": {
+        "aHb": {
             "opcode": "motion_yposition",
             "next": null,
-            "parent": "U^",
+            "parent": ":L",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U]": {
+        ":K": {
             "opcode": "looks_show",
-            "next": "rU",
-            "parent": "rS",
+            "next": "yn",
+            "parent": "yl",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rU": {
+        "yn": {
             "opcode": "lmsSpAsMoreControl_switch",
-            "next": "U_",
-            "parent": "U]",
+            "next": ":M",
+            "parent": ":K",
             "inputs": {
                 "SWITCH": [
                     2,
@@ -2509,17 +2509,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "U`"
+                    ":N"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U`": {
+        ":N": {
             "opcode": "lmscomments_commentCommand",
-            "next": "rV",
-            "parent": "rU",
+            "next": "yo",
+            "parent": "yn",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -2533,10 +2533,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "rV": {
+        "yo": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "rW",
-            "parent": "U`",
+            "next": "yp",
+            "parent": ":N",
             "inputs": {
                 "CASE": [
                     1,
@@ -2547,21 +2547,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "rX"
+                    "yq"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rX": {
+        "yq": {
             "opcode": "data_setvariableto",
-            "next": "U{",
-            "parent": "rV",
+            "next": ":O",
+            "parent": "yo",
             "inputs": {
                 "VALUE": [
                     3,
-                    "al{",
+                    "aHc",
                     [
                         10,
                         "0"
@@ -2577,10 +2577,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al{": {
+        "aHc": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "rX",
+            "parent": "yq",
             "inputs": {
                 "FROM": [
                     1,
@@ -2601,10 +2601,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U{": {
+        ":O": {
             "opcode": "motion_pointindirection",
-            "next": "al|",
-            "parent": "rX",
+            "next": "aHd",
+            "parent": "yq",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -2618,19 +2618,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "al|": {
+        "aHd": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "U{",
+            "parent": ":O",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rW": {
+        "yp": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "rY",
-            "parent": "rV",
+            "next": "yr",
+            "parent": "yo",
             "inputs": {
                 "CASE": [
                     1,
@@ -2641,21 +2641,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "rZ"
+                    "ys"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rZ": {
+        "ys": {
             "opcode": "data_setvariableto",
-            "next": "U|",
-            "parent": "rW",
+            "next": ":P",
+            "parent": "yp",
             "inputs": {
                 "VALUE": [
                     3,
-                    "al}",
+                    "aHe",
                     [
                         10,
                         "0"
@@ -2671,10 +2671,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "al}": {
+        "aHe": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "rZ",
+            "parent": "ys",
             "inputs": {
                 "FROM": [
                     1,
@@ -2695,10 +2695,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U|": {
+        ":P": {
             "opcode": "motion_pointindirection",
-            "next": "al~",
-            "parent": "rZ",
+            "next": "aHf",
+            "parent": "ys",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -2712,19 +2712,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "al~": {
+        "aHf": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "U|",
+            "parent": ":P",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rY": {
+        "yr": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "U}",
-            "parent": "rW",
+            "next": ":Q",
+            "parent": "yp",
             "inputs": {
                 "CASE": [
                     1,
@@ -2735,21 +2735,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "r!"
+                    "yt"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r!": {
+        "yt": {
             "opcode": "data_setvariableto",
-            "next": "U~",
-            "parent": "rY",
+            "next": ":R",
+            "parent": "yr",
             "inputs": {
                 "VALUE": [
                     3,
-                    "ama",
+                    "aHg",
                     [
                         10,
                         "0"
@@ -2765,10 +2765,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "ama": {
+        "aHg": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "r!",
+            "parent": "yt",
             "inputs": {
                 "FROM": [
                     1,
@@ -2789,10 +2789,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "U~": {
+        ":R": {
             "opcode": "motion_pointindirection",
-            "next": "amb",
-            "parent": "r!",
+            "next": "aHh",
+            "parent": "yt",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -2806,19 +2806,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amb": {
+        "aHh": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "U~",
+            "parent": ":R",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "U}": {
+        ":Q": {
             "opcode": "lmscomments_commentCommand",
-            "next": "r#",
-            "parent": "rY",
+            "next": "yu",
+            "parent": "yr",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -2832,10 +2832,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "r#": {
+        "yu": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "r%",
-            "parent": "U}",
+            "next": "yv",
+            "parent": ":Q",
             "inputs": {
                 "CASE": [
                     1,
@@ -2846,21 +2846,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "r("
+                    "yw"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r(": {
+        "yw": {
             "opcode": "data_setvariableto",
-            "next": "Va",
-            "parent": "r#",
+            "next": ":S",
+            "parent": "yu",
             "inputs": {
                 "VALUE": [
                     3,
-                    "amc",
+                    "aHi",
                     [
                         10,
                         "0"
@@ -2876,10 +2876,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amc": {
+        "aHi": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "r(",
+            "parent": "yw",
             "inputs": {
                 "FROM": [
                     1,
@@ -2900,10 +2900,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Va": {
+        ":S": {
             "opcode": "motion_pointindirection",
-            "next": "amd",
-            "parent": "r(",
+            "next": "aHj",
+            "parent": "yw",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -2917,19 +2917,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amd": {
+        "aHj": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "Va",
+            "parent": ":S",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r%": {
+        "yv": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "r)",
-            "parent": "r#",
+            "next": "yx",
+            "parent": "yu",
             "inputs": {
                 "CASE": [
                     1,
@@ -2940,21 +2940,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "r*"
+                    "yy"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r*": {
+        "yy": {
             "opcode": "data_setvariableto",
-            "next": "Vb",
-            "parent": "r%",
+            "next": ":T",
+            "parent": "yv",
             "inputs": {
                 "VALUE": [
                     3,
-                    "ame",
+                    "aHk",
                     [
                         10,
                         "0"
@@ -2970,10 +2970,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "ame": {
+        "aHk": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "r*",
+            "parent": "yy",
             "inputs": {
                 "FROM": [
                     1,
@@ -2994,10 +2994,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vb": {
+        ":T": {
             "opcode": "motion_pointindirection",
-            "next": "amf",
-            "parent": "r*",
+            "next": "aHl",
+            "parent": "yy",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -3011,19 +3011,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amf": {
+        "aHl": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "Vb",
+            "parent": ":T",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r)": {
+        "yx": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "Vc",
-            "parent": "r%",
+            "next": ":U",
+            "parent": "yv",
             "inputs": {
                 "CASE": [
                     1,
@@ -3034,21 +3034,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "r+"
+                    "yz"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r+": {
+        "yz": {
             "opcode": "data_setvariableto",
-            "next": "Vd",
-            "parent": "r)",
+            "next": ":V",
+            "parent": "yx",
             "inputs": {
                 "VALUE": [
                     3,
-                    "amg",
+                    "aHm",
                     [
                         10,
                         "0"
@@ -3064,10 +3064,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amg": {
+        "aHm": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "r+",
+            "parent": "yz",
             "inputs": {
                 "FROM": [
                     1,
@@ -3088,10 +3088,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vd": {
+        ":V": {
             "opcode": "motion_pointindirection",
-            "next": "amh",
-            "parent": "r+",
+            "next": "aHn",
+            "parent": "yz",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -3105,19 +3105,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amh": {
+        "aHn": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "Vd",
+            "parent": ":V",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Vc": {
+        ":U": {
             "opcode": "lmscomments_commentCommand",
-            "next": "r,",
-            "parent": "r)",
+            "next": "yA",
+            "parent": "yx",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -3131,10 +3131,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "r,": {
+        "yA": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "r-",
-            "parent": "Vc",
+            "next": "yB",
+            "parent": ":U",
             "inputs": {
                 "CASE": [
                     1,
@@ -3145,21 +3145,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "r."
+                    "yC"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r.": {
+        "yC": {
             "opcode": "data_setvariableto",
-            "next": "Ve",
-            "parent": "r,",
+            "next": ":W",
+            "parent": "yA",
             "inputs": {
                 "VALUE": [
                     3,
-                    "ami",
+                    "aHo",
                     [
                         10,
                         "0"
@@ -3175,10 +3175,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "ami": {
+        "aHo": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "r.",
+            "parent": "yC",
             "inputs": {
                 "FROM": [
                     1,
@@ -3199,10 +3199,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Ve": {
+        ":W": {
             "opcode": "motion_pointindirection",
-            "next": "amj",
-            "parent": "r.",
+            "next": "aHp",
+            "parent": "yC",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -3216,19 +3216,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amj": {
+        "aHp": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "Ve",
+            "parent": ":W",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r-": {
+        "yB": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "r/",
-            "parent": "r,",
+            "next": "yD",
+            "parent": "yA",
             "inputs": {
                 "CASE": [
                     1,
@@ -3239,21 +3239,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "r:"
+                    "yE"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r:": {
+        "yE": {
             "opcode": "data_setvariableto",
-            "next": "Vf",
-            "parent": "r-",
+            "next": ":X",
+            "parent": "yB",
             "inputs": {
                 "VALUE": [
                     3,
-                    "amk",
+                    "aHq",
                     [
                         10,
                         "0"
@@ -3269,10 +3269,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amk": {
+        "aHq": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "r:",
+            "parent": "yE",
             "inputs": {
                 "FROM": [
                     1,
@@ -3293,10 +3293,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vf": {
+        ":X": {
             "opcode": "motion_pointindirection",
-            "next": "aml",
-            "parent": "r:",
+            "next": "aHr",
+            "parent": "yE",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -3310,19 +3310,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "aml": {
+        "aHr": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "Vf",
+            "parent": ":X",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r/": {
+        "yD": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "Vg",
-            "parent": "r-",
+            "next": ":Y",
+            "parent": "yB",
             "inputs": {
                 "CASE": [
                     1,
@@ -3333,21 +3333,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "r;"
+                    "yF"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r;": {
+        "yF": {
             "opcode": "data_setvariableto",
-            "next": "Vh",
-            "parent": "r/",
+            "next": ":Z",
+            "parent": "yD",
             "inputs": {
                 "VALUE": [
                     3,
-                    "amm",
+                    "aHs",
                     [
                         10,
                         "0"
@@ -3363,10 +3363,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amm": {
+        "aHs": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "r;",
+            "parent": "yF",
             "inputs": {
                 "FROM": [
                     1,
@@ -3387,10 +3387,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vh": {
+        ":Z": {
             "opcode": "motion_pointindirection",
-            "next": "amn",
-            "parent": "r;",
+            "next": "aHt",
+            "parent": "yF",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -3404,19 +3404,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amn": {
+        "aHt": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "Vh",
+            "parent": ":Z",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Vg": {
+        ":Y": {
             "opcode": "lmscomments_commentCommand",
-            "next": "r=",
-            "parent": "r/",
+            "next": "yG",
+            "parent": "yD",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -3430,10 +3430,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "r=": {
+        "yG": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "r?",
-            "parent": "Vg",
+            "next": "yH",
+            "parent": ":Y",
             "inputs": {
                 "CASE": [
                     1,
@@ -3444,17 +3444,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "Vi"
+                    ":!"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Vi": {
+        ":!": {
             "opcode": "data_setvariableto",
-            "next": "Vj",
-            "parent": "r=",
+            "next": ":#",
+            "parent": "yG",
             "inputs": {
                 "VALUE": [
                     1,
@@ -3473,10 +3473,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vj": {
+        ":#": {
             "opcode": "motion_pointindirection",
-            "next": "amo",
-            "parent": "Vi",
+            "next": "aHu",
+            "parent": ":!",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -3490,19 +3490,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amo": {
+        "aHu": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "Vj",
+            "parent": ":#",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r?": {
+        "yH": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "Vk",
-            "parent": "r=",
+            "next": ":%",
+            "parent": "yG",
             "inputs": {
                 "CASE": [
                     1,
@@ -3513,17 +3513,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "c)"
+                    "c]"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "c)": {
+        "c]": {
             "opcode": "data_setvariableto",
-            "next": "c*",
-            "parent": "r?",
+            "next": "c^",
+            "parent": "yH",
             "inputs": {
                 "VALUE": [
                     1,
@@ -3542,10 +3542,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "c*": {
+        "c^": {
             "opcode": "motion_pointindirection",
-            "next": "amp",
-            "parent": "c)",
+            "next": "aHv",
+            "parent": "c]",
             "inputs": {
                 "DIRECTION": [
                     1,
@@ -3559,33 +3559,33 @@
             "shadow": false,
             "topLevel": false
         },
-        "amp": {
+        "aHv": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "c*",
+            "parent": "c^",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Vk": {
+        ":%": {
             "opcode": "lmsSpAsMoreControl_default",
             "next": null,
-            "parent": "r?",
+            "parent": "yH",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "amq"
+                    "aHw"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "amq": {
+        "aHw": {
             "opcode": "procedures_call",
             "next": null,
-            "parent": "Vk",
+            "parent": ":%",
             "inputs": {
                 "ZzMo;[$+1+{Wn/{SJq[J": [
                     1,
@@ -3613,28 +3613,28 @@
                 "warp": "false"
             }
         },
-        "U_": {
+        ":M": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "rU",
+            "parent": "yn",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "r@"
+                    "yI"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r@": {
+        "yI": {
             "opcode": "motion_changeyby",
-            "next": "r[",
-            "parent": "U_",
+            "next": "yJ",
+            "parent": ":M",
             "inputs": {
                 "DY": [
                     3,
-                    "Vl",
+                    ":(",
                     [
                         4,
                         ""
@@ -3645,14 +3645,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vl": {
+        ":(": {
             "opcode": "operator_divide",
             "next": null,
-            "parent": "r@",
+            "parent": "yI",
             "inputs": {
                 "NUM1": [
                     3,
-                    "Vm",
+                    ":)",
                     [
                         4,
                         ""
@@ -3670,10 +3670,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vm": {
+        ":)": {
             "opcode": "operator_subtract",
             "next": null,
-            "parent": "Vl",
+            "parent": ":(",
             "inputs": {
                 "NUM1": [
                     3,
@@ -3689,7 +3689,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "Vn",
+                    ":*",
                     [
                         4,
                         ""
@@ -3700,14 +3700,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vn": {
+        ":*": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "Vm",
+            "parent": ":)",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "amr"
+                    "aHx"
                 ]
             },
             "fields": {
@@ -3719,10 +3719,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amr": {
+        "aHx": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "Vn",
+            "parent": ":*",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -3733,10 +3733,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "r[": {
+        "yJ": {
             "opcode": "data_replaceitemoflist",
-            "next": "ams",
-            "parent": "r@",
+            "next": "aHy",
+            "parent": "yI",
             "inputs": {
                 "INDEX": [
                     3,
@@ -3752,7 +3752,7 @@
                 ],
                 "ITEM": [
                     3,
-                    "r]",
+                    "yK",
                     [
                         10,
                         ""
@@ -3768,14 +3768,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "r]": {
+        "yK": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "r[",
+            "parent": "yJ",
             "inputs": {
                 "STRING1": [
                     3,
-                    "amt",
+                    "aHz",
                     [
                         10,
                         ""
@@ -3783,7 +3783,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "Vo",
+                    ":+",
                     [
                         10,
                         ""
@@ -3794,19 +3794,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amt": {
+        "aHz": {
             "opcode": "motion_xposition",
             "next": null,
-            "parent": "r]",
+            "parent": "yK",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Vo": {
+        ":+": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "r]",
+            "parent": "yK",
             "inputs": {
                 "STRING1": [
                     1,
@@ -3817,7 +3817,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "amu",
+                    "aHA",
                     [
                         10,
                         ""
@@ -3828,19 +3828,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amu": {
+        "aHA": {
             "opcode": "motion_yposition",
             "next": null,
-            "parent": "Vo",
+            "parent": ":+",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ams": {
+        "aHy": {
             "opcode": "control_wait",
             "next": null,
-            "parent": "r[",
+            "parent": "yJ",
             "inputs": {
                 "DURATION": [
                     1,
@@ -3854,14 +3854,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vp": {
+        ":,": {
             "opcode": "procedures_definition",
-            "next": "Vq",
+            "next": ":-",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "Vr"
+                    ":."
                 ]
             },
             "fields": {},
@@ -3870,14 +3870,14 @@
             "x": -3263,
             "y": -1372
         },
-        "Vr": {
+        ":.": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "Vp",
+            "parent": ":,",
             "inputs": {
                 "`/rW)nf5Iz2?0*jT0w=|": [
                     1,
-                    "amv"
+                    "aHB"
                 ]
             },
             "fields": {},
@@ -3893,10 +3893,10 @@
                 "warp": "false"
             }
         },
-        "amv": {
+        "aHB": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "Vr",
+            "parent": ":.",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -3907,10 +3907,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "Vq": {
+        ":-": {
             "opcode": "lmscomments_commentCommand",
-            "next": "Vs",
-            "parent": "Vp",
+            "next": ":/",
+            "parent": ":,",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -3924,10 +3924,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vs": {
+        ":/": {
             "opcode": "lmsTempVars2_setThreadVariable",
             "next": null,
-            "parent": "Vq",
+            "parent": ":-",
             "inputs": {
                 "VAR": [
                     1,
@@ -3938,7 +3938,7 @@
                 ],
                 "STRING": [
                     3,
-                    "amw",
+                    "aHC",
                     [
                         10,
                         ""
@@ -3949,10 +3949,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amw": {
+        "aHC": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "Vs",
+            "parent": ":/",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -3963,9 +3963,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "amx": {
+        "aHD": {
             "opcode": "control_start_as_clone",
-            "next": "Vt",
+            "next": "::",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -3974,10 +3974,10 @@
             "x": 2209,
             "y": 131
         },
-        "Vt": {
+        "::": {
             "opcode": "lmscomments_commentCommand",
-            "next": "r^",
-            "parent": "amx",
+            "next": "yL",
+            "parent": "aHD",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -3991,14 +3991,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "r^": {
+        "yL": {
             "opcode": "procedures_call",
-            "next": "Vu",
-            "parent": "Vt",
+            "next": ":;",
+            "parent": "::",
             "inputs": {
                 "`/rW)nf5Iz2?0*jT0w=|": [
                     3,
-                    "Vv",
+                    ":=",
                     [
                         10,
                         ""
@@ -4016,10 +4016,10 @@
                 "warp": "false"
             }
         },
-        "Vv": {
+        ":=": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "r^",
+            "parent": "yL",
             "inputs": {
                 "STRING1": [
                     1,
@@ -4030,7 +4030,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "amy",
+                    "aHE",
                     [
                         10,
                         ""
@@ -4041,10 +4041,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amy": {
+        "aHE": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "Vv",
+            "parent": ":=",
             "inputs": {
                 "STRING1": [
                     3,
@@ -4070,64 +4070,64 @@
             "shadow": false,
             "topLevel": false
         },
-        "Vu": {
+        ":;": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "r^",
+            "parent": "yL",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "r_"
+                    "yM"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r_": {
+        "yM": {
             "opcode": "control_if",
             "next": null,
-            "parent": "Vu",
+            "parent": ":;",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "r`"
+                    "yN"
                 ],
                 "SUBSTACK": [
                     2,
-                    "Vw"
+                    ":?"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r`": {
+        "yN": {
             "opcode": "operator_or",
             "next": null,
-            "parent": "r_",
+            "parent": "yM",
             "inputs": {
                 "OPERAND1": [
                     2,
-                    "Vx"
+                    ":@"
                 ],
                 "OPERAND2": [
                     2,
-                    "Vy"
+                    ":["
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Vx": {
+        ":@": {
             "opcode": "operator_gt",
             "next": null,
-            "parent": "r`",
+            "parent": "yN",
             "inputs": {
                 "OPERAND1": [
                     3,
-                    "amz",
+                    "aHF",
                     [
                         10,
                         ""
@@ -4145,23 +4145,23 @@
             "shadow": false,
             "topLevel": false
         },
-        "amz": {
+        "aHF": {
             "opcode": "motion_yposition",
             "next": null,
-            "parent": "Vx",
+            "parent": ":@",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Vy": {
+        ":[": {
             "opcode": "operator_lt",
             "next": null,
-            "parent": "r`",
+            "parent": "yN",
             "inputs": {
                 "OPERAND1": [
                     3,
-                    "amA",
+                    "aHG",
                     [
                         10,
                         ""
@@ -4179,19 +4179,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amA": {
+        "aHG": {
             "opcode": "motion_yposition",
             "next": null,
-            "parent": "Vy",
+            "parent": ":[",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Vw": {
+        ":?": {
             "opcode": "data_replaceitemoflist",
-            "next": "amB",
-            "parent": "r_",
+            "next": "aHH",
+            "parent": "yM",
             "inputs": {
                 "INDEX": [
                     3,
@@ -4222,18 +4222,18 @@
             "shadow": false,
             "topLevel": false
         },
-        "amB": {
+        "aHH": {
             "opcode": "control_delete_this_clone",
             "next": null,
-            "parent": "Vw",
+            "parent": ":?",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "amC": {
+        "aHI": {
             "opcode": "control_start_as_clone",
-            "next": "Vz",
+            "next": ":]",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -4242,10 +4242,10 @@
             "x": 2958,
             "y": 140
         },
-        "Vz": {
+        ":]": {
             "opcode": "lmscomments_commentCommand",
-            "next": "r{",
-            "parent": "amC",
+            "next": "yO",
+            "parent": "aHI",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -4259,14 +4259,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "r{": {
+        "yO": {
             "opcode": "procedures_call",
-            "next": "VA",
-            "parent": "Vz",
+            "next": ":^",
+            "parent": ":]",
             "inputs": {
                 "`/rW)nf5Iz2?0*jT0w=|": [
                     3,
-                    "VB",
+                    ":_",
                     [
                         10,
                         ""
@@ -4284,10 +4284,10 @@
                 "warp": "false"
             }
         },
-        "VB": {
+        ":_": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "r{",
+            "parent": "yO",
             "inputs": {
                 "STRING1": [
                     1,
@@ -4298,7 +4298,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "amD",
+                    "aHJ",
                     [
                         10,
                         ""
@@ -4309,10 +4309,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amD": {
+        "aHJ": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "VB",
+            "parent": ":_",
             "inputs": {
                 "STRING1": [
                     3,
@@ -4338,57 +4338,57 @@
             "shadow": false,
             "topLevel": false
         },
-        "VA": {
+        ":^": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "r{",
+            "parent": "yO",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "jB"
+                    "k;"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "jB": {
+        "k;": {
             "opcode": "control_if",
-            "next": "r|",
-            "parent": "VA",
+            "next": "yP",
+            "parent": ":^",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "r}"
+                    "yQ"
                 ],
                 "SUBSTACK": [
                     2,
-                    "r~"
+                    "yR"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r}": {
+        "yQ": {
             "opcode": "sensing_touchingobject",
             "next": null,
-            "parent": "jB",
+            "parent": "k;",
             "inputs": {
                 "TOUCHINGOBJECTMENU": [
                     3,
-                    "amE",
-                    "amF"
+                    "aHK",
+                    "aHL"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "amE": {
+        "aHK": {
             "opcode": "truefantomcouplers_value_in_string_block",
             "next": null,
-            "parent": "r}",
+            "parent": "yQ",
             "inputs": {
                 "VALUE": [
                     1,
@@ -4402,10 +4402,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amF": {
+        "aHL": {
             "opcode": "sensing_touchingobjectmenu",
             "next": null,
-            "parent": "r}",
+            "parent": "yQ",
             "inputs": {},
             "fields": {
                 "TOUCHINGOBJECTMENU": [
@@ -4416,24 +4416,24 @@
             "shadow": true,
             "topLevel": false
         },
-        "r~": {
+        "yR": {
             "opcode": "looks_switchcostumeto",
-            "next": "sa",
-            "parent": "jB",
+            "next": "yS",
+            "parent": "k;",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "amG"
+                    "aHM"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "amG": {
+        "aHM": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "r~",
+            "parent": "yR",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -4444,10 +4444,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "sa": {
+        "yS": {
             "opcode": "lmsMoreEvents_broadcastData",
-            "next": "jC",
-            "parent": "r~",
+            "next": "k=",
+            "parent": "yR",
             "inputs": {
                 "BROADCAST_OPTION": [
                     1,
@@ -4459,7 +4459,7 @@
                 ],
                 "DATA": [
                     3,
-                    "sb",
+                    "yT",
                     [
                         10,
                         ""
@@ -4470,14 +4470,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "sb": {
+        "yT": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "sa",
+            "parent": "yS",
             "inputs": {
                 "STRING1": [
                     3,
-                    "amH",
+                    "aHN",
                     [
                         10,
                         ""
@@ -4485,7 +4485,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "VC",
+                    ":`",
                     [
                         10,
                         ""
@@ -4496,19 +4496,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amH": {
+        "aHN": {
             "opcode": "motion_xposition",
             "next": null,
-            "parent": "sb",
+            "parent": "yT",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "VC": {
+        ":`": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "sb",
+            "parent": "yT",
             "inputs": {
                 "STRING1": [
                     1,
@@ -4519,7 +4519,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "amI",
+                    "aHO",
                     [
                         10,
                         ""
@@ -4530,41 +4530,41 @@
             "shadow": false,
             "topLevel": false
         },
-        "amI": {
+        "aHO": {
             "opcode": "motion_yposition",
             "next": null,
-            "parent": "VC",
+            "parent": ":`",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "jC": {
+        "k=": {
             "opcode": "lmsSpAsMoreControl_switch",
-            "next": "VD",
-            "parent": "sa",
+            "next": ":{",
+            "parent": "yS",
             "inputs": {
                 "SWITCH": [
                     2,
-                    "VE"
+                    ":|"
                 ],
                 "SUBSTACK": [
                     2,
-                    "VF"
+                    ":}"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "VE": {
+        ":|": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "jC",
+            "parent": "k=",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "amJ"
+                    "aHP"
                 ]
             },
             "fields": {
@@ -4576,10 +4576,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amJ": {
+        "aHP": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "VE",
+            "parent": ":|",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -4590,10 +4590,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "VF": {
+        ":}": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "VG",
-            "parent": "jC",
+            "next": ":~",
+            "parent": "k=",
             "inputs": {
                 "CASE": [
                     1,
@@ -4607,10 +4607,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "VG": {
+        ":~": {
             "opcode": "lmsSpAsMoreControl_case",
             "next": null,
-            "parent": "VF",
+            "parent": ":}",
             "inputs": {
                 "CASE": [
                     1,
@@ -4621,17 +4621,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "amK"
+                    "aHQ"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "amK": {
+        "aHQ": {
             "opcode": "looks_seteffectto",
             "next": null,
-            "parent": "VG",
+            "parent": ":~",
             "inputs": {
                 "VALUE": [
                     1,
@@ -4650,10 +4650,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "VD": {
+        ":{": {
             "opcode": "control_stop",
-            "next": "sc",
-            "parent": "jC",
+            "next": "yU",
+            "parent": "k=",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -4669,10 +4669,10 @@
                 "hasnext": "true"
             }
         },
-        "sc": {
+        "yU": {
             "opcode": "control_repeat",
-            "next": "VH",
-            "parent": "VD",
+            "next": ";a",
+            "parent": ":{",
             "inputs": {
                 "TIMES": [
                     1,
@@ -4683,21 +4683,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "sd"
+                    "yV"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "sd": {
+        "yV": {
             "opcode": "motion_changeyby",
-            "next": "VI",
-            "parent": "sc",
+            "next": ";b",
+            "parent": "yU",
             "inputs": {
                 "DY": [
                     3,
-                    "VJ",
+                    ";c",
                     [
                         4,
                         ""
@@ -4708,14 +4708,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "VJ": {
+        ";c": {
             "opcode": "operator_divide",
             "next": null,
-            "parent": "sd",
+            "parent": "yV",
             "inputs": {
                 "NUM1": [
                     3,
-                    "VK",
+                    ";d",
                     [
                         4,
                         ""
@@ -4733,14 +4733,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "VK": {
+        ";d": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "VJ",
+            "parent": ";c",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "amL"
+                    "aHR"
                 ]
             },
             "fields": {
@@ -4752,10 +4752,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amL": {
+        "aHR": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "VK",
+            "parent": ";d",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -4766,10 +4766,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "VI": {
+        ";b": {
             "opcode": "looks_changeeffectby",
-            "next": "amM",
-            "parent": "sd",
+            "next": "aHS",
+            "parent": "yV",
             "inputs": {
                 "CHANGE": [
                     1,
@@ -4788,10 +4788,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amM": {
+        "aHS": {
             "opcode": "control_wait",
             "next": null,
-            "parent": "VI",
+            "parent": ";b",
             "inputs": {
                 "DURATION": [
                     1,
@@ -4805,10 +4805,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "VH": {
+        ";a": {
             "opcode": "data_replaceitemoflist",
-            "next": "amN",
-            "parent": "sc",
+            "next": "aHT",
+            "parent": "yU",
             "inputs": {
                 "INDEX": [
                     3,
@@ -4839,51 +4839,51 @@
             "shadow": false,
             "topLevel": false
         },
-        "amN": {
+        "aHT": {
             "opcode": "control_delete_this_clone",
             "next": null,
-            "parent": "VH",
+            "parent": ";a",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "r|": {
+        "yP": {
             "opcode": "control_if",
             "next": null,
-            "parent": "jB",
+            "parent": "k;",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "VL"
+                    ";e"
                 ],
                 "SUBSTACK": [
                     2,
-                    "se"
+                    "yW"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "VL": {
+        ";e": {
             "opcode": "sensing_touchingobject",
             "next": null,
-            "parent": "r|",
+            "parent": "yP",
             "inputs": {
                 "TOUCHINGOBJECTMENU": [
                     1,
-                    "amO"
+                    "aHU"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "amO": {
+        "aHU": {
             "opcode": "sensing_touchingobjectmenu",
             "next": null,
-            "parent": "VL",
+            "parent": ";e",
             "inputs": {},
             "fields": {
                 "TOUCHINGOBJECTMENU": [
@@ -4894,24 +4894,24 @@
             "shadow": true,
             "topLevel": false
         },
-        "se": {
+        "yW": {
             "opcode": "looks_switchcostumeto",
-            "next": "VM",
-            "parent": "r|",
+            "next": ";f",
+            "parent": "yP",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "amP"
+                    "aHV"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "amP": {
+        "aHV": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "se",
+            "parent": "yW",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -4922,10 +4922,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "VM": {
+        ";f": {
             "opcode": "control_stop",
-            "next": "VN",
-            "parent": "se",
+            "next": ";g",
+            "parent": "yW",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -4941,10 +4941,10 @@
                 "hasnext": "true"
             }
         },
-        "VN": {
+        ";g": {
             "opcode": "procedures_call",
-            "next": "sf",
-            "parent": "VM",
+            "next": "yX",
+            "parent": ";f",
             "inputs": {},
             "fields": {},
             "shadow": false,
@@ -4957,10 +4957,10 @@
                 "warp": "false"
             }
         },
-        "sf": {
+        "yX": {
             "opcode": "control_repeat",
-            "next": "VO",
-            "parent": "VN",
+            "next": ";h",
+            "parent": ";g",
             "inputs": {
                 "TIMES": [
                     1,
@@ -4971,21 +4971,21 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "sg"
+                    "yY"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "sg": {
+        "yY": {
             "opcode": "motion_changeyby",
-            "next": "VP",
-            "parent": "sf",
+            "next": ";i",
+            "parent": "yX",
             "inputs": {
                 "DY": [
                     3,
-                    "f(",
+                    "g)",
                     [
                         4,
                         ""
@@ -4996,14 +4996,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "f(": {
+        "g)": {
             "opcode": "operator_divide",
             "next": null,
-            "parent": "sg",
+            "parent": "yY",
             "inputs": {
                 "NUM1": [
                     3,
-                    "f)",
+                    "g*",
                     [
                         4,
                         ""
@@ -5021,14 +5021,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "f)": {
+        "g*": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "f(",
+            "parent": "g)",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "sh"
+                    "yZ"
                 ]
             },
             "fields": {
@@ -5040,10 +5040,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "sh": {
+        "yZ": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "f)",
+            "parent": "g*",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -5054,10 +5054,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "VP": {
+        ";i": {
             "opcode": "looks_changeeffectby",
-            "next": "amQ",
-            "parent": "sg",
+            "next": "aHW",
+            "parent": "yY",
             "inputs": {
                 "CHANGE": [
                     1,
@@ -5076,10 +5076,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amQ": {
+        "aHW": {
             "opcode": "control_wait",
             "next": null,
-            "parent": "VP",
+            "parent": ";i",
             "inputs": {
                 "DURATION": [
                     1,
@@ -5093,10 +5093,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "VO": {
+        ";h": {
             "opcode": "data_replaceitemoflist",
-            "next": "amR",
-            "parent": "sf",
+            "next": "aHX",
+            "parent": "yX",
             "inputs": {
                 "INDEX": [
                     2,
@@ -5123,23 +5123,23 @@
             "shadow": false,
             "topLevel": false
         },
-        "amR": {
+        "aHX": {
             "opcode": "control_delete_this_clone",
             "next": null,
-            "parent": "VO",
+            "parent": ";h",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "VQ": {
+        ";j": {
             "opcode": "procedures_definition",
-            "next": "VR",
+            "next": ";k",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "amS"
+                    "aHY"
                 ]
             },
             "fields": {},
@@ -5148,10 +5148,10 @@
             "x": 3857,
             "y": -204
         },
-        "amS": {
+        "aHY": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "VQ",
+            "parent": ";j",
             "inputs": {},
             "fields": {},
             "shadow": true,
@@ -5166,10 +5166,10 @@
                 "warp": "false"
             }
         },
-        "VR": {
+        ";k": {
             "opcode": "data_changevariableby",
-            "next": "si",
-            "parent": "VQ",
+            "next": "y!",
+            "parent": ";j",
             "inputs": {
                 "VALUE": [
                     1,
@@ -5188,10 +5188,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "si": {
+        "y!": {
             "opcode": "lmsMoreEvents_broadcastData",
-            "next": "f*",
-            "parent": "VR",
+            "next": "g+",
+            "parent": ";k",
             "inputs": {
                 "BROADCAST_OPTION": [
                     1,
@@ -5203,7 +5203,7 @@
                 ],
                 "DATA": [
                     3,
-                    "sj",
+                    "y#",
                     [
                         10,
                         ""
@@ -5214,14 +5214,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "sj": {
+        "y#": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "si",
+            "parent": "y!",
             "inputs": {
                 "STRING1": [
                     3,
-                    "amT",
+                    "aHZ",
                     [
                         10,
                         ""
@@ -5229,7 +5229,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "VS",
+                    ";l",
                     [
                         10,
                         ""
@@ -5240,19 +5240,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amT": {
+        "aHZ": {
             "opcode": "motion_xposition",
             "next": null,
-            "parent": "sj",
+            "parent": "y#",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "VS": {
+        ";l": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "sj",
+            "parent": "y#",
             "inputs": {
                 "STRING1": [
                     1,
@@ -5263,7 +5263,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "amU",
+                    "aH!",
                     [
                         10,
                         ""
@@ -5274,45 +5274,45 @@
             "shadow": false,
             "topLevel": false
         },
-        "amU": {
+        "aH!": {
             "opcode": "motion_yposition",
             "next": null,
-            "parent": "VS",
+            "parent": ";l",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "f*": {
+        "g+": {
             "opcode": "control_if_else",
-            "next": "sk",
-            "parent": "si",
+            "next": "y%",
+            "parent": "y!",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "VT"
+                    ";m"
                 ],
                 "SUBSTACK": [
                     2,
-                    "VU"
+                    ";n"
                 ],
                 "SUBSTACK2": [
                     2,
-                    "sl"
+                    "y("
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "VT": {
+        ";m": {
             "opcode": "operator_lt",
             "next": null,
-            "parent": "f*",
+            "parent": "g+",
             "inputs": {
                 "OPERAND1": [
                     3,
-                    "amV",
+                    "aH#",
                     [
                         10,
                         ""
@@ -5330,19 +5330,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "amV": {
+        "aH#": {
             "opcode": "motion_xposition",
             "next": null,
-            "parent": "VT",
+            "parent": ";m",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "VU": {
+        ";n": {
             "opcode": "lmscomments_commentCommand",
-            "next": "sm",
-            "parent": "f*",
+            "next": "y)",
+            "parent": "g+",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -5356,10 +5356,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "sm": {
+        "y)": {
             "opcode": "lmsMoreEvents_broadcastData",
-            "next": "amW",
-            "parent": "VU",
+            "next": "aH%",
+            "parent": ";n",
             "inputs": {
                 "BROADCAST_OPTION": [
                     1,
@@ -5371,7 +5371,7 @@
                 ],
                 "DATA": [
                     3,
-                    "VV",
+                    ";o",
                     [
                         10,
                         ""
@@ -5382,14 +5382,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "VV": {
+        ";o": {
             "opcode": "operator_subtract",
             "next": null,
-            "parent": "sm",
+            "parent": "y)",
             "inputs": {
                 "NUM1": [
                     3,
-                    "VW",
+                    ";p",
                     [
                         4,
                         ""
@@ -5407,14 +5407,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "VW": {
+        ";p": {
             "opcode": "operator_divide",
             "next": null,
-            "parent": "VV",
+            "parent": ";o",
             "inputs": {
                 "NUM1": [
                     3,
-                    "sn",
+                    "y*",
                     [
                         4,
                         ""
@@ -5432,14 +5432,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "sn": {
+        "y*": {
             "opcode": "lmsutilsblocks_stringIfElse",
             "next": null,
-            "parent": "VW",
+            "parent": ";p",
             "inputs": {
                 "BOOLEAN": [
                     2,
-                    "VX"
+                    ";q"
                 ],
                 "INPUTA": [
                     1,
@@ -5450,7 +5450,7 @@
                 ],
                 "INPUTB": [
                     3,
-                    "VY",
+                    ";r",
                     [
                         10,
                         ""
@@ -5461,10 +5461,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "VX": {
+        ";q": {
             "opcode": "operator_lt",
             "next": null,
-            "parent": "sn",
+            "parent": "y*",
             "inputs": {
                 "OPERAND1": [
                     1,
@@ -5475,7 +5475,7 @@
                 ],
                 "OPERAND2": [
                     3,
-                    "VZ",
+                    ";s",
                     [
                         10,
                         ""
@@ -5486,10 +5486,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "VZ": {
+        ";s": {
             "opcode": "operator_subtract",
             "next": null,
-            "parent": "VX",
+            "parent": ";q",
             "inputs": {
                 "NUM1": [
                     3,
@@ -5505,7 +5505,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "V!",
+                    ";t",
                     [
                         4,
                         ""
@@ -5516,14 +5516,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "V!": {
+        ";t": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "VZ",
+            "parent": ";s",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "amX"
+                    "aH("
                 ]
             },
             "fields": {
@@ -5535,10 +5535,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amX": {
+        "aH(": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "V!",
+            "parent": ";t",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -5549,10 +5549,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "VY": {
+        ";r": {
             "opcode": "operator_subtract",
             "next": null,
-            "parent": "sn",
+            "parent": "y*",
             "inputs": {
                 "NUM1": [
                     3,
@@ -5568,7 +5568,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "V#",
+                    ";u",
                     [
                         4,
                         ""
@@ -5579,14 +5579,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "V#": {
+        ";u": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "VY",
+            "parent": ";r",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "amY"
+                    "aH)"
                 ]
             },
             "fields": {
@@ -5598,10 +5598,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "amY": {
+        "aH)": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "V#",
+            "parent": ";u",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -5612,10 +5612,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "amW": {
+        "aH%": {
             "opcode": "lmsMoreEvents_broadcastData",
             "next": null,
-            "parent": "sm",
+            "parent": "y)",
             "inputs": {
                 "BROADCAST_OPTION": [
                     1,
@@ -5637,10 +5637,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "sl": {
+        "y(": {
             "opcode": "lmsMoreEvents_broadcastData",
-            "next": "amZ",
-            "parent": "f*",
+            "next": "aH*",
+            "parent": "g+",
             "inputs": {
                 "BROADCAST_OPTION": [
                     1,
@@ -5652,7 +5652,7 @@
                 ],
                 "DATA": [
                     3,
-                    "V%",
+                    ";v",
                     [
                         10,
                         ""
@@ -5663,14 +5663,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "V%": {
+        ";v": {
             "opcode": "operator_subtract",
             "next": null,
-            "parent": "sl",
+            "parent": "y(",
             "inputs": {
                 "NUM1": [
                     3,
-                    "V(",
+                    ";w",
                     [
                         4,
                         ""
@@ -5688,14 +5688,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "V(": {
+        ";w": {
             "opcode": "operator_divide",
             "next": null,
-            "parent": "V%",
+            "parent": ";v",
             "inputs": {
                 "NUM1": [
                     3,
-                    "so",
+                    "y+",
                     [
                         4,
                         ""
@@ -5713,14 +5713,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "so": {
+        "y+": {
             "opcode": "lmsutilsblocks_stringIfElse",
             "next": null,
-            "parent": "V(",
+            "parent": ";w",
             "inputs": {
                 "BOOLEAN": [
                     2,
-                    "V)"
+                    ";x"
                 ],
                 "INPUTA": [
                     1,
@@ -5731,7 +5731,7 @@
                 ],
                 "INPUTB": [
                     3,
-                    "V*",
+                    ";y",
                     [
                         10,
                         ""
@@ -5742,10 +5742,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "V)": {
+        ";x": {
             "opcode": "operator_lt",
             "next": null,
-            "parent": "so",
+            "parent": "y+",
             "inputs": {
                 "OPERAND1": [
                     1,
@@ -5756,7 +5756,7 @@
                 ],
                 "OPERAND2": [
                     3,
-                    "V+",
+                    ";z",
                     [
                         10,
                         ""
@@ -5767,10 +5767,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "V+": {
+        ";z": {
             "opcode": "operator_subtract",
             "next": null,
-            "parent": "V)",
+            "parent": ";x",
             "inputs": {
                 "NUM1": [
                     3,
@@ -5786,7 +5786,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "V,",
+                    ";A",
                     [
                         4,
                         ""
@@ -5797,14 +5797,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "V,": {
+        ";A": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "V+",
+            "parent": ";z",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "am!"
+                    "aH+"
                 ]
             },
             "fields": {
@@ -5816,10 +5816,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "am!": {
+        "aH+": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "V,",
+            "parent": ";A",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -5830,10 +5830,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "V*": {
+        ";y": {
             "opcode": "operator_subtract",
             "next": null,
-            "parent": "so",
+            "parent": "y+",
             "inputs": {
                 "NUM1": [
                     3,
@@ -5849,7 +5849,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "V-",
+                    ";B",
                     [
                         4,
                         ""
@@ -5860,14 +5860,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "V-": {
+        ";B": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "V*",
+            "parent": ";y",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "am#"
+                    "aH,"
                 ]
             },
             "fields": {
@@ -5879,10 +5879,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "am#": {
+        "aH,": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "V-",
+            "parent": ";B",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -5893,10 +5893,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "amZ": {
+        "aH*": {
             "opcode": "lmsMoreEvents_broadcastData",
             "next": null,
-            "parent": "sl",
+            "parent": "y(",
             "inputs": {
                 "BROADCAST_OPTION": [
                     1,
@@ -5918,32 +5918,32 @@
             "shadow": false,
             "topLevel": false
         },
-        "sk": {
+        "y%": {
             "opcode": "lmsSpAsMoreControl_switch",
             "next": null,
-            "parent": "f*",
+            "parent": "g+",
             "inputs": {
                 "SWITCH": [
                     2,
-                    "V."
+                    ";C"
                 ],
                 "SUBSTACK": [
                     2,
-                    "V/"
+                    ";D"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "V.": {
+        ";C": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "sk",
+            "parent": "y%",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "am%"
+                    "aH-"
                 ]
             },
             "fields": {
@@ -5955,10 +5955,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "am%": {
+        "aH-": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "V.",
+            "parent": ";C",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -5969,10 +5969,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "V/": {
+        ";D": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "V:",
-            "parent": "sk",
+            "next": ";E",
+            "parent": "y%",
             "inputs": {
                 "CASE": [
                     1,
@@ -5986,10 +5986,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "V:": {
+        ";E": {
             "opcode": "lmsSpAsMoreControl_case",
             "next": null,
-            "parent": "V/",
+            "parent": ";D",
             "inputs": {
                 "CASE": [
                     1,
@@ -6000,17 +6000,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "am("
+                    "aH."
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "am(": {
+        "aH.": {
             "opcode": "looks_seteffectto",
             "next": null,
-            "parent": "V:",
+            "parent": ";E",
             "inputs": {
                 "VALUE": [
                     1,
@@ -6029,9 +6029,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "am)": {
+        "aH/": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "c+",
+            "next": "c`",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -6045,24 +6045,24 @@
             "x": -180,
             "y": 642
         },
-        "c+": {
+        "c`": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "am)",
+            "parent": "aH/",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "c,"
+                    "c{"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "c,": {
+        "c{": {
             "opcode": "procedures_call",
-            "next": "c-",
-            "parent": "c+",
+            "next": "c|",
+            "parent": "c`",
             "inputs": {},
             "fields": {},
             "shadow": false,
@@ -6075,14 +6075,14 @@
                 "warp": "false"
             }
         },
-        "c-": {
+        "c|": {
             "opcode": "control_wait",
             "next": null,
-            "parent": "c,",
+            "parent": "c{",
             "inputs": {
                 "DURATION": [
                     3,
-                    "am*",
+                    "aH:",
                     [
                         5,
                         ""
@@ -6093,10 +6093,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "am*": {
+        "aH:": {
             "opcode": "operator_random",
             "next": null,
-            "parent": "c-",
+            "parent": "c|",
             "inputs": {
                 "FROM": [
                     1,
@@ -6117,9 +6117,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "am+": {
+        "aH;": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "V;",
+            "next": ";F",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -6133,10 +6133,10 @@
             "x": -1746,
             "y": 42
         },
-        "V;": {
+        ";F": {
             "opcode": "lmscomments_commentCommand",
-            "next": "V=",
-            "parent": "am+",
+            "next": ";G",
+            "parent": "aH;",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -6150,10 +6150,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "V=": {
+        ";G": {
             "opcode": "data_deletealloflist",
-            "next": "V?",
-            "parent": "V;",
+            "next": ";H",
+            "parent": ";F",
             "inputs": {},
             "fields": {
                 "LIST": [
@@ -6164,10 +6164,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "V?": {
+        ";H": {
             "opcode": "control_repeat",
             "next": null,
-            "parent": "V=",
+            "parent": ";G",
             "inputs": {
                 "TIMES": [
                     1,
@@ -6178,17 +6178,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "am,"
+                    "aH="
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "am,": {
+        "aH=": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "V?",
+            "parent": ";H",
             "inputs": {
                 "ITEM": [
                     1,
@@ -6207,9 +6207,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "am-": {
+        "aH?": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "V@",
+            "next": ";I",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -6223,10 +6223,10 @@
             "x": -1491,
             "y": -185
         },
-        "V@": {
+        ";I": {
             "opcode": "lmscomments_commentCommand",
-            "next": "V[",
-            "parent": "am-",
+            "next": ";J",
+            "parent": "aH?",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -6240,10 +6240,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "V[": {
+        ";J": {
             "opcode": "data_deletealloflist",
-            "next": "V]",
-            "parent": "V@",
+            "next": ";K",
+            "parent": ";I",
             "inputs": {},
             "fields": {
                 "LIST": [
@@ -6254,10 +6254,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "V]": {
+        ";K": {
             "opcode": "control_repeat",
             "next": null,
-            "parent": "V[",
+            "parent": ";J",
             "inputs": {
                 "TIMES": [
                     1,
@@ -6268,17 +6268,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "am."
+                    "aH@"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "am.": {
+        "aH@": {
             "opcode": "data_addtolist",
             "next": null,
-            "parent": "V]",
+            "parent": ";K",
             "inputs": {
                 "ITEM": [
                     1,
@@ -6297,7 +6297,7 @@
             "shadow": false,
             "topLevel": false
         },
-        "aPe": {
+        "aPr": {
             "opcode": "lmsclonesplus_getVariableOfClone",
             "next": null,
             "parent": null,
@@ -6343,7 +6343,7 @@
         },
         "g": {
             "opcode": "control_stop",
-            "next": "c.",
+            "next": "c_",
             "parent": "i",
             "inputs": {},
             "fields": {
@@ -6360,24 +6360,24 @@
                 "hasnext": "true"
             }
         },
-        "c.": {
+        "c_": {
             "opcode": "lmsclonesplus_deleteClonesInSprite",
             "next": null,
             "parent": "g",
             "inputs": {
                 "INPUT": [
                     1,
-                    "am/"
+                    "aH["
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "am/": {
+        "aH[": {
             "opcode": "lmsclonesplus_menu_spriteMenu",
             "next": null,
-            "parent": "c.",
+            "parent": "c_",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -6388,9 +6388,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "am:": {
+        "aH]": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "V^",
+            "next": ";L",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -6404,10 +6404,10 @@
             "x": 405,
             "y": -155
         },
-        "V^": {
+        ";L": {
             "opcode": "control_stop",
-            "next": "V_",
-            "parent": "am:",
+            "next": ";M",
+            "parent": "aH]",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -6423,24 +6423,24 @@
                 "hasnext": "true"
             }
         },
-        "V_": {
+        ";M": {
             "opcode": "lmsclonesplus_deleteClonesInSprite",
             "next": null,
-            "parent": "V^",
+            "parent": ";L",
             "inputs": {
                 "INPUT": [
                     1,
-                    "am;"
+                    "aH^"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "am;": {
+        "aH^": {
             "opcode": "lmsclonesplus_menu_spriteMenu",
             "next": null,
-            "parent": "V_",
+            "parent": ";M",
             "inputs": {},
             "fields": {
                 "spriteMenu": [

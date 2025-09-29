@@ -12,7 +12,7 @@
         ],
         "KLHPFXdfN*wCSIUfCl:(": [
             "money",
-            0
+            316.81803888795
         ],
         "Rjb@/kt`zy=Jbr4HWP#=": [
             "autoOn?",
@@ -32,7 +32,7 @@
         ],
         "]!yX2U/S0MIS{/_2=Go|": [
             "crashes",
-            0
+            12
         ],
         "V$*aU_H5V0cpe1?#K#mk": [
             "inflationMulti",
@@ -44,7 +44,7 @@
         ],
         "_Y)ub0TBqD4]asNbogWp": [
             "FPS",
-            "110"
+            "124"
         ],
         "cu9L(6+Fp@Fshy;=5@K$": [
             "challengesCompleted",
@@ -71,7 +71,15 @@
         ")^jAeXj?zvyzh`6dkQmA": [
             "logs",
             [
-                "rec:onScreenHint: recieved: start"
+                "rec:onScreenHint: recieved: start",
+                "rec:onScreenHint: recieved: hide",
+                "rec:onScreenHint: recieved: hide",
+                "rec:onScreenHint: recieved: engine_dead",
+                "rec:onScreenHint: recieved: hide",
+                "rec:onScreenHint: recieved: gas_stop",
+                "rec:onScreenHint: recieved: hide",
+                "rec:onScreenHint: recieved: hide",
+                "rec:onScreenHint: recieved: hide"
             ]
         ],
         "fLk-rVO_jv:S|cy]/~Fy": [
@@ -167,16 +175,16 @@
         "kGI_*!JQiGVRywumbdCG": [
             "carPositions",
             [
-                "-80|231.60000000000173",
-                "130|796.8000000000004",
-                "210|750",
+                "25|997.9925534291501",
+                "-80|696.098323571337",
                 "deleted",
+                "210|187.39785555393152",
+                "210|-397.44896767291436",
+                "25|692.9876975051606",
+                "80|435.56292942878804",
+                "210|-742.4227114539772",
                 "deleted",
-                "deleted",
-                "deleted",
-                "deleted",
-                "deleted",
-                "deleted"
+                "80|2.3760156322166894"
             ]
         ],
         "xpzO]xDO@=pC~R4+J}Qk": [
@@ -475,6 +483,7 @@
                 "cfm:fpsCounter: onStart (0): FPS restored (focused)",
                 "cfm:fpsCounter: onStart (0): FPS restored (focused)",
                 "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
                 "cfm:fpsCounter: onStart (0): FPS restored (focused)",
                 "cfm:fpsCounter: onStart (0): FPS restored (focused)",
                 "cfm:fpsCounter: onStart (0): FPS restored (focused)",
@@ -1700,7 +1709,7 @@
             "shadow": true,
             "topLevel": false
         },
-        "aON": {
+        "aOL": {
             "opcode": "event_broadcast",
             "next": null,
             "parent": null,

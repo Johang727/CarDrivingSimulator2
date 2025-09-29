@@ -10,9 +10,9 @@
     "lists": {},
     "broadcasts": {},
     "blocks": {
-        "apG": {
+        "awr": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "eh",
+            "next": "ea",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -26,38 +26,38 @@
             "x": -4367,
             "y": -4157
         },
-        "eh": {
+        "ea": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "apG",
+            "parent": "awr",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "tj"
+                    "t_"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "tj": {
+        "t_": {
             "opcode": "motion_goto",
-            "next": "tk",
-            "parent": "eh",
+            "next": "t`",
+            "parent": "ea",
             "inputs": {
                 "TO": [
                     1,
-                    "apH"
+                    "aws"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apH": {
+        "aws": {
             "opcode": "motion_goto_menu",
             "next": null,
-            "parent": "tj",
+            "parent": "t_",
             "inputs": {},
             "fields": {
                 "TO": [
@@ -67,14 +67,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "tk": {
+        "t`": {
             "opcode": "motion_pointindirection",
-            "next": "tl",
-            "parent": "tj",
+            "next": "t{",
+            "parent": "t_",
             "inputs": {
                 "DIRECTION": [
                     3,
-                    "ei",
+                    "eb",
                     [
                         8,
                         "0"
@@ -85,14 +85,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "ei": {
+        "eb": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "tk",
+            "parent": "t`",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "apI"
+                    "awt"
                 ]
             },
             "fields": {
@@ -103,10 +103,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "apI": {
+        "awt": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "ei",
+            "parent": "eb",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -116,9 +116,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "apJ": {
+        "awu": {
             "opcode": "lmsMoreEvents_whenStopClicked",
-            "next": "apK",
+            "next": "awv",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -127,18 +127,18 @@
             "x": -4074,
             "y": -4335
         },
-        "apK": {
+        "awv": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "apJ",
+            "parent": "awu",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apL": {
+        "aww": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "ej",
+            "next": "ec",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -152,56 +152,56 @@
             "x": -3657,
             "y": -4273
         },
-        "ej": {
+        "ec": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "apL",
+            "parent": "aww",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "tm"
+                    "t|"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "tm": {
+        "t|": {
             "opcode": "control_if",
             "next": null,
-            "parent": "ej",
+            "parent": "ec",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ek"
+                    "ed"
                 ],
                 "SUBSTACK": [
                     2,
-                    "f["
+                    "gB"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ek": {
+        "ed": {
             "opcode": "sensing_keypressed",
             "next": null,
-            "parent": "tm",
+            "parent": "t|",
             "inputs": {
                 "KEY_OPTION": [
                     1,
-                    "apM"
+                    "awx"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apM": {
+        "awx": {
             "opcode": "sensing_keyoptions",
             "next": null,
-            "parent": "ek",
+            "parent": "ed",
             "inputs": {},
             "fields": {
                 "KEY_OPTION": [
@@ -212,24 +212,24 @@
             "shadow": true,
             "topLevel": false
         },
-        "el": {
+        "ee": {
             "opcode": "lmsLooksPlus_spriteVisible",
             "next": null,
-            "parent": "f[",
+            "parent": "gB",
             "inputs": {
                 "TARGET": [
                     1,
-                    "apN"
+                    "awy"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apN": {
+        "awy": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "el",
+            "parent": "ee",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -240,92 +240,92 @@
             "shadow": true,
             "topLevel": false
         },
-        "f[": {
+        "gB": {
             "opcode": "control_if_else",
-            "next": "em",
-            "parent": "tm",
+            "next": "ef",
+            "parent": "t|",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "el"
+                    "ee"
                 ],
                 "SUBSTACK": [
                     2,
-                    "apO"
+                    "awz"
                 ],
                 "SUBSTACK2": [
                     2,
-                    "apP"
+                    "awA"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apO": {
+        "awz": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "f[",
+            "parent": "gB",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apP": {
+        "awA": {
             "opcode": "looks_show",
             "next": null,
-            "parent": "f[",
+            "parent": "gB",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "em": {
+        "ef": {
             "opcode": "control_wait_until",
             "next": null,
-            "parent": "f[",
+            "parent": "gB",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "en"
+                    "eg"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "en": {
+        "eg": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "em",
+            "parent": "ef",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "eo"
+                    "eh"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "eo": {
+        "eh": {
             "opcode": "sensing_keypressed",
             "next": null,
-            "parent": "en",
+            "parent": "eg",
             "inputs": {
                 "KEY_OPTION": [
                     1,
-                    "apQ"
+                    "awB"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apQ": {
+        "awB": {
             "opcode": "sensing_keyoptions",
             "next": null,
-            "parent": "eo",
+            "parent": "eh",
             "inputs": {},
             "fields": {
                 "KEY_OPTION": [
@@ -336,18 +336,18 @@
             "shadow": true,
             "topLevel": false
         },
-        "tl": {
+        "t{": {
             "opcode": "lmsLooksPlus_setLayerTo",
             "next": null,
-            "parent": "tk",
+            "parent": "t`",
             "inputs": {
                 "TARGET": [
                     1,
-                    "apR"
+                    "awC"
                 ],
                 "LAYER": [
                     3,
-                    "ep",
+                    "ei",
                     [
                         4,
                         "1"
@@ -358,10 +358,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "apR": {
+        "awC": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "tl",
+            "parent": "t{",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -372,24 +372,24 @@
             "shadow": true,
             "topLevel": false
         },
-        "eq": {
+        "ej": {
             "opcode": "lmsLooksPlus_spriteLayerNumber",
             "next": null,
-            "parent": "ep",
+            "parent": "ei",
             "inputs": {
                 "TARGET": [
                     1,
-                    "apS"
+                    "awD"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apS": {
+        "awD": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "eq",
+            "parent": "ej",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -400,14 +400,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "ep": {
+        "ei": {
             "opcode": "operator_add",
             "next": null,
-            "parent": "tl",
+            "parent": "t{",
             "inputs": {
                 "NUM1": [
                     3,
-                    "eq",
+                    "ej",
                     [
                         4,
                         ""
@@ -425,9 +425,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "apT": {
+        "awE": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "er",
+            "next": "ek",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -441,38 +441,38 @@
             "x": -4371,
             "y": -3801
         },
-        "er": {
+        "ek": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "apT",
+            "parent": "awE",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "tn"
+                    "t}"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "tn": {
+        "t}": {
             "opcode": "motion_goto",
-            "next": "to",
-            "parent": "er",
+            "next": "t~",
+            "parent": "ek",
             "inputs": {
                 "TO": [
                     1,
-                    "apU"
+                    "awF"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apU": {
+        "awF": {
             "opcode": "motion_goto_menu",
             "next": null,
-            "parent": "tn",
+            "parent": "t}",
             "inputs": {},
             "fields": {
                 "TO": [
@@ -483,14 +483,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "to": {
+        "t~": {
             "opcode": "motion_pointindirection",
-            "next": "tp",
-            "parent": "tn",
+            "next": "ua",
+            "parent": "t}",
             "inputs": {
                 "DIRECTION": [
                     3,
-                    "es",
+                    "el",
                     [
                         8,
                         "0"
@@ -501,14 +501,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "es": {
+        "el": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "to",
+            "parent": "t~",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "apV"
+                    "awG"
                 ]
             },
             "fields": {
@@ -520,10 +520,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "apV": {
+        "awG": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "es",
+            "parent": "el",
             "inputs": {},
             "fields": {
                 "OBJECT": [
@@ -534,18 +534,18 @@
             "shadow": true,
             "topLevel": false
         },
-        "tp": {
+        "ua": {
             "opcode": "lmsLooksPlus_setLayerTo",
             "next": null,
-            "parent": "to",
+            "parent": "t~",
             "inputs": {
                 "TARGET": [
                     1,
-                    "apW"
+                    "awH"
                 ],
                 "LAYER": [
                     3,
-                    "et",
+                    "em",
                     [
                         4,
                         "1"
@@ -556,10 +556,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "apW": {
+        "awH": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "tp",
+            "parent": "ua",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -570,14 +570,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "et": {
+        "em": {
             "opcode": "operator_add",
             "next": null,
-            "parent": "tp",
+            "parent": "ua",
             "inputs": {
                 "NUM1": [
                     3,
-                    "eu",
+                    "en",
                     [
                         4,
                         ""
@@ -595,24 +595,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "eu": {
+        "en": {
             "opcode": "lmsLooksPlus_spriteLayerNumber",
             "next": null,
-            "parent": "et",
+            "parent": "em",
             "inputs": {
                 "TARGET": [
                     1,
-                    "apX"
+                    "awI"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apX": {
+        "awI": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "eu",
+            "parent": "en",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -623,9 +623,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "apY": {
+        "awJ": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "ev",
+            "next": "eo",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -639,56 +639,56 @@
             "x": -3634,
             "y": -3744
         },
-        "ev": {
+        "eo": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "apY",
+            "parent": "awJ",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "tq"
+                    "ub"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "tq": {
+        "ub": {
             "opcode": "control_if",
             "next": null,
-            "parent": "ev",
+            "parent": "eo",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ew"
+                    "ep"
                 ],
                 "SUBSTACK": [
                     2,
-                    "f]"
+                    "gC"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ew": {
+        "ep": {
             "opcode": "sensing_keypressed",
             "next": null,
-            "parent": "tq",
+            "parent": "ub",
             "inputs": {
                 "KEY_OPTION": [
                     1,
-                    "apZ"
+                    "awK"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "apZ": {
+        "awK": {
             "opcode": "sensing_keyoptions",
             "next": null,
-            "parent": "ew",
+            "parent": "ep",
             "inputs": {},
             "fields": {
                 "KEY_OPTION": [
@@ -699,46 +699,46 @@
             "shadow": true,
             "topLevel": false
         },
-        "f]": {
+        "gC": {
             "opcode": "control_if_else",
-            "next": "ex",
-            "parent": "tq",
+            "next": "eq",
+            "parent": "ub",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ey"
+                    "er"
                 ],
                 "SUBSTACK": [
                     2,
-                    "ap!"
+                    "awL"
                 ],
                 "SUBSTACK2": [
                     2,
-                    "ap#"
+                    "awM"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ey": {
+        "er": {
             "opcode": "lmsLooksPlus_spriteVisible",
             "next": null,
-            "parent": "f]",
+            "parent": "gC",
             "inputs": {
                 "TARGET": [
                     1,
-                    "ap%"
+                    "awN"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ap%": {
+        "awN": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "ey",
+            "parent": "er",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -749,70 +749,70 @@
             "shadow": true,
             "topLevel": false
         },
-        "ap!": {
+        "awL": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "f]",
+            "parent": "gC",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ap#": {
+        "awM": {
             "opcode": "looks_show",
             "next": null,
-            "parent": "f]",
+            "parent": "gC",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ex": {
+        "eq": {
             "opcode": "control_wait_until",
             "next": null,
-            "parent": "f]",
+            "parent": "gC",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ez"
+                    "es"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ez": {
+        "es": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "ex",
+            "parent": "eq",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "eA"
+                    "et"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "eA": {
+        "et": {
             "opcode": "sensing_keypressed",
             "next": null,
-            "parent": "ez",
+            "parent": "es",
             "inputs": {
                 "KEY_OPTION": [
                     1,
-                    "ap("
+                    "awO"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ap(": {
+        "awO": {
             "opcode": "sensing_keyoptions",
             "next": null,
-            "parent": "eA",
+            "parent": "et",
             "inputs": {},
             "fields": {
                 "KEY_OPTION": [
@@ -823,9 +823,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "ap)": {
+        "awP": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "XM",
+            "next": "(l",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -839,10 +839,10 @@
             "x": -3105,
             "y": -4452
         },
-        "XM": {
+        "(l": {
             "opcode": "control_stop",
-            "next": "ap*",
-            "parent": "ap)",
+            "next": "awQ",
+            "parent": "awP",
             "inputs": {},
             "fields": {
                 "STOP_OPTION": [
@@ -858,10 +858,10 @@
                 "hasnext": "true"
             }
         },
-        "ap*": {
+        "awQ": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "XM",
+            "parent": "(l",
             "inputs": {},
             "fields": {},
             "shadow": false,
@@ -885,7 +885,7 @@
         },
         "g": {
             "opcode": "control_stop",
-            "next": "ap+",
+            "next": "awR",
             "parent": "i",
             "inputs": {},
             "fields": {
@@ -902,7 +902,7 @@
                 "hasnext": "true"
             }
         },
-        "ap+": {
+        "awR": {
             "opcode": "looks_hide",
             "next": null,
             "parent": "g",

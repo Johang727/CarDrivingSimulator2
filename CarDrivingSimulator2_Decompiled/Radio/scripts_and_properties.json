@@ -5,9 +5,9 @@
     "lists": {},
     "broadcasts": {},
     "blocks": {
-        "aMy": {
+        "aNu": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "[G",
+            "next": "]D",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -21,46 +21,46 @@
             "x": 83,
             "y": 223
         },
-        "[G": {
+        "]D": {
             "opcode": "control_forever",
             "next": null,
-            "parent": "aMy",
+            "parent": "aNu",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "BA"
+                    "Be"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "BA": {
+        "Be": {
             "opcode": "lmsSpAsMoreControl_switch",
             "next": null,
-            "parent": "[G",
+            "parent": "]D",
             "inputs": {
                 "SWITCH": [
                     2,
-                    "[H"
+                    "]E"
                 ],
                 "SUBSTACK": [
                     2,
-                    "BB"
+                    "Bf"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[H": {
+        "]E": {
             "opcode": "data_itemoflist",
             "next": null,
-            "parent": "BA",
+            "parent": "Be",
             "inputs": {
                 "INDEX": [
                     3,
-                    "aMz",
+                    "aNv",
                     [
                         7,
                         "1"
@@ -76,10 +76,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMz": {
+        "aNv": {
             "opcode": "sensing_current",
             "next": null,
-            "parent": "[H",
+            "parent": "]E",
             "inputs": {},
             "fields": {
                 "CURRENTMENU": [
@@ -90,10 +90,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BB": {
+        "Bf": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "[I",
-            "parent": "BA",
+            "next": "]F",
+            "parent": "Be",
             "inputs": {
                 "CASE": [
                     1,
@@ -104,31 +104,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "[J"
+                    "]G"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[J": {
+        "]G": {
             "opcode": "sound_playuntildone",
             "next": null,
-            "parent": "BB",
+            "parent": "Bf",
             "inputs": {
                 "SOUND_MENU": [
                     1,
-                    "aMA"
+                    "aNw"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMA": {
+        "aNw": {
             "opcode": "sound_sounds_menu",
             "next": null,
-            "parent": "[J",
+            "parent": "]G",
             "inputs": {},
             "fields": {
                 "SOUND_MENU": [
@@ -139,38 +139,38 @@
             "shadow": true,
             "topLevel": false
         },
-        "[I": {
+        "]F": {
             "opcode": "lmsSpAsMoreControl_default",
             "next": null,
-            "parent": "BB",
+            "parent": "Bf",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "[K"
+                    "]H"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[K": {
+        "]H": {
             "opcode": "sound_playuntildone",
             "next": null,
-            "parent": "[I",
+            "parent": "]F",
             "inputs": {
                 "SOUND_MENU": [
                     1,
-                    "aMB"
+                    "aNx"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMB": {
+        "aNx": {
             "opcode": "sound_sounds_menu",
             "next": null,
-            "parent": "[K",
+            "parent": "]H",
             "inputs": {},
             "fields": {
                 "SOUND_MENU": [
@@ -181,7 +181,7 @@
             "shadow": true,
             "topLevel": false
         },
-        "aPE": {
+        "aPA": {
             "opcode": "event_broadcast",
             "next": null,
             "parent": null,

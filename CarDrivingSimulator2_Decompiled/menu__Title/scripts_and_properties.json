@@ -10,9 +10,9 @@
     "lists": {},
     "broadcasts": {},
     "blocks": {
-        "akU": {
+        "aAO": {
             "opcode": "event_whenflagclicked",
-            "next": "akV",
+            "next": "aAP",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -21,10 +21,10 @@
             "x": -975,
             "y": 106
         },
-        "akV": {
+        "aAP": {
             "opcode": "event_broadcast",
             "next": null,
-            "parent": "akU",
+            "parent": "aAO",
             "inputs": {
                 "BROADCAST_INPUT": [
                     1,
@@ -39,9 +39,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "akW": {
+        "aAQ": {
             "opcode": "lmsclonesplus_whenCloneStartsWithVar",
-            "next": "q|",
+            "next": "vw",
             "parent": null,
             "inputs": {
                 "INPUTB": [
@@ -63,28 +63,28 @@
             "x": -290,
             "y": 104
         },
-        "q|": {
+        "vw": {
             "opcode": "lmsSpAsMoreControl_switch",
             "next": null,
-            "parent": "akW",
+            "parent": "aAQ",
             "inputs": {
                 "SWITCH": [
                     2,
-                    "akX"
+                    "aAR"
                 ],
                 "SUBSTACK": [
                     2,
-                    "q}"
+                    "vx"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "akX": {
+        "aAR": {
             "opcode": "localstorage_get",
             "next": null,
-            "parent": "q|",
+            "parent": "vw",
             "inputs": {
                 "KEY": [
                     1,
@@ -98,10 +98,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "q}": {
+        "vx": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "q~",
-            "parent": "q|",
+            "next": "vy",
+            "parent": "vw",
             "inputs": {
                 "CASE": [
                     1,
@@ -112,31 +112,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "ra"
+                    "vz"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ra": {
+        "vz": {
             "opcode": "looks_switchcostumeto",
-            "next": "T(",
-            "parent": "q}",
+            "next": "+T",
+            "parent": "vx",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "akY"
+                    "aAS"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "akY": {
+        "aAS": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "ra",
+            "parent": "vz",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -147,10 +147,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "T(": {
+        "+T": {
             "opcode": "motion_gotoxy",
-            "next": "T)",
-            "parent": "ra",
+            "next": "+U",
+            "parent": "vz",
             "inputs": {
                 "X": [
                     1,
@@ -171,51 +171,51 @@
             "shadow": false,
             "topLevel": false
         },
-        "T)": {
+        "+U": {
             "opcode": "looks_show",
-            "next": "rb",
-            "parent": "T(",
+            "next": "vA",
+            "parent": "+T",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rb": {
+        "vA": {
             "opcode": "control_wait_until",
-            "next": "T*",
-            "parent": "T)",
+            "next": "+V",
+            "parent": "+U",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "akZ"
+                    "aAT"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "akZ": {
+        "aAT": {
             "opcode": "lmsutilsblocks_spriteClicked",
             "next": null,
-            "parent": "rb",
+            "parent": "vA",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "T*": {
+        "+V": {
             "opcode": "looks_hide",
-            "next": "T+",
-            "parent": "rb",
+            "next": "+W",
+            "parent": "vA",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "T+": {
+        "+W": {
             "opcode": "event_broadcast",
-            "next": "rc",
-            "parent": "T*",
+            "next": "vB",
+            "parent": "+V",
             "inputs": {
                 "BROADCAST_INPUT": [
                     1,
@@ -230,24 +230,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "rc": {
+        "vB": {
             "opcode": "lmsclonesplus_deleteClonesInSprite",
-            "next": "ak!",
-            "parent": "T+",
+            "next": "aAU",
+            "parent": "+W",
             "inputs": {
                 "INPUT": [
                     1,
-                    "ak#"
+                    "aAV"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak#": {
+        "aAV": {
             "opcode": "lmsclonesplus_menu_spriteMenu",
             "next": null,
-            "parent": "rc",
+            "parent": "vB",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -258,19 +258,19 @@
             "shadow": true,
             "topLevel": false
         },
-        "ak!": {
+        "aAU": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "rc",
+            "parent": "vB",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "q~": {
+        "vy": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "T,",
-            "parent": "q}",
+            "next": "+X",
+            "parent": "vx",
             "inputs": {
                 "CASE": [
                     1,
@@ -281,31 +281,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "rd"
+                    "vC"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rd": {
+        "vC": {
             "opcode": "looks_switchcostumeto",
-            "next": "T-",
-            "parent": "q~",
+            "next": "+Y",
+            "parent": "vy",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "ak%"
+                    "aAW"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak%": {
+        "aAW": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "rd",
+            "parent": "vC",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -316,10 +316,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "T-": {
+        "+Y": {
             "opcode": "motion_gotoxy",
-            "next": "T.",
-            "parent": "rd",
+            "next": "+Z",
+            "parent": "vC",
             "inputs": {
                 "X": [
                     1,
@@ -340,51 +340,51 @@
             "shadow": false,
             "topLevel": false
         },
-        "T.": {
+        "+Z": {
             "opcode": "looks_show",
-            "next": "re",
-            "parent": "T-",
+            "next": "vD",
+            "parent": "+Y",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "re": {
+        "vD": {
             "opcode": "control_wait_until",
-            "next": "T/",
-            "parent": "T.",
+            "next": "+!",
+            "parent": "+Z",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ak("
+                    "aAX"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak(": {
+        "aAX": {
             "opcode": "lmsutilsblocks_spriteClicked",
             "next": null,
-            "parent": "re",
+            "parent": "vD",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "T/": {
+        "+!": {
             "opcode": "looks_hide",
-            "next": "T:",
-            "parent": "re",
+            "next": "+#",
+            "parent": "vD",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "T:": {
+        "+#": {
             "opcode": "event_broadcast",
-            "next": "rf",
-            "parent": "T/",
+            "next": "vE",
+            "parent": "+!",
             "inputs": {
                 "BROADCAST_INPUT": [
                     1,
@@ -399,24 +399,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "rf": {
+        "vE": {
             "opcode": "lmsclonesplus_deleteClonesInSprite",
-            "next": "ak)",
-            "parent": "T:",
+            "next": "aAY",
+            "parent": "+#",
             "inputs": {
                 "INPUT": [
                     1,
-                    "ak*"
+                    "aAZ"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak*": {
+        "aAZ": {
             "opcode": "lmsclonesplus_menu_spriteMenu",
             "next": null,
-            "parent": "rf",
+            "parent": "vE",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -427,47 +427,47 @@
             "shadow": true,
             "topLevel": false
         },
-        "ak)": {
+        "aAY": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "rf",
+            "parent": "vE",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "T,": {
+        "+X": {
             "opcode": "lmsSpAsMoreControl_default",
             "next": null,
-            "parent": "q~",
+            "parent": "vy",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "Z"
+                    "Y"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Z": {
+        "Y": {
             "opcode": "looks_switchcostumeto",
-            "next": "T;",
-            "parent": "T,",
+            "next": "+%",
+            "parent": "+X",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "ak+"
+                    "aA!"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak+": {
+        "aA!": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "Z",
+            "parent": "Y",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -478,10 +478,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "T;": {
+        "+%": {
             "opcode": "motion_gotoxy",
-            "next": "T=",
-            "parent": "Z",
+            "next": "+(",
+            "parent": "Y",
             "inputs": {
                 "X": [
                     1,
@@ -502,10 +502,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "T=": {
+        "+(": {
             "opcode": "looks_show",
             "next": "b.",
-            "parent": "T;",
+            "parent": "+%",
             "inputs": {},
             "fields": {},
             "shadow": false,
@@ -513,19 +513,19 @@
         },
         "b.": {
             "opcode": "control_wait_until",
-            "next": "T?",
-            "parent": "T=",
+            "next": "+)",
+            "parent": "+(",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ak,"
+                    "aA#"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak,": {
+        "aA#": {
             "opcode": "lmsutilsblocks_spriteClicked",
             "next": null,
             "parent": "b.",
@@ -534,19 +534,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "T?": {
+        "+)": {
             "opcode": "looks_hide",
-            "next": "T@",
+            "next": "+*",
             "parent": "b.",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "T@": {
+        "+*": {
             "opcode": "event_broadcast",
-            "next": "T[",
-            "parent": "T?",
+            "next": "++",
+            "parent": "+)",
             "inputs": {
                 "BROADCAST_INPUT": [
                     1,
@@ -561,24 +561,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "T[": {
+        "++": {
             "opcode": "lmsclonesplus_deleteClonesInSprite",
             "next": null,
-            "parent": "T@",
+            "parent": "+*",
             "inputs": {
                 "INPUT": [
                     1,
-                    "ak-"
+                    "aA%"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak-": {
+        "aA%": {
             "opcode": "lmsclonesplus_menu_spriteMenu",
             "next": null,
-            "parent": "T[",
+            "parent": "++",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -589,9 +589,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "ak.": {
+        "aA(": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "rg",
+            "next": "vF",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -605,24 +605,24 @@
             "x": -647,
             "y": 119
         },
-        "rg": {
+        "vF": {
             "opcode": "looks_switchbackdropto",
-            "next": "T]",
-            "parent": "ak.",
+            "next": "+,",
+            "parent": "aA(",
             "inputs": {
                 "BACKDROP": [
                     1,
-                    "ak/"
+                    "aA)"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak/": {
+        "aA)": {
             "opcode": "looks_backdrops",
             "next": null,
-            "parent": "rg",
+            "parent": "vF",
             "inputs": {},
             "fields": {
                 "BACKDROP": [
@@ -633,10 +633,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "T]": {
+        "+,": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "T^",
-            "parent": "rg",
+            "next": "+-",
+            "parent": "vF",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -655,10 +655,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "T^": {
+        "+-": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "T_",
-            "parent": "T]",
+            "next": "+.",
+            "parent": "+,",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -677,10 +677,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "T_": {
+        "+.": {
             "opcode": "lmsclonesplus_createCloneWithVar",
-            "next": "ak:",
-            "parent": "T^",
+            "next": "aA*",
+            "parent": "+-",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -699,10 +699,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "ak:": {
+        "aA*": {
             "opcode": "lmsclonesplus_createCloneWithVar",
             "next": null,
-            "parent": "T_",
+            "parent": "+.",
             "inputs": {
                 "INPUTB": [
                     1,
@@ -721,9 +721,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "ak;": {
+        "aA+": {
             "opcode": "lmsclonesplus_whenCloneStartsWithVar",
-            "next": "!",
+            "next": "Z",
             "parent": null,
             "inputs": {
                 "INPUTB": [
@@ -745,24 +745,24 @@
             "x": 203,
             "y": 91
         },
-        "!": {
+        "Z": {
             "opcode": "looks_switchcostumeto",
-            "next": "T`",
-            "parent": "ak;",
+            "next": "+/",
+            "parent": "aA+",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "ak="
+                    "aA,"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak=": {
+        "aA,": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "!",
+            "parent": "Z",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -773,10 +773,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "T`": {
+        "+/": {
             "opcode": "motion_gotoxy",
-            "next": "T{",
-            "parent": "!",
+            "next": "+:",
+            "parent": "Z",
             "inputs": {
                 "X": [
                     1,
@@ -797,10 +797,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "T{": {
+        "+:": {
             "opcode": "looks_show",
             "next": "b/",
-            "parent": "T`",
+            "parent": "+/",
             "inputs": {},
             "fields": {},
             "shadow": false,
@@ -808,19 +808,19 @@
         },
         "b/": {
             "opcode": "control_wait_until",
-            "next": "T|",
-            "parent": "T{",
+            "next": "+;",
+            "parent": "+:",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ak?"
+                    "aA-"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak?": {
+        "aA-": {
             "opcode": "lmsutilsblocks_spriteClicked",
             "next": null,
             "parent": "b/",
@@ -829,19 +829,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "T|": {
+        "+;": {
             "opcode": "looks_hide",
-            "next": "T}",
+            "next": "+=",
             "parent": "b/",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "T}": {
+        "+=": {
             "opcode": "event_broadcast",
-            "next": "T~",
-            "parent": "T|",
+            "next": "+?",
+            "parent": "+;",
             "inputs": {
                 "BROADCAST_INPUT": [
                     1,
@@ -856,24 +856,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "T~": {
+        "+?": {
             "opcode": "lmsclonesplus_deleteClonesInSprite",
             "next": null,
-            "parent": "T}",
+            "parent": "+=",
             "inputs": {
                 "INPUT": [
                     1,
-                    "ak@"
+                    "aA."
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak@": {
+        "aA.": {
             "opcode": "lmsclonesplus_menu_spriteMenu",
             "next": null,
-            "parent": "T~",
+            "parent": "+?",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -884,9 +884,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "ak[": {
+        "aA/": {
             "opcode": "lmsclonesplus_whenCloneStartsWithVar",
-            "next": "rh",
+            "next": "vG",
             "parent": null,
             "inputs": {
                 "INPUTB": [
@@ -908,24 +908,24 @@
             "x": 687,
             "y": 52
         },
-        "rh": {
+        "vG": {
             "opcode": "looks_switchcostumeto",
-            "next": "Ua",
-            "parent": "ak[",
+            "next": "+@",
+            "parent": "aA/",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "ak]"
+                    "aA:"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak]": {
+        "aA:": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "rh",
+            "parent": "vG",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -936,10 +936,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "Ua": {
+        "+@": {
             "opcode": "motion_gotoxy",
-            "next": "Ub",
-            "parent": "rh",
+            "next": "+[",
+            "parent": "vG",
             "inputs": {
                 "X": [
                     1,
@@ -960,51 +960,51 @@
             "shadow": false,
             "topLevel": false
         },
-        "Ub": {
+        "+[": {
             "opcode": "looks_show",
-            "next": "ri",
-            "parent": "Ua",
+            "next": "vH",
+            "parent": "+@",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ri": {
+        "vH": {
             "opcode": "control_wait_until",
-            "next": "Uc",
-            "parent": "Ub",
+            "next": "+]",
+            "parent": "+[",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ak^"
+                    "aA;"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak^": {
+        "aA;": {
             "opcode": "lmsutilsblocks_spriteClicked",
             "next": null,
-            "parent": "ri",
+            "parent": "vH",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Uc": {
+        "+]": {
             "opcode": "looks_hide",
-            "next": "Ud",
-            "parent": "ri",
+            "next": "+^",
+            "parent": "vH",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Ud": {
+        "+^": {
             "opcode": "event_broadcast",
-            "next": "Ue",
-            "parent": "Uc",
+            "next": "+_",
+            "parent": "+]",
             "inputs": {
                 "BROADCAST_INPUT": [
                     1,
@@ -1019,24 +1019,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "Ue": {
+        "+_": {
             "opcode": "lmsclonesplus_deleteClonesInSprite",
             "next": null,
-            "parent": "Ud",
+            "parent": "+^",
             "inputs": {
                 "INPUT": [
                     1,
-                    "ak_"
+                    "aA="
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak_": {
+        "aA=": {
             "opcode": "lmsclonesplus_menu_spriteMenu",
             "next": null,
-            "parent": "Ue",
+            "parent": "+_",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -1047,9 +1047,9 @@
             "shadow": true,
             "topLevel": false
         },
-        "ak`": {
+        "aA?": {
             "opcode": "lmsclonesplus_whenCloneStartsWithVar",
-            "next": "rj",
+            "next": "vI",
             "parent": null,
             "inputs": {
                 "INPUTB": [
@@ -1071,24 +1071,24 @@
             "x": 1183,
             "y": 47
         },
-        "rj": {
+        "vI": {
             "opcode": "looks_switchcostumeto",
-            "next": "Uf",
-            "parent": "ak`",
+            "next": "+`",
+            "parent": "aA?",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "ak{"
+                    "aA@"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak{": {
+        "aA@": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "rj",
+            "parent": "vI",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -1099,10 +1099,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "Uf": {
+        "+`": {
             "opcode": "motion_gotoxy",
-            "next": "Ug",
-            "parent": "rj",
+            "next": "+{",
+            "parent": "vI",
             "inputs": {
                 "X": [
                     1,
@@ -1123,51 +1123,51 @@
             "shadow": false,
             "topLevel": false
         },
-        "Ug": {
+        "+{": {
             "opcode": "looks_show",
-            "next": "rk",
-            "parent": "Uf",
+            "next": "vJ",
+            "parent": "+`",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "rk": {
+        "vJ": {
             "opcode": "control_wait_until",
-            "next": "Uh",
-            "parent": "Ug",
+            "next": "+|",
+            "parent": "+{",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "ak|"
+                    "aA["
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak|": {
+        "aA[": {
             "opcode": "lmsutilsblocks_spriteClicked",
             "next": null,
-            "parent": "rk",
+            "parent": "vJ",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Uh": {
+        "+|": {
             "opcode": "looks_hide",
-            "next": "Ui",
-            "parent": "rk",
+            "next": "+}",
+            "parent": "vJ",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "Ui": {
+        "+}": {
             "opcode": "event_broadcast",
-            "next": "Uj",
-            "parent": "Uh",
+            "next": "+~",
+            "parent": "+|",
             "inputs": {
                 "BROADCAST_INPUT": [
                     1,
@@ -1182,24 +1182,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "Uj": {
+        "+~": {
             "opcode": "lmsclonesplus_deleteClonesInSprite",
             "next": null,
-            "parent": "Ui",
+            "parent": "+}",
             "inputs": {
                 "INPUT": [
                     1,
-                    "ak}"
+                    "aA]"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "ak}": {
+        "aA]": {
             "opcode": "lmsclonesplus_menu_spriteMenu",
             "next": null,
-            "parent": "Uj",
+            "parent": "+~",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -1210,7 +1210,7 @@
             "shadow": true,
             "topLevel": false
         },
-        "aPc": {
+        "aPi": {
             "opcode": "procedures_call",
             "next": null,
             "parent": null,
@@ -1265,7 +1265,7 @@
         }
     },
     "comments": {
-        "aPd": {
+        "aPj": {
             "blockId": null,
             "x": -694,
             "y": -192,

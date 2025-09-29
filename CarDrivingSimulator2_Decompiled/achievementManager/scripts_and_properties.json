@@ -5,9 +5,9 @@
     "lists": {},
     "broadcasts": {},
     "blocks": {
-        "aMC": {
+        "^U": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "fH",
+            "next": "e:",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -21,14 +21,14 @@
             "x": 377,
             "y": 289
         },
-        "fH": {
+        "e:": {
             "opcode": "lmsLooksPlus_setLayerTo",
-            "next": "fI",
-            "parent": "aMC",
+            "next": "e;",
+            "parent": "^U",
             "inputs": {
                 "TARGET": [
                     1,
-                    "aMD"
+                    "^V"
                 ],
                 "LAYER": [
                     1,
@@ -42,10 +42,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMD": {
+        "^V": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "fH",
+            "parent": "e:",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -56,14 +56,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "fI": {
+        "e;": {
             "opcode": "data_addtolist",
-            "next": "BC",
-            "parent": "fH",
+            "next": "lS",
+            "parent": "e:",
             "inputs": {
                 "ITEM": [
                     3,
-                    "aME",
+                    "^W",
                     [
                         10,
                         "cosa"
@@ -79,19 +79,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "aME": {
+        "^W": {
             "opcode": "lmsMoreEvents_receivedData",
             "next": null,
-            "parent": "fI",
+            "parent": "e;",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "BC": {
+        "lS": {
             "opcode": "localstorage_set",
-            "next": "[L",
-            "parent": "fI",
+            "next": "Cm",
+            "parent": "e;",
             "inputs": {
                 "KEY": [
                     1,
@@ -102,7 +102,7 @@
                 ],
                 "VALUE": [
                     3,
-                    "[M",
+                    "Cn",
                     [
                         10,
                         ""
@@ -113,24 +113,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "[M": {
+        "Cn": {
             "opcode": "lmsData_getListArray",
             "next": null,
-            "parent": "BC",
+            "parent": "lS",
             "inputs": {
                 "LIST": [
                     1,
-                    "aMF"
+                    "^X"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMF": {
+        "^X": {
             "opcode": "lmsData_menu_lists",
             "next": null,
-            "parent": "[M",
+            "parent": "Cn",
             "inputs": {},
             "fields": {
                 "lists": [
@@ -141,24 +141,24 @@
             "shadow": true,
             "topLevel": false
         },
-        "[L": {
+        "Cm": {
             "opcode": "lmsSpAsMoreControl_startBlocks",
             "next": null,
-            "parent": "BC",
+            "parent": "lS",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "fJ"
+                    "e="
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "fJ": {
+        "e=": {
             "opcode": "lmsTempVars2_setRuntimeVariable",
-            "next": "fK",
-            "parent": "[L",
+            "next": "e?",
+            "parent": "Cm",
             "inputs": {
                 "VAR": [
                     1,
@@ -169,7 +169,7 @@
                 ],
                 "STRING": [
                     3,
-                    "aMG",
+                    "^Y",
                     [
                         10,
                         "0"
@@ -180,10 +180,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMG": {
+        "^Y": {
             "opcode": "data_lengthoflist",
             "next": null,
-            "parent": "fJ",
+            "parent": "e=",
             "inputs": {},
             "fields": {
                 "LIST": [
@@ -194,10 +194,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "fK": {
+        "e?": {
             "opcode": "lmsTempVars2_setThreadVariable",
-            "next": "fL",
-            "parent": "fJ",
+            "next": "e@",
+            "parent": "e=",
             "inputs": {
                 "VAR": [
                     1,
@@ -208,7 +208,7 @@
                 ],
                 "STRING": [
                     3,
-                    "aMH",
+                    "^Z",
                     [
                         10,
                         "0"
@@ -219,10 +219,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMH": {
+        "^Z": {
             "opcode": "lmsTempVars2_getRuntimeVariable",
             "next": null,
-            "parent": "fK",
+            "parent": "e?",
             "inputs": {
                 "VAR": [
                     1,
@@ -236,28 +236,28 @@
             "shadow": false,
             "topLevel": false
         },
-        "fL": {
+        "e@": {
             "opcode": "control_wait_until",
-            "next": "[N",
-            "parent": "fK",
+            "next": "Co",
+            "parent": "e?",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "[O"
+                    "Cp"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[O": {
+        "Cp": {
             "opcode": "operator_equals",
             "next": null,
-            "parent": "fL",
+            "parent": "e@",
             "inputs": {
                 "OPERAND1": [
                     3,
-                    "aMI",
+                    "^!",
                     [
                         10,
                         ""
@@ -275,10 +275,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMI": {
+        "^!": {
             "opcode": "lmsTempVars2_getRuntimeVariable",
             "next": null,
-            "parent": "[O",
+            "parent": "Cp",
             "inputs": {
                 "VAR": [
                     1,
@@ -292,14 +292,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "[N": {
+        "Co": {
             "opcode": "procedures_call",
             "next": null,
-            "parent": "fL",
+            "parent": "e@",
             "inputs": {
                 "ZaG52!~)JEfR6io_|}Ou": [
                     3,
-                    "aMJ",
+                    "^#",
                     [
                         10,
                         ""
@@ -317,10 +317,10 @@
                 "warp": "false"
             }
         },
-        "aMJ": {
+        "^#": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "[N",
+            "parent": "Co",
             "inputs": {
                 "VAR": [
                     1,
@@ -334,9 +334,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMK": {
+        "^%": {
             "opcode": "event_whenflagclicked",
-            "next": "[P",
+            "next": "Cq",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -345,19 +345,19 @@
             "x": -789,
             "y": 138
         },
-        "[P": {
+        "Cq": {
             "opcode": "looks_hide",
-            "next": "[Q",
-            "parent": "aMK",
+            "next": "Cr",
+            "parent": "^%",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[Q": {
+        "Cr": {
             "opcode": "verctedictionaries_dict_delete",
-            "next": "BD",
-            "parent": "[P",
+            "next": "lT",
+            "parent": "Cq",
             "inputs": {
                 "DICT": [
                     1,
@@ -371,10 +371,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BD": {
+        "lT": {
             "opcode": "lmscomments_commentC",
-            "next": "BE",
-            "parent": "[Q",
+            "next": "lU",
+            "parent": "Cr",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -385,17 +385,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "[R"
+                    "Cs"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[R": {
+        "Cs": {
             "opcode": "lmsTempVars2_setRuntimeVariable",
-            "next": "[S",
-            "parent": "BD",
+            "next": "Ct",
+            "parent": "lT",
             "inputs": {
                 "VAR": [
                     1,
@@ -416,10 +416,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[S": {
+        "Ct": {
             "opcode": "verctedictionaries_dict_set",
-            "next": "[T",
-            "parent": "[R",
+            "next": "Cu",
+            "parent": "Cs",
             "inputs": {
                 "KEY": [
                     1,
@@ -447,10 +447,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[T": {
+        "Cu": {
             "opcode": "verctedictionaries_dict_set",
-            "next": "[U",
-            "parent": "[S",
+            "next": "Cv",
+            "parent": "Ct",
             "inputs": {
                 "KEY": [
                     1,
@@ -478,10 +478,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[U": {
+        "Cv": {
             "opcode": "verctedictionaries_dict_set",
-            "next": "[V",
-            "parent": "[T",
+            "next": "Cw",
+            "parent": "Cu",
             "inputs": {
                 "KEY": [
                     1,
@@ -509,10 +509,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[V": {
+        "Cw": {
             "opcode": "verctedictionaries_dict_set",
-            "next": "aML",
-            "parent": "[U",
+            "next": "^(",
+            "parent": "Cv",
             "inputs": {
                 "KEY": [
                     1,
@@ -540,10 +540,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aML": {
+        "^(": {
             "opcode": "verctedictionaries_dict_set",
             "next": null,
-            "parent": "[V",
+            "parent": "Cw",
             "inputs": {
                 "KEY": [
                     1,
@@ -571,10 +571,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BE": {
+        "lU": {
             "opcode": "lmscomments_commentC",
-            "next": "[W",
-            "parent": "BD",
+            "next": "Cx",
+            "parent": "lT",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -585,17 +585,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "aMM"
+                    "^)"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMM": {
+        "^)": {
             "opcode": "lmsTempVars2_setRuntimeVariable",
             "next": null,
-            "parent": "BE",
+            "parent": "lU",
             "inputs": {
                 "VAR": [
                     1,
@@ -616,10 +616,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[W": {
+        "Cx": {
             "opcode": "lmscomments_commentC",
             "next": null,
-            "parent": "BE",
+            "parent": "lU",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -630,17 +630,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "aMN"
+                    "^*"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMN": {
+        "^*": {
             "opcode": "lmsTempVars2_setRuntimeVariable",
             "next": null,
-            "parent": "[W",
+            "parent": "Cx",
             "inputs": {
                 "VAR": [
                     1,
@@ -661,9 +661,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMO": {
+        "^+": {
             "opcode": "lmsMoreEvents_whenStopClicked",
-            "next": "aMP",
+            "next": "^,",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -672,18 +672,18 @@
             "x": -275,
             "y": -198
         },
-        "aMP": {
+        "^,": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "aMO",
+            "parent": "^+",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMQ": {
+        "^-": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "[X",
+            "next": "Cy",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -697,10 +697,10 @@
             "x": -1281,
             "y": 415
         },
-        "[X": {
+        "Cy": {
             "opcode": "data_deletealloflist",
-            "next": "aMR",
-            "parent": "aMQ",
+            "next": "^.",
+            "parent": "^-",
             "inputs": {},
             "fields": {
                 "LIST": [
@@ -711,23 +711,23 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMR": {
+        "^.": {
             "opcode": "localstorage_removeAll",
             "next": null,
-            "parent": "[X",
+            "parent": "Cy",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[Y": {
+        "Cz": {
             "opcode": "procedures_definition",
-            "next": "[Z",
+            "next": "CA",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "[!"
+                    "CB"
                 ]
             },
             "fields": {},
@@ -736,14 +736,14 @@
             "x": 1320,
             "y": 634
         },
-        "[!": {
+        "CB": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "[Y",
+            "parent": "Cz",
             "inputs": {
                 "ZaG52!~)JEfR6io_|}Ou": [
                     1,
-                    "aMS"
+                    "^/"
                 ]
             },
             "fields": {},
@@ -759,10 +759,10 @@
                 "warp": "false"
             }
         },
-        "aMS": {
+        "^/": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "[!",
+            "parent": "CB",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -773,10 +773,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "[Z": {
+        "CA": {
             "opcode": "lmsTempVars2_setRuntimeVariable",
-            "next": "[#",
-            "parent": "[Y",
+            "next": "CC",
+            "parent": "Cz",
             "inputs": {
                 "VAR": [
                     1,
@@ -797,10 +797,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[#": {
+        "CC": {
             "opcode": "looks_seteffectto",
-            "next": "[%",
-            "parent": "[Z",
+            "next": "CD",
+            "parent": "CA",
             "inputs": {
                 "VALUE": [
                     1,
@@ -819,10 +819,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[%": {
+        "CD": {
             "opcode": "looks_seteffectto",
-            "next": "[(",
-            "parent": "[#",
+            "next": "CE",
+            "parent": "CC",
             "inputs": {
                 "VALUE": [
                     1,
@@ -841,45 +841,45 @@
             "shadow": false,
             "topLevel": false
         },
-        "[(": {
+        "CE": {
             "opcode": "looks_hide",
-            "next": "z",
-            "parent": "[%",
+            "next": "p",
+            "parent": "CD",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "z": {
+        "p": {
             "opcode": "control_if_else",
-            "next": "aMT",
-            "parent": "[(",
+            "next": "^:",
+            "parent": "CE",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "[)"
+                    "CF"
                 ],
                 "SUBSTACK": [
                     2,
-                    "cm"
+                    "ap"
                 ],
                 "SUBSTACK2": [
                     2,
-                    "fM"
+                    "e["
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[)": {
+        "CF": {
             "opcode": "verctedictionaries_dict_property_defined",
             "next": null,
-            "parent": "z",
+            "parent": "p",
             "inputs": {
                 "KEY": [
                     3,
-                    "[*",
+                    "CG",
                     [
                         10,
                         "achievement"
@@ -897,14 +897,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "[*": {
+        "CG": {
             "opcode": "data_itemoflist",
             "next": null,
-            "parent": "[)",
+            "parent": "CF",
             "inputs": {
                 "INDEX": [
                     3,
-                    "aMU",
+                    "^;",
                     [
                         7,
                         "1"
@@ -920,10 +920,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMU": {
+        "^;": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "[*",
+            "parent": "CG",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -934,32 +934,32 @@
             "shadow": false,
             "topLevel": false
         },
-        "cm": {
+        "ap": {
             "opcode": "lmsSpAsMoreControl_switch",
-            "next": "[+",
-            "parent": "z",
+            "next": "CH",
+            "parent": "p",
             "inputs": {
                 "SWITCH": [
                     2,
-                    "[,"
+                    "CI"
                 ],
                 "SUBSTACK": [
                     2,
-                    "fN"
+                    "e]"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[,": {
+        "CI": {
             "opcode": "lmscomments_commentReporter",
             "next": null,
-            "parent": "cm",
+            "parent": "ap",
             "inputs": {
                 "INPUT": [
                     3,
-                    "[-",
+                    "CJ",
                     [
                         10,
                         ""
@@ -977,10 +977,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[-": {
+        "CJ": {
             "opcode": "strings_split",
             "next": null,
-            "parent": "[,",
+            "parent": "CI",
             "inputs": {
                 "ITEM": [
                     1,
@@ -991,7 +991,7 @@
                 ],
                 "STRING": [
                     3,
-                    "[.",
+                    "CK",
                     [
                         10,
                         "apple"
@@ -1009,14 +1009,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "[.": {
+        "CK": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "[-",
+            "parent": "CJ",
             "inputs": {
                 "KEY": [
                     3,
-                    "[/",
+                    "CL",
                     [
                         10,
                         "bar"
@@ -1034,14 +1034,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "[/": {
+        "CL": {
             "opcode": "data_itemoflist",
             "next": null,
-            "parent": "[.",
+            "parent": "CK",
             "inputs": {
                 "INDEX": [
                     3,
-                    "aMV",
+                    "^=",
                     [
                         7,
                         "1"
@@ -1057,10 +1057,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aMV": {
+        "^=": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "[/",
+            "parent": "CL",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -1071,10 +1071,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "fN": {
+        "e]": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "fO",
-            "parent": "cm",
+            "next": "e^",
+            "parent": "ap",
             "inputs": {
                 "CASE": [
                     1,
@@ -1085,17 +1085,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "[:"
+                    "CM"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[:": {
+        "CM": {
             "opcode": "lmscomments_commentCommand",
-            "next": "fP",
-            "parent": "fN",
+            "next": "e_",
+            "parent": "e]",
             "inputs": {
                 "COMMENT": [
                     1,
@@ -1109,24 +1109,24 @@
             "shadow": false,
             "topLevel": false
         },
-        "fP": {
+        "e_": {
             "opcode": "looks_switchcostumeto",
-            "next": "aMW",
-            "parent": "[:",
+            "next": "^?",
+            "parent": "CM",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "aMX"
+                    "^@"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMX": {
+        "^@": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "fP",
+            "parent": "e_",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -1137,19 +1137,19 @@
             "shadow": true,
             "topLevel": false
         },
-        "aMW": {
+        "^?": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "fP",
+            "parent": "e_",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "fO": {
+        "e^": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "[;",
-            "parent": "fN",
+            "next": "CN",
+            "parent": "e]",
             "inputs": {
                 "CASE": [
                     1,
@@ -1160,31 +1160,31 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "fQ"
+                    "e`"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "fQ": {
+        "e`": {
             "opcode": "looks_switchcostumeto",
-            "next": "aMY",
-            "parent": "fO",
+            "next": "^[",
+            "parent": "e^",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "aMZ"
+                    "^]"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMZ": {
+        "^]": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "fQ",
+            "parent": "e`",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -1195,47 +1195,47 @@
             "shadow": true,
             "topLevel": false
         },
-        "aMY": {
+        "^[": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "fQ",
+            "parent": "e`",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[;": {
+        "CN": {
             "opcode": "lmsSpAsMoreControl_default",
             "next": null,
-            "parent": "fO",
+            "parent": "e^",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "fR"
+                    "e{"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "fR": {
+        "e{": {
             "opcode": "looks_switchcostumeto",
-            "next": "aM!",
-            "parent": "[;",
+            "next": "^^",
+            "parent": "CN",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "aM#"
+                    "^_"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aM#": {
+        "^_": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "fR",
+            "parent": "e{",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -1246,19 +1246,19 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM!": {
+        "^^": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "fR",
+            "parent": "e{",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[+": {
+        "CH": {
             "opcode": "motion_gotoxy",
-            "next": "[=",
-            "parent": "cm",
+            "next": "CO",
+            "parent": "ap",
             "inputs": {
                 "X": [
                     1,
@@ -1279,10 +1279,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[=": {
+        "CO": {
             "opcode": "looks_setsizeto",
-            "next": "fS",
-            "parent": "[+",
+            "next": "e|",
+            "parent": "CH",
             "inputs": {
                 "SIZE": [
                     1,
@@ -1296,28 +1296,28 @@
             "shadow": false,
             "topLevel": false
         },
-        "fS": {
+        "e|": {
             "opcode": "lmsSpAsMoreControl_startBlocks",
-            "next": "[?",
-            "parent": "[=",
+            "next": "CP",
+            "parent": "CO",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "cn"
+                    "aq"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "cn": {
+        "aq": {
             "opcode": "jeremygamerTweening_tweenProperty",
             "next": null,
-            "parent": "fS",
+            "parent": "e|",
             "inputs": {
                 "PROPERTY": [
                     1,
-                    "aM%"
+                    "^`"
                 ],
                 "VALUE": [
                     1,
@@ -1335,21 +1335,21 @@
                 ],
                 "MODE": [
                     1,
-                    "aM("
+                    "^{"
                 ],
                 "DIRECTION": [
                     1,
-                    "aM)"
+                    "^|"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aM%": {
+        "^`": {
             "opcode": "jeremygamerTweening_menu_properties",
             "next": null,
-            "parent": "cn",
+            "parent": "aq",
             "inputs": {},
             "fields": {
                 "properties": [
@@ -1360,10 +1360,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM(": {
+        "^{": {
             "opcode": "jeremygamerTweening_menu_modes",
             "next": null,
-            "parent": "cn",
+            "parent": "aq",
             "inputs": {},
             "fields": {
                 "modes": [
@@ -1374,10 +1374,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM)": {
+        "^|": {
             "opcode": "jeremygamerTweening_menu_direction",
             "next": null,
-            "parent": "cn",
+            "parent": "aq",
             "inputs": {},
             "fields": {
                 "direction": [
@@ -1388,10 +1388,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "[?": {
+        "CP": {
             "opcode": "control_wait",
-            "next": "[@",
-            "parent": "fS",
+            "next": "CQ",
+            "parent": "e|",
             "inputs": {
                 "DURATION": [
                     1,
@@ -1405,23 +1405,23 @@
             "shadow": false,
             "topLevel": false
         },
-        "[@": {
+        "CQ": {
             "opcode": "looks_show",
-            "next": "A",
-            "parent": "[?",
+            "next": "q",
+            "parent": "CP",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "A": {
+        "q": {
             "opcode": "jeremygamerTweening_tweenProperty",
-            "next": "[[",
-            "parent": "[@",
+            "next": "CR",
+            "parent": "CQ",
             "inputs": {
                 "PROPERTY": [
                     1,
-                    "aM*"
+                    "^}"
                 ],
                 "VALUE": [
                     1,
@@ -1439,21 +1439,21 @@
                 ],
                 "MODE": [
                     1,
-                    "aM+"
+                    "^~"
                 ],
                 "DIRECTION": [
                     1,
-                    "aM,"
+                    "_a"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aM*": {
+        "^}": {
             "opcode": "jeremygamerTweening_menu_properties",
             "next": null,
-            "parent": "A",
+            "parent": "q",
             "inputs": {},
             "fields": {
                 "properties": [
@@ -1464,10 +1464,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM+": {
+        "^~": {
             "opcode": "jeremygamerTweening_menu_modes",
             "next": null,
-            "parent": "A",
+            "parent": "q",
             "inputs": {},
             "fields": {
                 "modes": [
@@ -1478,10 +1478,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM,": {
+        "_a": {
             "opcode": "jeremygamerTweening_menu_direction",
             "next": null,
-            "parent": "A",
+            "parent": "q",
             "inputs": {},
             "fields": {
                 "direction": [
@@ -1492,10 +1492,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "[[": {
+        "CR": {
             "opcode": "control_wait",
-            "next": "fT",
-            "parent": "A",
+            "next": "e}",
+            "parent": "q",
             "inputs": {
                 "DURATION": [
                     1,
@@ -1509,10 +1509,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "fT": {
+        "e}": {
             "opcode": "control_repeat",
-            "next": "co",
-            "parent": "[[",
+            "next": "ar",
+            "parent": "CR",
             "inputs": {
                 "TIMES": [
                     1,
@@ -1523,17 +1523,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "[]"
+                    "CS"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[]": {
+        "CS": {
             "opcode": "looks_changeeffectby",
-            "next": "aM-",
-            "parent": "fT",
+            "next": "_b",
+            "parent": "e}",
             "inputs": {
                 "CHANGE": [
                     1,
@@ -1552,10 +1552,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aM-": {
+        "_b": {
             "opcode": "control_wait",
             "next": null,
-            "parent": "[]",
+            "parent": "CS",
             "inputs": {
                 "DURATION": [
                     1,
@@ -1569,29 +1569,29 @@
             "shadow": false,
             "topLevel": false
         },
-        "co": {
+        "ar": {
             "opcode": "looks_switchcostumeto",
-            "next": "fU",
-            "parent": "fT",
+            "next": "e~",
+            "parent": "e}",
             "inputs": {
                 "COSTUME": [
                     3,
-                    "[^",
-                    "aM."
+                    "CT",
+                    "_c"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[^": {
+        "CT": {
             "opcode": "data_itemoflist",
             "next": null,
-            "parent": "co",
+            "parent": "ar",
             "inputs": {
                 "INDEX": [
                     3,
-                    "aM/",
+                    "_d",
                     [
                         7,
                         "1"
@@ -1607,10 +1607,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aM/": {
+        "_d": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "[^",
+            "parent": "CT",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -1621,10 +1621,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aM.": {
+        "_c": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "co",
+            "parent": "ar",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -1635,10 +1635,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "fU": {
+        "e~": {
             "opcode": "control_repeat",
-            "next": "[_",
-            "parent": "co",
+            "next": "CU",
+            "parent": "ar",
             "inputs": {
                 "TIMES": [
                     1,
@@ -1649,17 +1649,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "[`"
+                    "CV"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "[`": {
+        "CV": {
             "opcode": "looks_changeeffectby",
-            "next": "aM:",
-            "parent": "fU",
+            "next": "_e",
+            "parent": "e~",
             "inputs": {
                 "CHANGE": [
                     1,
@@ -1678,10 +1678,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aM:": {
+        "_e": {
             "opcode": "control_wait",
             "next": null,
-            "parent": "[`",
+            "parent": "CV",
             "inputs": {
                 "DURATION": [
                     1,
@@ -1695,10 +1695,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[_": {
+        "CU": {
             "opcode": "control_wait",
-            "next": "B",
-            "parent": "fU",
+            "next": "r",
+            "parent": "e~",
             "inputs": {
                 "DURATION": [
                     1,
@@ -1712,14 +1712,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "B": {
+        "r": {
             "opcode": "jeremygamerTweening_tweenProperty",
-            "next": "aM;",
-            "parent": "[_",
+            "next": "_f",
+            "parent": "CU",
             "inputs": {
                 "PROPERTY": [
                     1,
-                    "aM="
+                    "_g"
                 ],
                 "VALUE": [
                     1,
@@ -1737,21 +1737,21 @@
                 ],
                 "MODE": [
                     1,
-                    "aM?"
+                    "_h"
                 ],
                 "DIRECTION": [
                     1,
-                    "aM@"
+                    "_i"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aM=": {
+        "_g": {
             "opcode": "jeremygamerTweening_menu_properties",
             "next": null,
-            "parent": "B",
+            "parent": "r",
             "inputs": {},
             "fields": {
                 "properties": [
@@ -1762,10 +1762,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM?": {
+        "_h": {
             "opcode": "jeremygamerTweening_menu_modes",
             "next": null,
-            "parent": "B",
+            "parent": "r",
             "inputs": {},
             "fields": {
                 "modes": [
@@ -1776,10 +1776,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM@": {
+        "_i": {
             "opcode": "jeremygamerTweening_menu_direction",
             "next": null,
-            "parent": "B",
+            "parent": "r",
             "inputs": {},
             "fields": {
                 "direction": [
@@ -1790,33 +1790,33 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM;": {
+        "_f": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "B",
+            "parent": "r",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "fM": {
+        "e[": {
             "opcode": "looks_switchcostumeto",
-            "next": "[{",
-            "parent": "z",
+            "next": "CW",
+            "parent": "p",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "aM["
+                    "_j"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aM[": {
+        "_j": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "fM",
+            "parent": "e[",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -1827,10 +1827,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "[{": {
+        "CW": {
             "opcode": "motion_gotoxy",
-            "next": "[|",
-            "parent": "fM",
+            "next": "CX",
+            "parent": "e[",
             "inputs": {
                 "X": [
                     1,
@@ -1851,10 +1851,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "[|": {
+        "CX": {
             "opcode": "looks_setsizeto",
-            "next": "fV",
-            "parent": "[{",
+            "next": "fa",
+            "parent": "CW",
             "inputs": {
                 "SIZE": [
                     1,
@@ -1868,28 +1868,28 @@
             "shadow": false,
             "topLevel": false
         },
-        "fV": {
+        "fa": {
             "opcode": "lmsSpAsMoreControl_startBlocks",
-            "next": "[}",
-            "parent": "[|",
+            "next": "CY",
+            "parent": "CX",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "cp"
+                    "as"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "cp": {
+        "as": {
             "opcode": "jeremygamerTweening_tweenProperty",
             "next": null,
-            "parent": "fV",
+            "parent": "fa",
             "inputs": {
                 "PROPERTY": [
                     1,
-                    "aM]"
+                    "_k"
                 ],
                 "VALUE": [
                     1,
@@ -1907,21 +1907,21 @@
                 ],
                 "MODE": [
                     1,
-                    "aM^"
+                    "_l"
                 ],
                 "DIRECTION": [
                     1,
-                    "aM_"
+                    "_m"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aM]": {
+        "_k": {
             "opcode": "jeremygamerTweening_menu_properties",
             "next": null,
-            "parent": "cp",
+            "parent": "as",
             "inputs": {},
             "fields": {
                 "properties": [
@@ -1932,10 +1932,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM^": {
+        "_l": {
             "opcode": "jeremygamerTweening_menu_modes",
             "next": null,
-            "parent": "cp",
+            "parent": "as",
             "inputs": {},
             "fields": {
                 "modes": [
@@ -1946,10 +1946,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM_": {
+        "_m": {
             "opcode": "jeremygamerTweening_menu_direction",
             "next": null,
-            "parent": "cp",
+            "parent": "as",
             "inputs": {},
             "fields": {
                 "direction": [
@@ -1960,10 +1960,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "[}": {
+        "CY": {
             "opcode": "control_wait",
-            "next": "[~",
-            "parent": "fV",
+            "next": "CZ",
+            "parent": "fa",
             "inputs": {
                 "DURATION": [
                     1,
@@ -1977,23 +1977,23 @@
             "shadow": false,
             "topLevel": false
         },
-        "[~": {
+        "CZ": {
             "opcode": "looks_show",
-            "next": "C",
-            "parent": "[}",
+            "next": "s",
+            "parent": "CY",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "C": {
+        "s": {
             "opcode": "jeremygamerTweening_tweenProperty",
-            "next": "]a",
-            "parent": "[~",
+            "next": "C!",
+            "parent": "CZ",
             "inputs": {
                 "PROPERTY": [
                     1,
-                    "aM`"
+                    "_n"
                 ],
                 "VALUE": [
                     1,
@@ -2011,21 +2011,21 @@
                 ],
                 "MODE": [
                     1,
-                    "aM{"
+                    "_o"
                 ],
                 "DIRECTION": [
                     1,
-                    "aM|"
+                    "_p"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aM`": {
+        "_n": {
             "opcode": "jeremygamerTweening_menu_properties",
             "next": null,
-            "parent": "C",
+            "parent": "s",
             "inputs": {},
             "fields": {
                 "properties": [
@@ -2036,10 +2036,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM{": {
+        "_o": {
             "opcode": "jeremygamerTweening_menu_modes",
             "next": null,
-            "parent": "C",
+            "parent": "s",
             "inputs": {},
             "fields": {
                 "modes": [
@@ -2050,10 +2050,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM|": {
+        "_p": {
             "opcode": "jeremygamerTweening_menu_direction",
             "next": null,
-            "parent": "C",
+            "parent": "s",
             "inputs": {},
             "fields": {
                 "direction": [
@@ -2064,10 +2064,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "]a": {
+        "C!": {
             "opcode": "control_wait",
-            "next": "D",
-            "parent": "C",
+            "next": "t",
+            "parent": "s",
             "inputs": {
                 "DURATION": [
                     1,
@@ -2081,14 +2081,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "D": {
+        "t": {
             "opcode": "jeremygamerTweening_tweenProperty",
-            "next": "]b",
-            "parent": "]a",
+            "next": "C#",
+            "parent": "C!",
             "inputs": {
                 "PROPERTY": [
                     1,
-                    "aM}"
+                    "_q"
                 ],
                 "VALUE": [
                     1,
@@ -2106,21 +2106,21 @@
                 ],
                 "MODE": [
                     1,
-                    "aM~"
+                    "_r"
                 ],
                 "DIRECTION": [
                     1,
-                    "aNa"
+                    "_s"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aM}": {
+        "_q": {
             "opcode": "jeremygamerTweening_menu_properties",
             "next": null,
-            "parent": "D",
+            "parent": "t",
             "inputs": {},
             "fields": {
                 "properties": [
@@ -2131,10 +2131,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aM~": {
+        "_r": {
             "opcode": "jeremygamerTweening_menu_modes",
             "next": null,
-            "parent": "D",
+            "parent": "t",
             "inputs": {},
             "fields": {
                 "modes": [
@@ -2145,10 +2145,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aNa": {
+        "_s": {
             "opcode": "jeremygamerTweening_menu_direction",
             "next": null,
-            "parent": "D",
+            "parent": "t",
             "inputs": {},
             "fields": {
                 "direction": [
@@ -2159,28 +2159,28 @@
             "shadow": true,
             "topLevel": false
         },
-        "]b": {
+        "C#": {
             "opcode": "looks_hide",
-            "next": "aNb",
-            "parent": "D",
+            "next": "_t",
+            "parent": "t",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aNb": {
+        "_t": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "]b",
+            "parent": "C#",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aMT": {
+        "^:": {
             "opcode": "lmsTempVars2_setRuntimeVariable",
             "next": null,
-            "parent": "z",
+            "parent": "p",
             "inputs": {
                 "VAR": [
                     1,
@@ -2201,9 +2201,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "aNc": {
+        "_u": {
             "opcode": "event_whenflagclicked",
-            "next": "]c",
+            "next": "C%",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -2212,10 +2212,10 @@
             "x": 754,
             "y": -500
         },
-        "]c": {
+        "C%": {
             "opcode": "localstorage_setProjectId",
-            "next": "]d",
-            "parent": "aNc",
+            "next": "C(",
+            "parent": "_u",
             "inputs": {
                 "ID": [
                     1,
@@ -2229,10 +2229,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "]d": {
+        "C(": {
             "opcode": "lmsTempVars2_setRuntimeVariable",
-            "next": "]e",
-            "parent": "]c",
+            "next": "C)",
+            "parent": "C%",
             "inputs": {
                 "VAR": [
                     1,
@@ -2253,10 +2253,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "]e": {
+        "C)": {
             "opcode": "lmsTempVars2_setRuntimeVariable",
-            "next": "BF",
-            "parent": "]d",
+            "next": "lV",
+            "parent": "C(",
             "inputs": {
                 "VAR": [
                     1,
@@ -2277,46 +2277,46 @@
             "shadow": false,
             "topLevel": false
         },
-        "BF": {
+        "lV": {
             "opcode": "control_if",
             "next": null,
-            "parent": "]e",
+            "parent": "C)",
             "inputs": {
                 "CONDITION": [
                     2,
-                    "]f"
+                    "C*"
                 ],
                 "SUBSTACK": [
                     2,
-                    "BG"
+                    "lW"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "]f": {
+        "C*": {
             "opcode": "operator_not",
             "next": null,
-            "parent": "BF",
+            "parent": "lV",
             "inputs": {
                 "OPERAND": [
                     2,
-                    "]g"
+                    "C+"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "]g": {
+        "C+": {
             "opcode": "operator_equals",
             "next": null,
-            "parent": "]f",
+            "parent": "C*",
             "inputs": {
                 "OPERAND1": [
                     3,
-                    "aNd",
+                    "_v",
                     [
                         10,
                         ""
@@ -2334,10 +2334,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aNd": {
+        "_v": {
             "opcode": "localstorage_get",
             "next": null,
-            "parent": "]g",
+            "parent": "C+",
             "inputs": {
                 "KEY": [
                     1,
@@ -2351,18 +2351,18 @@
             "shadow": false,
             "topLevel": false
         },
-        "BG": {
+        "lW": {
             "opcode": "lmsData_setListArray",
             "next": null,
-            "parent": "BF",
+            "parent": "lV",
             "inputs": {
                 "LIST": [
                     1,
-                    "aNe"
+                    "_w"
                 ],
                 "ARRAY": [
                     3,
-                    "aNf",
+                    "_x",
                     [
                         10,
                         ""
@@ -2373,10 +2373,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aNe": {
+        "_w": {
             "opcode": "lmsData_menu_lists",
             "next": null,
-            "parent": "BG",
+            "parent": "lW",
             "inputs": {},
             "fields": {
                 "lists": [
@@ -2387,44 +2387,16 @@
             "shadow": true,
             "topLevel": false
         },
-        "aNf": {
+        "_x": {
             "opcode": "localstorage_get",
             "next": null,
-            "parent": "BG",
+            "parent": "lW",
             "inputs": {
                 "KEY": [
                     1,
                     [
                         10,
                         "achievements"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "aNg": {
-            "opcode": "event_whenflagclicked",
-            "next": "aNh",
-            "parent": null,
-            "inputs": {},
-            "fields": {},
-            "shadow": false,
-            "topLevel": true,
-            "x": -775,
-            "y": 834
-        },
-        "aNh": {
-            "opcode": "lmscomments_commentCommand",
-            "next": null,
-            "parent": "aNg",
-            "inputs": {
-                "COMMENT": [
-                    1,
-                    [
-                        10,
-                        "comment"
                     ]
                 ]
             },

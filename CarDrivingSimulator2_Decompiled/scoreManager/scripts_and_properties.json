@@ -5,14 +5,14 @@
     "lists": {},
     "broadcasts": {},
     "blocks": {
-        "]^": {
+        "]I": {
             "opcode": "procedures_definition",
-            "next": "]_",
+            "next": "]J",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "aN]"
+                    "aNy"
                 ]
             },
             "fields": {},
@@ -21,10 +21,10 @@
             "x": 19,
             "y": -882
         },
-        "aN]": {
+        "aNy": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "]^",
+            "parent": "]I",
             "inputs": {},
             "fields": {},
             "shadow": true,
@@ -39,10 +39,10 @@
                 "warp": "false"
             }
         },
-        "]_": {
+        "]J": {
             "opcode": "lmsTempVars2_setThreadVariable",
-            "next": "BI",
-            "parent": "]^",
+            "next": "Bg",
+            "parent": "]I",
             "inputs": {
                 "VAR": [
                     1,
@@ -63,10 +63,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BI": {
+        "Bg": {
             "opcode": "lmsTempVars2_changeThreadVariable",
-            "next": "BJ",
-            "parent": "]_",
+            "next": "Bh",
+            "parent": "]J",
             "inputs": {
                 "VAR": [
                     1,
@@ -77,7 +77,7 @@
                 ],
                 "NUM": [
                     3,
-                    "aN^",
+                    "aNz",
                     [
                         4,
                         ""
@@ -88,10 +88,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aN^": {
+        "aNz": {
             "opcode": "operator_divide",
             "next": null,
-            "parent": "BI",
+            "parent": "Bg",
             "inputs": {
                 "NUM1": [
                     3,
@@ -117,10 +117,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BJ": {
+        "Bh": {
             "opcode": "lmsTempVars2_changeThreadVariable",
-            "next": "BK",
-            "parent": "BI",
+            "next": "Bi",
+            "parent": "Bg",
             "inputs": {
                 "VAR": [
                     1,
@@ -131,7 +131,7 @@
                 ],
                 "NUM": [
                     3,
-                    "aN_",
+                    "aNA",
                     [
                         4,
                         ""
@@ -142,10 +142,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aN_": {
+        "aNA": {
             "opcode": "operator_multiply",
             "next": null,
-            "parent": "BJ",
+            "parent": "Bh",
             "inputs": {
                 "NUM1": [
                     3,
@@ -171,10 +171,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BK": {
+        "Bi": {
             "opcode": "lmsTempVars2_changeThreadVariable",
-            "next": "BL",
-            "parent": "BJ",
+            "next": "Bj",
+            "parent": "Bh",
             "inputs": {
                 "VAR": [
                     1,
@@ -185,7 +185,7 @@
                 ],
                 "NUM": [
                     3,
-                    "aN`",
+                    "aNB",
                     [
                         4,
                         ""
@@ -196,10 +196,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aN`": {
+        "aNB": {
             "opcode": "operator_multiply",
             "next": null,
-            "parent": "BK",
+            "parent": "Bi",
             "inputs": {
                 "NUM1": [
                     3,
@@ -225,10 +225,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BL": {
+        "Bj": {
             "opcode": "lmsTempVars2_changeThreadVariable",
-            "next": "BM",
-            "parent": "BK",
+            "next": "Bk",
+            "parent": "Bi",
             "inputs": {
                 "VAR": [
                     1,
@@ -239,7 +239,7 @@
                 ],
                 "NUM": [
                     3,
-                    "]`",
+                    "]K",
                     [
                         4,
                         ""
@@ -250,14 +250,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "]`": {
+        "]K": {
             "opcode": "operator_multiply",
             "next": null,
-            "parent": "BL",
+            "parent": "Bj",
             "inputs": {
                 "NUM1": [
                     3,
-                    "x!",
+                    "xv",
                     [
                         4,
                         ""
@@ -275,10 +275,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "x!": {
+        "xv": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "]`",
+            "parent": "]K",
             "inputs": {
                 "KEY": [
                     1,
@@ -299,10 +299,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BM": {
+        "Bk": {
             "opcode": "lmsTempVars2_changeThreadVariable",
-            "next": "BN",
-            "parent": "BL",
+            "next": "Bl",
+            "parent": "Bj",
             "inputs": {
                 "VAR": [
                     1,
@@ -313,7 +313,7 @@
                 ],
                 "NUM": [
                     3,
-                    "]{",
+                    "]L",
                     [
                         4,
                         ""
@@ -324,14 +324,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "]{": {
+        "]L": {
             "opcode": "operator_multiply",
             "next": null,
-            "parent": "BM",
+            "parent": "Bk",
             "inputs": {
                 "NUM1": [
                     3,
-                    "aN{",
+                    "aNC",
                     [
                         4,
                         ""
@@ -349,10 +349,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aN{": {
+        "aNC": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "]{",
+            "parent": "]L",
             "inputs": {
                 "KEY": [
                     1,
@@ -373,10 +373,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BN": {
+        "Bl": {
             "opcode": "lmsTempVars2_changeThreadVariable",
-            "next": "]|",
-            "parent": "BM",
+            "next": "]M",
+            "parent": "Bk",
             "inputs": {
                 "VAR": [
                     1,
@@ -387,7 +387,7 @@
                 ],
                 "NUM": [
                     3,
-                    "]}",
+                    "]N",
                     [
                         4,
                         ""
@@ -398,14 +398,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "]}": {
+        "]N": {
             "opcode": "operator_multiply",
             "next": null,
-            "parent": "BN",
+            "parent": "Bl",
             "inputs": {
                 "NUM1": [
                     3,
-                    "aN|",
+                    "aND",
                     [
                         4,
                         ""
@@ -423,10 +423,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aN|": {
+        "aND": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "]}",
+            "parent": "]N",
             "inputs": {
                 "KEY": [
                     1,
@@ -447,14 +447,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "]|": {
+        "]M": {
             "opcode": "procedures_return",
             "next": null,
-            "parent": "BN",
+            "parent": "Bl",
             "inputs": {
                 "VALUE": [
                     3,
-                    "]~",
+                    "]O",
                     [
                         10,
                         ""
@@ -465,14 +465,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "]~": {
+        "]O": {
             "opcode": "operator_round",
             "next": null,
-            "parent": "]|",
+            "parent": "]M",
             "inputs": {
                 "NUM": [
                     3,
-                    "aN}",
+                    "aNE",
                     [
                         4,
                         ""
@@ -483,10 +483,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aN}": {
+        "aNE": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "]~",
+            "parent": "]O",
             "inputs": {
                 "VAR": [
                     1,
@@ -500,7 +500,7 @@
             "shadow": false,
             "topLevel": false
         },
-        "aPF": {
+        "aPB": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
             "parent": null,
@@ -526,7 +526,7 @@
             "x": 720,
             "y": -673
         },
-        "aPG": {
+        "aPC": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
             "parent": null,
@@ -552,7 +552,7 @@
             "x": 687,
             "y": -478
         },
-        "aPH": {
+        "aPD": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
             "parent": null,
@@ -578,7 +578,7 @@
             "x": 705,
             "y": -586
         },
-        "aPI": {
+        "aPE": {
             "opcode": "verctedictionaries_dict_stringify",
             "next": null,
             "parent": null,
@@ -597,14 +597,14 @@
             "x": 644,
             "y": -893
         },
-        "^a": {
+        "]P": {
             "opcode": "procedures_definition",
-            "next": "BO",
+            "next": "Bm",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "^b"
+                    "]Q"
                 ]
             },
             "fields": {},
@@ -613,14 +613,14 @@
             "x": -947,
             "y": -1233
         },
-        "^b": {
+        "]Q": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "^a",
+            "parent": "]P",
             "inputs": {
                 "LC?h!cl_nOW`f4QJ,rC$": [
                     1,
-                    "aN~"
+                    "aNF"
                 ]
             },
             "fields": {},
@@ -636,10 +636,10 @@
                 "warp": "false"
             }
         },
-        "aN~": {
+        "aNF": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "^b",
+            "parent": "]Q",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -650,10 +650,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "BO": {
+        "Bm": {
             "opcode": "lmsTempVars2_setThreadVariable",
-            "next": "BP",
-            "parent": "^a",
+            "next": "Bn",
+            "parent": "]P",
             "inputs": {
                 "VAR": [
                     1,
@@ -664,7 +664,7 @@
                 ],
                 "STRING": [
                     3,
-                    "^c",
+                    "]R",
                     [
                         10,
                         ""
@@ -675,10 +675,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "^c": {
+        "]R": {
             "opcode": "strings_split",
             "next": null,
-            "parent": "BO",
+            "parent": "Bm",
             "inputs": {
                 "ITEM": [
                     1,
@@ -689,7 +689,7 @@
                 ],
                 "STRING": [
                     3,
-                    "aOa",
+                    "aNG",
                     [
                         10,
                         ""
@@ -707,10 +707,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOa": {
+        "aNG": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "^c",
+            "parent": "]R",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -721,10 +721,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BP": {
+        "Bn": {
             "opcode": "lmsTempVars2_setThreadVariable",
-            "next": "lC",
-            "parent": "BO",
+            "next": "lB",
+            "parent": "Bm",
             "inputs": {
                 "VAR": [
                     1,
@@ -735,7 +735,7 @@
                 ],
                 "STRING": [
                     3,
-                    "^d",
+                    "]S",
                     [
                         10,
                         ""
@@ -746,10 +746,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "^d": {
+        "]S": {
             "opcode": "strings_letters_of",
             "next": null,
-            "parent": "BP",
+            "parent": "Bn",
             "inputs": {
                 "LETTER1": [
                     1,
@@ -767,7 +767,7 @@
                 ],
                 "STRING": [
                     3,
-                    "^e",
+                    "]T",
                     [
                         10,
                         ""
@@ -778,10 +778,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "^e": {
+        "]T": {
             "opcode": "strings_split",
             "next": null,
-            "parent": "^d",
+            "parent": "]S",
             "inputs": {
                 "ITEM": [
                     1,
@@ -792,7 +792,7 @@
                 ],
                 "STRING": [
                     3,
-                    "aOb",
+                    "aNH",
                     [
                         10,
                         ""
@@ -810,10 +810,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOb": {
+        "aNH": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "^e",
+            "parent": "]T",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -824,32 +824,32 @@
             "shadow": false,
             "topLevel": false
         },
-        "lC": {
+        "lB": {
             "opcode": "lmsSpAsMoreControl_switch",
-            "next": "^f",
-            "parent": "BP",
+            "next": "]U",
+            "parent": "Bn",
             "inputs": {
                 "SWITCH": [
                     2,
-                    "^g"
+                    "]V"
                 ],
                 "SUBSTACK": [
                     2,
-                    "BQ"
+                    "Bo"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "^g": {
+        "]V": {
             "opcode": "operator_length",
             "next": null,
-            "parent": "lC",
+            "parent": "lB",
             "inputs": {
                 "STRING": [
                     3,
-                    "aOc",
+                    "aNI",
                     [
                         10,
                         ""
@@ -860,10 +860,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOc": {
+        "aNI": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "^g",
+            "parent": "]V",
             "inputs": {
                 "VAR": [
                     1,
@@ -877,10 +877,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "BQ": {
+        "Bo": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "BR",
-            "parent": "lC",
+            "next": "Bp",
+            "parent": "lB",
             "inputs": {
                 "CASE": [
                     1,
@@ -891,17 +891,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "^h"
+                    "]W"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "^h": {
+        "]W": {
             "opcode": "lmsTempVars2_setThreadVariable",
-            "next": "aOd",
-            "parent": "BQ",
+            "next": "aNJ",
+            "parent": "Bo",
             "inputs": {
                 "VAR": [
                     1,
@@ -922,19 +922,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOd": {
+        "aNJ": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "^h",
+            "parent": "]W",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "BR": {
+        "Bp": {
             "opcode": "lmsSpAsMoreControl_case",
-            "next": "aOe",
-            "parent": "BQ",
+            "next": "aNK",
+            "parent": "Bo",
             "inputs": {
                 "CASE": [
                     1,
@@ -945,17 +945,17 @@
                 ],
                 "SUBSTACK": [
                     2,
-                    "BS"
+                    "Bq"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "BS": {
+        "Bq": {
             "opcode": "lmsTempVars2_setThreadVariable",
-            "next": "aOf",
-            "parent": "BR",
+            "next": "aNL",
+            "parent": "Bp",
             "inputs": {
                 "VAR": [
                     1,
@@ -966,7 +966,7 @@
                 ],
                 "STRING": [
                     3,
-                    "^i",
+                    "]X",
                     [
                         10,
                         ""
@@ -977,14 +977,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "^i": {
+        "]X": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "BS",
+            "parent": "Bq",
             "inputs": {
                 "STRING1": [
                     3,
-                    "aOg",
+                    "aNM",
                     [
                         10,
                         ""
@@ -1002,10 +1002,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOg": {
+        "aNM": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "^i",
+            "parent": "]X",
             "inputs": {
                 "VAR": [
                     1,
@@ -1019,19 +1019,19 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOf": {
+        "aNL": {
             "opcode": "lmsSpAsMoreControl_breakSwitch",
             "next": null,
-            "parent": "BS",
+            "parent": "Bq",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aOe": {
+        "aNK": {
             "opcode": "lmsSpAsMoreControl_case",
             "next": null,
-            "parent": "BR",
+            "parent": "Bp",
             "inputs": {
                 "CASE": [
                     1,
@@ -1045,14 +1045,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "^f": {
+        "]U": {
             "opcode": "procedures_return",
             "next": null,
-            "parent": "lC",
+            "parent": "lB",
             "inputs": {
                 "VALUE": [
                     3,
-                    "BT",
+                    "Br",
                     [
                         10,
                         ""
@@ -1063,14 +1063,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "BT": {
+        "Br": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "^f",
+            "parent": "]U",
             "inputs": {
                 "STRING1": [
                     3,
-                    "aOh",
+                    "aNN",
                     [
                         10,
                         ""
@@ -1078,7 +1078,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "^j",
+                    "]Y",
                     [
                         10,
                         ""
@@ -1089,10 +1089,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOh": {
+        "aNN": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "BT",
+            "parent": "Br",
             "inputs": {
                 "VAR": [
                     1,
@@ -1106,10 +1106,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "^j": {
+        "]Y": {
             "opcode": "operator_join",
             "next": null,
-            "parent": "BT",
+            "parent": "Br",
             "inputs": {
                 "STRING1": [
                     1,
@@ -1120,7 +1120,7 @@
                 ],
                 "STRING2": [
                     3,
-                    "aOi",
+                    "aNO",
                     [
                         10,
                         ""
@@ -1131,10 +1131,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOi": {
+        "aNO": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "^j",
+            "parent": "]Y",
             "inputs": {
                 "VAR": [
                     1,
@@ -1148,14 +1148,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "^k": {
+        "]Z": {
             "opcode": "procedures_definition",
-            "next": "^l",
+            "next": "]!",
             "parent": null,
             "inputs": {
                 "custom_block": [
                     1,
-                    "^m"
+                    "]#"
                 ]
             },
             "fields": {},
@@ -1164,14 +1164,14 @@
             "x": 384,
             "y": -1798
         },
-        "^m": {
+        "]#": {
             "opcode": "procedures_prototype",
             "next": null,
-            "parent": "^k",
+            "parent": "]Z",
             "inputs": {
                 "`2i^;uAsUF)]Ch^HF(n;": [
                     1,
-                    "aOj"
+                    "aNP"
                 ]
             },
             "fields": {},
@@ -1187,10 +1187,10 @@
                 "warp": "false"
             }
         },
-        "aOj": {
+        "aNP": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "^m",
+            "parent": "]#",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -1201,14 +1201,14 @@
             "shadow": true,
             "topLevel": false
         },
-        "^l": {
+        "]!": {
             "opcode": "procedures_return",
             "next": null,
-            "parent": "^k",
+            "parent": "]Z",
             "inputs": {
                 "VALUE": [
                     3,
-                    "^n",
+                    "]%",
                     [
                         10,
                         ""
@@ -1219,14 +1219,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "^n": {
+        "]%": {
             "opcode": "procedures_call",
             "next": null,
-            "parent": "^l",
+            "parent": "]!",
             "inputs": {
                 "LC?h!cl_nOW`f4QJ,rC$": [
                     3,
-                    "BU",
+                    "Bs",
                     [
                         10,
                         ""
@@ -1245,14 +1245,14 @@
                 "return": "1"
             }
         },
-        "BU": {
+        "Bs": {
             "opcode": "operator_divide",
             "next": null,
-            "parent": "^n",
+            "parent": "]%",
             "inputs": {
                 "NUM1": [
                     3,
-                    "^o",
+                    "](",
                     [
                         4,
                         ""
@@ -1260,7 +1260,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "BV",
+                    "Bt",
                     [
                         4,
                         ""
@@ -1271,14 +1271,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "^o": {
+        "](": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "BU",
+            "parent": "Bs",
             "inputs": {
                 "KEY": [
                     3,
-                    "aOk",
+                    "aNQ",
                     [
                         10,
                         ""
@@ -1296,10 +1296,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOk": {
+        "aNQ": {
             "opcode": "argument_reporter_string_number",
             "next": null,
-            "parent": "^o",
+            "parent": "](",
             "inputs": {},
             "fields": {
                 "VALUE": [
@@ -1310,14 +1310,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "BV": {
+        "Bt": {
             "opcode": "operator_add",
             "next": null,
-            "parent": "BU",
+            "parent": "Bs",
             "inputs": {
                 "NUM1": [
                     3,
-                    "BW",
+                    "Bu",
                     [
                         4,
                         ""
@@ -1325,7 +1325,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "BX",
+                    "Bv",
                     [
                         4,
                         ""
@@ -1336,14 +1336,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "BW": {
+        "Bu": {
             "opcode": "operator_add",
             "next": null,
-            "parent": "BV",
+            "parent": "Bt",
             "inputs": {
                 "NUM1": [
                     3,
-                    "aOl",
+                    "aNR",
                     [
                         4,
                         ""
@@ -1351,7 +1351,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "aOm",
+                    "aNS",
                     [
                         4,
                         ""
@@ -1362,10 +1362,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOl": {
+        "aNR": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "BW",
+            "parent": "Bu",
             "inputs": {
                 "KEY": [
                     1,
@@ -1386,10 +1386,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOm": {
+        "aNS": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "BW",
+            "parent": "Bu",
             "inputs": {
                 "KEY": [
                     1,
@@ -1410,14 +1410,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "BX": {
+        "Bv": {
             "opcode": "operator_add",
             "next": null,
-            "parent": "BV",
+            "parent": "Bt",
             "inputs": {
                 "NUM1": [
                     3,
-                    "aOn",
+                    "aNT",
                     [
                         4,
                         ""
@@ -1425,7 +1425,7 @@
                 ],
                 "NUM2": [
                     3,
-                    "aOo",
+                    "aNU",
                     [
                         4,
                         ""
@@ -1436,10 +1436,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOn": {
+        "aNT": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "BX",
+            "parent": "Bv",
             "inputs": {
                 "KEY": [
                     1,
@@ -1460,10 +1460,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOo": {
+        "aNU": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
-            "parent": "BX",
+            "parent": "Bv",
             "inputs": {
                 "KEY": [
                     1,
@@ -1484,7 +1484,7 @@
             "shadow": false,
             "topLevel": false
         },
-        "aPJ": {
+        "aPF": {
             "opcode": "procedures_call",
             "next": null,
             "parent": null,
@@ -1511,7 +1511,7 @@
                 "return": "1"
             }
         },
-        "aPK": {
+        "aPG": {
             "opcode": "procedures_call",
             "next": null,
             "parent": null,
@@ -1538,7 +1538,7 @@
                 "return": "1"
             }
         },
-        "aPL": {
+        "aPH": {
             "opcode": "verctedictionaries_dict_get",
             "next": null,
             "parent": null,
@@ -1564,7 +1564,7 @@
             "x": 707,
             "y": -753
         },
-        "aPM": {
+        "aPI": {
             "opcode": "procedures_call",
             "next": null,
             "parent": null,
@@ -1591,9 +1591,9 @@
                 "return": "1"
             }
         },
-        "aOp": {
+        "aNV": {
             "opcode": "event_whenbroadcastreceived",
-            "next": "^p",
+            "next": "])",
             "parent": null,
             "inputs": {},
             "fields": {
@@ -1607,19 +1607,19 @@
             "x": 163,
             "y": -276
         },
-        "^p": {
+        "])": {
             "opcode": "looks_show",
-            "next": "BY",
-            "parent": "aOp",
+            "next": "Bw",
+            "parent": "aNV",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "BY": {
+        "Bw": {
             "opcode": "lmsTempVars2_setThreadVariable",
             "next": "g`",
-            "parent": "^p",
+            "parent": "])",
             "inputs": {
                 "VAR": [
                     1,
@@ -1630,7 +1630,7 @@
                 ],
                 "STRING": [
                     3,
-                    "^q",
+                    "]*",
                     [
                         10,
                         ""
@@ -1641,10 +1641,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "^q": {
+        "]*": {
             "opcode": "lmsLooksPlus_costumeContent",
             "next": null,
-            "parent": "BY",
+            "parent": "Bw",
             "inputs": {
                 "COSTUME": [
                     1,
@@ -1655,7 +1655,7 @@
                 ],
                 "TARGET": [
                     1,
-                    "aOq"
+                    "aNW"
                 ]
             },
             "fields": {
@@ -1667,10 +1667,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOq": {
+        "aNW": {
             "opcode": "lmsLooksPlus_menu_spriteMenu",
             "next": null,
-            "parent": "^q",
+            "parent": "]*",
             "inputs": {},
             "fields": {
                 "spriteMenu": [
@@ -1681,10 +1681,250 @@
             "shadow": true,
             "topLevel": false
         },
-        "^r": {
+        "]+": {
             "opcode": "lmsTempVars2_setThreadVariable",
             "next": null,
             "parent": "g`",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "svg"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "lC",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "lC": {
+            "opcode": "lmsLooksPlus_replaceColors",
+            "next": null,
+            "parent": "]+",
+            "inputs": {
+                "COLOR1": [
+                    3,
+                    "aNX",
+                    [
+                        9,
+                        "#FCB1E3"
+                    ]
+                ],
+                "COLOR2": [
+                    3,
+                    "],",
+                    [
+                        9,
+                        "#8ECAFF"
+                    ]
+                ],
+                "SVG": [
+                    3,
+                    "aNY",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNX": {
+            "opcode": "truefantomcouplers_value_in_string_block",
+            "next": null,
+            "parent": "lC",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "ps"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "],": {
+            "opcode": "operator_multiply",
+            "next": null,
+            "parent": "lC",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "aNZ",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "100"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNZ": {
+            "opcode": "procedures_call",
+            "next": null,
+            "parent": "],",
+            "inputs": {
+                "`2i^;uAsUF)]Ch^HF(n;": [
+                    1,
+                    [
+                        10,
+                        "perfect"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "getShift% %s",
+                "argumentids": "[\"`2i^;uAsUF)]Ch^HF(n;\"]",
+                "warp": "false",
+                "return": "1"
+            }
+        },
+        "aNY": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "lC",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "svg"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Bx": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": "By",
+            "parent": "g`",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "svg"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "Bz",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Bz": {
+            "opcode": "lmsLooksPlus_replaceColors",
+            "next": null,
+            "parent": "Bx",
+            "inputs": {
+                "COLOR1": [
+                    3,
+                    "aN!",
+                    [
+                        9,
+                        "#FCB1E3"
+                    ]
+                ],
+                "COLOR2": [
+                    3,
+                    [
+                        12,
+                        "crashes",
+                        "]!yX2U/S0MIS{/_2=Go|"
+                    ],
+                    [
+                        9,
+                        "#8ECAFF"
+                    ]
+                ],
+                "SVG": [
+                    3,
+                    "aN#",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN!": {
+            "opcode": "truefantomcouplers_value_in_string_block",
+            "next": null,
+            "parent": "Bz",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "rc"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN#": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "Bz",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "svg"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "By": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": "BA",
+            "parent": "Bx",
             "inputs": {
                 "VAR": [
                     1,
@@ -1709,11 +1949,11 @@
         "lD": {
             "opcode": "lmsLooksPlus_replaceColors",
             "next": null,
-            "parent": "^r",
+            "parent": "By",
             "inputs": {
                 "COLOR1": [
                     3,
-                    "aOr",
+                    "aN%",
                     [
                         9,
                         "#FCB1E3"
@@ -1721,7 +1961,7 @@
                 ],
                 "COLOR2": [
                     3,
-                    "^s",
+                    "aN(",
                     [
                         9,
                         "#8ECAFF"
@@ -1729,7 +1969,7 @@
                 ],
                 "SVG": [
                     3,
-                    "aOs",
+                    "aN)",
                     [
                         10,
                         ""
@@ -1740,250 +1980,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOr": {
+        "aN%": {
             "opcode": "truefantomcouplers_value_in_string_block",
             "next": null,
             "parent": "lD",
-            "inputs": {
-                "VALUE": [
-                    1,
-                    [
-                        10,
-                        "ps"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "^s": {
-            "opcode": "operator_multiply",
-            "next": null,
-            "parent": "lD",
-            "inputs": {
-                "NUM1": [
-                    3,
-                    "aOt",
-                    [
-                        4,
-                        ""
-                    ]
-                ],
-                "NUM2": [
-                    1,
-                    [
-                        4,
-                        "100"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "aOt": {
-            "opcode": "procedures_call",
-            "next": null,
-            "parent": "^s",
-            "inputs": {
-                "`2i^;uAsUF)]Ch^HF(n;": [
-                    1,
-                    [
-                        10,
-                        "perfect"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false,
-            "mutation": {
-                "tagName": "mutation",
-                "children": [],
-                "proccode": "getShift% %s",
-                "argumentids": "[\"`2i^;uAsUF)]Ch^HF(n;\"]",
-                "warp": "false",
-                "return": "1"
-            }
-        },
-        "aOs": {
-            "opcode": "lmsTempVars2_getThreadVariable",
-            "next": null,
-            "parent": "lD",
-            "inputs": {
-                "VAR": [
-                    1,
-                    [
-                        10,
-                        "svg"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "BZ": {
-            "opcode": "lmsTempVars2_setThreadVariable",
-            "next": "B!",
-            "parent": "g`",
-            "inputs": {
-                "VAR": [
-                    1,
-                    [
-                        10,
-                        "svg"
-                    ]
-                ],
-                "STRING": [
-                    3,
-                    "B#",
-                    [
-                        10,
-                        "0"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "B#": {
-            "opcode": "lmsLooksPlus_replaceColors",
-            "next": null,
-            "parent": "BZ",
-            "inputs": {
-                "COLOR1": [
-                    3,
-                    "aOu",
-                    [
-                        9,
-                        "#FCB1E3"
-                    ]
-                ],
-                "COLOR2": [
-                    3,
-                    [
-                        12,
-                        "crashes",
-                        "]!yX2U/S0MIS{/_2=Go|"
-                    ],
-                    [
-                        9,
-                        "#8ECAFF"
-                    ]
-                ],
-                "SVG": [
-                    3,
-                    "aOv",
-                    [
-                        10,
-                        ""
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "aOu": {
-            "opcode": "truefantomcouplers_value_in_string_block",
-            "next": null,
-            "parent": "B#",
-            "inputs": {
-                "VALUE": [
-                    1,
-                    [
-                        10,
-                        "rc"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "aOv": {
-            "opcode": "lmsTempVars2_getThreadVariable",
-            "next": null,
-            "parent": "B#",
-            "inputs": {
-                "VAR": [
-                    1,
-                    [
-                        10,
-                        "svg"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "B!": {
-            "opcode": "lmsTempVars2_setThreadVariable",
-            "next": "B%",
-            "parent": "BZ",
-            "inputs": {
-                "VAR": [
-                    1,
-                    [
-                        10,
-                        "svg"
-                    ]
-                ],
-                "STRING": [
-                    3,
-                    "lE",
-                    [
-                        10,
-                        "0"
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "lE": {
-            "opcode": "lmsLooksPlus_replaceColors",
-            "next": null,
-            "parent": "B!",
-            "inputs": {
-                "COLOR1": [
-                    3,
-                    "aOw",
-                    [
-                        9,
-                        "#FCB1E3"
-                    ]
-                ],
-                "COLOR2": [
-                    3,
-                    "aOx",
-                    [
-                        9,
-                        "#8ECAFF"
-                    ]
-                ],
-                "SVG": [
-                    3,
-                    "aOy",
-                    [
-                        10,
-                        ""
-                    ]
-                ]
-            },
-            "fields": {},
-            "shadow": false,
-            "topLevel": false
-        },
-        "aOw": {
-            "opcode": "truefantomcouplers_value_in_string_block",
-            "next": null,
-            "parent": "lE",
             "inputs": {
                 "VALUE": [
                     1,
@@ -1997,10 +1997,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOx": {
+        "aN(": {
             "opcode": "procedures_call",
             "next": null,
-            "parent": "lE",
+            "parent": "lD",
             "inputs": {},
             "fields": {},
             "shadow": false,
@@ -2014,10 +2014,10 @@
                 "return": "1"
             }
         },
-        "aOy": {
+        "aN)": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "lE",
+            "parent": "lD",
             "inputs": {
                 "VAR": [
                     1,
@@ -2031,18 +2031,18 @@
             "shadow": false,
             "topLevel": false
         },
-        "B%": {
+        "BA": {
             "opcode": "lmsLooksPlus_replaceCostumeContent",
             "next": null,
-            "parent": "B!",
+            "parent": "By",
             "inputs": {
                 "COSTUME": [
                     1,
-                    "aOz"
+                    "aN*"
                 ],
                 "CONTENT": [
                     3,
-                    "aOA",
+                    "aN+",
                     [
                         10,
                         ""
@@ -2058,10 +2058,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOz": {
+        "aN*": {
             "opcode": "looks_costume",
             "next": null,
-            "parent": "B%",
+            "parent": "BA",
             "inputs": {},
             "fields": {
                 "COSTUME": [
@@ -2072,10 +2072,10 @@
             "shadow": true,
             "topLevel": false
         },
-        "aOA": {
+        "aN+": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "B%",
+            "parent": "BA",
             "inputs": {
                 "VAR": [
                     1,
@@ -2089,9 +2089,9 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOB": {
+        "aN,": {
             "opcode": "event_whenflagclicked",
-            "next": "aOC",
+            "next": "aN-",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -2100,18 +2100,18 @@
             "x": -651,
             "y": -326
         },
-        "aOC": {
+        "aN-": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "aOB",
+            "parent": "aN,",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aOD": {
+        "aN.": {
             "opcode": "lmsMoreEvents_whenStopClicked",
-            "next": "aOE",
+            "next": "aN/",
             "parent": null,
             "inputs": {},
             "fields": {},
@@ -2120,16 +2120,16 @@
             "x": -434,
             "y": -320
         },
-        "aOE": {
+        "aN/": {
             "opcode": "looks_hide",
             "next": null,
-            "parent": "aOD",
+            "parent": "aN.",
             "inputs": {},
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "aPN": {
+        "aPJ": {
             "opcode": "event_broadcast",
             "next": null,
             "parent": null,
@@ -2149,7 +2149,7 @@
             "x": 515,
             "y": -383
         },
-        "aPO": {
+        "aPK": {
             "opcode": "procedures_call",
             "next": null,
             "parent": null,
@@ -2176,7 +2176,7 @@
                 "return": "1"
             }
         },
-        "aOF": {
+        "aN:": {
             "opcode": "lmsTempVars2_setThreadVariable",
             "next": null,
             "parent": null,
@@ -2190,7 +2190,7 @@
                 ],
                 "STRING": [
                     3,
-                    "lF",
+                    "lE",
                     [
                         10,
                         "0"
@@ -2203,14 +2203,14 @@
             "x": 468,
             "y": 199
         },
-        "lF": {
+        "lE": {
             "opcode": "lmsLooksPlus_replaceColors",
             "next": null,
-            "parent": "aOF",
+            "parent": "aN:",
             "inputs": {
                 "COLOR1": [
                     3,
-                    "aOG",
+                    "aN;",
                     [
                         9,
                         "#FCB1E3"
@@ -2218,7 +2218,7 @@
                 ],
                 "COLOR2": [
                     3,
-                    "^t",
+                    "]-",
                     [
                         9,
                         "#8ECAFF"
@@ -2226,7 +2226,7 @@
                 ],
                 "SVG": [
                     3,
-                    "aOH",
+                    "aN=",
                     [
                         10,
                         ""
@@ -2237,10 +2237,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOG": {
+        "aN;": {
             "opcode": "truefantomcouplers_value_in_string_block",
             "next": null,
-            "parent": "lF",
+            "parent": "lE",
             "inputs": {
                 "VALUE": [
                     1,
@@ -2254,14 +2254,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "^t": {
+        "]-": {
             "opcode": "operator_multiply",
             "next": null,
-            "parent": "lF",
+            "parent": "lE",
             "inputs": {
                 "NUM1": [
                     3,
-                    "aOI",
+                    "aN?",
                     [
                         4,
                         ""
@@ -2279,10 +2279,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOI": {
+        "aN?": {
             "opcode": "procedures_call",
             "next": null,
-            "parent": "^t",
+            "parent": "]-",
             "inputs": {
                 "`2i^;uAsUF)]Ch^HF(n;": [
                     1,
@@ -2304,10 +2304,10 @@
                 "return": "1"
             }
         },
-        "aOH": {
+        "aN=": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "lF",
+            "parent": "lE",
             "inputs": {
                 "VAR": [
                     1,
@@ -2321,14 +2321,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "^u": {
+        "].": {
             "opcode": "operator_equals",
             "next": null,
             "parent": "g`",
             "inputs": {
                 "OPERAND1": [
                     3,
-                    "^v",
+                    "]/",
                     [
                         10,
                         ""
@@ -2348,27 +2348,27 @@
         },
         "g`": {
             "opcode": "control_if_else",
-            "next": "BZ",
-            "parent": "BY",
+            "next": "Bx",
+            "parent": "Bw",
             "inputs": {
                 "SUBSTACK": [
                     2,
-                    "^w"
+                    "]:"
                 ],
                 "CONDITION": [
                     2,
-                    "^u"
+                    "]."
                 ],
                 "SUBSTACK2": [
                     2,
-                    "^r"
+                    "]+"
                 ]
             },
             "fields": {},
             "shadow": false,
             "topLevel": false
         },
-        "^w": {
+        "]:": {
             "opcode": "lmsTempVars2_setThreadVariable",
             "next": null,
             "parent": "g`",
@@ -2382,7 +2382,7 @@
                 ],
                 "STRING": [
                     3,
-                    "lG",
+                    "lF",
                     [
                         10,
                         "0"
@@ -2393,14 +2393,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "lG": {
+        "lF": {
             "opcode": "lmsLooksPlus_replaceColors",
             "next": null,
-            "parent": "^w",
+            "parent": "]:",
             "inputs": {
                 "COLOR1": [
                     3,
-                    "aOJ",
+                    "aN@",
                     [
                         9,
                         "#FCB1E3"
@@ -2408,7 +2408,7 @@
                 ],
                 "COLOR2": [
                     3,
-                    "aOK",
+                    "aN[",
                     [
                         9,
                         "#8ECAFF"
@@ -2416,7 +2416,7 @@
                 ],
                 "SVG": [
                     3,
-                    "aOL",
+                    "aN]",
                     [
                         10,
                         ""
@@ -2427,10 +2427,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOJ": {
+        "aN@": {
             "opcode": "truefantomcouplers_value_in_string_block",
             "next": null,
-            "parent": "lG",
+            "parent": "lF",
             "inputs": {
                 "VALUE": [
                     1,
@@ -2444,10 +2444,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOL": {
+        "aN]": {
             "opcode": "lmsTempVars2_getThreadVariable",
             "next": null,
-            "parent": "lG",
+            "parent": "lF",
             "inputs": {
                 "VAR": [
                     1,
@@ -2461,10 +2461,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOK": {
+        "aN[": {
             "opcode": "truefantomcouplers_value_in_string_block",
             "next": null,
-            "parent": "lG",
+            "parent": "lF",
             "inputs": {
                 "VALUE": [
                     1,
@@ -2478,14 +2478,14 @@
             "shadow": false,
             "topLevel": false
         },
-        "^v": {
+        "]/": {
             "opcode": "sensing_of",
             "next": null,
-            "parent": "^u",
+            "parent": "].",
             "inputs": {
                 "OBJECT": [
                     1,
-                    "aOM"
+                    "aN^"
                 ]
             },
             "fields": {
@@ -2497,10 +2497,10 @@
             "shadow": false,
             "topLevel": false
         },
-        "aOM": {
+        "aN^": {
             "opcode": "sensing_of_object_menu",
             "next": null,
-            "parent": "^v",
+            "parent": "]/",
             "inputs": {},
             "fields": {
                 "OBJECT": [
