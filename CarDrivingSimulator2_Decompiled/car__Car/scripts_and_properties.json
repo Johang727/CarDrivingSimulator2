@@ -1,0 +1,5193 @@
+{
+    "isStage": false,
+    "name": "car//Car",
+    "variables": {
+        ";9p%.j!#q.}H`4yOblu!": [
+            "i",
+            0
+        ],
+        "Us!_sw:43ZJF*,Fw_B!T": [
+            "control",
+            0
+        ]
+    },
+    "lists": {
+        "!si|C4yy$M*hOn~SGZAs": [
+            "danger",
+            [
+                "front"
+            ]
+        ]
+    },
+    "broadcasts": {},
+    "blocks": {
+        "anf": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "Ws",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -2461,
+            "y": -443
+        },
+        "Ws": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "Wt",
+            "parent": "anf",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "sets y position"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wt": {
+            "opcode": "procedures_call",
+            "next": "b:",
+            "parent": "Ws",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    1,
+                    [
+                        10,
+                        "rec gameStart (0)"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "warp": "false"
+            }
+        },
+        "b:": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": "Wu",
+            "parent": "Wt",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "ang"
+                ],
+                "LAYER": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ang": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "b:",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Wu": {
+            "opcode": "looks_show",
+            "next": "Wv",
+            "parent": "b:",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wv": {
+            "opcode": "motion_gotoxy",
+            "next": "Ww",
+            "parent": "Wu",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "188.00"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "-70.00"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Ww": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "Wv",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "b;"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "b;": {
+            "opcode": "motion_sety",
+            "next": "di",
+            "parent": "Ww",
+            "inputs": {
+                "Y": [
+                    3,
+                    "Wx",
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wx": {
+            "opcode": "operator_round",
+            "next": null,
+            "parent": "b;",
+            "inputs": {
+                "NUM": [
+                    3,
+                    "Wy",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wy": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "Wx",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "Wz",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "70.00"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wz": {
+            "opcode": "operator_multiply",
+            "next": null,
+            "parent": "Wy",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "WA",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WA": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "Wz",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "anh"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "velocity",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "anh": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "WA",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "di": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "b;",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ani": {
+            "opcode": "event_whenflagclicked",
+            "next": "WB",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -400,
+            "y": -633
+        },
+        "WB": {
+            "opcode": "motion_pointindirection",
+            "next": "anj",
+            "parent": "ani",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anj": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "WB",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ank": {
+            "opcode": "lmsMoreEvents_whenStopClicked",
+            "next": "anl",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -236,
+            "y": -387
+        },
+        "anl": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "ank",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anm": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "WC",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1516,
+            "y": -1016
+        },
+        "b=": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": "WE",
+            "parent": "WD",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "ann"
+                ],
+                "LAYER": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ann": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "b=",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "WE": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "WF",
+            "parent": "b=",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "moving left and right"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WD": {
+            "opcode": "procedures_call",
+            "next": "b=",
+            "parent": "WC",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    1,
+                    [
+                        10,
+                        "rec gameStart (1)"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "warp": "false"
+            }
+        },
+        "WG": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "WH",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "sx"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dj": {
+            "opcode": "procedures_definition",
+            "next": "dk",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "dl"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -633,
+            "y": -901
+        },
+        "dl": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "dj",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    1,
+                    "ano"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "argumentnames": "[\"\"]",
+                "argumentdefaults": "[\"\"]",
+                "warp": "false"
+            }
+        },
+        "ano": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "dl",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "dk": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "dm",
+            "parent": "dj",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "why do this? You can use the search to find functions"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dm": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": null,
+            "parent": "dk",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "anp",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anp": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "dm",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "dn": {
+            "opcode": "procedures_definition",
+            "next": "jD",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "w"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -2589,
+            "y": -968
+        },
+        "w": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "dn",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    1,
+                    "anq"
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    "anr"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "argumentnames": "[\"msg\",\"err/wrn/etc\"]",
+                "argumentdefaults": "[\"\",\"\",\"\"]",
+                "warp": "false"
+            }
+        },
+        "anq": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "w",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "anr": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "w",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "jD": {
+            "opcode": "control_if_else",
+            "next": null,
+            "parent": "dn",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "do"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "dp"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "dq"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "do": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "jD",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "ans",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ans": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "do",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dp": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "jD",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "n",
+                    [
+                        10,
+                        "rec:checking save status..."
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "logs",
+                    ")^jAeXj?zvyzh`6dkQmA"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "n": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "dp",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "ant",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "dr",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ant": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "n",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "dr": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "n",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ":"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "o",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "o": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "dr",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "anu",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "ds",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anu": {
+            "opcode": "lmsAssets_getSpriteName",
+            "next": null,
+            "parent": "o",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ds": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "o",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "anv",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anv": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "ds",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "dq": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "jD",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "b?",
+                    [
+                        10,
+                        "rec:checking save status..."
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "logs",
+                    ")^jAeXj?zvyzh`6dkQmA"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "b?": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "dq",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "x",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "dt",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "x": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "b?",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "anw",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "f+",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anw": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "x",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "f+": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "x",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ":"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "y",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "y": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "f+",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "anx",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "du",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anx": {
+            "opcode": "lmsAssets_getSpriteName",
+            "next": null,
+            "parent": "y",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "du": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "y",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "any",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "any": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "du",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dt": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "b?",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "anz",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anz": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "dt",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aPh": {
+            "opcode": "looks_gotofrontback",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "FRONT_BACK": [
+                    "back",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -3295,
+            "y": -809
+        },
+        "anA": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "dv",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -3259,
+            "y": -416
+        },
+        "dv": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "dw",
+            "parent": "anA",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "funny ref for old game"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dw": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "dv",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "b@"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "b@": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "dw",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "dx"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "dy"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dx": {
+            "opcode": "nonameawacomparisons_equalOrLess",
+            "next": null,
+            "parent": "b@",
+            "inputs": {
+                "a": [
+                    3,
+                    "dz",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "b": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dz": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "dx",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "anB"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "fuel",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "anB": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "dz",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "dy": {
+            "opcode": "looks_sayforsecs",
+            "next": "dA",
+            "parent": "b@",
+            "inputs": {
+                "MESSAGE": [
+                    1,
+                    [
+                        10,
+                        "Hi, You are currently out of Gas"
+                    ]
+                ],
+                "SECS": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dA": {
+            "opcode": "looks_sayforsecs",
+            "next": "dB",
+            "parent": "dy",
+            "inputs": {
+                "MESSAGE": [
+                    1,
+                    [
+                        10,
+                        "You will slowly lose HP because Physics"
+                    ]
+                ],
+                "SECS": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dB": {
+            "opcode": "looks_sayforsecs",
+            "next": "dC",
+            "parent": "dA",
+            "inputs": {
+                "MESSAGE": [
+                    1,
+                    [
+                        10,
+                        "To get more Gas hit a fuel truck, it works some how "
+                    ]
+                ],
+                "SECS": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dC": {
+            "opcode": "looks_say",
+            "next": "sy",
+            "parent": "dB",
+            "inputs": {
+                "MESSAGE": [
+                    1,
+                    [
+                        10,
+                        "Hit a Fuel Truck"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sy": {
+            "opcode": "control_wait_until",
+            "next": "anC",
+            "parent": "dC",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "WI"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WI": {
+            "opcode": "operator_gt",
+            "next": null,
+            "parent": "sy",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "WJ",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WJ": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "WI",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "anD"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "fuel",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "anD": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "WJ",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "anC": {
+            "opcode": "looks_sayforsecs",
+            "next": null,
+            "parent": "sy",
+            "inputs": {
+                "MESSAGE": [
+                    1,
+                    [
+                        10,
+                        "Great now you should be good for a while"
+                    ]
+                ],
+                "SECS": [
+                    1,
+                    [
+                        4,
+                        "2.5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WK": {
+            "opcode": "procedures_definition",
+            "next": "WL",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "anE"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -591,
+            "y": -1994
+        },
+        "anE": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "WK",
+            "inputs": {},
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "carDetected",
+                "argumentids": "[]",
+                "argumentnames": "[]",
+                "argumentdefaults": "[]",
+                "warp": "false"
+            }
+        },
+        "WL": {
+            "opcode": "data_deletealloflist",
+            "next": "WM",
+            "parent": "WK",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "danger",
+                    "!si|C4yy$M*hOn~SGZAs"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "WM": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "jE",
+            "parent": "WL",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "each car is 100 px tall + 40 px wide"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "jE": {
+            "opcode": "lmsTempVars2_forEachThreadVariable",
+            "next": "WN",
+            "parent": "WM",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "car"
+                    ]
+                ],
+                "NUM": [
+                    3,
+                    "anF",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sz"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anF": {
+            "opcode": "data_lengthoflist",
+            "next": null,
+            "parent": "jE",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "sz": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "jE",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "WO"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sA"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WO": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "sz",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "WP"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WP": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "WO",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "WQ",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "deleted"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WQ": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "WP",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "anG",
+                    [
+                        7,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "anG": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "WQ",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "car"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sA": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": "sB",
+            "parent": "sz",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "x"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "WR",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WR": {
+            "opcode": "strings_split",
+            "next": null,
+            "parent": "sA",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "WS",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "SPLIT": [
+                    1,
+                    [
+                        10,
+                        "|"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WS": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "WR",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "anH",
+                    [
+                        7,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "anH": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "WS",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "car"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sB": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": "WT",
+            "parent": "sA",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "y"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "WU",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WU": {
+            "opcode": "strings_split",
+            "next": null,
+            "parent": "sB",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "WV",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "SPLIT": [
+                    1,
+                    [
+                        10,
+                        "|"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WV": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "WU",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "anI",
+                    [
+                        7,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "anI": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "WV",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "car"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WT": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "jF",
+            "parent": "sB",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "check in front"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "jF": {
+            "opcode": "control_if",
+            "next": "WW",
+            "parent": "WT",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "WX"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sC"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WX": {
+            "opcode": "operator_gt",
+            "next": null,
+            "parent": "jF",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "sD",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sD": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "WX",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "anJ",
+                    [
+                        4,
+                        "100"
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "anK",
+                    [
+                        4,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anJ": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "sD",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "y"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anK": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "sD",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sC": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "jF",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "sE"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "anL"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sE": {
+            "opcode": "nonameawacomparisons_almostEqual3n",
+            "next": null,
+            "parent": "sC",
+            "inputs": {
+                "a": [
+                    3,
+                    "anM",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "b": [
+                    3,
+                    "anN",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "c": [
+                    1,
+                    [
+                        4,
+                        "35"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anM": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "sE",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "x"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anN": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": "sE",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anL": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "sC",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "front"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "danger",
+                    "!si|C4yy$M*hOn~SGZAs"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "WW": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "WY",
+            "parent": "jF",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "if positive"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WY": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "jG",
+            "parent": "WW",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "prioritize front"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "jG": {
+            "opcode": "control_if",
+            "next": "sF",
+            "parent": "WY",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "WZ"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sG"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WZ": {
+            "opcode": "operator_gt",
+            "next": null,
+            "parent": "jG",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "sH",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sH": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "WZ",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "anO",
+                    [
+                        4,
+                        "100"
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "anP",
+                    [
+                        4,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anO": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "sH",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "y"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anP": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "sH",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sG": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "jG",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "sI"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "anQ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sI": {
+            "opcode": "nonameawacomparisons_almostEqual3n",
+            "next": null,
+            "parent": "sG",
+            "inputs": {
+                "a": [
+                    3,
+                    "anR",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "b": [
+                    3,
+                    "W!",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "c": [
+                    1,
+                    [
+                        4,
+                        "35"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anR": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "sI",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "x"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W!": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "sI",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "anS",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "50"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anS": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": "W!",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anQ": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "sG",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "front left"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "danger",
+                    "!si|C4yy$M*hOn~SGZAs"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "sF": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "jG",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "W#"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sJ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W#": {
+            "opcode": "operator_gt",
+            "next": null,
+            "parent": "sF",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "sK",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sK": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "W#",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "anT",
+                    [
+                        4,
+                        "100"
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "anU",
+                    [
+                        4,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anT": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "sK",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "y"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anU": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "sK",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sJ": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "sF",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "sL"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "anV"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sL": {
+            "opcode": "nonameawacomparisons_almostEqual3n",
+            "next": null,
+            "parent": "sJ",
+            "inputs": {
+                "a": [
+                    3,
+                    "anW",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "b": [
+                    3,
+                    "W%",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "c": [
+                    1,
+                    [
+                        4,
+                        "35"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anW": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "sL",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "x"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W%": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "sL",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "anX",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "50"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anX": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": "W%",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anV": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "sJ",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "front right"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "danger",
+                    "!si|C4yy$M*hOn~SGZAs"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "WN": {
+            "opcode": "procedures_return",
+            "next": null,
+            "parent": "jE",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "W(",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W(": {
+            "opcode": "lmsData_getListArray",
+            "next": null,
+            "parent": "WN",
+            "inputs": {
+                "LIST": [
+                    1,
+                    "anY"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "anY": {
+            "opcode": "lmsData_menu_lists",
+            "next": null,
+            "parent": "W(",
+            "inputs": {},
+            "fields": {
+                "lists": [
+                    "danger",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "i": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "g",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterGas",
+                    "vlEIMBOG^lTuM.Xe.BdL"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 107,
+            "y": -81
+        },
+        "g": {
+            "opcode": "control_stop",
+            "next": "anZ",
+            "parent": "i",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "anZ": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "g",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aPi": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -291,
+            "y": -2523
+        },
+        "W)": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "an!",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "sM"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aPj": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "reshowRoad",
+                    "ecxuAlvliReS0C[6U6?B"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 51,
+            "y": -2630
+        },
+        "W*": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "an#",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "sN"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W+": {
+            "opcode": "procedures_definition",
+            "next": "sO",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "W,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1581,
+            "y": -2689
+        },
+        "W,": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "W+",
+            "inputs": {
+                "/lg]UPT;7srh.4n,;Ev4": [
+                    1,
+                    "an%"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "renderUSMarks %s",
+                "argumentids": "[\"/lg]UPT;7srh.4n,;Ev4\"]",
+                "argumentnames": "[\"\"]",
+                "argumentdefaults": "[\"\"]",
+                "warp": "false"
+            }
+        },
+        "an%": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "W,",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "sO": {
+            "opcode": "lmsTempVars2_forEachThreadVariable",
+            "next": null,
+            "parent": "W+",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "mark"
+                    ]
+                ],
+                "NUM": [
+                    3,
+                    "an(",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sP"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an(": {
+            "opcode": "data_lengthoflist",
+            "next": null,
+            "parent": "sO",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "danger",
+                    "!si|C4yy$M*hOn~SGZAs"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "sP": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": null,
+            "parent": "sO",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    "W-"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sQ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W-": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "sP",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "an)",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "danger",
+                    "!si|C4yy$M*hOn~SGZAs"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an)": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "W-",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "mark"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sQ": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "sR",
+            "parent": "sP",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "front"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "W."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W.": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "an*",
+            "parent": "sQ",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "front"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    ";9p%.j!#q.}H`4yOblu!",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an*": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "W.",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sR": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "W/",
+            "parent": "sQ",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "front left"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "W:"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W:": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "an+",
+            "parent": "sR",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "front left"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    ";9p%.j!#q.}H`4yOblu!",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an+": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "W:",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W/": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": null,
+            "parent": "sR",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "front right"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "W;"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W;": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "an,",
+            "parent": "W/",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "front right"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    ";9p%.j!#q.}H`4yOblu!",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an,": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "W;",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an-": {
+            "opcode": "lmsclonesplus_whenCloneStartsWithVar",
+            "next": "sS",
+            "parent": null,
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "front"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    ";9p%.j!#q.}H`4yOblu!",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -3102,
+            "y": -3178
+        },
+        "sS": {
+            "opcode": "looks_switchcostumeto",
+            "next": "sT",
+            "parent": "an-",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "an."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an.": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "sS",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "danger//front",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "W=": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "sT",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "sU"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sU": {
+            "opcode": "motion_gotoxy",
+            "next": null,
+            "parent": "W=",
+            "inputs": {
+                "X": [
+                    3,
+                    "an/",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "Y": [
+                    3,
+                    "an:",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an/": {
+            "opcode": "lmsclonesplus_getThingOfMainSprite",
+            "next": null,
+            "parent": "sU",
+            "inputs": {},
+            "fields": {
+                "INPUT": [
+                    "x position",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an:": {
+            "opcode": "lmsclonesplus_getThingOfMainSprite",
+            "next": null,
+            "parent": "sU",
+            "inputs": {},
+            "fields": {
+                "INPUT": [
+                    "y position",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an;": {
+            "opcode": "lmsclonesplus_whenCloneStartsWithVar",
+            "next": "sV",
+            "parent": null,
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "front left"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    ";9p%.j!#q.}H`4yOblu!",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -2635,
+            "y": -3392
+        },
+        "sV": {
+            "opcode": "looks_switchcostumeto",
+            "next": "sW",
+            "parent": "an;",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "an="
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an=": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "sV",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "danger//front left",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "W?": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "sW",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "sX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sX": {
+            "opcode": "motion_gotoxy",
+            "next": null,
+            "parent": "W?",
+            "inputs": {
+                "X": [
+                    3,
+                    "an?",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "Y": [
+                    3,
+                    "an@",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an?": {
+            "opcode": "lmsclonesplus_getThingOfMainSprite",
+            "next": null,
+            "parent": "sX",
+            "inputs": {},
+            "fields": {
+                "INPUT": [
+                    "x position",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an@": {
+            "opcode": "lmsclonesplus_getThingOfMainSprite",
+            "next": null,
+            "parent": "sX",
+            "inputs": {},
+            "fields": {
+                "INPUT": [
+                    "y position",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an[": {
+            "opcode": "lmsclonesplus_whenCloneStartsWithVar",
+            "next": "sY",
+            "parent": null,
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "front right"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    ";9p%.j!#q.}H`4yOblu!",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -2397,
+            "y": -2956
+        },
+        "sY": {
+            "opcode": "looks_switchcostumeto",
+            "next": "sZ",
+            "parent": "an[",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "an]"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an]": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "sY",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "danger//front right",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "W@": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "sZ",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "s!"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s!": {
+            "opcode": "motion_gotoxy",
+            "next": null,
+            "parent": "W@",
+            "inputs": {
+                "X": [
+                    3,
+                    "an^",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "Y": [
+                    3,
+                    "an_",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an^": {
+            "opcode": "lmsclonesplus_getThingOfMainSprite",
+            "next": null,
+            "parent": "s!",
+            "inputs": {},
+            "fields": {
+                "INPUT": [
+                    "x position",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "an_": {
+            "opcode": "lmsclonesplus_getThingOfMainSprite",
+            "next": null,
+            "parent": "s!",
+            "inputs": {},
+            "fields": {
+                "INPUT": [
+                    "y position",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "s#": {
+            "opcode": "looks_switchcostumeto",
+            "next": "an{",
+            "parent": "an`",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "an|"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an|": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "s#",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "sM": {
+            "opcode": "procedures_call",
+            "next": "an}",
+            "parent": "W)",
+            "inputs": {
+                "/lg]UPT;7srh.4n,;Ev4": [
+                    3,
+                    "an~",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "renderUSMarks %s",
+                "argumentids": "[\"/lg]UPT;7srh.4n,;Ev4\"]",
+                "warp": "false"
+            }
+        },
+        "an~": {
+            "opcode": "procedures_call",
+            "next": null,
+            "parent": "sM",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "carDetected",
+                "argumentids": "[]",
+                "warp": "false",
+                "return": "1"
+            }
+        },
+        "an}": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "sM",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        ".5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sN": {
+            "opcode": "procedures_call",
+            "next": "aoa",
+            "parent": "W*",
+            "inputs": {
+                "/lg]UPT;7srh.4n,;Ev4": [
+                    3,
+                    "aob",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "renderUSMarks %s",
+                "argumentids": "[\"/lg]UPT;7srh.4n,;Ev4\"]",
+                "warp": "false"
+            }
+        },
+        "aob": {
+            "opcode": "procedures_call",
+            "next": null,
+            "parent": "sN",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "carDetected",
+                "argumentids": "[]",
+                "warp": "false",
+                "return": "1"
+            }
+        },
+        "aoa": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "sN",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.05"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sT": {
+            "opcode": "lmsSpAsMoreControl_startBlocks",
+            "next": "s%",
+            "parent": "sS",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "W="
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an`": {
+            "opcode": "event_whenflagclicked",
+            "next": "s#",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1564,
+            "y": -3310
+        },
+        "an{": {
+            "opcode": "looks_setsizeto",
+            "next": null,
+            "parent": "s#",
+            "inputs": {
+                "SIZE": [
+                    1,
+                    [
+                        4,
+                        "100"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sZ": {
+            "opcode": "lmsSpAsMoreControl_startBlocks",
+            "next": "s(",
+            "parent": "sY",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "W@"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sW": {
+            "opcode": "lmsSpAsMoreControl_startBlocks",
+            "next": "s)",
+            "parent": "sV",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "W?"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s)": {
+            "opcode": "control_repeat",
+            "next": "aoc",
+            "parent": "sW",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "50"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "W["
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W[": {
+            "opcode": "control_wait",
+            "next": "aod",
+            "parent": "s)",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoe": {
+            "opcode": "looks_seteffectto",
+            "next": null,
+            "parent": "aof",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aof": {
+            "opcode": "control_start_as_clone",
+            "next": "aoe",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -2106,
+            "y": -3716
+        },
+        "aod": {
+            "opcode": "looks_changeeffectby",
+            "next": null,
+            "parent": "W[",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "s%": {
+            "opcode": "control_repeat",
+            "next": "aog",
+            "parent": "sT",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "50"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "W]"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W]": {
+            "opcode": "control_wait",
+            "next": "aoh",
+            "parent": "s%",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoh": {
+            "opcode": "looks_changeeffectby",
+            "next": null,
+            "parent": "W]",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "s(": {
+            "opcode": "control_repeat",
+            "next": "aoi",
+            "parent": "sZ",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "50"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "W^"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W^": {
+            "opcode": "control_wait",
+            "next": "aoj",
+            "parent": "s(",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoj": {
+            "opcode": "looks_changeeffectby",
+            "next": null,
+            "parent": "W^",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aog": {
+            "opcode": "control_delete_this_clone",
+            "next": null,
+            "parent": "s%",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoc": {
+            "opcode": "control_delete_this_clone",
+            "next": null,
+            "parent": "s)",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoi": {
+            "opcode": "control_delete_this_clone",
+            "next": null,
+            "parent": "s(",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "an#": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "W*",
+            "parent": null,
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "i gotta make this a seperate sprite"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 138,
+            "y": -2533
+        },
+        "an!": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "W)",
+            "parent": null,
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "i gotta make this a seperate sprite"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -242,
+            "y": -2453
+        },
+        "aok": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "W_",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterDealer",
+                    ";swRG=Sg`[DRYdeyG9tj"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 269,
+            "y": 174
+        },
+        "W_": {
+            "opcode": "control_stop",
+            "next": "aol",
+            "parent": "aok",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "aol": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "W_",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aom": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "W`",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "reshowRoad",
+                    "ecxuAlvliReS0C[6U6?B"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -2367,
+            "y": 193
+        },
+        "W`": {
+            "opcode": "lmsMoreEvents_broadcastToTarget",
+            "next": null,
+            "parent": "aom",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "gameStart",
+                        "s[@.HXqT/F28XT?w-:|y"
+                    ]
+                ],
+                "TARGET": [
+                    1,
+                    "aon"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aon": {
+            "opcode": "lmsMoreEvents_menu_targetMenu",
+            "next": null,
+            "parent": "W`",
+            "inputs": {},
+            "fields": {
+                "targetMenu": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "s*": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "W{",
+            "parent": "sx",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "kb"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "s+"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sx": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": null,
+            "parent": "WG",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "s*"
+                ],
+                "SWITCH": [
+                    2,
+                    "W|"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W|": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "sx",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "aoo"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "control",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoo": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "W|",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "menu//submenus",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "W{": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": null,
+            "parent": "s*",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "c"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "s,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s-": {
+            "opcode": "Gamepad_axisValue",
+            "next": null,
+            "parent": "W}",
+            "inputs": {
+                "b": [
+                    1,
+                    "aop"
+                ],
+                "i": [
+                    1,
+                    "aoq"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aop": {
+            "opcode": "Gamepad_menu_axisMenu",
+            "next": null,
+            "parent": "s-",
+            "inputs": {},
+            "fields": {
+                "axisMenu": [
+                    "1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aoq": {
+            "opcode": "Gamepad_menu_padMenu",
+            "next": null,
+            "parent": "s-",
+            "inputs": {},
+            "fields": {
+                "padMenu": [
+                    "1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "s,": {
+            "opcode": "motion_pointindirection",
+            "next": "s.",
+            "parent": "W{",
+            "inputs": {
+                "DIRECTION": [
+                    3,
+                    "W}",
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W}": {
+            "opcode": "operator_multiply",
+            "next": null,
+            "parent": "s,",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "s-",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "30"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "W~": {
+            "opcode": "operator_multiply",
+            "next": null,
+            "parent": "s.",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "s/",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s/": {
+            "opcode": "Gamepad_axisValue",
+            "next": null,
+            "parent": "W~",
+            "inputs": {
+                "b": [
+                    1,
+                    "aor"
+                ],
+                "i": [
+                    1,
+                    "aos"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aor": {
+            "opcode": "Gamepad_menu_axisMenu",
+            "next": null,
+            "parent": "s/",
+            "inputs": {},
+            "fields": {
+                "axisMenu": [
+                    "1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aos": {
+            "opcode": "Gamepad_menu_padMenu",
+            "next": null,
+            "parent": "s/",
+            "inputs": {},
+            "fields": {
+                "padMenu": [
+                    "1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "s.": {
+            "opcode": "motion_changexby",
+            "next": "Xa",
+            "parent": "s,",
+            "inputs": {
+                "DX": [
+                    3,
+                    "W~",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aot": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Xa",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xa": {
+            "opcode": "control_wait",
+            "next": "aot",
+            "parent": "s.",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s+": {
+            "opcode": "motion_pointindirection",
+            "next": "s:",
+            "parent": "s*",
+            "inputs": {
+                "DIRECTION": [
+                    3,
+                    "aou",
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aou": {
+            "opcode": "operator_multiply",
+            "next": null,
+            "parent": "s+",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    [
+                        12,
+                        "control",
+                        "Us!_sw:43ZJF*,Fw_B!T"
+                    ],
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "30"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s:": {
+            "opcode": "motion_changexby",
+            "next": "Xb",
+            "parent": "s+",
+            "inputs": {
+                "DX": [
+                    3,
+                    "aov",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aov": {
+            "opcode": "operator_multiply",
+            "next": null,
+            "parent": "s:",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    [
+                        12,
+                        "control",
+                        "Us!_sw:43ZJF*,Fw_B!T"
+                    ],
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xb": {
+            "opcode": "control_wait",
+            "next": "aow",
+            "parent": "s:",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aow": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Xb",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "jH": {
+            "opcode": "control_if_else",
+            "next": null,
+            "parent": "Xc",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "Xd"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "f,"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "jI"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xd": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "jH",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "aox"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aox": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "Xd",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "a",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "f,": {
+            "opcode": "control_if_else",
+            "next": "aoy",
+            "parent": "jH",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "Xe"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "Xf"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "Xg"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xe": {
+            "opcode": "lmscomments_commentBoolean",
+            "next": null,
+            "parent": "f,",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "dash?"
+                    ]
+                ],
+                "INPUT": [
+                    2,
+                    "Xh"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoy": {
+            "opcode": "lmsTimers_startResetTimer",
+            "next": null,
+            "parent": "f,",
+            "inputs": {
+                "TIMER": [
+                    1,
+                    [
+                        10,
+                        "a_press"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoz": {
+            "opcode": "lmsTimers_valueOfTimer",
+            "next": null,
+            "parent": "Xh",
+            "inputs": {
+                "TIMER": [
+                    1,
+                    [
+                        10,
+                        "a_press"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xh": {
+            "opcode": "operator_lt",
+            "next": null,
+            "parent": "Xe",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aoz",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        ".1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "jI": {
+            "opcode": "control_if_else",
+            "next": null,
+            "parent": "jH",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "Xi"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "f-"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "aoA"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xi": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "jI",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "aoB"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoB": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "Xi",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "d",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aoC": {
+            "opcode": "lmsTimers_startResetTimer",
+            "next": null,
+            "parent": "f-",
+            "inputs": {
+                "TIMER": [
+                    1,
+                    [
+                        10,
+                        "d_press"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "f-": {
+            "opcode": "control_if_else",
+            "next": "aoC",
+            "parent": "jI",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "Xj"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "Xk"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "Xl"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xj": {
+            "opcode": "lmscomments_commentBoolean",
+            "next": null,
+            "parent": "f-",
+            "inputs": {
+                "INPUT": [
+                    2,
+                    "Xm"
+                ],
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "dash?"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xm": {
+            "opcode": "operator_lt",
+            "next": null,
+            "parent": "Xj",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aoD",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        ".1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoD": {
+            "opcode": "lmsTimers_valueOfTimer",
+            "next": null,
+            "parent": "Xm",
+            "inputs": {
+                "TIMER": [
+                    1,
+                    [
+                        10,
+                        "d_press"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xl": {
+            "opcode": "data_setvariableto",
+            "next": "Xn",
+            "parent": "f-",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        ".5"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "control",
+                    "Us!_sw:43ZJF*,Fw_B!T"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoA": {
+            "opcode": "data_setvariableto",
+            "next": null,
+            "parent": "jI",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "control",
+                    "Us!_sw:43ZJF*,Fw_B!T"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xk": {
+            "opcode": "data_setvariableto",
+            "next": "Xo",
+            "parent": "f-",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "control",
+                    "Us!_sw:43ZJF*,Fw_B!T"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xg": {
+            "opcode": "data_setvariableto",
+            "next": "Xp",
+            "parent": "f,",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "-1"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "control",
+                    "Us!_sw:43ZJF*,Fw_B!T"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xf": {
+            "opcode": "data_setvariableto",
+            "next": "Xq",
+            "parent": "f,",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "-.5"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "control",
+                    "Us!_sw:43ZJF*,Fw_B!T"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "WF": {
+            "opcode": "lmsTimers_setTimer",
+            "next": "WH",
+            "parent": "WE",
+            "inputs": {
+                "TIMER": [
+                    1,
+                    [
+                        10,
+                        "a_press"
+                    ]
+                ],
+                "NUM": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "WH": {
+            "opcode": "lmsTimers_setTimer",
+            "next": "WG",
+            "parent": "WF",
+            "inputs": {
+                "TIMER": [
+                    1,
+                    [
+                        10,
+                        "d_press"
+                    ]
+                ],
+                "NUM": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aPk": {
+            "opcode": "lmsTimers_valueOfTimer",
+            "next": null,
+            "parent": null,
+            "inputs": {
+                "TIMER": [
+                    1,
+                    [
+                        10,
+                        "a_press"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1791,
+            "y": -579
+        },
+        "Xp": {
+            "opcode": "control_wait_until",
+            "next": null,
+            "parent": "Xg",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "Xr"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xr": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "Xp",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "Xs"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xs": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "Xr",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "aoE"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoE": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "Xs",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "a",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Xq": {
+            "opcode": "control_wait_until",
+            "next": null,
+            "parent": "Xf",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "Xt"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xt": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "Xq",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "Xu"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xu": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "Xt",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "aoF"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoF": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "Xu",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "a",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Xn": {
+            "opcode": "control_wait_until",
+            "next": null,
+            "parent": "Xl",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "Xv"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xv": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "Xn",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "Xw"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xw": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "Xv",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "aoG"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoG": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "Xw",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "d",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Xo": {
+            "opcode": "control_wait_until",
+            "next": null,
+            "parent": "Xk",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "Xx"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xx": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "Xo",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "Xy"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Xy": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "Xx",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "aoH"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoH": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "Xy",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "d",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Xc": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "Xz",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "jH"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoI": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "Xz",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1388,
+            "y": -2031
+        },
+        "Xz": {
+            "opcode": "procedures_call",
+            "next": "Xc",
+            "parent": "aoI",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    1,
+                    [
+                        10,
+                        "rec gameStart (2)"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "warp": "false"
+            }
+        },
+        "WC": {
+            "opcode": "Gamepad_setAxisDeadzone",
+            "next": "WD",
+            "parent": "anm",
+            "inputs": {
+                "DEADZONE": [
+                    1,
+                    [
+                        4,
+                        ".3"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "a": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "b",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "displayScore",
+                    "k5s*}*:k:PZ!kV$7(f$Z"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -782,
+            "y": 381
+        },
+        "b": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "a",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        }
+    },
+    "comments": {},
+    "currentCostume": 0,
+    "costumes": [
+        {
+            "name": "Car",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "360528859e53190beee09d68174c9d56",
+            "md5ext": "360528859e53190beee09d68174c9d56.svg",
+            "rotationCenterX": 42.47331243544005,
+            "rotationCenterY": 26.74326274059058
+        },
+        {
+            "name": "danger//front",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "d0759bb83b1b7920af675be466f99efb",
+            "md5ext": "d0759bb83b1b7920af675be466f99efb.svg",
+            "rotationCenterX": -43.5583120232655,
+            "rotationCenterY": 16.06186013817856
+        },
+        {
+            "name": "danger//front left",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "9c888de929acef4be7380867134a834b",
+            "md5ext": "9c888de929acef4be7380867134a834b.svg",
+            "rotationCenterX": -29.969586597740374,
+            "rotationCenterY": 28.5542890620884
+        },
+        {
+            "name": "danger//front right",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "fa9275ac0e68e09007eccb5c298185f0",
+            "md5ext": "fa9275ac0e68e09007eccb5c298185f0.svg",
+            "rotationCenterX": -31.5945898822132,
+            "rotationCenterY": -8.695708542685054
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 1,
+    "visible": false,
+    "x": 188,
+    "y": -70,
+    "size": 100,
+    "direction": 0,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

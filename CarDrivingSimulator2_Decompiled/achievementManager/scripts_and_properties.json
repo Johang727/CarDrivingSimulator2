@@ -1,0 +1,2531 @@
+{
+    "isStage": false,
+    "name": "achievementManager",
+    "variables": {},
+    "lists": {},
+    "broadcasts": {},
+    "blocks": {
+        "aMC": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "fH",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "unlockAchievement",
+                    "O$PV.F=1Y;;*.2!|/TA:"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 377,
+            "y": 289
+        },
+        "fH": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": "fI",
+            "parent": "aMC",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "aMD"
+                ],
+                "LAYER": [
+                    1,
+                    [
+                        4,
+                        "9999999999999"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMD": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "fH",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "achievementManager",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "fI": {
+            "opcode": "data_addtolist",
+            "next": "BC",
+            "parent": "fH",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "aME",
+                    [
+                        10,
+                        "cosa"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "unlockedAchievements",
+                    "sr]9)#x~4-qE+/.34k9G"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aME": {
+            "opcode": "lmsMoreEvents_receivedData",
+            "next": null,
+            "parent": "fI",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "BC": {
+            "opcode": "localstorage_set",
+            "next": "[L",
+            "parent": "fI",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "achievements"
+                    ]
+                ],
+                "VALUE": [
+                    3,
+                    "[M",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[M": {
+            "opcode": "lmsData_getListArray",
+            "next": null,
+            "parent": "BC",
+            "inputs": {
+                "LIST": [
+                    1,
+                    "aMF"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMF": {
+            "opcode": "lmsData_menu_lists",
+            "next": null,
+            "parent": "[M",
+            "inputs": {},
+            "fields": {
+                "lists": [
+                    "unlockedAchievements",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "[L": {
+            "opcode": "lmsSpAsMoreControl_startBlocks",
+            "next": null,
+            "parent": "BC",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "fJ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fJ": {
+            "opcode": "lmsTempVars2_setRuntimeVariable",
+            "next": "fK",
+            "parent": "[L",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "ACH_achievement#"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "aMG",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMG": {
+            "opcode": "data_lengthoflist",
+            "next": null,
+            "parent": "fJ",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "unlockedAchievements",
+                    "sr]9)#x~4-qE+/.34k9G"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "fK": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": "fL",
+            "parent": "fJ",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "number"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "aMH",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMH": {
+            "opcode": "lmsTempVars2_getRuntimeVariable",
+            "next": null,
+            "parent": "fK",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "ACH_achievement#"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fL": {
+            "opcode": "control_wait_until",
+            "next": "[N",
+            "parent": "fK",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "[O"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[O": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "fL",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aMI",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMI": {
+            "opcode": "lmsTempVars2_getRuntimeVariable",
+            "next": null,
+            "parent": "[O",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "ACH_isRunning?"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[N": {
+            "opcode": "procedures_call",
+            "next": null,
+            "parent": "fL",
+            "inputs": {
+                "ZaG52!~)JEfR6io_|}Ou": [
+                    3,
+                    "aMJ",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "displayAchievement %s",
+                "argumentids": "[\"ZaG52!~)JEfR6io_|}Ou\"]",
+                "warp": "false"
+            }
+        },
+        "aMJ": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "[N",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "number"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMK": {
+            "opcode": "event_whenflagclicked",
+            "next": "[P",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -789,
+            "y": 138
+        },
+        "[P": {
+            "opcode": "looks_hide",
+            "next": "[Q",
+            "parent": "aMK",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[Q": {
+            "opcode": "verctedictionaries_dict_delete",
+            "next": "BD",
+            "parent": "[P",
+            "inputs": {
+                "DICT": [
+                    1,
+                    [
+                        10,
+                        "possibleAchievements"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "BD": {
+            "opcode": "lmscomments_commentC",
+            "next": "BE",
+            "parent": "[Q",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "common achievements"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "[R"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[R": {
+            "opcode": "lmsTempVars2_setRuntimeVariable",
+            "next": "[S",
+            "parent": "BD",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "cmn_ach"
+                    ]
+                ],
+                "STRING": [
+                    1,
+                    [
+                        10,
+                        "5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[S": {
+            "opcode": "verctedictionaries_dict_set",
+            "next": "[T",
+            "parent": "[R",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "moneyShift"
+                    ]
+                ],
+                "DICT": [
+                    1,
+                    [
+                        10,
+                        "possibleAchievements"
+                    ]
+                ],
+                "VAL": [
+                    1,
+                    [
+                        10,
+                        "dn:Money Shift/desc:RPM exceeds 20K RPM/r:0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[T": {
+            "opcode": "verctedictionaries_dict_set",
+            "next": "[U",
+            "parent": "[S",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "engine"
+                    ]
+                ],
+                "DICT": [
+                    1,
+                    [
+                        10,
+                        "possibleAchievements"
+                    ]
+                ],
+                "VAL": [
+                    1,
+                    [
+                        10,
+                        "dn:New Engine, New Me/desc:Purchase a new engine/r:0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[U": {
+            "opcode": "verctedictionaries_dict_set",
+            "next": "[V",
+            "parent": "[T",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "challenger"
+                    ]
+                ],
+                "DICT": [
+                    1,
+                    [
+                        10,
+                        "possibleAchievements"
+                    ]
+                ],
+                "VAL": [
+                    1,
+                    [
+                        10,
+                        "dn:Challenger/desc:Complete a challenge/r:0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[V": {
+            "opcode": "verctedictionaries_dict_set",
+            "next": "aML",
+            "parent": "[U",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "gamble0"
+                    ]
+                ],
+                "DICT": [
+                    1,
+                    [
+                        10,
+                        "possibleAchievements"
+                    ]
+                ],
+                "VAL": [
+                    1,
+                    [
+                        10,
+                        "dn:Big Money, Big Money!/desc:Lose a net $10 to gambling/r:0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aML": {
+            "opcode": "verctedictionaries_dict_set",
+            "next": null,
+            "parent": "[V",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "gamble1"
+                    ]
+                ],
+                "DICT": [
+                    1,
+                    [
+                        10,
+                        "possibleAchievements"
+                    ]
+                ],
+                "VAL": [
+                    1,
+                    [
+                        10,
+                        "dn:99% of Gamblers.../desc:Lose a net $100 to gambling/r:0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "BE": {
+            "opcode": "lmscomments_commentC",
+            "next": "[W",
+            "parent": "BD",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "rare achievements"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "aMM"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMM": {
+            "opcode": "lmsTempVars2_setRuntimeVariable",
+            "next": null,
+            "parent": "BE",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "rare_ach"
+                    ]
+                ],
+                "STRING": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[W": {
+            "opcode": "lmscomments_commentC",
+            "next": null,
+            "parent": "BE",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "secret achievements"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "aMN"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMN": {
+            "opcode": "lmsTempVars2_setRuntimeVariable",
+            "next": null,
+            "parent": "[W",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "sec_ach"
+                    ]
+                ],
+                "STRING": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMO": {
+            "opcode": "lmsMoreEvents_whenStopClicked",
+            "next": "aMP",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -275,
+            "y": -198
+        },
+        "aMP": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "aMO",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMQ": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "[X",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "fullReset",
+                    "4#x^MG3o6xEMK[hN@^nx"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1281,
+            "y": 415
+        },
+        "[X": {
+            "opcode": "data_deletealloflist",
+            "next": "aMR",
+            "parent": "aMQ",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "unlockedAchievements",
+                    "sr]9)#x~4-qE+/.34k9G"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMR": {
+            "opcode": "localstorage_removeAll",
+            "next": null,
+            "parent": "[X",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[Y": {
+            "opcode": "procedures_definition",
+            "next": "[Z",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "[!"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 1320,
+            "y": 634
+        },
+        "[!": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "[Y",
+            "inputs": {
+                "ZaG52!~)JEfR6io_|}Ou": [
+                    1,
+                    "aMS"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "displayAchievement %s",
+                "argumentids": "[\"ZaG52!~)JEfR6io_|}Ou\"]",
+                "argumentnames": "[\"achievement\"]",
+                "argumentdefaults": "[\"\"]",
+                "warp": "false"
+            }
+        },
+        "aMS": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "[!",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "achievement",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "[Z": {
+            "opcode": "lmsTempVars2_setRuntimeVariable",
+            "next": "[#",
+            "parent": "[Y",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "ACH_isRunning?"
+                    ]
+                ],
+                "STRING": [
+                    1,
+                    [
+                        10,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[#": {
+            "opcode": "looks_seteffectto",
+            "next": "[%",
+            "parent": "[Z",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "COLOR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "[%": {
+            "opcode": "looks_seteffectto",
+            "next": "[(",
+            "parent": "[#",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "[(": {
+            "opcode": "looks_hide",
+            "next": "z",
+            "parent": "[%",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "z": {
+            "opcode": "control_if_else",
+            "next": "aMT",
+            "parent": "[(",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "[)"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "cm"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "fM"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[)": {
+            "opcode": "verctedictionaries_dict_property_defined",
+            "next": null,
+            "parent": "z",
+            "inputs": {
+                "KEY": [
+                    3,
+                    "[*",
+                    [
+                        10,
+                        "achievement"
+                    ]
+                ],
+                "DICT": [
+                    1,
+                    [
+                        10,
+                        "possibleAchievements"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[*": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "[)",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "aMU",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "unlockedAchievements",
+                    "sr]9)#x~4-qE+/.34k9G"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMU": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "[*",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "achievement",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "cm": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": "[+",
+            "parent": "z",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    "[,"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "fN"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[,": {
+            "opcode": "lmscomments_commentReporter",
+            "next": null,
+            "parent": "cm",
+            "inputs": {
+                "INPUT": [
+                    3,
+                    "[-",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "rarity"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[-": {
+            "opcode": "strings_split",
+            "next": null,
+            "parent": "[,",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "[.",
+                    [
+                        10,
+                        "apple"
+                    ]
+                ],
+                "SPLIT": [
+                    1,
+                    [
+                        10,
+                        "r:"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[.": {
+            "opcode": "verctedictionaries_dict_get",
+            "next": null,
+            "parent": "[-",
+            "inputs": {
+                "KEY": [
+                    3,
+                    "[/",
+                    [
+                        10,
+                        "bar"
+                    ]
+                ],
+                "DICT": [
+                    1,
+                    [
+                        10,
+                        "possibleAchievements"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[/": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "[.",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "aMV",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "unlockedAchievements",
+                    "sr]9)#x~4-qE+/.34k9G"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMV": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "[/",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "achievement",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "fN": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "fO",
+            "parent": "cm",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "[:"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[:": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "fP",
+            "parent": "fN",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "blank == 0 also"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fP": {
+            "opcode": "looks_switchcostumeto",
+            "next": "aMW",
+            "parent": "[:",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aMX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMX": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "fP",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "unlocked",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aMW": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "fP",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fO": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "[;",
+            "parent": "fN",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "1"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "fQ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fQ": {
+            "opcode": "looks_switchcostumeto",
+            "next": "aMY",
+            "parent": "fO",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aMZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMZ": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "fQ",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "unlocked_rare",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aMY": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "fQ",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[;": {
+            "opcode": "lmsSpAsMoreControl_default",
+            "next": null,
+            "parent": "fO",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "fR"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fR": {
+            "opcode": "looks_switchcostumeto",
+            "next": "aM!",
+            "parent": "[;",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aM#"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM#": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "fR",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "unlocked_undef",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM!": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "fR",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[+": {
+            "opcode": "motion_gotoxy",
+            "next": "[=",
+            "parent": "cm",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "-135"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[=": {
+            "opcode": "looks_setsizeto",
+            "next": "fS",
+            "parent": "[+",
+            "inputs": {
+                "SIZE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fS": {
+            "opcode": "lmsSpAsMoreControl_startBlocks",
+            "next": "[?",
+            "parent": "[=",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "cn"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "cn": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": null,
+            "parent": "fS",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "aM%"
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "100"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "aM("
+                ],
+                "DIRECTION": [
+                    1,
+                    "aM)"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM%": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "cn",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "size",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM(": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "cn",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "elastic",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM)": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "cn",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "in out",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "[?": {
+            "opcode": "control_wait",
+            "next": "[@",
+            "parent": "fS",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[@": {
+            "opcode": "looks_show",
+            "next": "A",
+            "parent": "[?",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "A": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": "[[",
+            "parent": "[@",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "aM*"
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "450"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "aM+"
+                ],
+                "DIRECTION": [
+                    1,
+                    "aM,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM*": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "A",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "direction",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM+": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "A",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "quad",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM,": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "A",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "in out",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "[[": {
+            "opcode": "control_wait",
+            "next": "fT",
+            "parent": "A",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fT": {
+            "opcode": "control_repeat",
+            "next": "co",
+            "parent": "[[",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "25"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "[]"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[]": {
+            "opcode": "looks_changeeffectby",
+            "next": "aM-",
+            "parent": "fT",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "4"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM-": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "[]",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "co": {
+            "opcode": "looks_switchcostumeto",
+            "next": "fU",
+            "parent": "fT",
+            "inputs": {
+                "COSTUME": [
+                    3,
+                    "[^",
+                    "aM."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[^": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "co",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "aM/",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "unlockedAchievements",
+                    "sr]9)#x~4-qE+/.34k9G"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM/": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "[^",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "achievement",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM.": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "co",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "base1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "fU": {
+            "opcode": "control_repeat",
+            "next": "[_",
+            "parent": "co",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "25"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "[`"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[`": {
+            "opcode": "looks_changeeffectby",
+            "next": "aM:",
+            "parent": "fU",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "-4"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM:": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "[`",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[_": {
+            "opcode": "control_wait",
+            "next": "B",
+            "parent": "fU",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": "aM;",
+            "parent": "[_",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "aM="
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "aM?"
+                ],
+                "DIRECTION": [
+                    1,
+                    "aM@"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM=": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "B",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "size",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM?": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "B",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "elastic",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM@": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "B",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "in out",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM;": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "B",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fM": {
+            "opcode": "looks_switchcostumeto",
+            "next": "[{",
+            "parent": "z",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aM["
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM[": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "fM",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "unlocked_undef",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "[{": {
+            "opcode": "motion_gotoxy",
+            "next": "[|",
+            "parent": "fM",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "-135"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[|": {
+            "opcode": "looks_setsizeto",
+            "next": "fV",
+            "parent": "[{",
+            "inputs": {
+                "SIZE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fV": {
+            "opcode": "lmsSpAsMoreControl_startBlocks",
+            "next": "[}",
+            "parent": "[|",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "cp"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "cp": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": null,
+            "parent": "fV",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "aM]"
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "100"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "aM^"
+                ],
+                "DIRECTION": [
+                    1,
+                    "aM_"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM]": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "cp",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "size",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM^": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "cp",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "elastic",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM_": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "cp",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "in out",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "[}": {
+            "opcode": "control_wait",
+            "next": "[~",
+            "parent": "fV",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[~": {
+            "opcode": "looks_show",
+            "next": "C",
+            "parent": "[}",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "C": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": "]a",
+            "parent": "[~",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "aM`"
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "450"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "aM{"
+                ],
+                "DIRECTION": [
+                    1,
+                    "aM|"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM`": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "C",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "direction",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM{": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "C",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "quad",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM|": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "C",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "in out",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]a": {
+            "opcode": "control_wait",
+            "next": "D",
+            "parent": "C",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "D": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": "]b",
+            "parent": "]a",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "aM}"
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "aM~"
+                ],
+                "DIRECTION": [
+                    1,
+                    "aNa"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aM}": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "D",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "size",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aM~": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "D",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "elastic",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aNa": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "D",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "in out",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]b": {
+            "opcode": "looks_hide",
+            "next": "aNb",
+            "parent": "D",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNb": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "]b",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMT": {
+            "opcode": "lmsTempVars2_setRuntimeVariable",
+            "next": null,
+            "parent": "z",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "ACH_isRunning?"
+                    ]
+                ],
+                "STRING": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNc": {
+            "opcode": "event_whenflagclicked",
+            "next": "]c",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 754,
+            "y": -500
+        },
+        "]c": {
+            "opcode": "localstorage_setProjectId",
+            "next": "]d",
+            "parent": "aNc",
+            "inputs": {
+                "ID": [
+                    1,
+                    [
+                        10,
+                        "CarDrivingSimulator2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]d": {
+            "opcode": "lmsTempVars2_setRuntimeVariable",
+            "next": "]e",
+            "parent": "]c",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "ACH_achievement#"
+                    ]
+                ],
+                "STRING": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]e": {
+            "opcode": "lmsTempVars2_setRuntimeVariable",
+            "next": "BF",
+            "parent": "]d",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "ACH_isRunning?"
+                    ]
+                ],
+                "STRING": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "BF": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "]e",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "]f"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "BG"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]f": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "BF",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "]g"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]g": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "]f",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aNd",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNd": {
+            "opcode": "localstorage_get",
+            "next": null,
+            "parent": "]g",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "achievements"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "BG": {
+            "opcode": "lmsData_setListArray",
+            "next": null,
+            "parent": "BF",
+            "inputs": {
+                "LIST": [
+                    1,
+                    "aNe"
+                ],
+                "ARRAY": [
+                    3,
+                    "aNf",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNe": {
+            "opcode": "lmsData_menu_lists",
+            "next": null,
+            "parent": "BG",
+            "inputs": {},
+            "fields": {
+                "lists": [
+                    "unlockedAchievements",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aNf": {
+            "opcode": "localstorage_get",
+            "next": null,
+            "parent": "BG",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "achievements"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNg": {
+            "opcode": "event_whenflagclicked",
+            "next": "aNh",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -775,
+            "y": 834
+        },
+        "aNh": {
+            "opcode": "lmscomments_commentCommand",
+            "next": null,
+            "parent": "aNg",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "comment"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        }
+    },
+    "comments": {},
+    "currentCostume": 6,
+    "costumes": [
+        {
+            "name": "unlocked",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "c0c0178b81242599e274ec08161a6e9f",
+            "md5ext": "c0c0178b81242599e274ec08161a6e9f.svg",
+            "rotationCenterX": 141.881935,
+            "rotationCenterY": 22.326189999999997
+        },
+        {
+            "name": "unlocked_rare",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "dee814e7704f52e209bf4876082a6fb9",
+            "md5ext": "dee814e7704f52e209bf4876082a6fb9.svg",
+            "rotationCenterX": 141.88193262916997,
+            "rotationCenterY": 22.326190000000025
+        },
+        {
+            "name": "unlocked_undef",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "d103864f9428e3cde41be3e588a71dd9",
+            "md5ext": "d103864f9428e3cde41be3e588a71dd9.svg",
+            "rotationCenterX": 141.881935,
+            "rotationCenterY": 22.326189999999997
+        },
+        {
+            "name": "base1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "1568018b8100d709843054ee9229ede8",
+            "md5ext": "1568018b8100d709843054ee9229ede8.svg",
+            "rotationCenterX": 141.881915,
+            "rotationCenterY": 22.326190000000025
+        },
+        {
+            "name": "moneyShift",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "1069dd51e35e17e94c6c8a654e0981cc",
+            "md5ext": "1069dd51e35e17e94c6c8a654e0981cc.svg",
+            "rotationCenterX": 141.881905,
+            "rotationCenterY": 22.326190000000054
+        },
+        {
+            "name": "engine",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "7d5ff300e155bb02c2eba3b710c55d4b",
+            "md5ext": "7d5ff300e155bb02c2eba3b710c55d4b.svg",
+            "rotationCenterX": 141.881895,
+            "rotationCenterY": 22.326190000000082
+        },
+        {
+            "name": "challenger",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "398eaf3b71afc20746b656c34abe447c",
+            "md5ext": "398eaf3b71afc20746b656c34abe447c.svg",
+            "rotationCenterX": 141.88188499999998,
+            "rotationCenterY": 22.32619000000011
+        },
+        {
+            "name": "gamble0",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "13cbb94b678b2f1c760860e8a05c45e7",
+            "md5ext": "13cbb94b678b2f1c760860e8a05c45e7.svg",
+            "rotationCenterX": 141.88187499999998,
+            "rotationCenterY": 22.32619000000014
+        },
+        {
+            "name": "gamble1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "bc62d431bbc5efe5534371ede58797e6",
+            "md5ext": "bc62d431bbc5efe5534371ede58797e6.svg",
+            "rotationCenterX": 141.88187499999998,
+            "rotationCenterY": 22.326190000000167
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 20,
+    "visible": false,
+    "x": 0,
+    "y": -135,
+    "size": 0,
+    "direction": 90,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

@@ -1,0 +1,982 @@
+{
+    "isStage": false,
+    "name": "lights//headlights",
+    "variables": {
+        "v!N)Nnn%[gHV!V!v+y:q": [
+            "on",
+            0
+        ]
+    },
+    "lists": {},
+    "broadcasts": {},
+    "blocks": {
+        "apG": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "eh",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -4367,
+            "y": -4157
+        },
+        "eh": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "apG",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "tj"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "tj": {
+            "opcode": "motion_goto",
+            "next": "tk",
+            "parent": "eh",
+            "inputs": {
+                "TO": [
+                    1,
+                    "apH"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apH": {
+            "opcode": "motion_goto_menu",
+            "next": null,
+            "parent": "tj",
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "car//Car"
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "tk": {
+            "opcode": "motion_pointindirection",
+            "next": "tl",
+            "parent": "tj",
+            "inputs": {
+                "DIRECTION": [
+                    3,
+                    "ei",
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ei": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "tk",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "apI"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "direction"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "apI": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "ei",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "car//Car"
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "apJ": {
+            "opcode": "lmsMoreEvents_whenStopClicked",
+            "next": "apK",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -4074,
+            "y": -4335
+        },
+        "apK": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "apJ",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apL": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "ej",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -3657,
+            "y": -4273
+        },
+        "ej": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "apL",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "tm"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "tm": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "ej",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ek"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "f["
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ek": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "tm",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "apM"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apM": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "ek",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "f",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "el": {
+            "opcode": "lmsLooksPlus_spriteVisible",
+            "next": null,
+            "parent": "f[",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "apN"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apN": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "el",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "lights//headlights",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "f[": {
+            "opcode": "control_if_else",
+            "next": "em",
+            "parent": "tm",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "el"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "apO"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "apP"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apO": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "f[",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apP": {
+            "opcode": "looks_show",
+            "next": null,
+            "parent": "f[",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "em": {
+            "opcode": "control_wait_until",
+            "next": null,
+            "parent": "f[",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "en"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "en": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "em",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "eo"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "eo": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "en",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "apQ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apQ": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "eo",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "f",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "tl": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": null,
+            "parent": "tk",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "apR"
+                ],
+                "LAYER": [
+                    3,
+                    "ep",
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apR": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "tl",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "lights//headlights",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "eq": {
+            "opcode": "lmsLooksPlus_spriteLayerNumber",
+            "next": null,
+            "parent": "ep",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "apS"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apS": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "eq",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ep": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "tl",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "eq",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apT": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "er",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "reshowRoad",
+                    "ecxuAlvliReS0C[6U6?B"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -4371,
+            "y": -3801
+        },
+        "er": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "apT",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "tn"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "tn": {
+            "opcode": "motion_goto",
+            "next": "to",
+            "parent": "er",
+            "inputs": {
+                "TO": [
+                    1,
+                    "apU"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apU": {
+            "opcode": "motion_goto_menu",
+            "next": null,
+            "parent": "tn",
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "to": {
+            "opcode": "motion_pointindirection",
+            "next": "tp",
+            "parent": "tn",
+            "inputs": {
+                "DIRECTION": [
+                    3,
+                    "es",
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "es": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "to",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "apV"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "direction",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "apV": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "es",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "tp": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": null,
+            "parent": "to",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "apW"
+                ],
+                "LAYER": [
+                    3,
+                    "et",
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apW": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "tp",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "lights//headlights",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "et": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "tp",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "eu",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "eu": {
+            "opcode": "lmsLooksPlus_spriteLayerNumber",
+            "next": null,
+            "parent": "et",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "apX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apX": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "eu",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "apY": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "ev",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "reshowRoad",
+                    "ecxuAlvliReS0C[6U6?B"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -3634,
+            "y": -3744
+        },
+        "ev": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "apY",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "tq"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "tq": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "ev",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ew"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "f]"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ew": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "tq",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "apZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "apZ": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "ew",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "f",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "f]": {
+            "opcode": "control_if_else",
+            "next": "ex",
+            "parent": "tq",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ey"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "ap!"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "ap#"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ey": {
+            "opcode": "lmsLooksPlus_spriteVisible",
+            "next": null,
+            "parent": "f]",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "ap%"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ap%": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "ey",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "lights//headlights",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ap!": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "f]",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ap#": {
+            "opcode": "looks_show",
+            "next": null,
+            "parent": "f]",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ex": {
+            "opcode": "control_wait_until",
+            "next": null,
+            "parent": "f]",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ez"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ez": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "ex",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "eA"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "eA": {
+            "opcode": "sensing_keypressed",
+            "next": null,
+            "parent": "ez",
+            "inputs": {
+                "KEY_OPTION": [
+                    1,
+                    "ap("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ap(": {
+            "opcode": "sensing_keyoptions",
+            "next": null,
+            "parent": "eA",
+            "inputs": {},
+            "fields": {
+                "KEY_OPTION": [
+                    "f",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ap)": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "XM",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterDealer",
+                    ";swRG=Sg`[DRYdeyG9tj"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -3105,
+            "y": -4452
+        },
+        "XM": {
+            "opcode": "control_stop",
+            "next": "ap*",
+            "parent": "ap)",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "ap*": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "XM",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "i": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "g",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterGas",
+                    "vlEIMBOG^lTuM.Xe.BdL"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -3592,
+            "y": -4613
+        },
+        "g": {
+            "opcode": "control_stop",
+            "next": "ap+",
+            "parent": "i",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "ap+": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "g",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "a": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "b",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "displayScore",
+                    "k5s*}*:k:PZ!kV$7(f$Z"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -3475,
+            "y": -3256
+        },
+        "b": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "a",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        }
+    },
+    "comments": {},
+    "currentCostume": 1,
+    "costumes": [
+        {
+            "name": "disfraz1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+            "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+            "rotationCenterX": 0,
+            "rotationCenterY": 0
+        },
+        {
+            "name": "headlights",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "479bc00b34761e1eff88402906ccada1",
+            "md5ext": "479bc00b34761e1eff88402906ccada1.svg",
+            "rotationCenterX": 300,
+            "rotationCenterY": 187.5
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 3,
+    "visible": false,
+    "x": 188,
+    "y": -70,
+    "size": 100,
+    "direction": 0,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

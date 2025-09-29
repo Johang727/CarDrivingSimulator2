@@ -1,0 +1,133 @@
+{
+    "isStage": false,
+    "name": "run",
+    "variables": {
+        "6o/e|^Ys~lf9+e^/0ob+": [
+            "pedalForce",
+            0
+        ],
+        "Vzjd)2CSdy?c:q1Ty;?e": [
+            "breakForce",
+            0
+        ],
+        ":(!D{KR@b|H27oUZ-Zm[": [
+            "acceleration",
+            0
+        ],
+        "AtK?8fP(S+g,]Z/QcP%[": [
+            "currentGear",
+            0
+        ],
+        "mgB}o`RFiC2t`9:8_zc!": [
+            "RPM",
+            0
+        ],
+        "|19$zzLlGyRE}kQj=oCs": [
+            "engineON",
+            0
+        ],
+        "{_%hq3)sbZe2J)w?U9RU": [
+            "velocity",
+            0
+        ],
+        "z_LC.2=%Oca`4QZP-zDZ": [
+            "odometer",
+            0
+        ],
+        ";Q-@{07#GCmh0?@8C%l|": [
+            "currentlyShifting",
+            0
+        ],
+        "8sDV__W9_c9[gA,uukB8": [
+            "auto",
+            0
+        ],
+        "j=ye9.Kh0q}VT67:r~jb": [
+            "fuel",
+            0
+        ],
+        "ol:dEtzZK-Bebm4v1%}u": [
+            "engineDying",
+            0
+        ],
+        "4.a6us1XXC*fp=-hP^_^": [
+            "health",
+            0
+        ],
+        "-Q[iqy4u}1l3:n)@q!=j": [
+            "temp",
+            0
+        ],
+        ",$ViwMH,ypMRmSCHj5?@": [
+            "tempMod",
+            0
+        ],
+        "Y$^,WQ9lc37gritDyUC2": [
+            "tempSpeed",
+            0
+        ],
+        "d2s#ctpcZD+cfn-@yp],": [
+            "temperature",
+            0
+        ],
+        "5Fh6%t`/e7Gakn|J,93W": [
+            "blinker",
+            0
+        ],
+        "hvVzwkX/4*/,:FoUzzME": [
+            "fuelMax",
+            0
+        ],
+        "F=b9Ya|pcj0U,C]h!C1m": [
+            "healthMax",
+            0
+        ]
+    },
+    "lists": {
+        "Lu(Kn%kujmCrLp[xs,~]": [
+            "engine0",
+            []
+        ],
+        "d?fmyd^V~S)-61dOVxmF": [
+            "engine3",
+            []
+        ],
+        ")M]_51f1B}73[MvOb]!l": [
+            "engine1",
+            []
+        ],
+        "HDNNGA5QNE~ar?[1a!zE": [
+            "engine2",
+            []
+        ],
+        "|NEj^Z5!2ep`1yDKWX=q": [
+            "engineBAD",
+            []
+        ]
+    },
+    "broadcasts": {},
+    "blocks": {},
+    "comments": {},
+    "currentCostume": 0,
+    "costumes": [
+        {
+            "name": "disfraz1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+            "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+            "rotationCenterX": 0,
+            "rotationCenterY": 0
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 17,
+    "visible": true,
+    "x": 0,
+    "y": 0,
+    "size": 100,
+    "direction": 90,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

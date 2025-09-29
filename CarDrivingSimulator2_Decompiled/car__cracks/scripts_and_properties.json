@@ -1,0 +1,721 @@
+{
+    "isStage": false,
+    "name": "car//cracks",
+    "variables": {},
+    "lists": {},
+    "broadcasts": {},
+    "blocks": {
+        "s;": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "#",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -998,
+            "y": -92
+        },
+        "#": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "s;",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "XA"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "XA": {
+            "opcode": "looks_show",
+            "next": "%",
+            "parent": "#",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "%": {
+            "opcode": "motion_goto",
+            "next": "(",
+            "parent": "XA",
+            "inputs": {
+                "TO": [
+                    1,
+                    "s="
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s=": {
+            "opcode": "motion_goto_menu",
+            "next": null,
+            "parent": "%",
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "(": {
+            "opcode": "motion_pointindirection",
+            "next": "b[",
+            "parent": "%",
+            "inputs": {
+                "DIRECTION": [
+                    3,
+                    "e",
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "(",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "s?"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "direction",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "s?": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "e",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "b[": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": "XB",
+            "parent": "(",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "s@"
+                ],
+                "LAYER": [
+                    3,
+                    "h",
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s@": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "b[",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "car//cracks",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "h": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "b[",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "f.",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "f.": {
+            "opcode": "lmsLooksPlus_spriteLayerNumber",
+            "next": null,
+            "parent": "h",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "s["
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s[": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "f.",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aoJ": {
+            "opcode": "event_whenflagclicked",
+            "next": "aoK",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -891,
+            "y": -289
+        },
+        "aoK": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "aoJ",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoL": {
+            "opcode": "lmsMoreEvents_whenStopClicked",
+            "next": "aoM",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -628,
+            "y": -282
+        },
+        "aoM": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "aoL",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "XB": {
+            "opcode": "looks_seteffectto",
+            "next": null,
+            "parent": "b[",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "XC",
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "XC": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "XB",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "aoN"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "health",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoN": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "XC",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aoO": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "XD",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "reshowRoad",
+                    "ecxuAlvliReS0C[6U6?B"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1002,
+            "y": 327
+        },
+        "XD": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "aoO",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "XE"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "XE": {
+            "opcode": "looks_show",
+            "next": "s]",
+            "parent": "XD",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "s]": {
+            "opcode": "motion_goto",
+            "next": "s^",
+            "parent": "XE",
+            "inputs": {
+                "TO": [
+                    1,
+                    "aoP"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoP": {
+            "opcode": "motion_goto_menu",
+            "next": null,
+            "parent": "s]",
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "s^": {
+            "opcode": "motion_pointindirection",
+            "next": ",",
+            "parent": "s]",
+            "inputs": {
+                "DIRECTION": [
+                    3,
+                    "XF",
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "XF": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "s^",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "aoQ"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "direction",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoQ": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "XF",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        ",": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": "XG",
+            "parent": "s^",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "aoR"
+                ],
+                "LAYER": [
+                    3,
+                    "XH",
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoR": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": ",",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "car//cracks",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "XH": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": ",",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "XI",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "3"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "XI": {
+            "opcode": "lmsLooksPlus_spriteLayerNumber",
+            "next": null,
+            "parent": "XH",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "aoS"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoS": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "XI",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "XG": {
+            "opcode": "looks_seteffectto",
+            "next": null,
+            "parent": ",",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "XJ",
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "XJ": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "XG",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "aoT"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "health",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aoT": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "XJ",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aoU": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "XK",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterDealer",
+                    ";swRG=Sg`[DRYdeyG9tj"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -257,
+            "y": 102
+        },
+        "XK": {
+            "opcode": "control_stop",
+            "next": "aoV",
+            "parent": "aoU",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "aoV": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "XK",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "i": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "g",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterGas",
+                    "vlEIMBOG^lTuM.Xe.BdL"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -229,
+            "y": -92
+        },
+        "g": {
+            "opcode": "control_stop",
+            "next": "aoW",
+            "parent": "i",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "aoW": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "g",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "a": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "b",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "displayScore",
+                    "k5s*}*:k:PZ!kV$7(f$Z"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -315,
+            "y": 353
+        },
+        "b": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "a",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        }
+    },
+    "comments": {},
+    "currentCostume": 0,
+    "costumes": [
+        {
+            "name": "damage",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "b746e2ea81f89ee9b8e64fd54d7c84b9",
+            "md5ext": "b746e2ea81f89ee9b8e64fd54d7c84b9.svg",
+            "rotationCenterX": 38.00127604624163,
+            "rotationCenterY": 18.12356931192923
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 4,
+    "visible": false,
+    "x": 188,
+    "y": -70,
+    "size": 100,
+    "direction": 0,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

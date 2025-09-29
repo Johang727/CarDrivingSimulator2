@@ -1,0 +1,2316 @@
+{
+    "isStage": false,
+    "name": "onScreenHint",
+    "variables": {
+        "7t3fZtjbo3Tl])s{/wD,": [
+            "data",
+            "start"
+        ]
+    },
+    "lists": {},
+    "broadcasts": {},
+    "blocks": {
+        "atE": {
+            "opcode": "event_whenflagclicked",
+            "next": "atF",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 171,
+            "y": 115
+        },
+        "atF": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "atE",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atG": {
+            "opcode": "lmsMoreEvents_whenStopClicked",
+            "next": "atH",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 518,
+            "y": 96
+        },
+        "atH": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "atG",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atI": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "#/",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "showHint",
+                    "!XKvFw=}pf5sHjZfZF6s"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 173,
+            "y": 613
+        },
+        "#/": {
+            "opcode": "looks_seteffectto",
+            "next": "vB",
+            "parent": "atI",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "25"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "vB": {
+            "opcode": "procedures_call",
+            "next": "vC",
+            "parent": "#/",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    3,
+                    "#:",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    [
+                        10,
+                        "rec"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "warp": "false"
+            }
+        },
+        "#:": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "vB",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "recieved: "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "atJ",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atJ": {
+            "opcode": "lmsMoreEvents_receivedData",
+            "next": null,
+            "parent": "#:",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vC": {
+            "opcode": "data_setvariableto",
+            "next": "#;",
+            "parent": "vB",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "atK",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "data",
+                    "7t3fZtjbo3Tl])s{/wD,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "atK": {
+            "opcode": "lmsMoreEvents_receivedData",
+            "next": null,
+            "parent": "vC",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "#;": {
+            "opcode": "procedures_call",
+            "next": "vD",
+            "parent": "vC",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    1,
+                    [
+                        10,
+                        "showHint (0)"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "warp": "false"
+            }
+        },
+        "vD": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": "kg",
+            "parent": "#;",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "atL"
+                ],
+                "LAYER": [
+                    1,
+                    [
+                        4,
+                        "250"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atL": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "vD",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "onScreenHint",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "kg": {
+            "opcode": "control_if",
+            "next": "#=",
+            "parent": "vD",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "#?"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "kh"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "#?": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "kg",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "#@"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "#@": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "#?",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "atM",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "140"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atM": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "#@",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "kh": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": null,
+            "parent": "kg",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "atN"
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "140"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        ".5"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "atO"
+                ],
+                "DIRECTION": [
+                    1,
+                    "atP"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atN": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "kh",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "y position",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "atO": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "kh",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "quart",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "atP": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "kh",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "in",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "#=": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "#[",
+            "parent": "kg",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "!y = 70"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "#[": {
+            "opcode": "looks_show",
+            "next": "vE",
+            "parent": "#=",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vE": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": "ki",
+            "parent": "#[",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    [
+                        12,
+                        "data",
+                        "7t3fZtjbo3Tl])s{/wD,"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vF"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vF": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vG",
+            "parent": "vE",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "gas_stop"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vH"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vH": {
+            "opcode": "looks_switchcostumeto",
+            "next": "atQ",
+            "parent": "vF",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "atR"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atR": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vH",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "gas//stop",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "atQ": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vH",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vG": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vI",
+            "parent": "vF",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "gas_off"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vJ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vJ": {
+            "opcode": "looks_switchcostumeto",
+            "next": "atS",
+            "parent": "vG",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "atT"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atT": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vJ",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "gas//off",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "atS": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vJ",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vI": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vK",
+            "parent": "vG",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "gas_hint"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vL"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vL": {
+            "opcode": "looks_switchcostumeto",
+            "next": "atU",
+            "parent": "vI",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "atV"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atV": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vL",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "gas//enter",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "atU": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vL",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vK": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vM",
+            "parent": "vI",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "engine_dead"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vN"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vN": {
+            "opcode": "looks_switchcostumeto",
+            "next": "atW",
+            "parent": "vK",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "atX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atX": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vN",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "engine//dead",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "atW": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vN",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vM": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vO",
+            "parent": "vK",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "stall"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vP"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vP": {
+            "opcode": "looks_switchcostumeto",
+            "next": "atY",
+            "parent": "vM",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "atZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "atZ": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vP",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "engine//stall",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "atY": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vP",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vO": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vQ",
+            "parent": "vM",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "clutch"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vR"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vR": {
+            "opcode": "looks_switchcostumeto",
+            "next": "at!",
+            "parent": "vO",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "at#"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at#": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vR",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "engine//clutch_start",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at!": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vR",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vQ": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vS",
+            "parent": "vO",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "neutral"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vT"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vT": {
+            "opcode": "looks_switchcostumeto",
+            "next": "at%",
+            "parent": "vQ",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "at("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at(": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vT",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "engine//neutralstart",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at%": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vT",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vS": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vU",
+            "parent": "vQ",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "fuel_out"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vV"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vV": {
+            "opcode": "looks_switchcostumeto",
+            "next": "at)",
+            "parent": "vS",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "at*"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at*": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vV",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "engine//gas",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at)": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vV",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vU": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vW",
+            "parent": "vS",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "start"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vX": {
+            "opcode": "looks_switchcostumeto",
+            "next": "at+",
+            "parent": "vU",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "at,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at,": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vX",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "engine//start",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at+": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vX",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vW": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "vY",
+            "parent": "vU",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "drive_auto"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "vZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vZ": {
+            "opcode": "looks_switchcostumeto",
+            "next": "at-",
+            "parent": "vW",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "at."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at.": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "vZ",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "engine//drive_auto",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at-": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "vZ",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "vY": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "v!",
+            "parent": "vW",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "drive"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "v#"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "v#": {
+            "opcode": "looks_switchcostumeto",
+            "next": "at/",
+            "parent": "vY",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "at:"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at:": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "v#",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "engine//drive",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at/": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "v#",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "v%": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "#]",
+            "parent": "v!",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "hide"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "gG"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "gG": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": "#^",
+            "parent": "v%",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "at;"
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "140"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "at="
+                ],
+                "DIRECTION": [
+                    1,
+                    "at?"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at;": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "gG",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "y position",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at=": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "gG",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "quart",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at?": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "gG",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "in",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "#^": {
+            "opcode": "looks_hide",
+            "next": "#_",
+            "parent": "gG",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "#_": {
+            "opcode": "control_stop",
+            "next": "at@",
+            "parent": "#^",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "at@": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "#_",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "#]": {
+            "opcode": "lmsSpAsMoreControl_default",
+            "next": null,
+            "parent": "v%",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "v("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "v(": {
+            "opcode": "procedures_call",
+            "next": "at[",
+            "parent": "#]",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    3,
+                    "#`",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    [
+                        10,
+                        "err"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "warp": "false"
+            }
+        },
+        "#`": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "v(",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "case <"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "at]",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at]": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "#`",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    [
+                        12,
+                        "data",
+                        "7t3fZtjbo3Tl])s{/wD,"
+                    ],
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    1,
+                    [
+                        10,
+                        "> is undefined"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at[": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "v(",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ki": {
+            "opcode": "jeremygamerTweening_tweenProperty",
+            "next": null,
+            "parent": "vE",
+            "inputs": {
+                "PROPERTY": [
+                    1,
+                    "at^"
+                ],
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "30"
+                    ]
+                ],
+                "SEC": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "MODE": [
+                    1,
+                    "at_"
+                ],
+                "DIRECTION": [
+                    1,
+                    "at`"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at^": {
+            "opcode": "jeremygamerTweening_menu_properties",
+            "next": null,
+            "parent": "ki",
+            "inputs": {},
+            "fields": {
+                "properties": [
+                    "y position",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at_": {
+            "opcode": "jeremygamerTweening_menu_modes",
+            "next": null,
+            "parent": "ki",
+            "inputs": {},
+            "fields": {
+                "modes": [
+                    "back",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at`": {
+            "opcode": "jeremygamerTweening_menu_direction",
+            "next": null,
+            "parent": "ki",
+            "inputs": {},
+            "fields": {
+                "direction": [
+                    "out",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "#{": {
+            "opcode": "procedures_definition",
+            "next": "#|",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "#}"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -2314,
+            "y": -1980
+        },
+        "#}": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "#{",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    1,
+                    "at{"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "argumentnames": "[\"\"]",
+                "argumentdefaults": "[\"\"]",
+                "warp": "false"
+            }
+        },
+        "at{": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "#}",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "#|": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "#~",
+            "parent": "#{",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "why do this? You can use the search to find functions"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "#~": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": null,
+            "parent": "#|",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "at|",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "at|": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "#~",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aPt": {
+            "opcode": "lmsSpAsMoreControl_startBlocks",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 719,
+            "y": 662
+        },
+        "%a": {
+            "opcode": "procedures_definition",
+            "next": "kj",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "v)"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -2363,
+            "y": -1788
+        },
+        "v)": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "%a",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    1,
+                    "at}"
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    "at~"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "argumentnames": "[\"msg\",\"err/wrn/etc\"]",
+                "argumentdefaults": "[\"\",\"\",\"\"]",
+                "warp": "false"
+            }
+        },
+        "at}": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "v)",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "at~": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "v)",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "kj": {
+            "opcode": "control_if_else",
+            "next": null,
+            "parent": "%a",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "%b"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "%c"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "%d"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "%b": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "kj",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aua",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aua": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "%b",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "%c": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "kj",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "v*",
+                    [
+                        10,
+                        "rec:checking save status..."
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "logs",
+                    ")^jAeXj?zvyzh`6dkQmA"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "v*": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "%c",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "aub",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "%e",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aub": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "v*",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "%e": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "v*",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ":"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "v+",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "v+": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "%e",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "auc",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "%f",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "auc": {
+            "opcode": "lmsAssets_getSpriteName",
+            "next": null,
+            "parent": "v+",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "%f": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "v+",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "aud",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aud": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "%f",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "%d": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "kj",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "v,",
+                    [
+                        10,
+                        "rec:checking save status..."
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "logs",
+                    ")^jAeXj?zvyzh`6dkQmA"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "v,": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "%d",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "v-",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "%g",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "v-": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "v,",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "aue",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "%h",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aue": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "v-",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "%h": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "v-",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ":"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "v.",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "v.": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "%h",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "auf",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "%i",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "auf": {
+            "opcode": "lmsAssets_getSpriteName",
+            "next": null,
+            "parent": "v.",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "%i": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "v.",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "aug",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aug": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "%i",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "%g": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "v,",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "auh",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "auh": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "%g",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aui": {
+            "opcode": "event_whenthisspriteclicked",
+            "next": "auj",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 792,
+            "y": 203
+        },
+        "auj": {
+            "opcode": "lmsMoreEvents_broadcastData",
+            "next": null,
+            "parent": "aui",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "showHint",
+                        "!XKvFw=}pf5sHjZfZF6s"
+                    ]
+                ],
+                "DATA": [
+                    1,
+                    [
+                        10,
+                        "hide"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "a": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "auk",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "displayScore",
+                    "k5s*}*:k:PZ!kV$7(f$Z"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 872,
+            "y": 365
+        },
+        "auk": {
+            "opcode": "lmsMoreEvents_broadcastData",
+            "next": null,
+            "parent": "a",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "showHint",
+                        "!XKvFw=}pf5sHjZfZF6s"
+                    ]
+                ],
+                "DATA": [
+                    1,
+                    [
+                        10,
+                        "hide"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "v!": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "v%",
+            "parent": "vY",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "kit"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "v/"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "v/": {
+            "opcode": "looks_switchcostumeto",
+            "next": "aul",
+            "parent": "v!",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aum"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aum": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "v/",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "item//kit",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aul": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "v/",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        }
+    },
+    "comments": {},
+    "currentCostume": 6,
+    "costumes": [
+        {
+            "name": "gas//stop",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "76f955aab53671eb2b1131f0a9e198cb",
+            "md5ext": "76f955aab53671eb2b1131f0a9e198cb.svg",
+            "rotationCenterX": 141.88192500000002,
+            "rotationCenterY": 174.61265163871764
+        },
+        {
+            "name": "gas//off",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "f71c286c7f9fef67942bd7771a295529",
+            "md5ext": "f71c286c7f9fef67942bd7771a295529.svg",
+            "rotationCenterX": 141.88192500000002,
+            "rotationCenterY": 169.56843971622533
+        },
+        {
+            "name": "gas//enter",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "63c5717a3188367cd1e8ec31869e1420",
+            "md5ext": "63c5717a3188367cd1e8ec31869e1420.svg",
+            "rotationCenterX": 126.326955,
+            "rotationCenterY": 165.59554
+        },
+        {
+            "name": "engine//stall",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "627cd1c90f36a7d1bc5b00d76c7704cd",
+            "md5ext": "627cd1c90f36a7d1bc5b00d76c7704cd.svg",
+            "rotationCenterX": 141.88193499999997,
+            "rotationCenterY": 169.5762947162253
+        },
+        {
+            "name": "engine//clutch_start",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "5f5511cfdc419740525a1fac9460843c",
+            "md5ext": "5f5511cfdc419740525a1fac9460843c.svg",
+            "rotationCenterX": 141.88193499999997,
+            "rotationCenterY": 169.18035471622534
+        },
+        {
+            "name": "engine//neutralstart",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "d6f77bfc329682858ffe9db8b510d71f",
+            "md5ext": "d6f77bfc329682858ffe9db8b510d71f.svg",
+            "rotationCenterX": 141.881935,
+            "rotationCenterY": 174.33514576975693
+        },
+        {
+            "name": "engine//start",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "9e928d18ee392aafdcc2b4b8e5ffd3f2",
+            "md5ext": "9e928d18ee392aafdcc2b4b8e5ffd3f2.svg",
+            "rotationCenterX": 141.88193499999997,
+            "rotationCenterY": 167.03746307750768
+        },
+        {
+            "name": "engine//gas",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "9d05389c8b2e9dfebc851a46dec42a77",
+            "md5ext": "9d05389c8b2e9dfebc851a46dec42a77.svg",
+            "rotationCenterX": 141.54087499999997,
+            "rotationCenterY": 177.00903807750768
+        },
+        {
+            "name": "engine//dead",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "d1b2ad2022d8df54a16c6d32f7adcf4b",
+            "md5ext": "d1b2ad2022d8df54a16c6d32f7adcf4b.svg",
+            "rotationCenterX": 194.07376499999998,
+            "rotationCenterY": 162.77534724287273
+        },
+        {
+            "name": "engine//drive",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "e9843c116b23deee6c987bc67c3f96a9",
+            "md5ext": "e9843c116b23deee6c987bc67c3f96a9.svg",
+            "rotationCenterX": 141.88193499999997,
+            "rotationCenterY": 166.30732210303958
+        },
+        {
+            "name": "engine//drive_auto",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "bd9b88c264179a93f9d015c8bbc59b4e",
+            "md5ext": "bd9b88c264179a93f9d015c8bbc59b4e.svg",
+            "rotationCenterX": 152.69317500000005,
+            "rotationCenterY": 171.50667489802436
+        },
+        {
+            "name": "item//kit",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "7209db17698b773b1884a0d97e2223c2",
+            "md5ext": "7209db17698b773b1884a0d97e2223c2.svg",
+            "rotationCenterX": 126.326945,
+            "rotationCenterY": 165.59554
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 22,
+    "visible": false,
+    "x": 0,
+    "y": 30,
+    "size": 75,
+    "direction": 90,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

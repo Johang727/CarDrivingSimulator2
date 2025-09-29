@@ -1,0 +1,237 @@
+{
+    "isStage": false,
+    "name": "Radio",
+    "variables": {},
+    "lists": {},
+    "broadcasts": {},
+    "blocks": {
+        "aMy": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "[G",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 83,
+            "y": 223
+        },
+        "[G": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "aMy",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "BA"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "BA": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": null,
+            "parent": "[G",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    "[H"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "BB"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[H": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "BA",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "aMz",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMz": {
+            "opcode": "sensing_current",
+            "next": null,
+            "parent": "[H",
+            "inputs": {},
+            "fields": {
+                "CURRENTMENU": [
+                    "HOUR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "BB": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "[I",
+            "parent": "BA",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "midnight"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "[J"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[J": {
+            "opcode": "sound_playuntildone",
+            "next": null,
+            "parent": "BB",
+            "inputs": {
+                "SOUND_MENU": [
+                    1,
+                    "aMA"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMA": {
+            "opcode": "sound_sounds_menu",
+            "next": null,
+            "parent": "[J",
+            "inputs": {},
+            "fields": {
+                "SOUND_MENU": [
+                    "Cave",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "[I": {
+            "opcode": "lmsSpAsMoreControl_default",
+            "next": null,
+            "parent": "BB",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "[K"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "[K": {
+            "opcode": "sound_playuntildone",
+            "next": null,
+            "parent": "[I",
+            "inputs": {
+                "SOUND_MENU": [
+                    1,
+                    "aMB"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aMB": {
+            "opcode": "sound_sounds_menu",
+            "next": null,
+            "parent": "[K",
+            "inputs": {},
+            "fields": {
+                "SOUND_MENU": [
+                    "Cave",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aPE": {
+            "opcode": "event_broadcast",
+            "next": null,
+            "parent": null,
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "enterDealer",
+                        ";swRG=Sg`[DRYdeyG9tj"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 322,
+            "y": 894
+        }
+    },
+    "comments": {},
+    "currentCostume": 0,
+    "costumes": [
+        {
+            "name": "disfraz1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+            "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+            "rotationCenterX": 0,
+            "rotationCenterY": 0
+        }
+    ],
+    "sounds": [
+        {
+            "name": "Cave",
+            "assetId": "c56a88c790c4403713de87d2d1311fcc",
+            "dataFormat": "mp3",
+            "rate": 48000,
+            "sampleCount": 7631871,
+            "md5ext": "c56a88c790c4403713de87d2d1311fcc.mp3"
+        }
+    ],
+    "volume": 100,
+    "layerOrder": 15,
+    "visible": true,
+    "x": 0,
+    "y": 0,
+    "size": 100,
+    "direction": 90,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

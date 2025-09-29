@@ -1,0 +1,2218 @@
+{
+    "isStage": true,
+    "name": "Stage",
+    "variables": {
+        "%S.r5juPpvl7MksUC;KX": [
+            "projectVersion",
+            "0.1.0-infdev"
+        ],
+        "2JaqYP~3eFXa3#MrdoD5": [
+            "controlLock",
+            0
+        ],
+        "KLHPFXdfN*wCSIUfCl:(": [
+            "money",
+            0
+        ],
+        "Rjb@/kt`zy=Jbr4HWP#=": [
+            "autoOn?",
+            0
+        ],
+        "x#v3EUV-3_tBZV(|$tQ;": [
+            "currentDialog",
+            0
+        ],
+        ")F:Z5ATs+5uZv-UaCV4o": [
+            "nextTriggered?",
+            "1"
+        ],
+        "I{ONh]e^q{S0}}o.Es5@": [
+            "question?",
+            "1"
+        ],
+        "]!yX2U/S0MIS{/_2=Go|": [
+            "crashes",
+            0
+        ],
+        "V$*aU_H5V0cpe1?#K#mk": [
+            "inflationMulti",
+            "1"
+        ],
+        "i6*@LxVtv)tFWbixCBsQ": [
+            "previousPoi",
+            "gas"
+        ],
+        "_Y)ub0TBqD4]asNbogWp": [
+            "FPS",
+            "110"
+        ],
+        "cu9L(6+Fp@Fshy;=5@K$": [
+            "challengesCompleted",
+            0
+        ],
+        "_JGxiLPcJ,qKw=0b?b@9": [
+            "moneyGambling",
+            0
+        ]
+    },
+    "lists": {
+        "h%n^+kU(e~P_[yJ#EaZN": [
+            "currentEngine",
+            [
+                "min:-99999|A:0|M:0|temp:x|acc:0|ratio:0|stall:-99999",
+                "min:-1|A:10|M:20|temp:x|acc:10|ratio:25|stall:-1",
+                "min:7|A:20|M:30|temp:x|acc:7|ratio:12.5|stall:5",
+                "min:15|A:40|M:55|temp:x|acc:5|ratio:6.3|stall:10",
+                "min:35|A:70|M:80|temp:x|acc:4|ratio:4.5|stall:30",
+                "min:65|A:110|M:125|temp:x|acc:3.3|ratio:3.1|stall:60",
+                "min:-60|A:0|M:0|temp:x|acc:-5|ratio:25|stall:-60"
+            ]
+        ],
+        ")^jAeXj?zvyzh`6dkQmA": [
+            "logs",
+            [
+                "rec:onScreenHint: recieved: start"
+            ]
+        ],
+        "fLk-rVO_jv:S|cy]/~Fy": [
+            "err_list",
+            [
+                "err:engine: test",
+                "err:engine: test",
+                "err:engine: test",
+                "err:dialog: dealership: default used",
+                "err:dialog: undefined case <>",
+                "err:menu//settings: case <0> is undefined",
+                "err:menu//settings: cl information: case <0> is undefined",
+                "err:dialog: rec scratch_card: undefined case <Fill Up>"
+            ]
+        ],
+        "GUCnwPhw{52pUxwz-rK.": [
+            "wrn_list",
+            [
+                "wrn:dialog: rec scratch_card: empty case <Highway Hopes>",
+                "wrn:dialog: rec scratch_card: empty case <The Lottery>",
+                "wrn:dialog: rec scratch_card: empty case <The Lottery>"
+            ]
+        ],
+        ".Kk(WHDpY4}ffDyn)vVW": [
+            "seasons",
+            [
+                "winter",
+                "winter",
+                "spring",
+                "spring",
+                "spring",
+                "summer",
+                "summer",
+                "summer",
+                "autumn",
+                "autumn",
+                "autumn",
+                "winter"
+            ]
+        ],
+        ";j10DIR6LjAta!xD9fw]": [
+            "time",
+            [
+                "midnight",
+                "midnight",
+                "night",
+                "night",
+                "night",
+                "night",
+                "dawn",
+                "dawn",
+                "morning",
+                "morning",
+                "morning",
+                "morning",
+                "noon",
+                "noon",
+                "noon",
+                "noon",
+                "noon",
+                "dusk",
+                "dusk",
+                "evening",
+                "evening",
+                "night",
+                "night",
+                "midnight"
+            ]
+        ],
+        "46:xF9NjrcWtG-OK4[4^": [
+            "cart",
+            []
+        ],
+        "7!4Ml05(cE]yX@D2j#N-": [
+            "team",
+            []
+        ],
+        "T7WCXE=WIQ[l-8l6`!DD": [
+            "options",
+            [
+                "Buy",
+                "Nevermind"
+            ]
+        ],
+        "lF+fHTa!T9DA+yi2cuhr": [
+            "options-deny",
+            []
+        ],
+        "$ASqex(Uai@V.a5rFV@E": [
+            "denys",
+            []
+        ],
+        "kGI_*!JQiGVRywumbdCG": [
+            "carPositions",
+            [
+                "-80|231.60000000000173",
+                "130|796.8000000000004",
+                "210|750",
+                "deleted",
+                "deleted",
+                "deleted",
+                "deleted",
+                "deleted",
+                "deleted",
+                "deleted"
+            ]
+        ],
+        "xpzO]xDO@=pC~R4+J}Qk": [
+            "inventory",
+            []
+        ],
+        "sr]9)#x~4-qE+/.34k9G": [
+            "unlockedAchievements",
+            [
+                "moneyShift",
+                "gamble0",
+                "gamble1",
+                "challenger"
+            ]
+        ],
+        "jGWP2itRbw=?8lfCxxFF": [
+            "nyotifs",
+            [
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS limited (unfocused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)",
+                "cfm:fpsCounter: onStart (0): FPS restored (focused)"
+            ]
+        ]
+    },
+    "broadcasts": {
+        ")(|!x$?gzy.u8R_6.^zI": "save",
+        "4#x^MG3o6xEMK[hN@^nx": "fullReset",
+        "s[@.HXqT/F28XT?w-:|y": "gameStart",
+        "NUq`-12oiZwD1k;z2`;W": "SFX",
+        "`3Njp?]aWXVy%yjDxG#^": "modifyHealth",
+        "yhw6z:50:*{W?!Zr?BWD": "carHit",
+        "hdo/Tbb9dCAE1hGHC`[U": "loadTitle",
+        "XxL4w$w`[Xz(^{@KAGdw": "openSettings",
+        "_f[7iejC@.TJTBXn[e7[": "autoON",
+        "k|8nXxg/ZcStP,M67h|f": "autoOFF",
+        "vlEIMBOG^lTuM.Xe.BdL": "enterGas",
+        "ecxuAlvliReS0C[6U6?B": "reshowRoad",
+        "!XKvFw=}pf5sHjZfZF6s": "showHint",
+        "%Wf/O.h1V/@kj;[Dm]@q": "load",
+        ",zSkMl*IpVC|_va0?^g~": "statusCheck",
+        "T]D?b6mi(KFcHu}}4S_%": "???Debug",
+        ";L4G5O8Xh8T75Q{DTXIJ": "cutsceneStart",
+        "eh[FQZ%W?H1q30rVV$B+": "savePrompt",
+        "@;OJIFx47j=CnDSbQ5j)": "cashier",
+        "c6OA3!R(M,T4)l/U6`fn": "fuelUp",
+        "(hHQ37S3X[D1;VQ*bQ;(": "crash_particle",
+        "8/UfVKk$3l22/}Z89p7*": "gas_store",
+        "^h*sj0Ev`xoNXF|!V4N9": "zoom",
+        "TfSA=;:K1mu_rOzL(wOM": "dealership_dialog",
+        ";swRG=Sg`[DRYdeyG9tj": "enterDealer",
+        "vQo}jj2Lm,O^%BSE6mkc": "changeEngine",
+        "oUH^zgov18c]47[eJtQ=": "openAbout",
+        "O$PV.F=1Y;;*.2!|/TA:": "unlockAchievement",
+        "%uoFj}4OGe729K/9Icy.": "openAchievments",
+        "TA:woovU6wJ,VO!Gp3;^": "gameStartCali",
+        "5+R-]Ug~dgZYs_LwL|/i": "storyStart",
+        "Kp1e+LHUXB74t#nxCqk4": "story0",
+        "nG,k^%7^0D{]45nMw/7L": "story1",
+        "k}g/`JDr5Z-+}N+Rk=xn": "startFPS",
+        "mpGbIzEt713|Ep8m[yd|": "shift_particle",
+        "k5s*}*:k:PZ!kV$7(f$Z": "displayScore",
+        "KHS2O[Jvp?|)2+ki0CP2": "scratch_card"
+    },
+    "blocks": {
+        "e!": {
+            "opcode": "event_whenflagclicked",
+            "next": "B(",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -979,
+            "y": -57
+        },
+        "B(": {
+            "opcode": "DTcameracontrols_setCol",
+            "next": "B)",
+            "parent": "e!",
+            "inputs": {
+                "val": [
+                    1,
+                    [
+                        9,
+                        "#000000"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B)": {
+            "opcode": "localstorage_setProjectId",
+            "next": "B*",
+            "parent": "B(",
+            "inputs": {
+                "ID": [
+                    1,
+                    [
+                        10,
+                        "CarDrivingSimulator2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B*": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "B+",
+            "parent": "B)",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "initialize runtime variables"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B+": {
+            "opcode": "runtimeoptions_setFramerate",
+            "next": "g{",
+            "parent": "B*",
+            "inputs": {
+                "fps": [
+                    1,
+                    [
+                        4,
+                        "240"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "g{": {
+            "opcode": "runtimeoptions_setEnabled",
+            "next": "B,",
+            "parent": "B+",
+            "inputs": {
+                "thing": [
+                    1,
+                    "e#"
+                ],
+                "enabled": [
+                    1,
+                    "e%"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e#": {
+            "opcode": "runtimeoptions_menu_thing",
+            "next": null,
+            "parent": "g{",
+            "inputs": {},
+            "fields": {
+                "thing": [
+                    "turbo mode",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "e%": {
+            "opcode": "runtimeoptions_menu_enabled",
+            "next": null,
+            "parent": "g{",
+            "inputs": {},
+            "fields": {
+                "enabled": [
+                    "true",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "B,": {
+            "opcode": "runtimeoptions_setDimensions",
+            "next": "lH",
+            "parent": "g{",
+            "inputs": {
+                "width": [
+                    1,
+                    [
+                        4,
+                        "640"
+                    ]
+                ],
+                "height": [
+                    1,
+                    [
+                        4,
+                        "360"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "lH": {
+            "opcode": "runtimeoptions_setCloneLimit",
+            "next": "g|",
+            "parent": "B,",
+            "inputs": {
+                "limit": [
+                    1,
+                    "e("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e(": {
+            "opcode": "runtimeoptions_menu_clones",
+            "next": null,
+            "parent": "lH",
+            "inputs": {},
+            "fields": {
+                "clones": [
+                    "Infinity",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "g|": {
+            "opcode": "runtimeoptions_setEnabled",
+            "next": "g}",
+            "parent": "lH",
+            "inputs": {
+                "thing": [
+                    1,
+                    "e)"
+                ],
+                "enabled": [
+                    1,
+                    "e*"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e)": {
+            "opcode": "runtimeoptions_menu_thing",
+            "next": null,
+            "parent": "g|",
+            "inputs": {},
+            "fields": {
+                "thing": [
+                    "remove fencing",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "e*": {
+            "opcode": "runtimeoptions_menu_enabled",
+            "next": null,
+            "parent": "g|",
+            "inputs": {},
+            "fields": {
+                "enabled": [
+                    "true",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "g}": {
+            "opcode": "runtimeoptions_setEnabled",
+            "next": "B-",
+            "parent": "g|",
+            "inputs": {
+                "thing": [
+                    1,
+                    "e+"
+                ],
+                "enabled": [
+                    1,
+                    "e,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e+": {
+            "opcode": "runtimeoptions_menu_thing",
+            "next": null,
+            "parent": "g}",
+            "inputs": {},
+            "fields": {
+                "thing": [
+                    "remove misc limits",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "e,": {
+            "opcode": "runtimeoptions_menu_enabled",
+            "next": null,
+            "parent": "g}",
+            "inputs": {},
+            "fields": {
+                "enabled": [
+                    "true",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "B-": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "B.",
+            "parent": "g}",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "set project version - i forgot to increase it :p"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B.": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "e-",
+            "parent": "B-",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "will increase when you can fuel up"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e-": {
+            "opcode": "data_setvariableto",
+            "next": null,
+            "parent": "B.",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "0.1.0-infdev"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "projectVersion",
+                    "%S.r5juPpvl7MksUC;KX"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "cB": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "B/",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -960,
+            "y": 489
+        },
+        "B/": {
+            "opcode": "lmsTimers_startResetTimer",
+            "next": "B:",
+            "parent": "cB",
+            "inputs": {
+                "TIMER": [
+                    1,
+                    [
+                        10,
+                        "gameTime"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B:": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "B/",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "lI"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "lI": {
+            "opcode": "looks_switchbackdropto",
+            "next": null,
+            "parent": "B:",
+            "inputs": {
+                "BACKDROP": [
+                    3,
+                    "B;",
+                    "e."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B;": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "lI",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "road//"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "B=",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B=": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "B;",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "B?",
+                    [
+                        7,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "B?": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "B=",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    ".",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        ".": {
+            "opcode": "sensing_current",
+            "next": null,
+            "parent": "B?",
+            "inputs": {},
+            "fields": {
+                "CURRENTMENU": [
+                    "HOUR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "e.": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "lI",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "road//dawn",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "cC": {
+            "opcode": "event_whenflagclicked",
+            "next": "lJ",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -2182,
+            "y": -261
+        },
+        "lJ": {
+            "opcode": "looks_switchbackdropto",
+            "next": "B@",
+            "parent": "cC",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "/"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "/": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "lJ",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "menu//title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "B@": {
+            "opcode": "looks_seteffectto",
+            "next": "B[",
+            "parent": "lJ",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "B[": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "B@",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "lK"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "lK": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "B[",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "B]"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "lL"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B]": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "lK",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "^x"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^x": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "B]",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    [
+                        12,
+                        "currentDialog",
+                        "x#v3EUV-3_tBZV(|$tQ;"
+                    ],
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "lL": {
+            "opcode": "control_repeat",
+            "next": "lM",
+            "parent": "lK",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "20"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "B^"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B^": {
+            "opcode": "looks_changeeffectby",
+            "next": "^y",
+            "parent": "lL",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "-1"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "^y": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "B^",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "lM": {
+            "opcode": "control_wait_until",
+            "next": "B_",
+            "parent": "lL",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "^z"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^z": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "lM",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    [
+                        12,
+                        "currentDialog",
+                        "x#v3EUV-3_tBZV(|$tQ;"
+                    ],
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B_": {
+            "opcode": "control_repeat",
+            "next": null,
+            "parent": "lM",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "20"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "B`"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B`": {
+            "opcode": "looks_changeeffectby",
+            "next": "^A",
+            "parent": "B_",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "^A": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "B`",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "cD": {
+            "opcode": "lmsMoreEvents_whenStopClicked",
+            "next": "B{",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1330,
+            "y": -685
+        },
+        "B{": {
+            "opcode": "looks_switchbackdropto",
+            "next": null,
+            "parent": "cD",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "e/"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e/": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "B{",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "menu//title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "^B": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "B|",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "reshowRoad",
+                    "ecxuAlvliReS0C[6U6?B"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -397,
+            "y": 347
+        },
+        "B|": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "^B",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "lN"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "lN": {
+            "opcode": "looks_switchbackdropto",
+            "next": null,
+            "parent": "B|",
+            "inputs": {
+                "BACKDROP": [
+                    3,
+                    "B}",
+                    "^C"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B}": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "lN",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "road//"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "B~",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "B~": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "B}",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "Ca",
+                    [
+                        7,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Ca": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "B~",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "^D",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^D": {
+            "opcode": "sensing_current",
+            "next": null,
+            "parent": "Ca",
+            "inputs": {},
+            "fields": {
+                "CURRENTMENU": [
+                    "HOUR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "^C": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "lN",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "road//dawn",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "^E": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "Cb",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterGas",
+                    "vlEIMBOG^lTuM.Xe.BdL"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -964,
+            "y": 842
+        },
+        "Cb": {
+            "opcode": "control_stop",
+            "next": "Cc",
+            "parent": "^E",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "Cc": {
+            "opcode": "looks_switchbackdropto",
+            "next": null,
+            "parent": "Cb",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "^F"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^F": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "Cc",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "POI//gas_station_counter",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "^G": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "Cd",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gas_store",
+                    "8/UfVKk$3l22/}Z89p7*"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -923,
+            "y": 1038
+        },
+        "Cd": {
+            "opcode": "control_stop",
+            "next": "Ce",
+            "parent": "^G",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "Ce": {
+            "opcode": "looks_switchbackdropto",
+            "next": null,
+            "parent": "Cd",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "^H"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^H": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "Ce",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "POI//shelf",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "^I": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "Cf",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterDealer",
+                    ";swRG=Sg`[DRYdeyG9tj"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -420,
+            "y": 827
+        },
+        "Cf": {
+            "opcode": "control_stop",
+            "next": "Cg",
+            "parent": "^I",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "Cg": {
+            "opcode": "looks_switchbackdropto",
+            "next": null,
+            "parent": "Cf",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "^J"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^J": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "Cg",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "POI//dealership",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aON": {
+            "opcode": "event_broadcast",
+            "next": null,
+            "parent": null,
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "enterGas",
+                        "vlEIMBOG^lTuM.Xe.BdL"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 31,
+            "y": 777
+        },
+        "^K": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "Ch",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "storyStart",
+                    "5+R-]Ug~dgZYs_LwL|/i"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1339,
+            "y": 892
+        },
+        "Ch": {
+            "opcode": "looks_switchbackdropto",
+            "next": null,
+            "parent": "^K",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "^L"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^L": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "Ch",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "menu//blank",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "^M": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "lO",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "story0",
+                    "Kp1e+LHUXB74t#nxCqk4"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -2234,
+            "y": 800
+        },
+        "lO": {
+            "opcode": "looks_switchbackdropto",
+            "next": "Ci",
+            "parent": "^M",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "^N"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^N": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "lO",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "story//0",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Ci": {
+            "opcode": "looks_seteffectto",
+            "next": "lP",
+            "parent": "lO",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "-100"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "lP": {
+            "opcode": "control_repeat",
+            "next": "^O",
+            "parent": "Ci",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "80"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "Cj"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Cj": {
+            "opcode": "looks_changeeffectby",
+            "next": "^P",
+            "parent": "lP",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "^P": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "Cj",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^O": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "lP",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^Q": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "lQ",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "story1",
+                    "nG,k^%7^0D{]45nMw/7L"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1881,
+            "y": 810
+        },
+        "lQ": {
+            "opcode": "looks_switchbackdropto",
+            "next": "Ck",
+            "parent": "^Q",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "^R"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^R": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "lQ",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "story//1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Ck": {
+            "opcode": "looks_seteffectto",
+            "next": "lR",
+            "parent": "lQ",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "-100"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "lR": {
+            "opcode": "control_repeat",
+            "next": "^S",
+            "parent": "Ck",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "80"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "Cl"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Cl": {
+            "opcode": "looks_changeeffectby",
+            "next": "^T",
+            "parent": "lR",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "BRIGHTNESS",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "^T": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "Cl",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.05"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "^S": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "lR",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        }
+    },
+    "comments": {},
+    "currentCostume": 0,
+    "costumes": [
+        {
+            "name": "menu//title",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "2b7a6451d014640976d6320ee0cf4b14",
+            "md5ext": "2b7a6451d014640976d6320ee0cf4b14.svg",
+            "rotationCenterX": -179.75,
+            "rotationCenterY": -145.24999999999994
+        },
+        {
+            "name": "menu//settings",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "8ed33092fe9e2df7eb231a788cf78ab3",
+            "md5ext": "8ed33092fe9e2df7eb231a788cf78ab3.svg",
+            "rotationCenterX": 309.92952899583736,
+            "rotationCenterY": -116.14581328049263
+        },
+        {
+            "name": "menu//about",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "78f1c8994065bafc771e04e2af4f7453",
+            "md5ext": "78f1c8994065bafc771e04e2af4f7453.svg",
+            "rotationCenterX": 0,
+            "rotationCenterY": 0
+        },
+        {
+            "name": "menu//achiev",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "7200a082b3a1d3ac3c533997f37155c8",
+            "md5ext": "7200a082b3a1d3ac3c533997f37155c8.svg",
+            "rotationCenterX": 309.92952899583736,
+            "rotationCenterY": -116.14578328049265
+        },
+        {
+            "name": "menu//blank",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "3bd9e72bcbe4e44fb6afae78553539b8",
+            "md5ext": "3bd9e72bcbe4e44fb6afae78553539b8.svg",
+            "rotationCenterX": -252.01157844990576,
+            "rotationCenterY": -164.42887523629474
+        },
+        {
+            "name": "road//dawn",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "3c2583204cdd59096f30f45798f12f6d",
+            "md5ext": "3c2583204cdd59096f30f45798f12f6d.svg",
+            "rotationCenterX": 492.5,
+            "rotationCenterY": 303.3352140090092
+        },
+        {
+            "name": "road//morning",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "4932b3f8fda38e0a7f5366d4b8bde7da",
+            "md5ext": "4932b3f8fda38e0a7f5366d4b8bde7da.svg",
+            "rotationCenterX": 492.5,
+            "rotationCenterY": 303.335215
+        },
+        {
+            "name": "road//noon",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "ddf4cc44cc063e399aa01923c113d27a",
+            "md5ext": "ddf4cc44cc063e399aa01923c113d27a.svg",
+            "rotationCenterX": 492.5,
+            "rotationCenterY": 303.3352140090092
+        },
+        {
+            "name": "road//dusk",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "65e6ff3c43646bb178e65d7a51bc7421",
+            "md5ext": "65e6ff3c43646bb178e65d7a51bc7421.svg",
+            "rotationCenterX": 492.5,
+            "rotationCenterY": 303.335215
+        },
+        {
+            "name": "road//evening",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "b50e0edbf2562446fa343459d4585a87",
+            "md5ext": "b50e0edbf2562446fa343459d4585a87.svg",
+            "rotationCenterX": 492.5,
+            "rotationCenterY": 303.3352140090092
+        },
+        {
+            "name": "road//night",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "9f65ed50daf963c6a7fb212c28f1573c",
+            "md5ext": "9f65ed50daf963c6a7fb212c28f1573c.svg",
+            "rotationCenterX": 492.5,
+            "rotationCenterY": 303.3352140090092
+        },
+        {
+            "name": "road//midnight",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "9213f1514d27bc540d3e12ea91028b9c",
+            "md5ext": "9213f1514d27bc540d3e12ea91028b9c.svg",
+            "rotationCenterX": 492.5,
+            "rotationCenterY": 303.3352049999999
+        },
+        {
+            "name": "POI//gas_station_counter",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "ec2b0b9cd53b250b19f17130ea3f3fc9",
+            "md5ext": "ec2b0b9cd53b250b19f17130ea3f3fc9.svg",
+            "rotationCenterX": 320,
+            "rotationCenterY": 240
+        },
+        {
+            "name": "POI//shelf",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "e06490159d3e4accc9509b00ae4f9f22",
+            "md5ext": "e06490159d3e4accc9509b00ae4f9f22.svg",
+            "rotationCenterX": 322.84777043702195,
+            "rotationCenterY": 215.50088676671214
+        },
+        {
+            "name": "POI//dealership",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "e85162df6d8acc23db4cde4901948a03",
+            "md5ext": "e85162df6d8acc23db4cde4901948a03.svg",
+            "rotationCenterX": 324.565201465202,
+            "rotationCenterY": 216.32397460937534
+        },
+        {
+            "name": "story//0",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "229a8c919cb41b4e9802559a4d3e5069",
+            "md5ext": "229a8c919cb41b4e9802559a4d3e5069.svg",
+            "rotationCenterX": 320.00000000000006,
+            "rotationCenterY": 180.00000000000003
+        },
+        {
+            "name": "story//1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "844933c0d988bff733f5ea253ea94306",
+            "md5ext": "844933c0d988bff733f5ea253ea94306.svg",
+            "rotationCenterX": 462.0720720720721,
+            "rotationCenterY": 498.0255255255255
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 0,
+    "tempo": 60,
+    "videoTransparency": 50,
+    "videoState": "on",
+    "textToSpeechLanguage": null
+}

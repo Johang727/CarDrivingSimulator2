@@ -1,0 +1,2827 @@
+{
+    "isStage": false,
+    "name": "fpsCounter",
+    "variables": {},
+    "lists": {
+        "iFACB,lJf{zuOSZJ56#,": [
+            "FPS",
+            [
+                163.93,
+                169.49,
+                158.73,
+                107.53,
+                142.86,
+                158.73,
+                169.49,
+                133.33,
+                129.87,
+                163.93,
+                144.93,
+                70.42,
+                129.87,
+                158.73,
+                98.04,
+                101.01,
+                109.89,
+                93.46,
+                66.23,
+                105.26,
+                142.86,
+                109.89,
+                117.65,
+                80.65,
+                78.74,
+                108.7,
+                99.01,
+                125,
+                114.94,
+                108.7,
+                119.05,
+                83.33,
+                111.11,
+                108.7,
+                103.09,
+                113.64,
+                131.58,
+                135.14,
+                72.99,
+                84.75,
+                112.36,
+                103.09,
+                149.25,
+                108.7,
+                113.64,
+                80.65,
+                96.15,
+                88.5,
+                71.43,
+                81.97,
+                52.63,
+                57.47,
+                61.73,
+                64.94,
+                66.67,
+                52.36,
+                57.14,
+                76.34,
+                59.17,
+                76.34,
+                89.29,
+                84.75,
+                87.72,
+                95.24,
+                73.53,
+                94.34,
+                78.74,
+                69.44,
+                97.09,
+                95.24,
+                76.92,
+                64.52,
+                85.47,
+                89.29,
+                87.72,
+                91.74,
+                106.38,
+                128.21,
+                147.06,
+                126.58,
+                121.95,
+                71.43,
+                89.29,
+                140.85,
+                158.73,
+                163.93,
+                116.28,
+                158.73,
+                153.85,
+                144.93,
+                142.86,
+                140.85,
+                129.87,
+                88.5,
+                105.26,
+                126.58,
+                153.85,
+                144.93,
+                135.14,
+                87.72,
+                153.85,
+                136.99,
+                153.85,
+                87.72,
+                129.87,
+                128.21,
+                133.33,
+                142.86
+            ]
+        ]
+    },
+    "broadcasts": {},
+    "blocks": {
+        "aNi": {
+            "opcode": "event_whenflagclicked",
+            "next": "]h",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -897,
+            "y": -877
+        },
+        "]h": {
+            "opcode": "data_deletealloflist",
+            "next": "]i",
+            "parent": "aNi",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "]i": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "]h",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "e:"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e:": {
+            "opcode": "data_addtolist",
+            "next": "BH",
+            "parent": "]i",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "aNj",
+                    [
+                        10,
+                        "cosa"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNj": {
+            "opcode": "dtbyxeroname_fps",
+            "next": null,
+            "parent": "e:",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "BH": {
+            "opcode": "data_deleteoflist",
+            "next": "b~",
+            "parent": "e:",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "aNk",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNk": {
+            "opcode": "data_itemnumoflist",
+            "next": null,
+            "parent": "BH",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "Infinity"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "b~": {
+            "opcode": "control_if",
+            "next": "e;",
+            "parent": "BH",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "]j"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "]k"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]j": {
+            "opcode": "operator_gt",
+            "next": null,
+            "parent": "b~",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aNl",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "120"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNl": {
+            "opcode": "data_lengthoflist",
+            "next": null,
+            "parent": "]j",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "]k": {
+            "opcode": "data_deleteoflist",
+            "next": "aNm",
+            "parent": "b~",
+            "inputs": {
+                "INDEX": [
+                    1,
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNm": {
+            "opcode": "data_deleteoflist",
+            "next": null,
+            "parent": "]k",
+            "inputs": {
+                "INDEX": [
+                    1,
+                    [
+                        7,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "e;": {
+            "opcode": "data_setvariableto",
+            "next": "aNn",
+            "parent": "b~",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "]l",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "FPS",
+                    "_Y)ub0TBqD4]asNbogWp"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "]l": {
+            "opcode": "strings_split",
+            "next": null,
+            "parent": "e;",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "]m",
+                    [
+                        10,
+                        "90.58"
+                    ]
+                ],
+                "SPLIT": [
+                    1,
+                    [
+                        10,
+                        "."
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]m": {
+            "opcode": "operator_round",
+            "next": null,
+            "parent": "]l",
+            "inputs": {
+                "NUM": [
+                    3,
+                    "aNo",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNo": {
+            "opcode": "qxsckdataanalysis_average",
+            "next": null,
+            "parent": "]m",
+            "inputs": {
+                "NUMBERS": [
+                    3,
+                    [
+                        13,
+                        "FPS",
+                        "iFACB,lJf{zuOSZJ56#,"
+                    ],
+                    [
+                        10,
+                        "1 2 3 4 5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNn": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "e;",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.0000001"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNp": {
+            "opcode": "event_whenflagclicked",
+            "next": "]n",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -710,
+            "y": -383
+        },
+        "e=": {
+            "opcode": "looks_switchcostumeto",
+            "next": "]o",
+            "parent": "]n",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aNq"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNq": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "e=",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "disfraz1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]o": {
+            "opcode": "control_wait",
+            "next": "]p",
+            "parent": "e=",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]p": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "]o",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "cb"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "cb": {
+            "opcode": "control_if_else",
+            "next": null,
+            "parent": "]p",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "aNr"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "]q"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "]r"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNr": {
+            "opcode": "cubesterWindowControls_isFocused",
+            "next": null,
+            "parent": "cb",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]q": {
+            "opcode": "data_deletealloflist",
+            "next": "]s",
+            "parent": "cb",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "]t": {
+            "opcode": "control_wait_until",
+            "next": null,
+            "parent": "hd",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "]u"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]u": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "]t",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "aNs"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNs": {
+            "opcode": "cubesterWindowControls_isFocused",
+            "next": null,
+            "parent": "]u",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]r": {
+            "opcode": "data_deletealloflist",
+            "next": "]v",
+            "parent": "cb",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "FPS",
+                    "iFACB,lJf{zuOSZJ56#,"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "]w": {
+            "opcode": "runtimeoptions_setFramerate",
+            "next": "]x",
+            "parent": "]v",
+            "inputs": {
+                "fps": [
+                    1,
+                    [
+                        4,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]x": {
+            "opcode": "control_wait_until",
+            "next": null,
+            "parent": "]w",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "aNt"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNt": {
+            "opcode": "cubesterWindowControls_isFocused",
+            "next": null,
+            "parent": "]x",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNu": {
+            "opcode": "event_whenflagclicked",
+            "next": "e?",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1199,
+            "y": 436
+        },
+        "e?": {
+            "opcode": "control_create_clone_of",
+            "next": "]y",
+            "parent": "aNu",
+            "inputs": {
+                "CLONE_OPTION": [
+                    1,
+                    "aNv"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNv": {
+            "opcode": "control_create_clone_of_menu",
+            "next": null,
+            "parent": "e?",
+            "inputs": {},
+            "fields": {
+                "CLONE_OPTION": [
+                    "_myself_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]y": {
+            "opcode": "looks_show",
+            "next": "]z",
+            "parent": "e?",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]z": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "]y",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "cc"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "cc": {
+            "opcode": "lmsLooksPlus_replaceCostumeContent",
+            "next": "aNw",
+            "parent": "]z",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aNx"
+                ],
+                "CONTENT": [
+                    3,
+                    "cd",
+                    [
+                        10,
+                        "<svg />"
+                    ]
+                ]
+            },
+            "fields": {
+                "TYPE": [
+                    "SVG",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNx": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "cc",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "disfraz1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "cd": {
+            "opcode": "lmsLooksPlus_replaceColors",
+            "next": null,
+            "parent": "cc",
+            "inputs": {
+                "COLOR1": [
+                    3,
+                    "aNy",
+                    [
+                        9,
+                        "#FCB1E3"
+                    ]
+                ],
+                "COLOR2": [
+                    3,
+                    "]A",
+                    [
+                        9,
+                        "#8ECAFF"
+                    ]
+                ],
+                "SVG": [
+                    3,
+                    "]B",
+                    [
+                        10,
+                        "<svg />"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNy": {
+            "opcode": "truefantomcouplers_value_in_string_block",
+            "next": null,
+            "parent": "cd",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "frames_per"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]A": {
+            "opcode": "truefantomcouplers_value_in_string_block",
+            "next": null,
+            "parent": "cd",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "aNz",
+                    [
+                        10,
+                        "uwu"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNz": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "]A",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "FPS: "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    [
+                        12,
+                        "FPS",
+                        "_Y)ub0TBqD4]asNbogWp"
+                    ],
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNw": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "cc",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNA": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "e@",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "startFPS",
+                    "k}g/`JDr5Z-+}N+Rk=xn"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1214,
+            "y": 1120
+        },
+        "e@": {
+            "opcode": "control_create_clone_of",
+            "next": "]C",
+            "parent": "aNA",
+            "inputs": {
+                "CLONE_OPTION": [
+                    1,
+                    "aNB"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNB": {
+            "opcode": "control_create_clone_of_menu",
+            "next": null,
+            "parent": "e@",
+            "inputs": {},
+            "fields": {
+                "CLONE_OPTION": [
+                    "_myself_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]C": {
+            "opcode": "looks_show",
+            "next": "]D",
+            "parent": "e@",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]D": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "]C",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "ce"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ce": {
+            "opcode": "lmsLooksPlus_replaceCostumeContent",
+            "next": "aNC",
+            "parent": "]D",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aND"
+                ],
+                "CONTENT": [
+                    3,
+                    "cf",
+                    [
+                        10,
+                        "<svg />"
+                    ]
+                ]
+            },
+            "fields": {
+                "TYPE": [
+                    "SVG",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aND": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "ce",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "disfraz1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "cf": {
+            "opcode": "lmsLooksPlus_replaceColors",
+            "next": null,
+            "parent": "ce",
+            "inputs": {
+                "COLOR1": [
+                    3,
+                    "aNE",
+                    [
+                        9,
+                        "#FCB1E3"
+                    ]
+                ],
+                "COLOR2": [
+                    3,
+                    "]E",
+                    [
+                        9,
+                        "#8ECAFF"
+                    ]
+                ],
+                "SVG": [
+                    3,
+                    "]F",
+                    [
+                        10,
+                        "<svg />"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNE": {
+            "opcode": "truefantomcouplers_value_in_string_block",
+            "next": null,
+            "parent": "cf",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "frames_per"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]E": {
+            "opcode": "truefantomcouplers_value_in_string_block",
+            "next": null,
+            "parent": "cf",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "aNF",
+                    [
+                        10,
+                        "uwu"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNF": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "]E",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "FPS: "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    [
+                        12,
+                        "FPS",
+                        "_Y)ub0TBqD4]asNbogWp"
+                    ],
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNC": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "ce",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNG": {
+            "opcode": "lmsMoreEvents_whenStopClicked",
+            "next": "aNH",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1324,
+            "y": 22
+        },
+        "aNH": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "aNG",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNI": {
+            "opcode": "event_whenflagclicked",
+            "next": "]G",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1581,
+            "y": 772
+        },
+        "]G": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "aNI",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "]H"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]H": {
+            "opcode": "looks_seteffectto",
+            "next": null,
+            "parent": "]G",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "aNJ",
+                    [
+                        4,
+                        "48"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "COLOR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNJ": {
+            "opcode": "operator_divide",
+            "next": null,
+            "parent": "]H",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    [
+                        12,
+                        "FPS",
+                        "_Y)ub0TBqD4]asNbogWp"
+                    ],
+                    [
+                        4,
+                        "60"
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNK": {
+            "opcode": "control_start_as_clone",
+            "next": "]I",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 150,
+            "y": -941
+        },
+        "]J": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "]K",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "]L"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "cg": {
+            "opcode": "motion_gotoxy",
+            "next": "ch",
+            "parent": "]L",
+            "inputs": {
+                "X": [
+                    3,
+                    "]M",
+                    [
+                        4,
+                        "275"
+                    ]
+                ],
+                "Y": [
+                    3,
+                    "]N",
+                    [
+                        4,
+                        "160"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]M": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "cg",
+            "inputs": {
+                "NUM1": [
+                    1,
+                    [
+                        4,
+                        "305"
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "aNL",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNL": {
+            "opcode": "DTcameracontrols_getX",
+            "next": null,
+            "parent": "]M",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]N": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "cg",
+            "inputs": {
+                "NUM1": [
+                    1,
+                    [
+                        4,
+                        "-50"
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "aNM",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNM": {
+            "opcode": "DTcameracontrols_getY",
+            "next": null,
+            "parent": "]N",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ch": {
+            "opcode": "control_if_else",
+            "next": null,
+            "parent": "cg",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "e["
+                ],
+                "SUBSTACK": [
+                    2,
+                    "]O"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "aNN"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e[": {
+            "opcode": "operator_or",
+            "next": null,
+            "parent": "ch",
+            "inputs": {
+                "OPERAND1": [
+                    2,
+                    "]P"
+                ],
+                "OPERAND2": [
+                    2,
+                    "e]"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]P": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "e[",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "aNO"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNO": {
+            "opcode": "cubesterWindowControls_isFocused",
+            "next": null,
+            "parent": "]P",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e]": {
+            "opcode": "operator_or",
+            "next": null,
+            "parent": "e[",
+            "inputs": {
+                "OPERAND1": [
+                    2,
+                    "]Q"
+                ],
+                "OPERAND2": [
+                    2,
+                    "e^"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]Q": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "e]",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "]R"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]R": {
+            "opcode": "runtimeoptions_getEnabled",
+            "next": null,
+            "parent": "]Q",
+            "inputs": {
+                "thing": [
+                    1,
+                    "aNP"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNP": {
+            "opcode": "runtimeoptions_menu_thing",
+            "next": null,
+            "parent": "]R",
+            "inputs": {},
+            "fields": {
+                "thing": [
+                    "turbo mode",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "e^": {
+            "opcode": "operator_or",
+            "next": null,
+            "parent": "e]",
+            "inputs": {
+                "OPERAND1": [
+                    2,
+                    "]S"
+                ],
+                "OPERAND2": [
+                    2,
+                    "]T"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]S": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "e^",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "aNQ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNQ": {
+            "opcode": "obviousalexsensing_isPackaged",
+            "next": null,
+            "parent": "]S",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]T": {
+            "opcode": "operator_lt",
+            "next": null,
+            "parent": "e^",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aNR",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "60"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNR": {
+            "opcode": "runtimeoptions_getFramerate",
+            "next": null,
+            "parent": "]T",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]O": {
+            "opcode": "looks_show",
+            "next": "c",
+            "parent": "ch",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "c": {
+            "opcode": "lmsSpAsMoreControl_funnyBlock",
+            "next": null,
+            "parent": "]O",
+            "inputs": {
+                "1": [
+                    2,
+                    "]U"
+                ],
+                "2": [
+                    2,
+                    "]V"
+                ],
+                "3": [
+                    2,
+                    "]W"
+                ],
+                "4": [
+                    2,
+                    "]X"
+                ],
+                "8": [
+                    2,
+                    "aNS"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "]Y"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "]Z"
+                ],
+                "SUBSTACK3": [
+                    2,
+                    "]!"
+                ],
+                "SUBSTACK4": [
+                    2,
+                    "]#"
+                ],
+                "SUBSTACK8": [
+                    2,
+                    "]%"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]U": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "aNT"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNT": {
+            "opcode": "cubesterWindowControls_isFocused",
+            "next": null,
+            "parent": "]U",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]Y": {
+            "opcode": "looks_switchcostumeto",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aNU"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNU": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "]Y",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "inactive",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]W": {
+            "opcode": "operator_lt",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aNV",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "60"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNV": {
+            "opcode": "runtimeoptions_getFramerate",
+            "next": null,
+            "parent": "]W",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]!": {
+            "opcode": "looks_switchcostumeto",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aNW"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNW": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "]!",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "low_limit",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]V": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "]("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "](": {
+            "opcode": "runtimeoptions_getEnabled",
+            "next": null,
+            "parent": "]V",
+            "inputs": {
+                "thing": [
+                    1,
+                    "aNX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNX": {
+            "opcode": "runtimeoptions_menu_thing",
+            "next": null,
+            "parent": "](",
+            "inputs": {},
+            "fields": {
+                "thing": [
+                    "turbo mode",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]Z": {
+            "opcode": "looks_switchcostumeto",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aNY"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNY": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "]Z",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "turbo_off",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]X": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "aNZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aNZ": {
+            "opcode": "obviousalexsensing_isPackaged",
+            "next": null,
+            "parent": "]X",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]#": {
+            "opcode": "looks_switchcostumeto",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aN!"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN!": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "]#",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "in_editor",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aNS": {
+            "opcode": "nonameawacomparisons_true",
+            "next": null,
+            "parent": "c",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]%": {
+            "opcode": "looks_switchcostumeto",
+            "next": null,
+            "parent": "c",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "aN#"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN#": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "]%",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "misc_slow",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aNN": {
+            "opcode": "looks_hide",
+            "next": null,
+            "parent": "ch",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN%": {
+            "opcode": "event_whenflagclicked",
+            "next": "])",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 228,
+            "y": -1291
+        },
+        "]*": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "])",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "]+"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e_": {
+            "opcode": "motion_gotoxy",
+            "next": null,
+            "parent": "]+",
+            "inputs": {
+                "X": [
+                    3,
+                    "],",
+                    [
+                        4,
+                        "275"
+                    ]
+                ],
+                "Y": [
+                    3,
+                    "]-",
+                    [
+                        4,
+                        "160"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "],": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "e_",
+            "inputs": {
+                "NUM1": [
+                    1,
+                    [
+                        4,
+                        "305"
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "aN(",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN(": {
+            "opcode": "DTcameracontrols_getX",
+            "next": null,
+            "parent": "],",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]-": {
+            "opcode": "operator_add",
+            "next": null,
+            "parent": "e_",
+            "inputs": {
+                "NUM1": [
+                    1,
+                    [
+                        4,
+                        "-50"
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "aN)",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN)": {
+            "opcode": "DTcameracontrols_getY",
+            "next": null,
+            "parent": "]-",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "].": {
+            "opcode": "procedures_definition",
+            "next": "ci",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "e{"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -2242,
+            "y": -697
+        },
+        "e{": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "].",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    1,
+                    "aN*"
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    "aN+"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "argumentnames": "[\"mrow\",\"err/wrn/etc\"]",
+                "argumentdefaults": "[\"\",\"\",\"\"]",
+                "warp": "false"
+            }
+        },
+        "aN*": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "e{",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "mrow"
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aN+": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "e{",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc"
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ci": {
+            "opcode": "control_if_else",
+            "next": null,
+            "parent": "].",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "]/"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "]:"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "];"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]/": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "ci",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "aN,",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN,": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "]/",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]:": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "ci",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "e|",
+                    [
+                        10,
+                        "rec:checking save status..."
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "nyotifs",
+                    "jGWP2itRbw=?8lfCxxFF"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "e|": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "]:",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "aN-",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "]=",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN-": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "e|",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "]=": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "e|",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ":"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "e}",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "e}": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "]=",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "aN.",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "]?",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN.": {
+            "opcode": "lmsAssets_getSpriteName",
+            "next": null,
+            "parent": "e}",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]?": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "e}",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "aN/",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN/": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "]?",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "mrow"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "];": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "ci",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "e~",
+                    [
+                        10,
+                        "rec:checking save status..."
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "nyotifs",
+                    "jGWP2itRbw=?8lfCxxFF"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "e~": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "];",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "fa",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "]@",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fa": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "e~",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "aN:",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "][",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN:": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "fa",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "][": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "fa",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ":"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "fc",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "fc": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "][",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "aN;",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "]]",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN;": {
+            "opcode": "lmsAssets_getSpriteName",
+            "next": null,
+            "parent": "fc",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]]": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "fc",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "aN=",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN=": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "]]",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]@": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "e~",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "aN?",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN?": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "]@",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "mrow"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "]n": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": "e=",
+            "parent": "aNp",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ],
+                "STRING": [
+                    1,
+                    [
+                        10,
+                        "onStart (0)"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]s": {
+            "opcode": "procedures_call",
+            "next": "hd",
+            "parent": "]q",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    1,
+                    [
+                        10,
+                        "FPS restored (focused)"
+                    ]
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    [
+                        10,
+                        "cfm"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "warp": "false"
+            }
+        },
+        "]v": {
+            "opcode": "procedures_call",
+            "next": "]w",
+            "parent": "]r",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    1,
+                    [
+                        10,
+                        "FPS limited (unfocused)"
+                    ]
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    [
+                        10,
+                        "cfm"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "warp": "false"
+            }
+        },
+        "]F": {
+            "opcode": "lmsLooksPlus_costumeContent",
+            "next": null,
+            "parent": "cf",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "TARGET": [
+                    1,
+                    "aN@"
+                ]
+            },
+            "fields": {
+                "CONTENT": [
+                    "content",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN@": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "]F",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "fpsCounter",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]B": {
+            "opcode": "lmsLooksPlus_costumeContent",
+            "next": null,
+            "parent": "cd",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "TARGET": [
+                    1,
+                    "aN["
+                ]
+            },
+            "fields": {
+                "CONTENT": [
+                    "content",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aN[": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "]B",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "fpsCounter",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "]I": {
+            "opcode": "looks_seteffectto",
+            "next": "]K",
+            "parent": "aNK",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "COLOR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "hd": {
+            "opcode": "runtimeoptions_setFramerate",
+            "next": "]t",
+            "parent": "]s",
+            "inputs": {
+                "fps": [
+                    1,
+                    [
+                        4,
+                        "240"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]+": {
+            "opcode": "looks_gotofrontback",
+            "next": "e_",
+            "parent": "]*",
+            "inputs": {},
+            "fields": {
+                "FRONT_BACK": [
+                    "front",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "]L": {
+            "opcode": "looks_gotofrontback",
+            "next": "cg",
+            "parent": "]J",
+            "inputs": {},
+            "fields": {
+                "FRONT_BACK": [
+                    "front",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "])": {
+            "opcode": "looks_setsizeto",
+            "next": "]*",
+            "parent": "aN%",
+            "inputs": {
+                "SIZE": [
+                    1,
+                    [
+                        4,
+                        "50"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "]K": {
+            "opcode": "looks_setsizeto",
+            "next": "]J",
+            "parent": "]I",
+            "inputs": {
+                "SIZE": [
+                    1,
+                    [
+                        4,
+                        "50"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        }
+    },
+    "comments": {},
+    "currentCostume": 0,
+    "costumes": [
+        {
+            "name": "disfraz1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "79f5265f53dae72630a2b5902eaf3fe0",
+            "md5ext": "79f5265f53dae72630a2b5902eaf3fe0.svg",
+            "rotationCenterX": 62.75,
+            "rotationCenterY": 19.09000320434569
+        },
+        {
+            "name": "inactive",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "a534de3ee21a66a8017318b78593e7dd",
+            "md5ext": "a534de3ee21a66a8017318b78593e7dd.svg",
+            "rotationCenterX": 60.51288449950812,
+            "rotationCenterY": -8.021358873290836
+        },
+        {
+            "name": "in_editor",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "10064d7a305773343577f714954a9a8f",
+            "md5ext": "10064d7a305773343577f714954a9a8f.svg",
+            "rotationCenterX": 60.788003312905744,
+            "rotationCenterY": -7.53971868814088
+        },
+        {
+            "name": "turbo_off",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "d2f4c2ff7e5f177447d70ea6fb704dd3",
+            "md5ext": "d2f4c2ff7e5f177447d70ea6fb704dd3.svg",
+            "rotationCenterX": 63.230783984792936,
+            "rotationCenterY": -8.8194063327268
+        },
+        {
+            "name": "low_limit",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "3ee19d91fb4b378e5a7f75661bbe530e",
+            "md5ext": "3ee19d91fb4b378e5a7f75661bbe530e.svg",
+            "rotationCenterX": 62.405915227283174,
+            "rotationCenterY": -8.955800532456209
+        },
+        {
+            "name": "misc_slow",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "95ffc3e4c700e8b15d50765a1e9606e4",
+            "md5ext": "95ffc3e4c700e8b15d50765a1e9606e4.svg",
+            "rotationCenterX": 62.651760227283205,
+            "rotationCenterY": -8.877125532456205
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 23,
+    "visible": false,
+    "x": 305,
+    "y": -50,
+    "size": 50,
+    "direction": 90,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

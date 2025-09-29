@@ -1,0 +1,1547 @@
+{
+    "isStage": false,
+    "name": "weatherHandler",
+    "variables": {
+        "d2s#ctpcZD+cfn-@yp],": [
+            "temperature",
+            1
+        ]
+    },
+    "lists": {},
+    "broadcasts": {},
+    "blocks": {
+        "am=": {
+            "opcode": "event_whenflagclicked",
+            "next": "c/",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1025,
+            "y": -406
+        },
+        "c:": {
+            "opcode": "data_addtolist",
+            "next": "c;",
+            "parent": "c/",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "winter"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c;": {
+            "opcode": "data_addtolist",
+            "next": "c=",
+            "parent": "c:",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "winter"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c=": {
+            "opcode": "data_addtolist",
+            "next": "c?",
+            "parent": "c;",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "spring"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c?": {
+            "opcode": "data_addtolist",
+            "next": "c@",
+            "parent": "c=",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "spring"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c@": {
+            "opcode": "data_addtolist",
+            "next": "c[",
+            "parent": "c?",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "spring"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c[": {
+            "opcode": "data_addtolist",
+            "next": "c]",
+            "parent": "c@",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "summer"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c]": {
+            "opcode": "data_addtolist",
+            "next": "c^",
+            "parent": "c[",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "summer"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c^": {
+            "opcode": "data_addtolist",
+            "next": "c_",
+            "parent": "c]",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "summer"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c_": {
+            "opcode": "data_addtolist",
+            "next": "c`",
+            "parent": "c^",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "autumn"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c`": {
+            "opcode": "data_addtolist",
+            "next": "c{",
+            "parent": "c_",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "autumn"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c{": {
+            "opcode": "data_addtolist",
+            "next": "am?",
+            "parent": "c`",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "autumn"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am?": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "c{",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "winter"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "fp": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "sp",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "m*",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "m*": {
+            "opcode": "sensing_current",
+            "next": null,
+            "parent": "fp",
+            "inputs": {},
+            "fields": {
+                "CURRENTMENU": [
+                    "MONTH",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am@": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "sp",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -33,
+            "y": -625
+        },
+        "sp": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": null,
+            "parent": "am@",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    "fp"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sq"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sq": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "sr",
+            "parent": "sp",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "winter"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "ss"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sr": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "st",
+            "parent": "sq",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "spring"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "su"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "st": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "c|",
+            "parent": "sr",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "summer"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sv"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "c|": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": null,
+            "parent": "st",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "autumn"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sw"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ss": {
+            "opcode": "data_setvariableto",
+            "next": "am[",
+            "parent": "sq",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "am]",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "temperature",
+                    "d2s#ctpcZD+cfn-@yp],"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am]": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "ss",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "-100"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "32"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "su": {
+            "opcode": "data_setvariableto",
+            "next": "am^",
+            "parent": "sr",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "am_",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "temperature",
+                    "d2s#ctpcZD+cfn-@yp],"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am_": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "su",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "10"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "120"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am[": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "ss",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am^": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "su",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sv": {
+            "opcode": "data_setvariableto",
+            "next": "am`",
+            "parent": "st",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "am{",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "temperature",
+                    "d2s#ctpcZD+cfn-@yp],"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am{": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "sv",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "120"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "500"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am`": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "sv",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sw": {
+            "opcode": "data_setvariableto",
+            "next": "am|",
+            "parent": "c|",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "am}",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "temperature",
+                    "d2s#ctpcZD+cfn-@yp],"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am}": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "sw",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "70"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am|": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "sw",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am~": {
+            "opcode": "event_whenflagclicked",
+            "next": "c}",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1894,
+            "y": -350
+        },
+        "c~": {
+            "opcode": "data_addtolist",
+            "next": "db",
+            "parent": "da",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "midnight"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aPf": {
+            "opcode": "sensing_current",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "CURRENTMENU": [
+                    "HOUR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1806,
+            "y": -549
+        },
+        "db": {
+            "opcode": "data_addtolist",
+            "next": "dc",
+            "parent": "c~",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "midnight"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "dd": {
+            "opcode": "data_addtolist",
+            "next": "de",
+            "parent": "dc",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "night"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "de": {
+            "opcode": "data_addtolist",
+            "next": "V`",
+            "parent": "dd",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "night"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "V`": {
+            "opcode": "data_addtolist",
+            "next": "V{",
+            "parent": "de",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "night"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "V{": {
+            "opcode": "data_addtolist",
+            "next": "V|",
+            "parent": "V`",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "night"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "V}": {
+            "opcode": "data_addtolist",
+            "next": "V~",
+            "parent": "V|",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "dawn"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "V~": {
+            "opcode": "data_addtolist",
+            "next": "Wa",
+            "parent": "V}",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "dawn"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wa": {
+            "opcode": "data_addtolist",
+            "next": "Wb",
+            "parent": "V~",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "morning"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wc": {
+            "opcode": "data_addtolist",
+            "next": "Wd",
+            "parent": "Wb",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "morning"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wd": {
+            "opcode": "data_addtolist",
+            "next": "We",
+            "parent": "Wc",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "morning"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "We": {
+            "opcode": "data_addtolist",
+            "next": "Wf",
+            "parent": "Wd",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "morning"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wg": {
+            "opcode": "data_addtolist",
+            "next": "Wh",
+            "parent": "Wf",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "noon"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wh": {
+            "opcode": "data_addtolist",
+            "next": "Wi",
+            "parent": "Wg",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "noon"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wi": {
+            "opcode": "data_addtolist",
+            "next": "Wj",
+            "parent": "Wh",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "noon"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wj": {
+            "opcode": "data_addtolist",
+            "next": "Wk",
+            "parent": "Wi",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "noon"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wk": {
+            "opcode": "data_addtolist",
+            "next": "Wl",
+            "parent": "Wj",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "noon"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wl": {
+            "opcode": "data_addtolist",
+            "next": "Wm",
+            "parent": "Wk",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "dusk"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wn": {
+            "opcode": "data_addtolist",
+            "next": "Wo",
+            "parent": "Wm",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "dusk"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wo": {
+            "opcode": "data_addtolist",
+            "next": "Wp",
+            "parent": "Wn",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "evening"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wp": {
+            "opcode": "data_addtolist",
+            "next": "Wq",
+            "parent": "Wo",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "evening"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wr": {
+            "opcode": "data_addtolist",
+            "next": "df",
+            "parent": "Wq",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "night"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "df": {
+            "opcode": "data_addtolist",
+            "next": "dg",
+            "parent": "Wr",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "night"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "ana": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "dg",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "midnight"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "V|": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "V}",
+            "parent": "V{",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "6 am"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "da": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "c~",
+            "parent": "c}",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "23-01 midnight"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dc": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "dd",
+            "parent": "db",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "02-04"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "dg": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "ana",
+            "parent": "df",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "23-01 midnight"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wb": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "Wc",
+            "parent": "Wa",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "9am"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wf": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "Wg",
+            "parent": "We",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "12"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wm": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "Wn",
+            "parent": "Wl",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "18"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Wq": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "Wr",
+            "parent": "Wp",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "21"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "c}": {
+            "opcode": "data_deletealloflist",
+            "next": "da",
+            "parent": "am~",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c/": {
+            "opcode": "data_deletealloflist",
+            "next": "c:",
+            "parent": "am=",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "seasons",
+                    ".Kk(WHDpY4}ffDyn)vVW"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "anb": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": null,
+            "parent": null,
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    "dh"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -506,
+            "y": -584
+        },
+        "dh": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "anb",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "anc",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "anc": {
+            "opcode": "sensing_current",
+            "next": null,
+            "parent": "dh",
+            "inputs": {},
+            "fields": {
+                "CURRENTMENU": [
+                    "HOUR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "and": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": null,
+            "inputs": {
+                "INDEX": [
+                    3,
+                    "ane",
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "time",
+                    ";j10DIR6LjAta!xD9fw]"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -309,
+            "y": -769
+        },
+        "ane": {
+            "opcode": "sensing_current",
+            "next": null,
+            "parent": "and",
+            "inputs": {},
+            "fields": {
+                "CURRENTMENU": [
+                    "HOUR",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "a": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "b",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "displayScore",
+                    "k5s*}*:k:PZ!kV$7(f$Z"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -220,
+            "y": 210
+        },
+        "b": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "a",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        }
+    },
+    "comments": {
+        "aPg": {
+            "blockId": null,
+            "x": -1461.9341563786008,
+            "y": -434.5308732319455,
+            "width": 200,
+            "height": 200,
+            "minimized": false,
+            "text": "Winter: 12 1 2\nSpring: 3 4 5\nSummer: 6 7 8\nAutumn: 9 10 11"
+        }
+    },
+    "currentCostume": 0,
+    "costumes": [
+        {
+            "name": "disfraz1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+            "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+            "rotationCenterX": 0,
+            "rotationCenterY": 0
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 10,
+    "visible": true,
+    "x": 0,
+    "y": 0,
+    "size": 100,
+    "direction": 90,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

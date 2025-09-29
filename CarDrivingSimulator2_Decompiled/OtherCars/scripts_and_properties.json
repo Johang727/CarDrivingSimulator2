@@ -1,0 +1,6603 @@
+{
+    "isStage": false,
+    "name": "OtherCars",
+    "variables": {
+        "qKkb[juQfk1[7DO[C0vh": [
+            "i",
+            0
+        ],
+        "=_WyG7:d3lMUfYzkyxyk": [
+            "car#",
+            0
+        ],
+        "TT:.PGaL@1Lq,Z_9(GP;": [
+            "speed",
+            0
+        ]
+    },
+    "lists": {
+        "a$GVMD],JER4xUSrRIN!": [
+            "carPos",
+            [
+                "130 -750",
+                "80 -750",
+                "25 -750",
+                "-25 750",
+                "-80 750",
+                "-130 750",
+                "130 750",
+                "80 750",
+                "25 750",
+                "210 750",
+                "-210 -750"
+            ]
+        ]
+    },
+    "broadcasts": {},
+    "blocks": {
+        "alz": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "Ux",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -85,
+            "y": 285
+        },
+        "Ux": {
+            "opcode": "data_setvariableto",
+            "next": "Uy",
+            "parent": "alz",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "crashes",
+                    "]!yX2U/S0MIS{/_2=Go|"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Uy": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "Ux",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "Uz"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Uz": {
+            "opcode": "procedures_call",
+            "next": "UA",
+            "parent": "Uy",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "create car",
+                "argumentids": "[]",
+                "warp": "false"
+            }
+        },
+        "UA": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "Uz",
+            "inputs": {
+                "DURATION": [
+                    3,
+                    "alA",
+                    [
+                        5,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alA": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "UA",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        ".25"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        ".5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alB": {
+            "opcode": "event_whenflagclicked",
+            "next": "UB",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -946,
+            "y": -89
+        },
+        "UB": {
+            "opcode": "data_deletealloflist",
+            "next": "rF",
+            "parent": "alB",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "rF": {
+            "opcode": "lmscomments_commentC",
+            "next": "rG",
+            "parent": "UB",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "cars on right side of road"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "UC"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UC": {
+            "opcode": "data_addtolist",
+            "next": "UD",
+            "parent": "rF",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "130 -750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UD": {
+            "opcode": "data_addtolist",
+            "next": "alC",
+            "parent": "UC",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "80 -750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "alC": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "UD",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "25 -750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "rG": {
+            "opcode": "lmscomments_commentC",
+            "next": "rH",
+            "parent": "rF",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "cars on left side of road"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "UE"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UE": {
+            "opcode": "data_addtolist",
+            "next": "UF",
+            "parent": "rG",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "-25 750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UF": {
+            "opcode": "data_addtolist",
+            "next": "alD",
+            "parent": "UE",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "-80 750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "alD": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "UF",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "-130 750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "rH": {
+            "opcode": "lmscomments_commentC",
+            "next": "UG",
+            "parent": "rG",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "cars on right side from ahead"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "UH"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UH": {
+            "opcode": "data_addtolist",
+            "next": "UI",
+            "parent": "rH",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "130 750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UI": {
+            "opcode": "data_addtolist",
+            "next": "alE",
+            "parent": "UH",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "80 750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "alE": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "UI",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "25 750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UG": {
+            "opcode": "lmscomments_commentC",
+            "next": null,
+            "parent": "rH",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "cars on shoulder"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "UJ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UJ": {
+            "opcode": "data_addtolist",
+            "next": "alF",
+            "parent": "UG",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "210 750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "alF": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "UJ",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "-210 -750"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UK": {
+            "opcode": "procedures_definition",
+            "next": "jp",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "rI"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -1078,
+            "y": -963
+        },
+        "rI": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "UK",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    1,
+                    "alG"
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    "alH"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "argumentnames": "[\"msg\",\"err/wrn/etc\"]",
+                "argumentdefaults": "[\"\",\"\",\"\"]",
+                "warp": "false"
+            }
+        },
+        "alG": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "rI",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "alH": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "rI",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "jp": {
+            "opcode": "control_if_else",
+            "next": null,
+            "parent": "UK",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "UL"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "UM"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "UN"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UL": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "jp",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "alI",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alI": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "UL",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UM": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "jp",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "rJ",
+                    [
+                        10,
+                        "rec:checking save status..."
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "logs",
+                    ")^jAeXj?zvyzh`6dkQmA"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "rJ": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "UM",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "alJ",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "UO",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alJ": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "rJ",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UO": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rJ",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ":"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "rK",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rK": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "UO",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "alK",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "UP",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alK": {
+            "opcode": "lmsAssets_getSpriteName",
+            "next": null,
+            "parent": "rK",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UP": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rK",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "alL",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alL": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "UP",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UN": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "jp",
+            "inputs": {
+                "ITEM": [
+                    3,
+                    "rL",
+                    [
+                        10,
+                        "rec:checking save status..."
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "logs",
+                    ")^jAeXj?zvyzh`6dkQmA"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "rL": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "UN",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "rM",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "UQ",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rM": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rL",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "alM",
+                    [
+                        10,
+                        "manzana "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "UR",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alM": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "rM",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "err/wrn/etc",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UR": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rM",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ":"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "rN",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rN": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "UR",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "alN",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "US",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alN": {
+            "opcode": "lmsAssets_getSpriteName",
+            "next": null,
+            "parent": "rN",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "US": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rN",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "alO",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alO": {
+            "opcode": "lmsTempVars2_getThreadVariable",
+            "next": null,
+            "parent": "US",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UQ": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rL",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        ": "
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "alP",
+                    [
+                        10,
+                        "banana"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alP": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "UQ",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "msg",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UT": {
+            "opcode": "procedures_definition",
+            "next": "jq",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "alQ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -2741,
+            "y": -988
+        },
+        "alQ": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "UT",
+            "inputs": {},
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "create car",
+                "argumentids": "[]",
+                "argumentnames": "[]",
+                "argumentdefaults": "[]",
+                "warp": "false"
+            }
+        },
+        "jq": {
+            "opcode": "control_if",
+            "next": "jr",
+            "parent": "UT",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "UU"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "UV"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UU": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "jq",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "alR"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alR": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "UU",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UV": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "alS",
+            "parent": "jq",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "alS": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "UV",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "jr": {
+            "opcode": "control_if",
+            "next": "js",
+            "parent": "jq",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "UW"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "UX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UW": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "jr",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "alT"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alT": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "UW",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UX": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "alU",
+            "parent": "jr",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "2"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "alU": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "UX",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "js": {
+            "opcode": "control_if",
+            "next": "jt",
+            "parent": "jr",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "UY"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "UZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "UY": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "js",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "alV"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alV": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "UY",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "3"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "UZ": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "alW",
+            "parent": "js",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "3"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "alW": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "UZ",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "jt": {
+            "opcode": "control_if",
+            "next": "ju",
+            "parent": "js",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "U!"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "U#"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U!": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "jt",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "alX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alX": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "U!",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "4"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "U#": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "alY",
+            "parent": "jt",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "4"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "alY": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "U#",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "ju": {
+            "opcode": "control_if",
+            "next": "jv",
+            "parent": "jt",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "U%"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "U("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U%": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "ju",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "alZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "alZ": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "U%",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "5"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "U(": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "al!",
+            "parent": "ju",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "5"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al!": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "U(",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "jv": {
+            "opcode": "control_if",
+            "next": "jw",
+            "parent": "ju",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "U)"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "U*"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U)": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "jv",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "al#"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al#": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "U)",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "6"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "U*": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "al%",
+            "parent": "jv",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "6"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al%": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "U*",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "jw": {
+            "opcode": "control_if",
+            "next": "jx",
+            "parent": "jv",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "U+"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "U,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U+": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "jw",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "al("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al(": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "U+",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "7"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "U,": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "al)",
+            "parent": "jw",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "7"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al)": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "U,",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "jx": {
+            "opcode": "control_if",
+            "next": "jy",
+            "parent": "jw",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "U-"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "U."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U-": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "jx",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "al*"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al*": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "U-",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "8"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "U.": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "al+",
+            "parent": "jx",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "8"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al+": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "U.",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "jy": {
+            "opcode": "control_if",
+            "next": "rO",
+            "parent": "jx",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "U/"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "U:"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U/": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "jy",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "al,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al,": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "U/",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "9"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "U:": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "al-",
+            "parent": "jy",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "9"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al-": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "U:",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "rO": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "jy",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "U;"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "U="
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U;": {
+            "opcode": "operator_not",
+            "next": null,
+            "parent": "rO",
+            "inputs": {
+                "OPERAND": [
+                    2,
+                    "al."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al.": {
+            "opcode": "lmsclonesplus_cloneExists",
+            "next": null,
+            "parent": "U;",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "U=": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "al/",
+            "parent": "rO",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al/": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "U=",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "this script",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            }
+        },
+        "al:": {
+            "opcode": "control_start_as_clone",
+            "next": "rP",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 809,
+            "y": 191
+        },
+        "rP": {
+            "opcode": "procedures_call",
+            "next": "rQ",
+            "parent": "al:",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    3,
+                    "U?",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "warp": "false"
+            }
+        },
+        "U?": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rP",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "clone ("
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "al;",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al;": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "U?",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ],
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    1,
+                    [
+                        10,
+                        ") (0)"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rQ": {
+            "opcode": "lmsLooksPlus_setLayerTo",
+            "next": "jz",
+            "parent": "rP",
+            "inputs": {
+                "TARGET": [
+                    1,
+                    "al="
+                ],
+                "LAYER": [
+                    1,
+                    [
+                        4,
+                        "-10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al=": {
+            "opcode": "lmsLooksPlus_menu_spriteMenu",
+            "next": null,
+            "parent": "rQ",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "OtherCars",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "jz": {
+            "opcode": "looks_switchcostumeto",
+            "next": "rR",
+            "parent": "rQ",
+            "inputs": {
+                "COSTUME": [
+                    3,
+                    "al?",
+                    "al@"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al?": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "jz",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "car"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ],
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al@": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "jz",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "car1",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "rR": {
+            "opcode": "data_setvariableto",
+            "next": "jA",
+            "parent": "jz",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "al[",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "car#",
+                    "=_WyG7:d3lMUfYzkyxyk"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al[": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "rR",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "jA": {
+            "opcode": "motion_gotoxy",
+            "next": "rS",
+            "parent": "rR",
+            "inputs": {
+                "X": [
+                    3,
+                    "U@",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "Y": [
+                    3,
+                    "U[",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U@": {
+            "opcode": "strings_split",
+            "next": null,
+            "parent": "jA",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "al]",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "SPLIT": [
+                    1,
+                    [
+                        10,
+                        " "
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al]": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "U@",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    [
+                        12,
+                        "car#",
+                        "=_WyG7:d3lMUfYzkyxyk"
+                    ],
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "U[": {
+            "opcode": "strings_split",
+            "next": null,
+            "parent": "jA",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        4,
+                        "2"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "al^",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "SPLIT": [
+                    1,
+                    [
+                        10,
+                        " "
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al^": {
+            "opcode": "data_itemoflist",
+            "next": null,
+            "parent": "U[",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    [
+                        12,
+                        "car#",
+                        "=_WyG7:d3lMUfYzkyxyk"
+                    ],
+                    [
+                        7,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPos",
+                    "a$GVMD],JER4xUSrRIN!"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "rS": {
+            "opcode": "data_replaceitemoflist",
+            "next": "U]",
+            "parent": "jA",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ],
+                    [
+                        7,
+                        ""
+                    ]
+                ],
+                "ITEM": [
+                    3,
+                    "rT",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "rT": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rS",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "al_",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "U^",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al_": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": "rT",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U^": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "rT",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "|"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "al`",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al`": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "U^",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U]": {
+            "opcode": "looks_show",
+            "next": "rU",
+            "parent": "rS",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rU": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": "U_",
+            "parent": "U]",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    [
+                        12,
+                        "car#",
+                        "=_WyG7:d3lMUfYzkyxyk"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "U`"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U`": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "rV",
+            "parent": "rU",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "right"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rV": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "rW",
+            "parent": "U`",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "1"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "rX"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rX": {
+            "opcode": "data_setvariableto",
+            "next": "U{",
+            "parent": "rV",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "al{",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al{": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "rX",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "50"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "70"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U{": {
+            "opcode": "motion_pointindirection",
+            "next": "al|",
+            "parent": "rX",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al|": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "U{",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rW": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "rY",
+            "parent": "rV",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "2"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "rZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rZ": {
+            "opcode": "data_setvariableto",
+            "next": "U|",
+            "parent": "rW",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "al}",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "al}": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "rZ",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "60"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "80"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U|": {
+            "opcode": "motion_pointindirection",
+            "next": "al~",
+            "parent": "rZ",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "al~": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "U|",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rY": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "U}",
+            "parent": "rW",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "3"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "r!"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r!": {
+            "opcode": "data_setvariableto",
+            "next": "U~",
+            "parent": "rY",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "ama",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "ama": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "r!",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "70"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "100"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U~": {
+            "opcode": "motion_pointindirection",
+            "next": "amb",
+            "parent": "r!",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amb": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "U~",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "U}": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "r#",
+            "parent": "rY",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "left"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r#": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "r%",
+            "parent": "U}",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "4"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "r("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r(": {
+            "opcode": "data_setvariableto",
+            "next": "Va",
+            "parent": "r#",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "amc",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amc": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "r(",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "-50"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "-70"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Va": {
+            "opcode": "motion_pointindirection",
+            "next": "amd",
+            "parent": "r(",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "180"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amd": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Va",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r%": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "r)",
+            "parent": "r#",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "5"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "r*"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r*": {
+            "opcode": "data_setvariableto",
+            "next": "Vb",
+            "parent": "r%",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "ame",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "ame": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "r*",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "-60"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "-80"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vb": {
+            "opcode": "motion_pointindirection",
+            "next": "amf",
+            "parent": "r*",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "180"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amf": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Vb",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r)": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "Vc",
+            "parent": "r%",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "6"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "r+"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r+": {
+            "opcode": "data_setvariableto",
+            "next": "Vd",
+            "parent": "r)",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "amg",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amg": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "r+",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "-70"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "-100"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vd": {
+            "opcode": "motion_pointindirection",
+            "next": "amh",
+            "parent": "r+",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "180"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amh": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Vd",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vc": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "r,",
+            "parent": "r)",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "right front"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r,": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "r-",
+            "parent": "Vc",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "7"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "r."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r.": {
+            "opcode": "data_setvariableto",
+            "next": "Ve",
+            "parent": "r,",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "ami",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "ami": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "r.",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "50"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "70"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Ve": {
+            "opcode": "motion_pointindirection",
+            "next": "amj",
+            "parent": "r.",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amj": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Ve",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r-": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "r/",
+            "parent": "r,",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "8"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "r:"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r:": {
+            "opcode": "data_setvariableto",
+            "next": "Vf",
+            "parent": "r-",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "amk",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amk": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "r:",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "60"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "80"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vf": {
+            "opcode": "motion_pointindirection",
+            "next": "aml",
+            "parent": "r:",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "aml": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Vf",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r/": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "Vg",
+            "parent": "r-",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "9"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "r;"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r;": {
+            "opcode": "data_setvariableto",
+            "next": "Vh",
+            "parent": "r/",
+            "inputs": {
+                "VALUE": [
+                    3,
+                    "amm",
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amm": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "r;",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        "70"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        "100"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vh": {
+            "opcode": "motion_pointindirection",
+            "next": "amn",
+            "parent": "r;",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amn": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Vh",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vg": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "r=",
+            "parent": "r/",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "shoulder"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r=": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "r?",
+            "parent": "Vg",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "10"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "Vi"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vi": {
+            "opcode": "data_setvariableto",
+            "next": "Vj",
+            "parent": "r=",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vj": {
+            "opcode": "motion_pointindirection",
+            "next": "amo",
+            "parent": "Vi",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amo": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "Vj",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r?": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "Vk",
+            "parent": "r=",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "11"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "c)"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "c)": {
+            "opcode": "data_setvariableto",
+            "next": "c*",
+            "parent": "r?",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "speed",
+                    "TT:.PGaL@1Lq,Z_9(GP;"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "c*": {
+            "opcode": "motion_pointindirection",
+            "next": "amp",
+            "parent": "c)",
+            "inputs": {
+                "DIRECTION": [
+                    1,
+                    [
+                        8,
+                        "-175"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amp": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "c*",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vk": {
+            "opcode": "lmsSpAsMoreControl_default",
+            "next": null,
+            "parent": "r?",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "amq"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amq": {
+            "opcode": "procedures_call",
+            "next": null,
+            "parent": "Vk",
+            "inputs": {
+                "ZzMo;[$+1+{Wn/{SJq[J": [
+                    1,
+                    [
+                        10,
+                        "invalid rng value"
+                    ]
+                ],
+                "q#;S0tT6_|1(2ivL(,R,": [
+                    1,
+                    [
+                        10,
+                        "err"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "log %s as %s",
+                "argumentids": "[\"ZzMo;[$+1+{Wn/{SJq[J\",\"q#;S0tT6_|1(2ivL(,R,\"]",
+                "warp": "false"
+            }
+        },
+        "U_": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "rU",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "r@"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r@": {
+            "opcode": "motion_changeyby",
+            "next": "r[",
+            "parent": "U_",
+            "inputs": {
+                "DY": [
+                    3,
+                    "Vl",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vl": {
+            "opcode": "operator_divide",
+            "next": null,
+            "parent": "r@",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "Vm",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vm": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "Vl",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    [
+                        12,
+                        "speed",
+                        "TT:.PGaL@1Lq,Z_9(GP;"
+                    ],
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "Vn",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vn": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "Vm",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "amr"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "velocity",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amr": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "Vn",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "r[": {
+            "opcode": "data_replaceitemoflist",
+            "next": "ams",
+            "parent": "r@",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ],
+                    [
+                        7,
+                        ""
+                    ]
+                ],
+                "ITEM": [
+                    3,
+                    "r]",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "r]": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "r[",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "amt",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "Vo",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amt": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": "r]",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vo": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "r]",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "|"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "amu",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amu": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "Vo",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ams": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "r[",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vp": {
+            "opcode": "procedures_definition",
+            "next": "Vq",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "Vr"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -3263,
+            "y": -1372
+        },
+        "Vr": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "Vp",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    1,
+                    "amv"
+                ]
+            },
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "argumentnames": "[\"\"]",
+                "argumentdefaults": "[\"\"]",
+                "warp": "false"
+            }
+        },
+        "amv": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "Vr",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Vq": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "Vs",
+            "parent": "Vp",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "why do this? You can use the search to find functions"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vs": {
+            "opcode": "lmsTempVars2_setThreadVariable",
+            "next": null,
+            "parent": "Vq",
+            "inputs": {
+                "VAR": [
+                    1,
+                    [
+                        10,
+                        "script"
+                    ]
+                ],
+                "STRING": [
+                    3,
+                    "amw",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amw": {
+            "opcode": "argument_reporter_string_number",
+            "next": null,
+            "parent": "Vs",
+            "inputs": {},
+            "fields": {
+                "VALUE": [
+                    "",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amx": {
+            "opcode": "control_start_as_clone",
+            "next": "Vt",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 2209,
+            "y": 131
+        },
+        "Vt": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "r^",
+            "parent": "amx",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "position limits"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r^": {
+            "opcode": "procedures_call",
+            "next": "Vu",
+            "parent": "Vt",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    3,
+                    "Vv",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "warp": "false"
+            }
+        },
+        "Vv": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "r^",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "clone ("
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "amy",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amy": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "Vv",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ],
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    1,
+                    [
+                        10,
+                        ") (1)"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vu": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "r^",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "r_"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r_": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "Vu",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "r`"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "Vw"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r`": {
+            "opcode": "operator_or",
+            "next": null,
+            "parent": "r_",
+            "inputs": {
+                "OPERAND1": [
+                    2,
+                    "Vx"
+                ],
+                "OPERAND2": [
+                    2,
+                    "Vy"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vx": {
+            "opcode": "operator_gt",
+            "next": null,
+            "parent": "r`",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "amz",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "1000"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amz": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "Vx",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vy": {
+            "opcode": "operator_lt",
+            "next": null,
+            "parent": "r`",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "amA",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "-1000"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amA": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "Vy",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Vw": {
+            "opcode": "data_replaceitemoflist",
+            "next": "amB",
+            "parent": "r_",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ],
+                    [
+                        7,
+                        ""
+                    ]
+                ],
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "deleted"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amB": {
+            "opcode": "control_delete_this_clone",
+            "next": null,
+            "parent": "Vw",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amC": {
+            "opcode": "control_start_as_clone",
+            "next": "Vz",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 2958,
+            "y": 140
+        },
+        "Vz": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "r{",
+            "parent": "amC",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "position limits"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r{": {
+            "opcode": "procedures_call",
+            "next": "VA",
+            "parent": "Vz",
+            "inputs": {
+                "`/rW)nf5Iz2?0*jT0w=|": [
+                    3,
+                    "VB",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "// script %s",
+                "argumentids": "[\"`/rW)nf5Iz2?0*jT0w=|\"]",
+                "warp": "false"
+            }
+        },
+        "VB": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "r{",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "clone ("
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "amD",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amD": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "VB",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ],
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    1,
+                    [
+                        10,
+                        ") (2)"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VA": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "r{",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "jB"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "jB": {
+            "opcode": "control_if",
+            "next": "r|",
+            "parent": "VA",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "r}"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "r~"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r}": {
+            "opcode": "sensing_touchingobject",
+            "next": null,
+            "parent": "jB",
+            "inputs": {
+                "TOUCHINGOBJECTMENU": [
+                    3,
+                    "amE",
+                    "amF"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amE": {
+            "opcode": "truefantomcouplers_value_in_string_block",
+            "next": null,
+            "parent": "r}",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        10,
+                        "OtherCars"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amF": {
+            "opcode": "sensing_touchingobjectmenu",
+            "next": null,
+            "parent": "r}",
+            "inputs": {},
+            "fields": {
+                "TOUCHINGOBJECTMENU": [
+                    "_mouse_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "r~": {
+            "opcode": "looks_switchcostumeto",
+            "next": "sa",
+            "parent": "jB",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "amG"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amG": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "r~",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "boom",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "sa": {
+            "opcode": "lmsMoreEvents_broadcastData",
+            "next": "jC",
+            "parent": "r~",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "crash_particle",
+                        "(hHQ37S3X[D1;VQ*bQ;("
+                    ]
+                ],
+                "DATA": [
+                    3,
+                    "sb",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sb": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "sa",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "amH",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "VC",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amH": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": "sb",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VC": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "sb",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "|"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "amI",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amI": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "VC",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "jC": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": "VD",
+            "parent": "sa",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    "VE"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "VF"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VE": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "jC",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "amJ"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "quality",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amJ": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "VE",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "menu//submenus",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "VF": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "VG",
+            "parent": "jC",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "4"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VG": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": null,
+            "parent": "VF",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "5"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "amK"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amK": {
+            "opcode": "looks_seteffectto",
+            "next": null,
+            "parent": "VG",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "100"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "VD": {
+            "opcode": "control_stop",
+            "next": "sc",
+            "parent": "jC",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "sc": {
+            "opcode": "control_repeat",
+            "next": "VH",
+            "parent": "VD",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "100"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sd"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sd": {
+            "opcode": "motion_changeyby",
+            "next": "VI",
+            "parent": "sc",
+            "inputs": {
+                "DY": [
+                    3,
+                    "VJ",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VJ": {
+            "opcode": "operator_divide",
+            "next": null,
+            "parent": "sd",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "VK",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "-10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VK": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "VJ",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "amL"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "velocity",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amL": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "VK",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "VI": {
+            "opcode": "looks_changeeffectby",
+            "next": "amM",
+            "parent": "sd",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amM": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "VI",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VH": {
+            "opcode": "data_replaceitemoflist",
+            "next": "amN",
+            "parent": "sc",
+            "inputs": {
+                "INDEX": [
+                    3,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ],
+                    [
+                        7,
+                        ""
+                    ]
+                ],
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "deleted"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amN": {
+            "opcode": "control_delete_this_clone",
+            "next": null,
+            "parent": "VH",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "r|": {
+            "opcode": "control_if",
+            "next": null,
+            "parent": "jB",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "VL"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "se"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VL": {
+            "opcode": "sensing_touchingobject",
+            "next": null,
+            "parent": "r|",
+            "inputs": {
+                "TOUCHINGOBJECTMENU": [
+                    1,
+                    "amO"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amO": {
+            "opcode": "sensing_touchingobjectmenu",
+            "next": null,
+            "parent": "VL",
+            "inputs": {},
+            "fields": {
+                "TOUCHINGOBJECTMENU": [
+                    "car//Car",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "se": {
+            "opcode": "looks_switchcostumeto",
+            "next": "VM",
+            "parent": "r|",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "amP"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amP": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "se",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "boom",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "VM": {
+            "opcode": "control_stop",
+            "next": "VN",
+            "parent": "se",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "VN": {
+            "opcode": "procedures_call",
+            "next": "sf",
+            "parent": "VM",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "decreasePlayerHealth",
+                "argumentids": "[]",
+                "warp": "false"
+            }
+        },
+        "sf": {
+            "opcode": "control_repeat",
+            "next": "VO",
+            "parent": "VN",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "100"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "sg"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sg": {
+            "opcode": "motion_changeyby",
+            "next": "VP",
+            "parent": "sf",
+            "inputs": {
+                "DY": [
+                    3,
+                    "f(",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "f(": {
+            "opcode": "operator_divide",
+            "next": null,
+            "parent": "sg",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "f)",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "-10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "f)": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "f(",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "sh"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "velocity",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "sh": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "f)",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "VP": {
+            "opcode": "looks_changeeffectby",
+            "next": "amQ",
+            "parent": "sg",
+            "inputs": {
+                "CHANGE": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amQ": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "VP",
+            "inputs": {
+                "DURATION": [
+                    1,
+                    [
+                        5,
+                        "0.01"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VO": {
+            "opcode": "data_replaceitemoflist",
+            "next": "amR",
+            "parent": "sf",
+            "inputs": {
+                "INDEX": [
+                    2,
+                    [
+                        12,
+                        "i",
+                        "qKkb[juQfk1[7DO[C0vh"
+                    ]
+                ],
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "deleted"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amR": {
+            "opcode": "control_delete_this_clone",
+            "next": null,
+            "parent": "VO",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VQ": {
+            "opcode": "procedures_definition",
+            "next": "VR",
+            "parent": null,
+            "inputs": {
+                "custom_block": [
+                    1,
+                    "amS"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": 3857,
+            "y": -204
+        },
+        "amS": {
+            "opcode": "procedures_prototype",
+            "next": null,
+            "parent": "VQ",
+            "inputs": {},
+            "fields": {},
+            "shadow": true,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "decreasePlayerHealth",
+                "argumentids": "[]",
+                "argumentnames": "[]",
+                "argumentdefaults": "[]",
+                "warp": "false"
+            }
+        },
+        "VR": {
+            "opcode": "data_changevariableby",
+            "next": "si",
+            "parent": "VQ",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ]
+            },
+            "fields": {
+                "VARIABLE": [
+                    "crashes",
+                    "]!yX2U/S0MIS{/_2=Go|"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "si": {
+            "opcode": "lmsMoreEvents_broadcastData",
+            "next": "f*",
+            "parent": "VR",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "crash_particle",
+                        "(hHQ37S3X[D1;VQ*bQ;("
+                    ]
+                ],
+                "DATA": [
+                    3,
+                    "sj",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sj": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "si",
+            "inputs": {
+                "STRING1": [
+                    3,
+                    "amT",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "VS",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amT": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": "sj",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VS": {
+            "opcode": "operator_join",
+            "next": null,
+            "parent": "sj",
+            "inputs": {
+                "STRING1": [
+                    1,
+                    [
+                        10,
+                        "|"
+                    ]
+                ],
+                "STRING2": [
+                    3,
+                    "amU",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amU": {
+            "opcode": "motion_yposition",
+            "next": null,
+            "parent": "VS",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "f*": {
+            "opcode": "control_if_else",
+            "next": "sk",
+            "parent": "si",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "VT"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "VU"
+                ],
+                "SUBSTACK2": [
+                    2,
+                    "sl"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VT": {
+            "opcode": "operator_lt",
+            "next": null,
+            "parent": "f*",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    "amV",
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "amV": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": "VT",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VU": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "sm",
+            "parent": "f*",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "on left side"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sm": {
+            "opcode": "lmsMoreEvents_broadcastData",
+            "next": "amW",
+            "parent": "VU",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "modifyHealth",
+                        "`3Njp?]aWXVy%yjDxG#^"
+                    ]
+                ],
+                "DATA": [
+                    3,
+                    "VV",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VV": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "sm",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "VW",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "10"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VW": {
+            "opcode": "operator_divide",
+            "next": null,
+            "parent": "VV",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "sn",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sn": {
+            "opcode": "lmsutilsblocks_stringIfElse",
+            "next": null,
+            "parent": "VW",
+            "inputs": {
+                "BOOLEAN": [
+                    2,
+                    "VX"
+                ],
+                "INPUTA": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ],
+                "INPUTB": [
+                    3,
+                    "VY",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VX": {
+            "opcode": "operator_lt",
+            "next": null,
+            "parent": "sn",
+            "inputs": {
+                "OPERAND1": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ],
+                "OPERAND2": [
+                    3,
+                    "VZ",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "VZ": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "VX",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    [
+                        12,
+                        "speed",
+                        "TT:.PGaL@1Lq,Z_9(GP;"
+                    ],
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "V!",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V!": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "VZ",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "amX"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "velocity",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amX": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "V!",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "VY": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "sn",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    [
+                        12,
+                        "speed",
+                        "TT:.PGaL@1Lq,Z_9(GP;"
+                    ],
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "V#",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V#": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "VY",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "amY"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "velocity",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "amY": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "V#",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "amW": {
+            "opcode": "lmsMoreEvents_broadcastData",
+            "next": null,
+            "parent": "sm",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "carHit",
+                        "yhw6z:50:*{W?!Zr?BWD"
+                    ]
+                ],
+                "DATA": [
+                    1,
+                    [
+                        10,
+                        "left"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sl": {
+            "opcode": "lmsMoreEvents_broadcastData",
+            "next": "amZ",
+            "parent": "f*",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "modifyHealth",
+                        "`3Njp?]aWXVy%yjDxG#^"
+                    ]
+                ],
+                "DATA": [
+                    3,
+                    "V%",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V%": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "sl",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "V(",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "35"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V(": {
+            "opcode": "operator_divide",
+            "next": null,
+            "parent": "V%",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    "so",
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    1,
+                    [
+                        4,
+                        "5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "so": {
+            "opcode": "lmsutilsblocks_stringIfElse",
+            "next": null,
+            "parent": "V(",
+            "inputs": {
+                "BOOLEAN": [
+                    2,
+                    "V)"
+                ],
+                "INPUTA": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ],
+                "INPUTB": [
+                    3,
+                    "V*",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V)": {
+            "opcode": "operator_lt",
+            "next": null,
+            "parent": "so",
+            "inputs": {
+                "OPERAND1": [
+                    1,
+                    [
+                        10,
+                        "0"
+                    ]
+                ],
+                "OPERAND2": [
+                    3,
+                    "V+",
+                    [
+                        10,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V+": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "V)",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    [
+                        12,
+                        "speed",
+                        "TT:.PGaL@1Lq,Z_9(GP;"
+                    ],
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "V,",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V,": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "V+",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "am!"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "velocity",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am!": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "V,",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "V*": {
+            "opcode": "operator_subtract",
+            "next": null,
+            "parent": "so",
+            "inputs": {
+                "NUM1": [
+                    3,
+                    [
+                        12,
+                        "speed",
+                        "TT:.PGaL@1Lq,Z_9(GP;"
+                    ],
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "NUM2": [
+                    3,
+                    "V-",
+                    [
+                        4,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V-": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "V*",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "am#"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "velocity",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am#": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "V-",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "engine",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "amZ": {
+            "opcode": "lmsMoreEvents_broadcastData",
+            "next": null,
+            "parent": "sl",
+            "inputs": {
+                "BROADCAST_OPTION": [
+                    1,
+                    [
+                        11,
+                        "carHit",
+                        "yhw6z:50:*{W?!Zr?BWD"
+                    ]
+                ],
+                "DATA": [
+                    1,
+                    [
+                        10,
+                        "right"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "sk": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": null,
+            "parent": "f*",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    "V."
+                ],
+                "SUBSTACK": [
+                    2,
+                    "V/"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V.": {
+            "opcode": "sensing_of",
+            "next": null,
+            "parent": "sk",
+            "inputs": {
+                "OBJECT": [
+                    1,
+                    "am%"
+                ]
+            },
+            "fields": {
+                "PROPERTY": [
+                    "quality",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am%": {
+            "opcode": "sensing_of_object_menu",
+            "next": null,
+            "parent": "V.",
+            "inputs": {},
+            "fields": {
+                "OBJECT": [
+                    "menu//submenus",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "V/": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "V:",
+            "parent": "sk",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "4"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V:": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": null,
+            "parent": "V/",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "5"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "am("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am(": {
+            "opcode": "looks_seteffectto",
+            "next": null,
+            "parent": "V:",
+            "inputs": {
+                "VALUE": [
+                    1,
+                    [
+                        4,
+                        "100"
+                    ]
+                ]
+            },
+            "fields": {
+                "EFFECT": [
+                    "GHOST",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am)": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "c+",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "reshowRoad",
+                    "ecxuAlvliReS0C[6U6?B"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -180,
+            "y": 642
+        },
+        "c+": {
+            "opcode": "control_forever",
+            "next": null,
+            "parent": "am)",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "c,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "c,": {
+            "opcode": "procedures_call",
+            "next": "c-",
+            "parent": "c+",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "create car",
+                "argumentids": "[]",
+                "warp": "false"
+            }
+        },
+        "c-": {
+            "opcode": "control_wait",
+            "next": null,
+            "parent": "c,",
+            "inputs": {
+                "DURATION": [
+                    3,
+                    "am*",
+                    [
+                        5,
+                        ""
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am*": {
+            "opcode": "operator_random",
+            "next": null,
+            "parent": "c-",
+            "inputs": {
+                "FROM": [
+                    1,
+                    [
+                        4,
+                        ".25"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    [
+                        4,
+                        ".5"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am+": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "V;",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "gameStart",
+                    "s[@.HXqT/F28XT?w-:|y"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1746,
+            "y": 42
+        },
+        "V;": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "V=",
+            "parent": "am+",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "init"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V=": {
+            "opcode": "data_deletealloflist",
+            "next": "V?",
+            "parent": "V;",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "V?": {
+            "opcode": "control_repeat",
+            "next": null,
+            "parent": "V=",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "10"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "am,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am,": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "V?",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "deleted"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "am-": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "V@",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "reshowRoad",
+                    "ecxuAlvliReS0C[6U6?B"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1491,
+            "y": -185
+        },
+        "V@": {
+            "opcode": "lmscomments_commentCommand",
+            "next": "V[",
+            "parent": "am-",
+            "inputs": {
+                "COMMENT": [
+                    1,
+                    [
+                        10,
+                        "init"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "V[": {
+            "opcode": "data_deletealloflist",
+            "next": "V]",
+            "parent": "V@",
+            "inputs": {},
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "V]": {
+            "opcode": "control_repeat",
+            "next": null,
+            "parent": "V[",
+            "inputs": {
+                "TIMES": [
+                    1,
+                    [
+                        6,
+                        "10"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "am."
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am.": {
+            "opcode": "data_addtolist",
+            "next": null,
+            "parent": "V]",
+            "inputs": {
+                "ITEM": [
+                    1,
+                    [
+                        10,
+                        "deleted"
+                    ]
+                ]
+            },
+            "fields": {
+                "LIST": [
+                    "carPositions",
+                    "kGI_*!JQiGVRywumbdCG"
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "aPe": {
+            "opcode": "lmsclonesplus_getVariableOfClone",
+            "next": null,
+            "parent": null,
+            "inputs": {
+                "INPUTC": [
+                    1,
+                    [
+                        10,
+                        "3"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "=_WyG7:d3lMUfYzkyxyk",
+                    null
+                ],
+                "INPUTB": [
+                    "qKkb[juQfk1[7DO[C0vh",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 1336,
+            "y": 115
+        },
+        "i": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "g",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterGas",
+                    "vlEIMBOG^lTuM.Xe.BdL"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -4,
+            "y": -118
+        },
+        "g": {
+            "opcode": "control_stop",
+            "next": "c.",
+            "parent": "i",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "c.": {
+            "opcode": "lmsclonesplus_deleteClonesInSprite",
+            "next": null,
+            "parent": "g",
+            "inputs": {
+                "INPUT": [
+                    1,
+                    "am/"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am/": {
+            "opcode": "lmsclonesplus_menu_spriteMenu",
+            "next": null,
+            "parent": "c.",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "OtherCars",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "am:": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "V^",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "enterDealer",
+                    ";swRG=Sg`[DRYdeyG9tj"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 405,
+            "y": -155
+        },
+        "V^": {
+            "opcode": "control_stop",
+            "next": "V_",
+            "parent": "am:",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        },
+        "V_": {
+            "opcode": "lmsclonesplus_deleteClonesInSprite",
+            "next": null,
+            "parent": "V^",
+            "inputs": {
+                "INPUT": [
+                    1,
+                    "am;"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "am;": {
+            "opcode": "lmsclonesplus_menu_spriteMenu",
+            "next": null,
+            "parent": "V_",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "OtherCars",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "a": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "b",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "displayScore",
+                    "k5s*}*:k:PZ!kV$7(f$Z"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -451,
+            "y": -41
+        },
+        "b": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "a",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        }
+    },
+    "comments": {},
+    "currentCostume": 0,
+    "costumes": [
+        {
+            "name": "car1",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "6bd4d74177b270f69438b77570c21323",
+            "md5ext": "6bd4d74177b270f69438b77570c21323.svg",
+            "rotationCenterX": 39.49920025849997,
+            "rotationCenterY": 19.379290299700017
+        },
+        {
+            "name": "car2",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "d8c6dd270b5314449fa0a62d96d9dc28",
+            "md5ext": "d8c6dd270b5314449fa0a62d96d9dc28.svg",
+            "rotationCenterX": 39.49920025849997,
+            "rotationCenterY": 19.379290299700017
+        },
+        {
+            "name": "car3",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "6c0899e35c2d90ba1c5083c67e2285cc",
+            "md5ext": "6c0899e35c2d90ba1c5083c67e2285cc.svg",
+            "rotationCenterX": 39.49920051699996,
+            "rotationCenterY": 19.379290662000017
+        },
+        {
+            "name": "car4",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "047f18770d7bb94b7888b0f3568bd9b4",
+            "md5ext": "047f18770d7bb94b7888b0f3568bd9b4.svg",
+            "rotationCenterX": 39.49920077549996,
+            "rotationCenterY": 19.379291024300016
+        },
+        {
+            "name": "car5",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "28b0c3f23ec549a0a964a91dff22aec4",
+            "md5ext": "28b0c3f23ec549a0a964a91dff22aec4.svg",
+            "rotationCenterX": 39.49920185689996,
+            "rotationCenterY": 19.379292209500022
+        },
+        {
+            "name": "car6",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "e9a37906867b804dcd7cec93c38cbcb2",
+            "md5ext": "e9a37906867b804dcd7cec93c38cbcb2.svg",
+            "rotationCenterX": 39.499203761199965,
+            "rotationCenterY": 19.379294217600034
+        },
+        {
+            "name": "car7",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "b913f4782fd8f4c416ab7417b405252a",
+            "md5ext": "b913f4782fd8f4c416ab7417b405252a.svg",
+            "rotationCenterX": 39.49920731129998,
+            "rotationCenterY": 19.379298694400006
+        },
+        {
+            "name": "car8",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "837d372e1d69f4065eabe0910627a46a",
+            "md5ext": "837d372e1d69f4065eabe0910627a46a.svg",
+            "rotationCenterX": 39.49920497589994,
+            "rotationCenterY": 19.379297285700034
+        },
+        {
+            "name": "car9",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "161865bdc521f12ab5e270688016ba85",
+            "md5ext": "161865bdc521f12ab5e270688016ba85.svg",
+            "rotationCenterX": 39.49921017179997,
+            "rotationCenterY": 19.37929423120005
+        },
+        {
+            "name": "car10",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "4a498c9110f935530276b25059a51824",
+            "md5ext": "4a498c9110f935530276b25059a51824.svg",
+            "rotationCenterX": 39.49921030509995,
+            "rotationCenterY": 19.37929870800002
+        },
+        {
+            "name": "boom",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "6774c5acc7fbf16de2928f6a3c981b00",
+            "md5ext": "6774c5acc7fbf16de2928f6a3c981b00.svg",
+            "rotationCenterX": 59.61199737523435,
+            "rotationCenterY": 21.19174783687444
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 7,
+    "visible": false,
+    "x": 500,
+    "y": 500,
+    "size": 100,
+    "direction": 180,
+    "draggable": false,
+    "rotationStyle": "all around"
+}

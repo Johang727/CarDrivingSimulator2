@@ -1,0 +1,1345 @@
+{
+    "isStage": false,
+    "name": "menu//Title",
+    "variables": {
+        "znKL3f%*yZ_8WdfolAgn": [
+            "i",
+            0
+        ]
+    },
+    "lists": {},
+    "broadcasts": {},
+    "blocks": {
+        "akU": {
+            "opcode": "event_whenflagclicked",
+            "next": "akV",
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -975,
+            "y": 106
+        },
+        "akV": {
+            "opcode": "event_broadcast",
+            "next": null,
+            "parent": "akU",
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "loadTitle",
+                        "hdo/Tbb9dCAE1hGHC`[U"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "akW": {
+            "opcode": "lmsclonesplus_whenCloneStartsWithVar",
+            "next": "q|",
+            "parent": null,
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "start"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "znKL3f%*yZ_8WdfolAgn",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -290,
+            "y": 104
+        },
+        "q|": {
+            "opcode": "lmsSpAsMoreControl_switch",
+            "next": null,
+            "parent": "akW",
+            "inputs": {
+                "SWITCH": [
+                    2,
+                    "akX"
+                ],
+                "SUBSTACK": [
+                    2,
+                    "q}"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "akX": {
+            "opcode": "localstorage_get",
+            "next": null,
+            "parent": "q|",
+            "inputs": {
+                "KEY": [
+                    1,
+                    [
+                        10,
+                        "start"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "q}": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "q~",
+            "parent": "q|",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "1"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "ra"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ra": {
+            "opcode": "looks_switchcostumeto",
+            "next": "T(",
+            "parent": "q}",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "akY"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "akY": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "ra",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "story mode",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "T(": {
+            "opcode": "motion_gotoxy",
+            "next": "T)",
+            "parent": "ra",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "75"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T)": {
+            "opcode": "looks_show",
+            "next": "rb",
+            "parent": "T(",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rb": {
+            "opcode": "control_wait_until",
+            "next": "T*",
+            "parent": "T)",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "akZ"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "akZ": {
+            "opcode": "lmsutilsblocks_spriteClicked",
+            "next": null,
+            "parent": "rb",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T*": {
+            "opcode": "looks_hide",
+            "next": "T+",
+            "parent": "rb",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T+": {
+            "opcode": "event_broadcast",
+            "next": "rc",
+            "parent": "T*",
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "storyStart",
+                        "5+R-]Ug~dgZYs_LwL|/i"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rc": {
+            "opcode": "lmsclonesplus_deleteClonesInSprite",
+            "next": "ak!",
+            "parent": "T+",
+            "inputs": {
+                "INPUT": [
+                    1,
+                    "ak#"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak#": {
+            "opcode": "lmsclonesplus_menu_spriteMenu",
+            "next": null,
+            "parent": "rc",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "menu//Title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ak!": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "rc",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "q~": {
+            "opcode": "lmsSpAsMoreControl_case",
+            "next": "T,",
+            "parent": "q}",
+            "inputs": {
+                "CASE": [
+                    1,
+                    [
+                        10,
+                        "2"
+                    ]
+                ],
+                "SUBSTACK": [
+                    2,
+                    "rd"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rd": {
+            "opcode": "looks_switchcostumeto",
+            "next": "T-",
+            "parent": "q~",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "ak%"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak%": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "rd",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "california mode",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "T-": {
+            "opcode": "motion_gotoxy",
+            "next": "T.",
+            "parent": "rd",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "75"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T.": {
+            "opcode": "looks_show",
+            "next": "re",
+            "parent": "T-",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "re": {
+            "opcode": "control_wait_until",
+            "next": "T/",
+            "parent": "T.",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ak("
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak(": {
+            "opcode": "lmsutilsblocks_spriteClicked",
+            "next": null,
+            "parent": "re",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T/": {
+            "opcode": "looks_hide",
+            "next": "T:",
+            "parent": "re",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T:": {
+            "opcode": "event_broadcast",
+            "next": "rf",
+            "parent": "T/",
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "gameStartCali",
+                        "TA:woovU6wJ,VO!Gp3;^"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rf": {
+            "opcode": "lmsclonesplus_deleteClonesInSprite",
+            "next": "ak)",
+            "parent": "T:",
+            "inputs": {
+                "INPUT": [
+                    1,
+                    "ak*"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak*": {
+            "opcode": "lmsclonesplus_menu_spriteMenu",
+            "next": null,
+            "parent": "rf",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "menu//Title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ak)": {
+            "opcode": "lmsSpAsMoreControl_breakSwitch",
+            "next": null,
+            "parent": "rf",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T,": {
+            "opcode": "lmsSpAsMoreControl_default",
+            "next": null,
+            "parent": "q~",
+            "inputs": {
+                "SUBSTACK": [
+                    2,
+                    "Z"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Z": {
+            "opcode": "looks_switchcostumeto",
+            "next": "T;",
+            "parent": "T,",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "ak+"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak+": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "Z",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "start button",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "T;": {
+            "opcode": "motion_gotoxy",
+            "next": "T=",
+            "parent": "Z",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "75"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T=": {
+            "opcode": "looks_show",
+            "next": "b.",
+            "parent": "T;",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "b.": {
+            "opcode": "control_wait_until",
+            "next": "T?",
+            "parent": "T=",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ak,"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak,": {
+            "opcode": "lmsutilsblocks_spriteClicked",
+            "next": null,
+            "parent": "b.",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T?": {
+            "opcode": "looks_hide",
+            "next": "T@",
+            "parent": "b.",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T@": {
+            "opcode": "event_broadcast",
+            "next": "T[",
+            "parent": "T?",
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "gameStart",
+                        "s[@.HXqT/F28XT?w-:|y"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T[": {
+            "opcode": "lmsclonesplus_deleteClonesInSprite",
+            "next": null,
+            "parent": "T@",
+            "inputs": {
+                "INPUT": [
+                    1,
+                    "ak-"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak-": {
+            "opcode": "lmsclonesplus_menu_spriteMenu",
+            "next": null,
+            "parent": "T[",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "menu//Title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ak.": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "rg",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "loadTitle",
+                    "hdo/Tbb9dCAE1hGHC`[U"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -647,
+            "y": 119
+        },
+        "rg": {
+            "opcode": "looks_switchbackdropto",
+            "next": "T]",
+            "parent": "ak.",
+            "inputs": {
+                "BACKDROP": [
+                    1,
+                    "ak/"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak/": {
+            "opcode": "looks_backdrops",
+            "next": null,
+            "parent": "rg",
+            "inputs": {},
+            "fields": {
+                "BACKDROP": [
+                    "menu//title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "T]": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "T^",
+            "parent": "rg",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "start"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "znKL3f%*yZ_8WdfolAgn",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "T^": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "T_",
+            "parent": "T]",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "settings"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "znKL3f%*yZ_8WdfolAgn",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "T_": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": "ak:",
+            "parent": "T^",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "about"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "znKL3f%*yZ_8WdfolAgn",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak:": {
+            "opcode": "lmsclonesplus_createCloneWithVar",
+            "next": null,
+            "parent": "T_",
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "achive"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "znKL3f%*yZ_8WdfolAgn",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak;": {
+            "opcode": "lmsclonesplus_whenCloneStartsWithVar",
+            "next": "!",
+            "parent": null,
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "settings"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "znKL3f%*yZ_8WdfolAgn",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 203,
+            "y": 91
+        },
+        "!": {
+            "opcode": "looks_switchcostumeto",
+            "next": "T`",
+            "parent": "ak;",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "ak="
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak=": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "!",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "settings button",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "T`": {
+            "opcode": "motion_gotoxy",
+            "next": "T{",
+            "parent": "!",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "25"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T{": {
+            "opcode": "looks_show",
+            "next": "b/",
+            "parent": "T`",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "b/": {
+            "opcode": "control_wait_until",
+            "next": "T|",
+            "parent": "T{",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ak?"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak?": {
+            "opcode": "lmsutilsblocks_spriteClicked",
+            "next": null,
+            "parent": "b/",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T|": {
+            "opcode": "looks_hide",
+            "next": "T}",
+            "parent": "b/",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T}": {
+            "opcode": "event_broadcast",
+            "next": "T~",
+            "parent": "T|",
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "openSettings",
+                        "XxL4w$w`[Xz(^{@KAGdw"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "T~": {
+            "opcode": "lmsclonesplus_deleteClonesInSprite",
+            "next": null,
+            "parent": "T}",
+            "inputs": {
+                "INPUT": [
+                    1,
+                    "ak@"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak@": {
+            "opcode": "lmsclonesplus_menu_spriteMenu",
+            "next": null,
+            "parent": "T~",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "menu//Title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ak[": {
+            "opcode": "lmsclonesplus_whenCloneStartsWithVar",
+            "next": "rh",
+            "parent": null,
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "about"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "znKL3f%*yZ_8WdfolAgn",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 687,
+            "y": 52
+        },
+        "rh": {
+            "opcode": "looks_switchcostumeto",
+            "next": "Ua",
+            "parent": "ak[",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "ak]"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak]": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "rh",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "about button",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Ua": {
+            "opcode": "motion_gotoxy",
+            "next": "Ub",
+            "parent": "rh",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "-25"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Ub": {
+            "opcode": "looks_show",
+            "next": "ri",
+            "parent": "Ua",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ri": {
+            "opcode": "control_wait_until",
+            "next": "Uc",
+            "parent": "Ub",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ak^"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak^": {
+            "opcode": "lmsutilsblocks_spriteClicked",
+            "next": null,
+            "parent": "ri",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Uc": {
+            "opcode": "looks_hide",
+            "next": "Ud",
+            "parent": "ri",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Ud": {
+            "opcode": "event_broadcast",
+            "next": "Ue",
+            "parent": "Uc",
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "openAbout",
+                        "oUH^zgov18c]47[eJtQ="
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Ue": {
+            "opcode": "lmsclonesplus_deleteClonesInSprite",
+            "next": null,
+            "parent": "Ud",
+            "inputs": {
+                "INPUT": [
+                    1,
+                    "ak_"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak_": {
+            "opcode": "lmsclonesplus_menu_spriteMenu",
+            "next": null,
+            "parent": "Ue",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "menu//Title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "ak`": {
+            "opcode": "lmsclonesplus_whenCloneStartsWithVar",
+            "next": "rj",
+            "parent": null,
+            "inputs": {
+                "INPUTB": [
+                    1,
+                    [
+                        10,
+                        "achive"
+                    ]
+                ]
+            },
+            "fields": {
+                "INPUTA": [
+                    "znKL3f%*yZ_8WdfolAgn",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": 1183,
+            "y": 47
+        },
+        "rj": {
+            "opcode": "looks_switchcostumeto",
+            "next": "Uf",
+            "parent": "ak`",
+            "inputs": {
+                "COSTUME": [
+                    1,
+                    "ak{"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak{": {
+            "opcode": "looks_costume",
+            "next": null,
+            "parent": "rj",
+            "inputs": {},
+            "fields": {
+                "COSTUME": [
+                    "achievements button",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "Uf": {
+            "opcode": "motion_gotoxy",
+            "next": "Ug",
+            "parent": "rj",
+            "inputs": {
+                "X": [
+                    1,
+                    [
+                        4,
+                        "0"
+                    ]
+                ],
+                "Y": [
+                    1,
+                    [
+                        4,
+                        "-75"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Ug": {
+            "opcode": "looks_show",
+            "next": "rk",
+            "parent": "Uf",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "rk": {
+            "opcode": "control_wait_until",
+            "next": "Uh",
+            "parent": "Ug",
+            "inputs": {
+                "CONDITION": [
+                    2,
+                    "ak|"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak|": {
+            "opcode": "lmsutilsblocks_spriteClicked",
+            "next": null,
+            "parent": "rk",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Uh": {
+            "opcode": "looks_hide",
+            "next": "Ui",
+            "parent": "rk",
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Ui": {
+            "opcode": "event_broadcast",
+            "next": "Uj",
+            "parent": "Uh",
+            "inputs": {
+                "BROADCAST_INPUT": [
+                    1,
+                    [
+                        11,
+                        "openAchievments",
+                        "%uoFj}4OGe729K/9Icy."
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Uj": {
+            "opcode": "lmsclonesplus_deleteClonesInSprite",
+            "next": null,
+            "parent": "Ui",
+            "inputs": {
+                "INPUT": [
+                    1,
+                    "ak}"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "ak}": {
+            "opcode": "lmsclonesplus_menu_spriteMenu",
+            "next": null,
+            "parent": "Uj",
+            "inputs": {},
+            "fields": {
+                "spriteMenu": [
+                    "menu//Title",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "aPc": {
+            "opcode": "procedures_call",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": true,
+            "x": -763,
+            "y": 243,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "proccode": "\u200b\u200bbreakpoint\u200b\u200b",
+                "argumentids": "[]",
+                "warp": "false"
+            }
+        },
+        "a": {
+            "opcode": "event_whenbroadcastreceived",
+            "next": "b",
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "BROADCAST_OPTION": [
+                    "displayScore",
+                    "k5s*}*:k:PZ!kV$7(f$Z"
+                ]
+            },
+            "shadow": false,
+            "topLevel": true,
+            "x": -1293,
+            "y": 648
+        },
+        "b": {
+            "opcode": "control_stop",
+            "next": null,
+            "parent": "a",
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": [
+                    "other scripts in sprite",
+                    null
+                ]
+            },
+            "shadow": false,
+            "topLevel": false,
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            }
+        }
+    },
+    "comments": {
+        "aPd": {
+            "blockId": null,
+            "x": -694,
+            "y": -192,
+            "width": 200,
+            "height": 200,
+            "minimized": false,
+            "text": "Grass turns to lava and your car is always on fire in cali mode"
+        }
+    },
+    "currentCostume": 5,
+    "costumes": [
+        {
+            "name": "start button",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "aec5afc705ddc6dd2e5efb240f5a45fb",
+            "md5ext": "aec5afc705ddc6dd2e5efb240f5a45fb.svg",
+            "rotationCenterX": 72.33468341573911,
+            "rotationCenterY": 22.121772112580402
+        },
+        {
+            "name": "settings button",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "7866595149d8a011df56968f170cfa7c",
+            "md5ext": "7866595149d8a011df56968f170cfa7c.svg",
+            "rotationCenterX": 72.33468341573911,
+            "rotationCenterY": 22.121772112580402
+        },
+        {
+            "name": "about button",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "69134fafe0a57964576137cf728b0935",
+            "md5ext": "69134fafe0a57964576137cf728b0935.svg",
+            "rotationCenterX": 72.33468341573911,
+            "rotationCenterY": 22.121772112580402
+        },
+        {
+            "name": "achievements button",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "f74d276b84edf31703fa3403fb0f2059",
+            "md5ext": "f74d276b84edf31703fa3403fb0f2059.svg",
+            "rotationCenterX": 72.33468341573911,
+            "rotationCenterY": 22.121772112580402
+        },
+        {
+            "name": "california mode",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "a97c149c586414dd7e3c98cf123452de",
+            "md5ext": "a97c149c586414dd7e3c98cf123452de.svg",
+            "rotationCenterX": 90.63107676114373,
+            "rotationCenterY": 22.121769999999998
+        },
+        {
+            "name": "story mode",
+            "bitmapResolution": 1,
+            "dataFormat": "svg",
+            "assetId": "69339cdde3a31fae872f2b48406a8ffd",
+            "md5ext": "69339cdde3a31fae872f2b48406a8ffd.svg",
+            "rotationCenterX": 72.33468500000001,
+            "rotationCenterY": 22.121769999999998
+        }
+    ],
+    "sounds": [],
+    "volume": 100,
+    "layerOrder": 8,
+    "visible": false,
+    "x": 0,
+    "y": 0,
+    "size": 100,
+    "direction": 90,
+    "draggable": false,
+    "rotationStyle": "all around"
+}
